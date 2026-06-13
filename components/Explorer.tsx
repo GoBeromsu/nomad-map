@@ -5,16 +5,24 @@ import dynamic from "next/dynamic";
 import FilterBar, { type Filters } from "./FilterBar";
 import PlaceListItem from "./PlaceListItem";
 import PlaceDetail from "./PlaceDetail";
+import { useGeolocation } from "@/lib/useGeolocation";
+import { haversineKm } from "@/lib/geo";
+import { useI18n } from "@/lib/i18n/I18nProvider";
 import type { Category, Place, Status } from "@/lib/types";
+
+function MapLoading() {
+  const { t } = useI18n();
+  return (
+    <div className="flex h-full w-full items-center justify-center bg-neutral-100 text-sm text-neutral-400">
+      {t("map.loading")}
+    </div>
+  );
+}
 
 // 지도는 클라이언트 전용 (Kakao SDK가 window 필요)
 const MapView = dynamic(() => import("./MapView"), {
   ssr: false,
-  loading: () => (
-    <div className="flex h-full w-full items-center justify-center bg-neutral-100 text-sm text-neutral-400">
-      지도를 불러오는 중…
-    </div>
-  ),
+  loading: () => <MapLoading />,
 });
 
 export default function Explorer({ places }: { places: Place[] }) {
@@ -26,10 +34,12 @@ export default function Explorer({ places }: { places: Place[] }) {
     statuses: new Set<Status>(),
   });
   const sheetCloseRef = useRef<HTMLButtonElement>(null);
+  const { coords: userLocation } = useGeolocation();
+  const { t } = useI18n();
 
   const filtered = useMemo(() => {
     const q = filters.query.trim().toLowerCase();
-    return places.filter((p) => {
+    const list = places.filter((p) => {
       if (filters.categories.size && !filters.categories.has(p.category))
         return false;
       if (filters.statuses.size && !filters.statuses.has(p.status)) return false;
@@ -41,7 +51,16 @@ export default function Explorer({ places }: { places: Place[] }) {
       }
       return true;
     });
-  }, [places, filters]);
+    // 현재 위치가 있으면 가까운 순으로 정렬
+    if (userLocation) {
+      return [...list].sort(
+        (a, b) =>
+          haversineKm(userLocation.lat, userLocation.lng, a.lat, a.lng) -
+          haversineKm(userLocation.lat, userLocation.lng, b.lat, b.lng),
+      );
+    }
+    return list;
+  }, [places, filters, userLocation]);
 
   const selected = useMemo(
     () => places.find((p) => p.id === selectedId) ?? null,
@@ -85,7 +104,7 @@ export default function Explorer({ places }: { places: Place[] }) {
   const renderList = () =>
     filtered.length === 0 ? (
       <p className="px-2 py-8 text-center text-sm text-neutral-400">
-        조건에 맞는 장소가 없어요.
+        {t("list.empty")}
       </p>
     ) : (
       <ul className="space-y-2">
@@ -95,6 +114,11 @@ export default function Explorer({ places }: { places: Place[] }) {
               place={p}
               active={p.id === selectedId}
               onClick={() => handleSelect(p.id)}
+              distanceKm={
+                userLocation
+                  ? haversineKm(userLocation.lat, userLocation.lng, p.lat, p.lng)
+                  : undefined
+              }
             />
           </li>
         ))}
@@ -122,6 +146,7 @@ export default function Explorer({ places }: { places: Place[] }) {
           places={filtered}
           selectedId={selectedId}
           onSelect={handleSelect}
+          userLocation={userLocation}
         />
 
         {/* 데스크톱: 상세 floating 패널 */}
@@ -137,7 +162,7 @@ export default function Explorer({ places }: { places: Place[] }) {
           onClick={() => setMobileListOpen(true)}
           className="absolute bottom-4 left-1/2 z-10 -translate-x-1/2 rounded-full bg-neutral-900 px-5 py-2.5 text-sm font-semibold text-white shadow-lg md:hidden"
         >
-          목록 보기 ({filtered.length})
+          {t("list.openMobile")} ({filtered.length})
         </button>
       </div>
 
@@ -170,13 +195,13 @@ export default function Explorer({ places }: { places: Place[] }) {
           >
             <div className="flex items-center justify-between border-b border-neutral-100 p-4">
               <h2 id="mobile-list-title" className="text-sm font-semibold">
-                장소 목록
+                {t("list.title")}
               </h2>
               <button
                 ref={sheetCloseRef}
                 type="button"
                 onClick={() => setMobileListOpen(false)}
-                aria-label="닫기"
+                aria-label={t("common.close")}
                 className="text-neutral-400"
               >
                 ✕

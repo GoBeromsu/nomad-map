@@ -1,6 +1,7 @@
 "use client";
 
 import { CATEGORY_META, STATUS_META } from "@/lib/constants";
+import { useI18n } from "@/lib/i18n/I18nProvider";
 import type { Category, Status } from "@/lib/types";
 
 export interface Filters {
@@ -20,6 +21,8 @@ export default function FilterBar({
   total: number;
   shown: number;
 }) {
+  const { t } = useI18n();
+
   const toggleCategory = (c: Category) => {
     const next = new Set(filters.categories);
     next.has(c) ? next.delete(c) : next.add(c);
@@ -37,8 +40,8 @@ export default function FilterBar({
         type="search"
         value={filters.query}
         onChange={(e) => onChange({ ...filters, query: e.target.value })}
-        placeholder="장소 이름, 태그 검색…"
-        aria-label="장소 검색"
+        placeholder={t("filter.searchPlaceholder")}
+        aria-label={t("filter.searchPlaceholder")}
         className="w-full rounded-lg border border-neutral-200 bg-white px-3 py-2 text-sm outline-none transition focus:border-neutral-400 focus:ring-2 focus:ring-neutral-100"
       />
 
@@ -59,7 +62,7 @@ export default function FilterBar({
               }`}
               style={active ? { background: meta.color } : undefined}
             >
-              {meta.emoji} {meta.label}
+              {meta.emoji} {t(`category.${c}`)}
             </button>
           );
         })}
@@ -82,14 +85,14 @@ export default function FilterBar({
                 border: `${active ? "2px" : "1px"} solid ${active ? meta.color : "#e5e5e5"}`,
               }}
             >
-              {meta.label}
+              {t(`status.${s}`)}
             </button>
           );
         })}
       </div>
 
       <p className="text-xs text-neutral-400">
-        {shown === total ? `총 ${total}곳` : `${total}곳 중 ${shown}곳 표시`}
+        {t("filter.count", { total, shown })}
       </p>
     </div>
   );

@@ -2,16 +2,15 @@
 export type Category =
   | "cafe" // 카페
   | "accommodation" // 숙소
-  | "coworking" // 코워킹 스페이스
   | "restaurant" // 식당
-  | "spot"; // 그 외 (도서관, 라운지 등)
+  | "recovery" // 회복 / 칠링 (해변, 사우나, 자연, 쉼)
+  | "other"; // 기타
 
 // 상태 배지
 export type Status =
-  | "recommended" // 강력 추천
-  | "good" // 괜찮음
-  | "revisit" // 재방문 의사
-  | "mixed"; // 호불호 갈림
+  | "recommended" // 추천
+  | "good" // 보통
+  | "bad"; // 불호
 
 // 1~5 점 노마드 평가 항목
 export interface NomadRatings {
@@ -44,7 +43,6 @@ export interface Place {
   description: string; // 한 줄 ~ 짧은 설명
   photos: string[]; // 사진 URL 배열 (첫 번째가 대표)
   ratings: NomadRatings;
-  priceLevel?: 1 | 2 | 3; // 가격대 (₩ ~ ₩₩₩)
   tags?: string[];
   links?: LinkRef[]; // 외부 URL / 지도 링크 / 접근 안내
   channels?: LinkRef[]; // 홍보 채널 (인스타, 블로그, 유튜브 등)

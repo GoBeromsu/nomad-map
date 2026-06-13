@@ -3,7 +3,8 @@
 import { useMemo, useState } from "react";
 import dynamic from "next/dynamic";
 import { getAllPlaces } from "@/lib/places";
-import { CATEGORY_META, RATING_LABELS, STATUS_META } from "@/lib/constants";
+import { CATEGORY_META, RATING_KEYS, STATUS_META } from "@/lib/constants";
+import { useI18n } from "@/lib/i18n/I18nProvider";
 import type { Category, LinkRef, NomadRatings, Place, Status } from "@/lib/types";
 
 const LocationPicker = dynamic(() => import("@/components/LocationPicker"), {
@@ -28,6 +29,7 @@ function slugify(name: string) {
 }
 
 export default function AdminPage() {
+  const { t } = useI18n();
   const existing = useMemo(() => getAllPlaces(), []);
   const [password, setPassword] = useState("");
 
@@ -40,7 +42,6 @@ export default function AdminPage() {
   const [address, setAddress] = useState("");
   const [description, setDescription] = useState("");
   const [ratings, setRatings] = useState<NomadRatings>(EMPTY_RATINGS);
-  const [priceLevel, setPriceLevel] = useState<1 | 2 | 3>(2);
   const [tags, setTags] = useState("");
   const [photos, setPhotos] = useState<string[]>([]);
   const [links, setLinks] = useState<LinkRef[]>([{ label: "", url: "" }]);
@@ -67,7 +68,6 @@ export default function AdminPage() {
       description: description.trim(),
       photos,
       ratings,
-      priceLevel,
       tags: tags
         .split(",")
         .map((t) => t.trim())
@@ -85,7 +85,7 @@ export default function AdminPage() {
     };
   }, [
     name, category, status, lat, lng, address, description, photos, ratings,
-    priceLevel, tags, links, channels, visitDate, visitDuration, visitNote,
+    tags, links, channels, visitDate, visitDuration, visitNote,
   ]);
 
   const singleJson = JSON.stringify(place, null, 2);
@@ -214,25 +214,18 @@ export default function AdminPage() {
           <Field label="분류">
             <select value={category} onChange={(e) => setCategory(e.target.value as Category)} className="input">
               {(Object.keys(CATEGORY_META) as Category[]).map((c) => (
-                <option key={c} value={c}>{CATEGORY_META[c].emoji} {CATEGORY_META[c].label}</option>
+                <option key={c} value={c}>{CATEGORY_META[c].emoji} {t(`category.${c}`)}</option>
               ))}
             </select>
           </Field>
           <Field label="상태">
             <select value={status} onChange={(e) => setStatus(e.target.value as Status)} className="input">
               {(Object.keys(STATUS_META) as Status[]).map((s) => (
-                <option key={s} value={s}>{STATUS_META[s].label}</option>
+                <option key={s} value={s}>{t(`status.${s}`)}</option>
               ))}
             </select>
           </Field>
         </div>
-        <Field label="가격대">
-          <select value={priceLevel} onChange={(e) => setPriceLevel(Number(e.target.value) as 1 | 2 | 3)} className="input">
-            <option value={1}>₩ (저렴)</option>
-            <option value={2}>₩₩ (보통)</option>
-            <option value={3}>₩₩₩ (비쌈)</option>
-          </select>
-        </Field>
         <Field label="주소">
           <input value={address} onChange={(e) => setAddress(e.target.value)} className="input" placeholder="서울 마포구 …" />
         </Field>
@@ -260,9 +253,9 @@ export default function AdminPage() {
       {/* 노마드 평가 */}
       <Section title="노마드 평가 (1~5)">
         <div className="space-y-3">
-          {(Object.keys(RATING_LABELS) as (keyof NomadRatings)[]).map((key) => (
+          {RATING_KEYS.map((key) => (
             <div key={key} className="flex items-center gap-3">
-              <label htmlFor={`rating-${key}`} className="w-16 text-sm text-neutral-600">{RATING_LABELS[key]}</label>
+              <label htmlFor={`rating-${key}`} className="w-16 text-sm text-neutral-600">{t(`rating.${key}`)}</label>
               <input
                 id={`rating-${key}`}
                 type="range" min={1} max={5} value={ratings[key]}

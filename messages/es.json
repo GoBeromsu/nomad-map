@@ -1,0 +1,55 @@
+{
+  "app": {
+    "title": "Nomad Map",
+    "tagline": "Lugares que he visitado, seleccionados para nómadas digitales que viajan por Corea",
+    "admin": "Admin"
+  },
+  "filter": {
+    "searchPlaceholder": "Buscar lugares",
+    "count": "{shown} de {total}",
+    "category": "Categoría",
+    "status": "Estado"
+  },
+  "category": {
+    "cafe": "Café",
+    "accommodation": "Alojamiento",
+    "restaurant": "Comida",
+    "recovery": "Descanso",
+    "other": "Otros"
+  },
+  "status": {
+    "recommended": "Recomendado",
+    "good": "Regular",
+    "bad": "No es para mí"
+  },
+  "rating": {
+    "title": "Valoración nómada",
+    "wifi": "Wi-Fi",
+    "power": "Enchufes",
+    "seating": "Asientos",
+    "quiet": "Silencioso",
+    "longStay": "Estancia larga"
+  },
+  "map": {
+    "loading": "Cargando mapa…",
+    "errorTitle": "No se pudo cargar el mapa",
+    "errorHint": "Establece tu clave JavaScript de Kakao en NEXT_PUBLIC_KAKAO_MAP_KEY y asegúrate de que el dominio del sitio esté registrado en la consola de Kakao Developers.",
+    "recenter": "Mi ubicación"
+  },
+  "list": {
+    "empty": "Ningún lugar coincide con tus filtros.",
+    "openMobile": "Mostrar lista",
+    "title": "Lugares",
+    "near": "Los más cercanos primero"
+  },
+  "detail": {
+    "ratings": "Valoración nómada",
+    "visit": "Registro de visitas",
+    "links": "Enlaces",
+    "channels": "Canales"
+  },
+  "common": {
+    "close": "Cerrar",
+    "language": "Idioma"
+  }
+}

@@ -3,18 +3,28 @@
 import { useEffect, useRef, useState } from "react";
 import { loadKakaoMaps } from "@/lib/kakao";
 import { CATEGORY_META } from "@/lib/constants";
+import { useI18n } from "@/lib/i18n/I18nProvider";
 import type { Place } from "@/lib/types";
 
 interface MapViewProps {
   places: Place[];
   selectedId: string | null;
   onSelect: (id: string) => void;
+  userLocation?: { lat: number; lng: number } | null;
 }
 
-export default function MapView({ places, selectedId, onSelect }: MapViewProps) {
+export default function MapView({
+  places,
+  selectedId,
+  onSelect,
+  userLocation,
+}: MapViewProps) {
+  const { t } = useI18n();
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<any>(null);
   const overlaysRef = useRef<Map<string, any>>(new Map());
+  const meMarkerRef = useRef<any>(null);
+  const didCenterOnMe = useRef(false);
   const onSelectRef = useRef(onSelect);
   onSelectRef.current = onSelect;
 
@@ -109,18 +119,53 @@ export default function MapView({ places, selectedId, onSelect }: MapViewProps) 
     }
   }, [selectedId, ready, places]);
 
+  // 현재 위치 마커 — userLocation이 생기면 표시하고, 최초 1회 그쪽으로 중심 이동
+  useEffect(() => {
+    if (!ready || !mapRef.current || !window.kakao || !userLocation) return;
+    const kakao = window.kakao;
+    const pos = new kakao.maps.LatLng(userLocation.lat, userLocation.lng);
+
+    if (!meMarkerRef.current) {
+      const el = document.createElement("div");
+      el.className = "nm-here";
+      el.setAttribute("aria-hidden", "true");
+      meMarkerRef.current = new kakao.maps.CustomOverlay({
+        position: pos,
+        content: el,
+        yAnchor: 0.5,
+        xAnchor: 0.5,
+        zIndex: 50,
+      });
+      meMarkerRef.current.setMap(mapRef.current);
+    } else {
+      meMarkerRef.current.setPosition(pos);
+    }
+
+    if (!didCenterOnMe.current && places.length === 0) {
+      mapRef.current.setLevel(6);
+      mapRef.current.setCenter(pos);
+      didCenterOnMe.current = true;
+    }
+  }, [userLocation, ready, places.length]);
+
+  const recenterToMe = () => {
+    if (!mapRef.current || !window.kakao || !userLocation) return;
+    mapRef.current.setLevel(6);
+    mapRef.current.panTo(
+      new window.kakao.maps.LatLng(userLocation.lat, userLocation.lng),
+    );
+  };
+
   if (error) {
     return (
       <div className="flex h-full w-full items-center justify-center bg-neutral-100 p-8 text-center">
         <div className="max-w-sm">
           <p className="text-lg font-semibold text-neutral-800">
-            지도를 불러올 수 없습니다
+            {t("map.errorTitle")}
           </p>
           <p className="mt-2 text-sm text-neutral-500">{error}</p>
           <p className="mt-4 rounded-lg bg-neutral-200 p-3 text-left text-xs text-neutral-600">
-            <code>NEXT_PUBLIC_KAKAO_MAP_KEY</code> 환경변수에 Kakao JavaScript
-            키를 설정하고, Kakao Developers 콘솔에서 사이트 도메인을 등록했는지
-            확인하세요.
+            {t("map.errorHint")}
           </p>
         </div>
       </div>
@@ -128,11 +173,23 @@ export default function MapView({ places, selectedId, onSelect }: MapViewProps) 
   }
 
   return (
-    <div
-      ref={containerRef}
-      className="h-full w-full"
-      role="application"
-      aria-label="노마드 장소 지도"
-    />
+    <div className="relative h-full w-full">
+      <div
+        ref={containerRef}
+        className="h-full w-full"
+        role="application"
+        aria-label={t("app.title")}
+      />
+      {userLocation && (
+        <button
+          type="button"
+          onClick={recenterToMe}
+          className="absolute right-3 top-3 z-10 flex items-center gap-1.5 rounded-full border border-neutral-200 bg-white/95 px-3 py-2 text-xs font-semibold text-neutral-700 shadow-md backdrop-blur transition hover:bg-white"
+        >
+          <span aria-hidden="true">📍</span>
+          {t("map.recenter")}
+        </button>
+      )}
+    </div>
   );
 }

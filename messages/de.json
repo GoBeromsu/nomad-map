@@ -1,0 +1,55 @@
+{
+  "app": {
+    "title": "Nomad Map",
+    "tagline": "Orte, die ich besucht habe – kuratiert für digitale Nomaden auf Reisen durch Korea",
+    "admin": "Admin"
+  },
+  "filter": {
+    "searchPlaceholder": "Orte suchen",
+    "count": "{shown} von {total}",
+    "category": "Kategorie",
+    "status": "Status"
+  },
+  "category": {
+    "cafe": "Café",
+    "accommodation": "Unterkunft",
+    "restaurant": "Essen",
+    "recovery": "Erholung",
+    "other": "Sonstiges"
+  },
+  "status": {
+    "recommended": "Empfohlen",
+    "good": "In Ordnung",
+    "bad": "Nichts für mich"
+  },
+  "rating": {
+    "title": "Nomaden-Bewertung",
+    "wifi": "Wi-Fi",
+    "power": "Steckdosen",
+    "seating": "Sitzplätze",
+    "quiet": "Ruhe",
+    "longStay": "Längerer Aufenthalt"
+  },
+  "map": {
+    "loading": "Karte wird geladen …",
+    "errorTitle": "Karte konnte nicht geladen werden",
+    "errorHint": "Trage deinen Kakao-JavaScript-Schlüssel in NEXT_PUBLIC_KAKAO_MAP_KEY ein und stelle sicher, dass die Website-Domain in der Kakao Developers-Konsole registriert ist.",
+    "recenter": "Mein Standort"
+  },
+  "list": {
+    "empty": "Keine Orte entsprechen deinen Filtern.",
+    "openMobile": "Liste anzeigen",
+    "title": "Orte",
+    "near": "Nächste zuerst"
+  },
+  "detail": {
+    "ratings": "Nomaden-Bewertung",
+    "visit": "Besuchsprotokoll",
+    "links": "Links",
+    "channels": "Kanäle"
+  },
+  "common": {
+    "close": "Schließen",
+    "language": "Sprache"
+  }
+}

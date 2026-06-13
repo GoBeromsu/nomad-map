@@ -1,17 +1,22 @@
 "use client";
 
-import { CATEGORY_META, PRICE_LABEL, STATUS_META } from "@/lib/constants";
+import { CATEGORY_META, STATUS_META } from "@/lib/constants";
+import { formatKm } from "@/lib/geo";
+import { useI18n } from "@/lib/i18n/I18nProvider";
 import type { Place } from "@/lib/types";
 
 export default function PlaceListItem({
   place,
   active,
   onClick,
+  distanceKm,
 }: {
   place: Place;
   active: boolean;
   onClick: () => void;
+  distanceKm?: number;
 }) {
+  const { t } = useI18n();
   const cat = CATEGORY_META[place.category];
   const status = STATUS_META[place.status];
   return (
@@ -44,6 +49,11 @@ export default function PlaceListItem({
           <span className="truncate text-sm font-semibold text-neutral-900">
             {place.name}
           </span>
+          {distanceKm !== undefined && (
+            <span className="ml-auto shrink-0 rounded-full bg-blue-50 px-1.5 py-0.5 text-[10px] font-semibold text-blue-600">
+              {formatKm(distanceKm)}
+            </span>
+          )}
         </div>
         <p className="mt-0.5 truncate text-xs text-neutral-500">
           {place.description}
@@ -53,19 +63,14 @@ export default function PlaceListItem({
             className="rounded-full px-1.5 py-0.5 text-[10px] font-medium"
             style={{ background: cat.color + "1a", color: cat.color }}
           >
-            {cat.label}
+            {t(`category.${place.category}`)}
           </span>
           <span
             className="rounded-full px-1.5 py-0.5 text-[10px] font-semibold"
             style={{ background: status.bg, color: status.color }}
           >
-            {status.label}
+            {t(`status.${place.status}`)}
           </span>
-          {place.priceLevel && (
-            <span className="text-[10px] font-semibold text-neutral-400">
-              {PRICE_LABEL[place.priceLevel]}
-            </span>
-          )}
         </div>
       </div>
     </button>

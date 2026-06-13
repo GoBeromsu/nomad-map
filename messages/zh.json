@@ -1,0 +1,55 @@
+{
+  "app": {
+    "title": "游牧地图",
+    "tagline": "我走过的地方，为游历韩国的数字游牧者精心整理",
+    "admin": "管理员"
+  },
+  "filter": {
+    "searchPlaceholder": "搜索地点",
+    "count": "{shown} / {total}",
+    "category": "分类",
+    "status": "状态"
+  },
+  "category": {
+    "cafe": "咖啡馆",
+    "accommodation": "住宿",
+    "restaurant": "餐厅",
+    "recovery": "休闲",
+    "other": "其他"
+  },
+  "status": {
+    "recommended": "强烈推荐",
+    "good": "还不错",
+    "bad": "不适合我"
+  },
+  "rating": {
+    "title": "游牧评分",
+    "wifi": "Wi-Fi",
+    "power": "电源插座",
+    "seating": "座位",
+    "quiet": "安静",
+    "longStay": "久坐友好"
+  },
+  "map": {
+    "loading": "地图加载中…",
+    "errorTitle": "无法加载地图",
+    "errorHint": "请在 NEXT_PUBLIC_KAKAO_MAP_KEY 中设置您的 Kakao JavaScript 密钥，并确保站点域名已在 Kakao Developers 控制台中注册。",
+    "recenter": "我的位置"
+  },
+  "list": {
+    "empty": "没有地点符合筛选条件。",
+    "openMobile": "显示列表",
+    "title": "地点",
+    "near": "按距离排序"
+  },
+  "detail": {
+    "ratings": "游牧评分",
+    "visit": "到访记录",
+    "links": "链接",
+    "channels": "频道"
+  },
+  "common": {
+    "close": "关闭",
+    "language": "语言"
+  }
+}

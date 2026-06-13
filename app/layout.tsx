@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { I18nProvider } from "@/lib/i18n/I18nProvider";
 
 export const metadata: Metadata = {
   title: "노마드 맵 · 한국 디지털 노마드 장소 기록",
@@ -21,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="ko" className="h-full">
       <body className="flex min-h-full flex-col bg-neutral-50 text-neutral-900 antialiased">
-        {children}
+        <I18nProvider>{children}</I18nProvider>
       </body>
     </html>
   );

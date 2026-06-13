@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import RatingBars from "./RatingBars";
-import { CATEGORY_META, PRICE_LABEL, STATUS_META } from "@/lib/constants";
+import { CATEGORY_META, STATUS_META } from "@/lib/constants";
+import { useI18n } from "@/lib/i18n/I18nProvider";
 import type { Place } from "@/lib/types";
 
 export default function PlaceDetail({
@@ -12,6 +13,7 @@ export default function PlaceDetail({
   place: Place;
   onClose: () => void;
 }) {
+  const { t } = useI18n();
   const [photoIdx, setPhotoIdx] = useState(0);
   const cat = CATEGORY_META[place.category];
   const status = STATUS_META[place.status];
@@ -35,7 +37,7 @@ export default function PlaceDetail({
                   <button
                     key={i}
                     type="button"
-                    aria-label={`사진 ${i + 1}`}
+                    aria-label={`${i + 1}`}
                     aria-current={i === photoIdx ? "true" : undefined}
                     onClick={() => setPhotoIdx(i)}
                     className="flex h-9 w-6 items-center justify-center"
@@ -58,7 +60,7 @@ export default function PlaceDetail({
         <button
           type="button"
           onClick={onClose}
-          aria-label="닫기"
+          aria-label={t("common.close")}
           className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-black/40 text-white backdrop-blur transition hover:bg-black/60"
         >
           ✕
@@ -71,19 +73,14 @@ export default function PlaceDetail({
             className="inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-medium"
             style={{ background: cat.color + "1a", color: cat.color }}
           >
-            {cat.emoji} {cat.label}
+            {cat.emoji} {t(`category.${place.category}`)}
           </span>
           <span
             className="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold"
             style={{ background: status.bg, color: status.color }}
           >
-            {status.label}
+            {t(`status.${place.status}`)}
           </span>
-          {place.priceLevel && (
-            <span className="rounded-full bg-neutral-100 px-2.5 py-1 text-xs font-semibold text-neutral-600">
-              {PRICE_LABEL[place.priceLevel]}
-            </span>
-          )}
         </div>
 
         <h2 className="mt-3 text-xl font-bold text-neutral-900">{place.name}</h2>
@@ -110,7 +107,7 @@ export default function PlaceDetail({
         {/* 노마드 평가 */}
         <section className="mt-5 rounded-xl border border-neutral-200 p-4">
           <h3 className="mb-3 text-sm font-semibold text-neutral-800">
-            노마드 평가
+            {t("detail.ratings")}
           </h3>
           <RatingBars ratings={place.ratings} />
         </section>
@@ -119,7 +116,7 @@ export default function PlaceDetail({
         {place.visit && (place.visit.date || place.visit.duration || place.visit.note) && (
           <section className="mt-4 rounded-xl bg-neutral-50 p-4">
             <h3 className="mb-2 text-sm font-semibold text-neutral-800">
-              방문 기록
+              {t("detail.visit")}
             </h3>
             <div className="space-y-1 text-sm text-neutral-600">
               {(place.visit.date || place.visit.duration) && (

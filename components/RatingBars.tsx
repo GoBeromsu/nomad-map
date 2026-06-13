@@ -1,16 +1,19 @@
-import { RATING_LABELS } from "@/lib/constants";
+"use client";
+
+import { RATING_KEYS } from "@/lib/constants";
+import { useI18n } from "@/lib/i18n/I18nProvider";
 import type { NomadRatings } from "@/lib/types";
 
 export default function RatingBars({ ratings }: { ratings: NomadRatings }) {
-  const keys = Object.keys(RATING_LABELS) as (keyof NomadRatings)[];
+  const { t } = useI18n();
   return (
     <dl className="grid grid-cols-1 gap-2.5">
-      {keys.map((key) => {
+      {RATING_KEYS.map((key) => {
         const value = ratings[key];
         return (
           <div key={key} className="flex items-center gap-3">
             <dt className="w-16 shrink-0 text-xs font-medium text-neutral-500">
-              {RATING_LABELS[key]}
+              {t(`rating.${key}`)}
             </dt>
             <dd className="flex flex-1 items-center gap-2">
               <div className="flex gap-1" aria-hidden>

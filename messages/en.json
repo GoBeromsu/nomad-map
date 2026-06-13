@@ -1,0 +1,55 @@
+{
+  "app": {
+    "title": "Nomad Map",
+    "tagline": "Places I've been, curated for digital nomads traveling Korea",
+    "admin": "Admin"
+  },
+  "filter": {
+    "searchPlaceholder": "Search places",
+    "count": "{shown} of {total}",
+    "category": "Category",
+    "status": "Status"
+  },
+  "category": {
+    "cafe": "Cafe",
+    "accommodation": "Stay",
+    "restaurant": "Food",
+    "recovery": "Recovery",
+    "other": "Other"
+  },
+  "status": {
+    "recommended": "Recommended",
+    "good": "Okay",
+    "bad": "Not for me"
+  },
+  "rating": {
+    "title": "Nomad rating",
+    "wifi": "Wi-Fi",
+    "power": "Outlets",
+    "seating": "Seating",
+    "quiet": "Quiet",
+    "longStay": "Long stay"
+  },
+  "map": {
+    "loading": "Loading map…",
+    "errorTitle": "Couldn't load the map",
+    "errorHint": "Set your Kakao JavaScript key in NEXT_PUBLIC_KAKAO_MAP_KEY and make sure the site domain is registered in the Kakao Developers console.",
+    "recenter": "My location"
+  },
+  "list": {
+    "empty": "No places match your filters.",
+    "openMobile": "Show list",
+    "title": "Places",
+    "near": "Nearest first"
+  },
+  "detail": {
+    "ratings": "Nomad rating",
+    "visit": "Visit log",
+    "links": "Links",
+    "channels": "Channels"
+  },
+  "common": {
+    "close": "Close",
+    "language": "Language"
+  }
+}

@@ -1,97 +1,1012 @@
 [
   {
-    "id": "fritz-coffee-mapo",
-    "name": "프릳츠 커피 컴퍼니 (마포)",
+    "id": "제주도-자전거컨셉-게스트하우스",
+    "name": "제주도 자전거컨셉 게스트하우스",
+    "category": "accommodation",
+    "status": "good",
+    "lat": 33.495575,
+    "lng": 126.902948,
+    "address": "제주특별자치도 제주시 구좌읍 종달로1길",
+    "description": "구좌읍 종달리에 위치한 자전거 테마 게스트하우스. 호스트가 직접 설계·시공한 친환경 목조 건물로 성산일출봉과 우도를 조망할 수 있다. 노마드라면 제주 동쪽 탐방 베이스캠프로 쓰기 좋다.",
+    "photos": [],
+    "ratings": {
+      "wifi": 3,
+      "power": 3,
+      "seating": 2,
+      "quiet": 4,
+      "longStay": 3
+    },
+    "tags": [
+      "종달리",
+      "자전거테마",
+      "게스트하우스",
+      "에어비앤비",
+      "구좌읍",
+      "친환경목조"
+    ],
+    "links": [
+      {
+        "label": "에어비앤비",
+        "url": "https://www.airbnb.com/rooms/18796141"
+      }
+    ],
+    "channels": [],
+    "visit": {
+      "date": "2026-04-14",
+      "duration": "2박",
+      "note": "스트레스로 당일 충동 예약. 무계획 제주 여행 베이스. 성산일출봉 방향 조용한 동쪽 위치."
+    }
+  },
+  {
+    "id": "제주-토비스-콘도",
+    "name": "제주 토비스 콘도",
+    "category": "accommodation",
+    "status": "good",
+    "lat": 33.375013,
+    "lng": 126.235819,
+    "address": "제주특별자치도 제주시 한림읍 금능리",
+    "description": "2026년 6월 제주 여행 Day2에 묵은 콘도. 금능해수욕장 산책 후 밤늦게 입실했음에도 숙소가 괜찮아 재이용 후보로 기록됐다. 한림·금능 권역 탐방 시 베이스로 적합하다.",
+    "photos": [],
+    "ratings": {
+      "wifi": 3,
+      "power": 3,
+      "seating": 2,
+      "quiet": 4,
+      "longStay": 3
+    },
+    "tags": [
+      "콘도",
+      "한림",
+      "금능",
+      "재이용후보"
+    ],
+    "links": [],
+    "channels": [],
+    "visit": {
+      "date": "2026-06-09",
+      "duration": "1박",
+      "note": "숙소 괜찮았음. 금능해수욕장 산책·교촌치킨 저녁 후 입실. 재이용 의사."
+    }
+  },
+  {
+    "id": "강남-코리아-24시-찜질방",
+    "name": "강남 코리아 24시 찜질방",
+    "category": "recovery",
+    "status": "recommended",
+    "lat": 37.498165,
+    "lng": 127.028308,
+    "address": "서울특별시 강남구 강남대로 지하 396",
+    "description": "강남역 인근 24시간 찜질방·사우나. 1박 약 15,000원으로 이불 제공, 조용한 환경 덕에 서울 출장 시 가성비 숙박지로 반복 이용하게 된다. 강남 일정과 동선이 짧아 야간 이동 부담이 없다.",
+    "photos": [],
+    "ratings": {
+      "wifi": 2,
+      "power": 2,
+      "seating": 2,
+      "quiet": 4,
+      "longStay": 2
+    },
+    "tags": [
+      "찜질방",
+      "강남",
+      "24시",
+      "가성비",
+      "서울숙박",
+      "출장"
+    ],
+    "links": [
+      {
+        "label": "공식 사이트",
+        "url": "http://gangnamkorea.dothome.co.kr/"
+      }
+    ],
+    "channels": [],
+    "visit": {
+      "date": "2026-04-25",
+      "duration": "1박 (총 3회 이용)",
+      "note": "조용하고 이불 제공. 매우 만족. 4월·5월 서울 체류 시 반복 재이용 확정."
+    }
+  },
+  {
+    "id": "한담-해변",
+    "name": "한담 해변",
+    "category": "recovery",
+    "status": "recommended",
+    "lat": 33.4634,
+    "lng": 126.3038,
+    "address": "제주특별자치도 제주시 애월읍 애월로1길 26-4",
+    "description": "애월읍 한담에서 곽지까지 이어지는 1.2km 해안산책로. 현무암 해안과 에메랄드빛 바다가 어우러져 제주 대표 힐링 스팟으로 꼽힌다. 인접한 한담 카페거리에서 작업 후 바람 쐬러 걷기 좋다.",
+    "photos": [],
+    "ratings": {
+      "wifi": 1,
+      "power": 1,
+      "seating": 1,
+      "quiet": 4,
+      "longStay": 1
+    },
+    "tags": [
+      "애월",
+      "한담",
+      "해안산책로",
+      "오션뷰",
+      "카페거리",
+      "이효리"
+    ],
+    "links": [
+      {
+        "label": "비짓제주",
+        "url": "https://m.visitjeju.net/kr/detail/view?contentsid=CONT_000000000500682"
+      }
+    ],
+    "channels": [],
+    "visit": {
+      "date": "2026-06-09",
+      "duration": "반나절",
+      "note": "이효리 언급으로 꼭 가고 싶었던 곳. 현무암 산책로와 에메랄드 바다."
+    }
+  },
+  {
+    "id": "제주-쉼표",
+    "name": "제주 쉼표",
+    "category": "cafe",
+    "status": "good",
+    "lat": 33.395282,
+    "lng": 126.241935,
+    "address": "제주특별자치도 제주시 한림읍 한림로 359",
+    "description": "협재 해변 인근 오션뷰 카페. 연중무휴에 예약 없이 이용 가능하고 전면 주차가 편리해 제주 서부 카페 투어 필수 코스로 꼽힌다. 노트북 작업보다는 오션뷰 휴식에 적합하다.",
+    "photos": [],
+    "ratings": {
+      "wifi": 3,
+      "power": 2,
+      "seating": 3,
+      "quiet": 3,
+      "longStay": 2
+    },
+    "tags": [
+      "협재",
+      "오션뷰",
+      "노예약",
+      "연중무휴",
+      "한림",
+      "카페"
+    ],
+    "links": [],
+    "channels": [
+      {
+        "label": "인스타그램",
+        "url": "https://www.instagram.com/jejucomma/"
+      }
+    ],
+    "visit": {
+      "date": "2026-06-10",
+      "duration": "방문 예정",
+      "note": "Day3 방문 계획. 연중무휴 09:00–19:30 영업 확인."
+    }
+  },
+  {
+    "id": "물의-교회",
+    "name": "물의 교회",
+    "category": "recovery",
+    "status": "good",
+    "lat": 43.0264,
+    "lng": 142.7718,
+    "address": "홋카이도 유후쓰군 시무캇푸촌 도마무",
+    "description": "안도 타다오가 설계한 홋카이도 도마무의 숲속 예배당(1988년). 정면 유리벽이 열리면 연못 위 십자가와 공간이 하나로 합쳐지는 경험을 선사한다. 콘크리트·물·빛·자연이 가장 순수하게 구현된 안도 건축으로 꼽힌다.",
+    "photos": [],
+    "ratings": {
+      "wifi": 1,
+      "power": 1,
+      "seating": 1,
+      "quiet": 5,
+      "longStay": 1
+    },
+    "tags": [
+      "안도타다오",
+      "건축",
+      "버킷리스트",
+      "홋카이도",
+      "도마무",
+      "교회"
+    ],
+    "links": [],
+    "channels": [],
+    "visit": null
+  },
+  {
+    "id": "예가-아이네오",
+    "name": "예가 아이네오",
+    "category": "restaurant",
+    "status": "good",
+    "lat": 37.6007,
+    "lng": 126.9139,
+    "address": "서울특별시 은평구 갈현로4길 27",
+    "description": "서울 응암역 근처 깔끔한 한식당으로 이모 가게. 보쌈정식 추천, 셀프바 운영으로 가성비가 좋다. 은평구 방문 시 부담 없이 들를 수 있는 동네 맛집.",
+    "photos": [],
+    "ratings": {
+      "wifi": 1,
+      "power": 1,
+      "seating": 3,
+      "quiet": 3,
+      "longStay": 1
+    },
+    "tags": [
+      "한식",
+      "보쌈정식",
+      "셀프바",
+      "가성비",
+      "응암역",
+      "은평구"
+    ],
+    "links": [
+      {
+        "label": "다이닝코드",
+        "url": "https://www.diningcode.com/profile.php?rid=rqDP2WAbu6xq"
+      }
+    ],
+    "channels": [],
+    "visit": null
+  },
+  {
+    "id": "니모메-빈티지라운지",
+    "name": "니모메 빈티지라운지",
     "category": "cafe",
     "status": "recommended",
-    "lat": 37.546021,
-    "lng": 126.95177,
-    "address": "서울 마포구 새창로2길 17",
-    "description": "원두 로스터리 기반의 넓은 카페. 2층에 작업하기 좋은 큰 테이블이 많고 콘센트도 넉넉합니다.",
-    "photos": [
-      "https://picsum.photos/seed/fritz1/1000/700",
-      "https://picsum.photos/seed/fritz2/1000/700"
+    "lat": 33.493724,
+    "lng": 126.430942,
+    "address": "제주특별자치도 제주시 일주서로 7335-8",
+    "description": "제주시 외도동 연대포구 근처 오션뷰 빈티지 카페. 옛 전화기·카메라 소품으로 꾸며진 공간에 폴딩도어가 열리면 바다가 한눈에 들어온다. 공항 출발 전 마지막 제주 감성을 담기에 딱 좋은 위치다.",
+    "photos": [],
+    "ratings": {
+      "wifi": 3,
+      "power": 2,
+      "seating": 3,
+      "quiet": 3,
+      "longStay": 2
+    },
+    "tags": [
+      "외도동",
+      "오션뷰",
+      "빈티지",
+      "티라미수",
+      "연대포구",
+      "폴딩도어"
     ],
-    "ratings": { "wifi": 4, "power": 5, "seating": 5, "quiet": 3, "longStay": 4 },
-    "priceLevel": 2,
-    "tags": ["로스터리", "넓은좌석", "2층작업석"],
+    "links": [],
+    "channels": [],
+    "visit": {
+      "date": "2026-06-11",
+      "duration": "1시간 내외",
+      "note": "공항 가기 전 마지막 카페. 폴딩도어 개방형 좌석과 야외 테라스, 오션뷰 인상적."
+    }
+  },
+  {
+    "id": "여수-라이라이",
+    "name": "여수 라이라이",
+    "category": "restaurant",
+    "status": "recommended",
+    "lat": 34.761126,
+    "lng": 127.665286,
+    "address": "전라남도 여수시 거북선공원2길 21",
+    "description": "여수의 중식당으로 짬뽕·유린기가 대표 메뉴다. 제주 여행 복귀 후 들른 곳으로 콩국수와 해물짬뽕을 먹었다. 합리적인 가격에 여수 로컬 분위기를 즐길 수 있다.",
+    "photos": [],
+    "ratings": {
+      "wifi": 1,
+      "power": 1,
+      "seating": 3,
+      "quiet": 3,
+      "longStay": 1
+    },
+    "tags": [
+      "여수",
+      "중식",
+      "짬뽕",
+      "유린기",
+      "콩국수",
+      "로컬맛집"
+    ],
     "links": [
-      { "label": "카카오맵", "url": "https://map.kakao.com/?q=프릳츠커피 마포" }
+      {
+        "label": "다이닝코드",
+        "url": "https://www.diningcode.com/profile.php?rid=YROi7e5jC0h5"
+      }
     ],
+    "channels": [],
+    "visit": {
+      "date": "2026-06-11",
+      "duration": "점심",
+      "note": "제주 복귀 후 저녁. 콩국수 + 해물짬뽕. 만족스러운 마무리 식사."
+    }
+  },
+  {
+    "id": "비틀스-타코",
+    "name": "비틀스 타코",
+    "category": "restaurant",
+    "status": "good",
+    "lat": 33.463263,
+    "lng": 126.309728,
+    "address": "제주특별자치도 제주시 애월읍 애월로1길 24-9",
+    "description": "애월 한담 해변 도보 거리의 타코 전문점. 테이크아웃 후 한담 해안산책로에서 먹기 좋은 위치다. 화요일 정기휴무이므로 방문 전 요일 확인 필수.",
+    "photos": [],
+    "ratings": {
+      "wifi": 1,
+      "power": 1,
+      "seating": 3,
+      "quiet": 3,
+      "longStay": 1
+    },
+    "tags": [
+      "애월",
+      "한담",
+      "타코",
+      "테이크아웃",
+      "멕시칸",
+      "화요일휴무"
+    ],
+    "links": [],
     "channels": [
-      { "label": "인스타그램", "url": "https://www.instagram.com/fritzcoffeecompany/" }
+      {
+        "label": "인스타그램",
+        "url": "https://www.instagram.com/bittles_taco/"
+      }
     ],
-    "visit": { "date": "2026-03", "duration": "3시간", "note": "주말 오후엔 붐비니 오전 추천." }
+    "visit": {
+      "date": "2026-06-09",
+      "duration": "점심",
+      "note": "Day2 점심 실방문. 당초 테이크아웃 계획이었으나 현장 점심으로 변경."
+    }
   },
   {
-    "id": "wework-seolleung",
-    "name": "WeWork 선릉",
-    "category": "coworking",
+    "id": "바솔트-크로스핏",
+    "name": "바솔트 크로스핏",
+    "category": "other",
     "status": "good",
-    "lat": 37.504974,
-    "lng": 127.04896,
-    "address": "서울 강남구 테헤란로 419",
-    "description": "데이패스로 하루 단위 이용 가능. 빠른 인터넷, 무료 커피, 통화 부스까지 갖춘 정통 코워킹 스페이스.",
-    "photos": ["https://picsum.photos/seed/wework1/1000/700"],
-    "ratings": { "wifi": 5, "power": 5, "seating": 4, "quiet": 4, "longStay": 5 },
-    "priceLevel": 3,
-    "tags": ["데이패스", "통화부스", "프린터"],
-    "links": [{ "label": "공식 사이트", "url": "https://www.wework.com/ko-KR" }],
-    "channels": [],
-    "visit": { "date": "2026-02", "duration": "1일", "note": "데이패스 예약은 앱에서 미리." }
-  },
-  {
-    "id": "stayfolio-jeju",
-    "name": "제주 한 달 살기 스테이",
-    "category": "accommodation",
-    "status": "revisit",
-    "lat": 33.45049,
-    "lng": 126.5708,
-    "address": "제주 제주시 애월읍",
-    "description": "장기 투숙 할인이 있는 독채형 스테이. 책상과 모니터, 빠른 와이파이가 있어 한 달 살기 워케이션에 적합.",
-    "photos": [
-      "https://picsum.photos/seed/jeju1/1000/700",
-      "https://picsum.photos/seed/jeju2/1000/700"
+    "lat": 33.4948,
+    "lng": 126.4432,
+    "address": "제주특별자치도 제주시 테우해안로 168",
+    "description": "이호테우 해변 앞 통유리 오션뷰 크로스핏 박스. 드롭인 사전 네이버 예약이 필수이며 새벽 7시부터 타임이 운영된다. 제주 체류 중 운동 루틴을 유지하고 싶은 노마드에게 추천.",
+    "photos": [],
+    "ratings": {
+      "wifi": 2,
+      "power": 2,
+      "seating": 2,
+      "quiet": 3,
+      "longStay": 1
+    },
+    "tags": [
+      "이호테우",
+      "크로스핏",
+      "오션뷰",
+      "드롭인",
+      "운동",
+      "네이버예약"
     ],
-    "ratings": { "wifi": 4, "power": 5, "seating": 4, "quiet": 5, "longStay": 5 },
-    "priceLevel": 2,
-    "tags": ["한달살기", "독채", "워케이션"],
-    "links": [{ "label": "예약 페이지", "url": "https://www.stayfolio.com/" }],
+    "links": [
+      {
+        "label": "네이버플레이스",
+        "url": "https://m.place.naver.com/place/1382274491"
+      }
+    ],
     "channels": [],
-    "visit": { "date": "2025-11", "duration": "30박 31일", "note": "월 단위 계약 시 가격 협의 가능." }
+    "visit": {
+      "date": "2026-06-10",
+      "duration": "1회 드롭인",
+      "note": "Day3 10:00 모닝 와드 예정. 통유리 오션뷰."
+    }
   },
   {
-    "id": "cafe-haeundae-busan",
-    "name": "해운대 오션뷰 카페",
+    "id": "쓩쓩-렌탈샵",
+    "name": "쓩쓩 렌탈샵",
+    "category": "other",
+    "status": "good",
+    "lat": 33.462191,
+    "lng": 126.328973,
+    "address": "제주특별자치도 제주시 애월읍",
+    "description": "제주 애월권 미니스쿠터·전기자전거 렌탈샵. 마이리얼트립에서 이용권을 판매하며 한담~애월 해안 코스를 스쿠터로 즐기기 위한 출발지로 활용된다.",
+    "photos": [],
+    "ratings": {
+      "wifi": 1,
+      "power": 1,
+      "seating": 1,
+      "quiet": 3,
+      "longStay": 1
+    },
+    "tags": [
+      "애월",
+      "스쿠터렌탈",
+      "전기자전거",
+      "마이리얼트립",
+      "레저",
+      "한담"
+    ],
+    "links": [
+      {
+        "label": "마이리얼트립 이용권",
+        "url": "https://www.myrealtrip.com/offers/116583"
+      }
+    ],
+    "channels": [],
+    "visit": {
+      "date": "2026-06-10",
+      "duration": "반나절",
+      "note": "Day3 스쿠터 코스 출발지 예정."
+    }
+  },
+  {
+    "id": "종달리-746",
+    "name": "종달리 746",
     "category": "cafe",
-    "status": "mixed",
-    "lat": 35.158698,
-    "lng": 129.160384,
-    "address": "부산 해운대구 달맞이길",
-    "description": "바다가 보이는 뷰는 최고지만 창가 자리는 콘센트가 없어요. 짧은 작업+휴식용으로 추천.",
-    "photos": ["https://picsum.photos/seed/busan1/1000/700"],
-    "ratings": { "wifi": 3, "power": 2, "seating": 3, "quiet": 2, "longStay": 2 },
-    "priceLevel": 2,
-    "tags": ["오션뷰", "분위기"],
-    "links": [{ "label": "카카오맵", "url": "https://map.kakao.com/?q=해운대 달맞이길 카페" }],
+    "status": "recommended",
+    "lat": 33.491855,
+    "lng": 126.902569,
+    "address": "제주특별자치도 제주시 구좌읍 종달리 746",
+    "description": "구좌읍 종달리의 조용한 카페. 글을 쓰다 보면 마음이 평안해지는 분위기로, 노트북 작업이나 사색에 집중하기 좋다. 성산일출봉 방향 동쪽 제주 탐방 시 들르기 좋은 숨은 공간.",
+    "photos": [],
+    "ratings": {
+      "wifi": 3,
+      "power": 3,
+      "seating": 3,
+      "quiet": 5,
+      "longStay": 4
+    },
+    "tags": [
+      "종달리",
+      "구좌읍",
+      "조용한카페",
+      "작업",
+      "감성카페"
+    ],
+    "links": [],
     "channels": [],
-    "visit": { "date": "2026-01", "duration": "1.5시간", "note": "뷰 맛집. 작업보다는 리프레시용." }
+    "visit": {
+      "date": "2026-04-15",
+      "duration": "오후",
+      "note": "글을 쓰다 보니 마음이 평안해졌다. 사색과 작업 모두 잘 되는 조용한 곳."
+    }
   },
   {
-    "id": "library-starfield-coex",
-    "name": "별마당 도서관 (코엑스)",
-    "category": "spot",
+    "id": "올드캡-west",
+    "name": "올드캡 west",
+    "category": "restaurant",
     "status": "good",
-    "lat": 37.51199,
-    "lng": 127.05902,
-    "address": "서울 강남구 영동대로 513",
-    "description": "개방형 대형 도서관. 무료이고 자리가 많지만 소음이 있는 편. 가볍게 읽거나 짧은 작업에 좋음.",
-    "photos": ["https://picsum.photos/seed/coex1/1000/700"],
-    "ratings": { "wifi": 3, "power": 3, "seating": 4, "quiet": 2, "longStay": 3 },
-    "priceLevel": 1,
-    "tags": ["무료", "넓음", "접근성"],
-    "links": [{ "label": "스타필드 코엑스", "url": "https://www.starfield.co.kr/coexmall/main.do" }],
+    "lat": 33.494042,
+    "lng": 126.43719,
+    "address": "제주특별자치도 제주시 일주서로 7400",
+    "description": "제주공항 인근 수제버거 전문점. 화요일 정기휴무이며 평일 브레이크타임(15:00–17:00)이 있다. 공항 도착 후 첫 끼니로 접근성이 좋다.",
+    "photos": [],
+    "ratings": {
+      "wifi": 2,
+      "power": 2,
+      "seating": 3,
+      "quiet": 3,
+      "longStay": 1
+    },
+    "tags": [
+      "수제버거",
+      "제주공항인근",
+      "화요일휴무",
+      "점심"
+    ],
+    "links": [],
     "channels": [],
-    "visit": { "date": "2026-04", "duration": "1시간", "note": "지하철 바로 연결, 약속 전 시간 때우기 좋음." }
+    "visit": {
+      "date": "2026-06-08",
+      "duration": "점심",
+      "note": "Day1 점심 후보로 방문. 공항 인근 위치 편리."
+    }
+  },
+  {
+    "id": "유민미술관",
+    "name": "유민미술관",
+    "category": "recovery",
+    "status": "recommended",
+    "lat": 33.4238,
+    "lng": 126.9305,
+    "address": "제주특별자치도 서귀포시 성산읍 섭지코지로 107",
+    "description": "안도 타다오가 설계한 섭지코지의 아르누보 컬렉션 미술관. 물·바람·빛·소리를 건축으로 끌어들인 공간을 거닐다 보면 발걸음 소리가 뒤에서 들리는 독특한 청각 경험을 할 수 있다. 건축과 자연을 동시에 감상하고 싶은 여행자에게 강력 추천.",
+    "photos": [],
+    "ratings": {
+      "wifi": 1,
+      "power": 1,
+      "seating": 2,
+      "quiet": 4,
+      "longStay": 1
+    },
+    "tags": [
+      "안도타다오",
+      "미술관",
+      "섭지코지",
+      "성산",
+      "건축",
+      "아르누보"
+    ],
+    "links": [],
+    "channels": [],
+    "visit": {
+      "date": "2026-04-15",
+      "duration": "오전",
+      "note": "셜록현준 영상 보고 방문. 높은 층고와 콘크리트 공간, 발소리 울림이 인상 깊었다."
+    }
+  },
+  {
+    "id": "연대포구",
+    "name": "연대포구",
+    "category": "recovery",
+    "status": "good",
+    "lat": 33.494413,
+    "lng": 126.426895,
+    "address": "제주특별자치도 제주시 연대마을길 34-10",
+    "description": "제주시 외도이동 이호테우 권역 인근의 조용한 포구. 관광지화되지 않은 로컬 산책 포인트로 니모메 빈티지라운지와 가까워 카페 방문 전후 걷기 좋다.",
+    "photos": [],
+    "ratings": {
+      "wifi": 1,
+      "power": 1,
+      "seating": 1,
+      "quiet": 4,
+      "longStay": 1
+    },
+    "tags": [
+      "포구",
+      "외도동",
+      "이호테우",
+      "산책",
+      "로컬"
+    ],
+    "links": [],
+    "channels": [],
+    "visit": {
+      "date": "2026-06-08",
+      "duration": "산책",
+      "note": "Day1 자유 동선 중 선택적 방문."
+    }
+  },
+  {
+    "id": "고스트타운",
+    "name": "고스트타운",
+    "category": "other",
+    "status": "good",
+    "lat": 33.47637,
+    "lng": 126.356842,
+    "address": "제주특별자치도 제주시 애월읍 부룡수길 35-14",
+    "description": "제주 애월의 귀신 체험·VR 가상체험관 복합 시설. 카페·레스토랑·펜션까지 갖춰 비 오는 날 애월 실내 오락거리로 적합하다. 10:00–22:00 운영으로 저녁 방문도 가능.",
+    "photos": [],
+    "ratings": {
+      "wifi": 2,
+      "power": 2,
+      "seating": 3,
+      "quiet": 2,
+      "longStay": 1
+    },
+    "tags": [
+      "애월",
+      "VR체험",
+      "귀신체험",
+      "복합시설",
+      "실내액티비티"
+    ],
+    "links": [
+      {
+        "label": "공식 사이트",
+        "url": "http://ghosttown.co.kr/"
+      }
+    ],
+    "channels": [],
+    "visit": {
+      "date": "2026-06-10",
+      "duration": "방문 예정",
+      "note": "Day3 일정 중 들르는 스팟으로 계획."
+    }
+  },
+  {
+    "id": "트립레시피",
+    "name": "트립레시피",
+    "category": "accommodation",
+    "status": "recommended",
+    "lat": 33.46481,
+    "lng": 126.389919,
+    "address": "제주특별자치도 제주시 애월읍 수산리",
+    "description": "애월읍 수산리의 복층 독채 감성 펜션(에어비앤비). 멀리 바다가 보이는 뷰가 인상적이다. 한담 카페거리까지 차로 13분 거리라 애월 생활권 탐색 베이스로 좋다.",
+    "photos": [],
+    "ratings": {
+      "wifi": 3,
+      "power": 3,
+      "seating": 2,
+      "quiet": 4,
+      "longStay": 3
+    },
+    "tags": [
+      "애월",
+      "수산리",
+      "독채",
+      "에어비앤비",
+      "오션뷰",
+      "복층",
+      "감성펜션"
+    ],
+    "links": [
+      {
+        "label": "에어비앤비",
+        "url": "https://www.airbnb.co.kr/rooms/1632992810294269236"
+      }
+    ],
+    "channels": [],
+    "visit": {
+      "date": "2026-06-10",
+      "duration": "1박",
+      "note": "바다가 저 멀리 보이는 게 참 좋았음. 하나로마트 광어회+라면 야식."
+    }
+  },
+  {
+    "id": "와구와궁",
+    "name": "와구와궁",
+    "category": "restaurant",
+    "status": "good",
+    "lat": 33.462191,
+    "lng": 126.328973,
+    "address": "제주특별자치도 제주시 애월읍",
+    "description": "제주 애월 권역 식당. 여행 일정 중 점심 후보로 올랐으나 온라인 정보가 부족해 방문 전 네이버플레이스 직접 확인이 필요하다.",
+    "photos": [],
+    "ratings": {
+      "wifi": 2,
+      "power": 2,
+      "seating": 3,
+      "quiet": 3,
+      "longStay": 1
+    },
+    "tags": [
+      "애월",
+      "제주식당",
+      "점심"
+    ],
+    "links": [],
+    "channels": [],
+    "visit": {
+      "date": "2026-06-10",
+      "duration": "점심 예정",
+      "note": "Day3 점심 후보."
+    }
+  },
+  {
+    "id": "금능해수욕장",
+    "name": "금능해수욕장",
+    "category": "recovery",
+    "status": "recommended",
+    "lat": 33.394,
+    "lng": 126.2398,
+    "address": "제주특별자치도 제주시 한림읍 금능길 119-10",
+    "description": "한림읍 협재 해수욕장 인접한 금능 해변. 에메랄드빛 바다와 비교적 한적한 분위기로 제주 서부 해변 중 로컬 감성이 살아있다. 산책만 해도 충분히 만족스러운 곳.",
+    "photos": [],
+    "ratings": {
+      "wifi": 1,
+      "power": 1,
+      "seating": 1,
+      "quiet": 3,
+      "longStay": 1
+    },
+    "tags": [
+      "한림",
+      "금능",
+      "협재인근",
+      "해수욕장",
+      "오션뷰",
+      "산책"
+    ],
+    "links": [],
+    "channels": [],
+    "visit": {
+      "date": "2026-06-09",
+      "duration": "오후 산책",
+      "note": "바다를 거닌 시간이 이번 제주 여행에서 좋았던 점으로 꼽힘."
+    }
+  },
+  {
+    "id": "대원암",
+    "name": "대원암",
+    "category": "recovery",
+    "status": "good",
+    "lat": 33.46481,
+    "lng": 126.389919,
+    "address": "제주특별자치도 제주시 애월읍 수산리",
+    "description": "애월읍 수산리 소재 불교 암자. 1933년 창건 후 4·3 때 소실, 1981년 재건된 역사 사찰이다. 트립레시피 숙소 인근에서 저녁 산책 코스로 적합하다.",
+    "photos": [],
+    "ratings": {
+      "wifi": 1,
+      "power": 1,
+      "seating": 1,
+      "quiet": 5,
+      "longStay": 1
+    },
+    "tags": [
+      "수산리",
+      "애월",
+      "사찰",
+      "산책",
+      "역사"
+    ],
+    "links": [],
+    "channels": [],
+    "visit": {
+      "date": "2026-06-10",
+      "duration": "저녁 산책",
+      "note": "Day3 저녁 산책 장소."
+    }
+  },
+  {
+    "id": "이호테우해수욕장",
+    "name": "이호테우해수욕장",
+    "category": "recovery",
+    "status": "recommended",
+    "lat": 33.5063,
+    "lng": 126.4636,
+    "address": "제주특별자치도 제주시 이호일동 1600-2",
+    "description": "붉은·흰 조랑말 등대가 상징인 제주시 대표 일몰 해변. 도두봉·도두해수파크와 인접해 있어 제주 북부 반나절 코스로 함께 묶기 좋다. 일몰 시간대 방문을 강력 추천.",
+    "photos": [],
+    "ratings": {
+      "wifi": 1,
+      "power": 1,
+      "seating": 1,
+      "quiet": 3,
+      "longStay": 1
+    },
+    "tags": [
+      "이호테우",
+      "일몰",
+      "조랑말등대",
+      "제주시",
+      "해수욕장"
+    ],
+    "links": [
+      {
+        "label": "공식 사이트",
+        "url": "https://iho.bo9jeong.co.kr/beach"
+      }
+    ],
+    "channels": [],
+    "visit": {
+      "date": "2026-06-08",
+      "duration": "오후~일몰",
+      "note": "Day1 해변 산책 및 일몰 감상."
+    }
+  },
+  {
+    "id": "도두봉",
+    "name": "도두봉",
+    "category": "recovery",
+    "status": "good",
+    "lat": 33.5105,
+    "lng": 126.4758,
+    "address": "제주특별자치도 제주시 도두일동",
+    "description": "제주공항 바로 옆 해발 65m 완만한 오름. 정상에서 제주공항과 북쪽 바다를 조망할 수 있는 일몰 명소다. 부담 없이 10~20분이면 오를 수 있어 이호테우 산책 후 이어 방문하기 좋다.",
+    "photos": [],
+    "ratings": {
+      "wifi": 1,
+      "power": 1,
+      "seating": 1,
+      "quiet": 4,
+      "longStay": 1
+    },
+    "tags": [
+      "도두봉",
+      "오름",
+      "일몰",
+      "공항인근",
+      "도두동",
+      "제주시"
+    ],
+    "links": [],
+    "channels": [],
+    "visit": {
+      "date": "2026-06-08",
+      "duration": "일몰 후 동선",
+      "note": "Day1 이호테우 일몰 후 동선."
+    }
+  },
+  {
+    "id": "아룸서울",
+    "name": "아룸서울",
+    "category": "accommodation",
+    "status": "recommended",
+    "lat": 37.5785,
+    "lng": 126.9695,
+    "address": "서울특별시 종로구 자하문로",
+    "description": "서촌 한옥 숙소. 맛있는 스콘과 향긋한 커피로 웰컴푸드를 제공하고 편백욕조가 갖춰져 있다. 경복궁·청와대·통인시장이 도보 거리이며 주변 맛집도 풍부해 서울 여행 베이스로 손색없다.",
+    "photos": [],
+    "ratings": {
+      "wifi": 3,
+      "power": 3,
+      "seating": 2,
+      "quiet": 4,
+      "longStay": 3
+    },
+    "tags": [
+      "서촌",
+      "한옥숙소",
+      "경복궁역",
+      "편백욕조",
+      "웰컴푸드",
+      "종로"
+    ],
+    "links": [],
+    "channels": [],
+    "visit": null
+  },
+  {
+    "id": "마이못",
+    "name": "마이못",
+    "category": "recovery",
+    "status": "good",
+    "lat": 33.46481,
+    "lng": 126.389919,
+    "address": "제주특별자치도 제주시 애월읍 수산리",
+    "description": "제주 애월 수산리 인근 산책 장소. 정확한 위치는 방문 전 네이버지도에서 '마이못 제주'로 검색이 필요하다.",
+    "photos": [],
+    "ratings": {
+      "wifi": 1,
+      "power": 1,
+      "seating": 1,
+      "quiet": 4,
+      "longStay": 1
+    },
+    "tags": [
+      "애월",
+      "수산리",
+      "산책",
+      "제주"
+    ],
+    "links": [],
+    "channels": [],
+    "visit": {
+      "date": "2026-06-10",
+      "duration": "산책 예정",
+      "note": "Day3 저녁 산책 후보지."
+    }
+  },
+  {
+    "id": "도두해수파크",
+    "name": "도두해수파크",
+    "category": "recovery",
+    "status": "good",
+    "lat": 33.5136,
+    "lng": 126.4786,
+    "address": "제주특별자치도 제주시 도두일동",
+    "description": "제주시 도두동 24시간 찜질방으로 제주 유일의 미네랄 용천 해수 사우나를 갖추고 있다. 체크인/아웃 개념이 없고 짐 보관이 불가하지만 저렴하게 하룻밤을 보낼 수 있다. 이호테우·도두봉 동선과 연결된다.",
+    "photos": [],
+    "ratings": {
+      "wifi": 1,
+      "power": 2,
+      "seating": 2,
+      "quiet": 3,
+      "longStay": 2
+    },
+    "tags": [
+      "도두동",
+      "찜질방",
+      "해수사우나",
+      "24시",
+      "제주시",
+      "가성비"
+    ],
+    "links": [
+      {
+        "label": "공식 사이트",
+        "url": "http://seawaterpark.com/"
+      }
+    ],
+    "channels": [],
+    "visit": {
+      "date": "2026-06-08",
+      "duration": "1박",
+      "note": "Day1 이호테우 일몰 후 입실. 체크인/아웃 없음, 짐 보관 불가 주의."
+    }
+  },
+  {
+    "id": "all-hallows-by-the-tower",
+    "name": "All Hallows by the Tower",
+    "category": "recovery",
+    "status": "good",
+    "lat": 51.5095,
+    "lng": -0.0784,
+    "address": "Byward St, London EC3R 5BJ, United Kingdom",
+    "description": "런던 타워 옆에 자리한 역사 교회. 런던에서 기도와 묵상이 필요할 때 들를 수 있는 도심 속 공간이다.",
+    "photos": [],
+    "ratings": {
+      "wifi": 1,
+      "power": 1,
+      "seating": 3,
+      "quiet": 4,
+      "longStay": 1
+    },
+    "tags": [
+      "런던",
+      "교회",
+      "역사",
+      "타워브릿지인근",
+      "묵상"
+    ],
+    "links": [],
+    "channels": [],
+    "visit": null
+  },
+  {
+    "id": "antalya",
+    "name": "Antalya",
+    "category": "recovery",
+    "status": "good",
+    "lat": 36.8969,
+    "lng": 30.7133,
+    "address": "Antalya, Turkey",
+    "description": "터키 지중해 연안 도시. 무스타파가 추천해 준 여행지로 버킷리스트에 기록된 곳이다.",
+    "photos": [],
+    "ratings": {
+      "wifi": 3,
+      "power": 3,
+      "seating": 3,
+      "quiet": 3,
+      "longStay": 3
+    },
+    "tags": [
+      "터키",
+      "지중해",
+      "버킷리스트",
+      "추천여행지"
+    ],
+    "links": [],
+    "channels": [],
+    "visit": null
+  },
+  {
+    "id": "brighton",
+    "name": "Brighton",
+    "category": "recovery",
+    "status": "good",
+    "lat": 50.8225,
+    "lng": -0.1372,
+    "address": "Brighton, East Sussex, United Kingdom",
+    "description": "영국 남부 해안 도시. Sheffield에서 기차로 이동해 에어비앤비 숙박 후 Seven Sisters 하이킹을 위한 거점으로 활용했다. 런던에서 당일치기 또는 1박 기점으로 적합하다.",
+    "photos": [],
+    "ratings": {
+      "wifi": 3,
+      "power": 3,
+      "seating": 3,
+      "quiet": 3,
+      "longStay": 3
+    },
+    "tags": [
+      "영국",
+      "브라이튼",
+      "해안도시",
+      "SevenSisters거점",
+      "에어비앤비"
+    ],
+    "links": [],
+    "channels": [],
+    "visit": null
+  },
+  {
+    "id": "seven-sisters",
+    "name": "Seven Sisters",
+    "category": "recovery",
+    "status": "recommended",
+    "lat": 50.753,
+    "lng": 0.155,
+    "address": "Seven Sisters Country Park, East Sussex, United Kingdom",
+    "description": "영국 남부의 백악 절벽(chalk cliff) 해안 하이킹 코스. Brighton에서 출발해 약 20km 도보로 이어진다. 절벽 감상과 사색을 겸한 긴 걷기 여정.",
+    "photos": [],
+    "ratings": {
+      "wifi": 1,
+      "power": 1,
+      "seating": 1,
+      "quiet": 5,
+      "longStay": 1
+    },
+    "tags": [
+      "영국",
+      "하이킹",
+      "절벽",
+      "백악절벽",
+      "Sussex",
+      "브라이튼근교"
+    ],
+    "links": [],
+    "channels": [],
+    "visit": null
   }
 ]

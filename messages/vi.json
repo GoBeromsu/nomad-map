@@ -1,0 +1,55 @@
+{
+  "app": {
+    "title": "Nomad Map",
+    "tagline": "Những nơi tôi đã đến, được chọn lọc cho digital nomad du lịch Hàn Quốc",
+    "admin": "Quản trị"
+  },
+  "filter": {
+    "searchPlaceholder": "Tìm kiếm địa điểm",
+    "count": "{shown} trên {total}",
+    "category": "Danh mục",
+    "status": "Trạng thái"
+  },
+  "category": {
+    "cafe": "Cà phê",
+    "accommodation": "Lưu trú",
+    "restaurant": "Ăn uống",
+    "recovery": "Phục hồi",
+    "other": "Khác"
+  },
+  "status": {
+    "recommended": "Gợi ý",
+    "good": "Ổn",
+    "bad": "Không hợp với tôi"
+  },
+  "rating": {
+    "title": "Đánh giá Nomad",
+    "wifi": "Wi-Fi",
+    "power": "Ổ cắm điện",
+    "seating": "Chỗ ngồi",
+    "quiet": "Yên tĩnh",
+    "longStay": "Ở lâu"
+  },
+  "map": {
+    "loading": "Đang tải bản đồ…",
+    "errorTitle": "Không thể tải bản đồ",
+    "errorHint": "Đặt Kakao JavaScript key vào NEXT_PUBLIC_KAKAO_MAP_KEY và đảm bảo domain của trang web đã được đăng ký trong Kakao Developers console.",
+    "recenter": "Vị trí của tôi"
+  },
+  "list": {
+    "empty": "Không có địa điểm nào phù hợp với bộ lọc của bạn.",
+    "openMobile": "Hiển thị danh sách",
+    "title": "Địa điểm",
+    "near": "Gần nhất trước"
+  },
+  "detail": {
+    "ratings": "Đánh giá Nomad",
+    "visit": "Nhật ký ghé thăm",
+    "links": "Liên kết",
+    "channels": "Kênh"
+  },
+  "common": {
+    "close": "Đóng",
+    "language": "Ngôn ngữ"
+  }
+}

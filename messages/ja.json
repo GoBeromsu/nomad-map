@@ -1,0 +1,55 @@
+{
+  "app": {
+    "title": "Nomad Map",
+    "tagline": "韓国を旅するデジタルノマドのために、実際に訪れた場所を厳選",
+    "admin": "管理"
+  },
+  "filter": {
+    "searchPlaceholder": "場所を検索",
+    "count": "{total}件中{shown}件",
+    "category": "カテゴリー",
+    "status": "ステータス"
+  },
+  "category": {
+    "cafe": "カフェ",
+    "accommodation": "宿泊",
+    "restaurant": "グルメ",
+    "recovery": "リフレッシュ",
+    "other": "その他"
+  },
+  "status": {
+    "recommended": "おすすめ",
+    "good": "まあまあ",
+    "bad": "自分には合わない"
+  },
+  "rating": {
+    "title": "ノマド評価",
+    "wifi": "Wi-Fi",
+    "power": "電源",
+    "seating": "座席",
+    "quiet": "静かさ",
+    "longStay": "長居"
+  },
+  "map": {
+    "loading": "マップを読み込み中…",
+    "errorTitle": "マップを読み込めませんでした",
+    "errorHint": "NEXT_PUBLIC_KAKAO_MAP_KEY にKakao JavaScriptキーを設定し、Kakao Developersコンソールでサイトのドメインが登録されていることを確認してください。",
+    "recenter": "現在地"
+  },
+  "list": {
+    "empty": "条件に一致する場所がありません。",
+    "openMobile": "リストを表示",
+    "title": "スポット",
+    "near": "近い順"
+  },
+  "detail": {
+    "ratings": "ノマド評価",
+    "visit": "訪問記録",
+    "links": "リンク",
+    "channels": "チャンネル"
+  },
+  "common": {
+    "close": "閉じる",
+    "language": "言語"
+  }
+}
