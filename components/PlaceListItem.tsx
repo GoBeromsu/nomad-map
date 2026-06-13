@@ -1,9 +1,18 @@
 "use client";
 
-import { CATEGORY_META, STATUS_META } from "@/lib/constants";
+import { CATEGORY_META } from "@/lib/constants";
 import { formatKm } from "@/lib/geo";
 import { useI18n } from "@/lib/i18n/I18nProvider";
+import { localizeField } from "@/lib/i18n/localizeField";
 import type { Place } from "@/lib/types";
+
+// Maps status key → accent token classes for dark/light theme compatibility.
+// STATUS_META bg/color values are light-theme only; accent tokens auto-flip.
+const STATUS_CHIP: Record<string, string> = {
+  recommended: "bg-accent-green/15 text-accent-green",
+  good: "bg-accent-blue/15 text-accent-blue",
+  bad: "bg-accent-red/15 text-accent-red",
+};
 
 export default function PlaceListItem({
   place,
@@ -16,9 +25,8 @@ export default function PlaceListItem({
   onClick: () => void;
   distanceKm?: number;
 }) {
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
   const cat = CATEGORY_META[place.category];
-  const status = STATUS_META[place.status];
   return (
     <button
       type="button"
@@ -26,11 +34,11 @@ export default function PlaceListItem({
       aria-current={active ? "true" : undefined}
       className={`flex w-full items-center gap-3 rounded-xl border p-2.5 text-left transition ${
         active
-          ? "border-neutral-900 bg-neutral-50"
-          : "border-neutral-200 bg-white hover:border-neutral-300 hover:bg-neutral-50"
+          ? "border-accent-red bg-surface-2"
+          : "border-hairline bg-surface-1 hover:bg-surface-2"
       }`}
     >
-      <div className="h-14 w-14 shrink-0 overflow-hidden rounded-lg bg-neutral-100">
+      <div className="h-14 w-14 shrink-0 overflow-hidden rounded-lg bg-surface-3">
         {place.photos[0] ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img
@@ -46,17 +54,17 @@ export default function PlaceListItem({
       </div>
       <div className="min-w-0 flex-1">
         <div className="flex items-center gap-1.5">
-          <span className="truncate text-sm font-semibold text-neutral-900">
+          <span className="truncate text-sm font-semibold text-ink">
             {place.name}
           </span>
           {distanceKm !== undefined && (
-            <span className="ml-auto shrink-0 rounded-full bg-blue-50 px-1.5 py-0.5 text-[10px] font-semibold text-blue-600">
+            <span className="ml-auto shrink-0 rounded-full bg-accent-blue/15 px-1.5 py-0.5 text-[10px] font-semibold text-accent-blue">
               {formatKm(distanceKm)}
             </span>
           )}
         </div>
-        <p className="mt-0.5 truncate text-xs text-neutral-500">
-          {place.description}
+        <p className="mt-0.5 truncate text-xs text-muted">
+          {localizeField(place.description_i18n, locale, place.description)}
         </p>
         <div className="mt-1.5 flex items-center gap-1.5">
           <span
@@ -66,8 +74,7 @@ export default function PlaceListItem({
             {t(`category.${place.category}`)}
           </span>
           <span
-            className="rounded-full px-1.5 py-0.5 text-[10px] font-semibold"
-            style={{ background: status.bg, color: status.color }}
+            className={`rounded-full px-1.5 py-0.5 text-[10px] font-semibold ${STATUS_CHIP[place.status] ?? ""}`}
           >
             {t(`status.${place.status}`)}
           </span>

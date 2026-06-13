@@ -2,9 +2,17 @@
 
 import { useState } from "react";
 import RatingBars from "./RatingBars";
-import { CATEGORY_META, STATUS_META } from "@/lib/constants";
+import { CATEGORY_META } from "@/lib/constants";
 import { useI18n } from "@/lib/i18n/I18nProvider";
+import { localizeField } from "@/lib/i18n/localizeField";
 import type { Place } from "@/lib/types";
+
+// Maps status key → accent token classes for dark/light theme compatibility.
+const STATUS_CHIP: Record<string, string> = {
+  recommended: "bg-accent-green/15 text-accent-green",
+  good: "bg-accent-blue/15 text-accent-blue",
+  bad: "bg-accent-red/15 text-accent-red",
+};
 
 export default function PlaceDetail({
   place,
@@ -13,16 +21,15 @@ export default function PlaceDetail({
   place: Place;
   onClose: () => void;
 }) {
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
   const [photoIdx, setPhotoIdx] = useState(0);
   const cat = CATEGORY_META[place.category];
-  const status = STATUS_META[place.status];
   const photos = place.photos.length > 0 ? place.photos : [];
 
   return (
     <div className="flex h-full flex-col">
       {/* 사진 */}
-      <div className="relative aspect-[4/3] w-full shrink-0 bg-neutral-100">
+      <div className="relative aspect-[4/3] w-full shrink-0 bg-surface-3">
         {photos.length > 0 ? (
           <>
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -61,7 +68,7 @@ export default function PlaceDetail({
           type="button"
           onClick={onClose}
           aria-label={t("common.close")}
-          className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-black/40 text-white backdrop-blur transition hover:bg-black/60"
+          className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-black/40 text-muted backdrop-blur transition hover:bg-black/60 hover:text-ink"
         >
           ✕
         </button>
@@ -76,19 +83,18 @@ export default function PlaceDetail({
             {cat.emoji} {t(`category.${place.category}`)}
           </span>
           <span
-            className="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold"
-            style={{ background: status.bg, color: status.color }}
+            className={`inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold ${STATUS_CHIP[place.status] ?? ""}`}
           >
             {t(`status.${place.status}`)}
           </span>
         </div>
 
-        <h2 className="mt-3 text-xl font-bold text-neutral-900">{place.name}</h2>
+        <h2 className="mt-3 text-xl font-bold text-ink">{place.name}</h2>
         {place.address && (
-          <p className="mt-1 text-sm text-neutral-500">{place.address}</p>
+          <p className="mt-1 text-sm text-muted">{place.address}</p>
         )}
-        <p className="mt-3 text-[15px] leading-relaxed text-neutral-700">
-          {place.description}
+        <p className="mt-3 text-[15px] leading-relaxed text-body">
+          {localizeField(place.description_i18n, locale, place.description)}
         </p>
 
         {place.tags && place.tags.length > 0 && (
@@ -96,7 +102,7 @@ export default function PlaceDetail({
             {place.tags.map((t) => (
               <span
                 key={t}
-                className="rounded-md bg-neutral-100 px-2 py-0.5 text-xs text-neutral-600"
+                className="rounded-md bg-surface-3 px-2 py-0.5 text-xs text-muted"
               >
                 #{t}
               </span>
@@ -105,29 +111,30 @@ export default function PlaceDetail({
         )}
 
         {/* 노마드 평가 */}
-        <section className="mt-5 rounded-xl border border-neutral-200 p-4">
-          <h3 className="mb-3 text-sm font-semibold text-neutral-800">
+        <section className="mt-5 rounded-xl border border-hairline p-4">
+          <h3 className="mb-3 text-sm font-semibold text-ink">
             {t("detail.ratings")}
           </h3>
           <RatingBars ratings={place.ratings} />
         </section>
 
-        {/* 방문 기록 */}
-        {place.visit && (place.visit.date || place.visit.duration || place.visit.note) && (
-          <section className="mt-4 rounded-xl bg-neutral-50 p-4">
-            <h3 className="mb-2 text-sm font-semibold text-neutral-800">
-              {t("detail.visit")}
+        {/* 코멘트 */}
+        {place.comment && (place.comment.date || place.comment.duration || place.comment.note || place.comment.note_i18n) && (
+          <section className="mt-4 rounded-xl bg-surface-2 p-4">
+            <h3 className="mb-2 text-sm font-semibold text-ink">
+              {t("detail.comment")}
             </h3>
-            <div className="space-y-1 text-sm text-neutral-600">
-              {(place.visit.date || place.visit.duration) && (
+            <div className="space-y-1 text-sm text-muted">
+              {(place.comment.date || place.comment.duration) && (
                 <p>
-                  <span aria-hidden="true">📅</span> {place.visit.date}
-                  {place.visit.duration ? ` · ${place.visit.duration}` : ""}
+                  <span aria-hidden="true">📅</span> {place.comment.date}
+                  {place.comment.duration ? ` · ${place.comment.duration}` : ""}
                 </p>
               )}
-              {place.visit.note && (
-                <p className="text-neutral-700">
-                  <span aria-hidden="true">💬</span> {place.visit.note}
+              {(place.comment.note || place.comment.note_i18n) && (
+                <p className="text-body">
+                  <span aria-hidden="true">💬</span>{" "}
+                  {localizeField(place.comment.note_i18n, locale, place.comment.note ?? "")}
                 </p>
               )}
             </div>
@@ -157,13 +164,13 @@ function LinkRow({ label, url, icon }: { label: string; url: string; icon: strin
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex items-center justify-between rounded-lg border border-neutral-200 px-3 py-2.5 text-sm font-medium text-neutral-700 transition hover:border-neutral-300 hover:bg-neutral-50"
+      className="flex items-center justify-between rounded-lg border border-hairline px-3 py-2.5 text-sm font-medium text-body transition hover:bg-surface-2"
     >
       <span className="flex items-center gap-2">
         <span aria-hidden>{icon}</span>
         {label}
       </span>
-      <span aria-hidden className="text-neutral-400">
+      <span aria-hidden className="text-muted">
         ↗
       </span>
     </a>

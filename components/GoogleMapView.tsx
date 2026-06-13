@@ -1,0 +1,266 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+import { loadGoogleMaps } from "@/lib/google";
+import { CATEGORY_META } from "@/lib/constants";
+import { useI18n } from "@/lib/i18n/I18nProvider";
+import { useTheme } from "@/lib/theme/ThemeProvider";
+import type { Place } from "@/lib/types";
+
+export interface MapViewProps {
+  places: Place[];
+  selectedId: string | null;
+  onSelect: (id: string) => void;
+  userLocation?: { lat: number; lng: number } | null;
+}
+
+export default function GoogleMapView({
+  places,
+  selectedId,
+  onSelect,
+  userLocation,
+}: MapViewProps) {
+  const { t } = useI18n();
+  const { theme } = useTheme();
+  const containerRef = useRef<HTMLDivElement>(null);
+  const mapRef = useRef<any>(null);
+  const markersRef = useRef<Map<string, any>>(new Map());
+  const meMarkerRef = useRef<any>(null);
+  const didCenterOnMe = useRef(false);
+  const onSelectRef = useRef(onSelect);
+  onSelectRef.current = onSelect;
+  const lastFlownIdRef = useRef<string | null>(null);
+  const zoomRafRef = useRef<number | null>(null);
+
+  const [error, setError] = useState<string | null>(null);
+  const [ready, setReady] = useState(false);
+
+  // 지도 초기화
+  useEffect(() => {
+    let cancelled = false;
+    loadGoogleMaps()
+      .then((google) => {
+        if (cancelled || !containerRef.current) return;
+        const map = new google.maps.Map(containerRef.current, {
+          center: { lat: 36.5, lng: 127.8 },
+          zoom: 7,
+          // AdvancedMarkerElement 사용을 위해 mapId 필요
+          mapId: "nomad-map",
+          // mapId 사용 시 styles 속성은 무시됨 — colorScheme으로 다크/라이트 전환.
+          // 초기값은 아래 theme-update effect가 ready=true 시 즉시 적용합니다.
+          // 불필요한 기본 UI 제거
+          streetViewControl: false,
+          mapTypeControl: false,
+          fullscreenControl: false,
+        });
+        mapRef.current = map;
+        setReady(true);
+      })
+      .catch((e: Error) => !cancelled && setError(e.message));
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  // 테마 변경 시 colorScheme 재적용
+  useEffect(() => {
+    if (!ready || !mapRef.current) return;
+    mapRef.current.setOptions({
+      colorScheme: theme === "dark" ? "DARK" : "LIGHT",
+    });
+  }, [theme, ready]);
+
+  // 마커 렌더링 — 필터된 목록이 바뀔 때마다 갱신
+  useEffect(() => {
+    if (!ready || !mapRef.current || !window.google) return;
+    const google = window.google;
+    const map = mapRef.current;
+
+    // 기존 마커 제거
+    markersRef.current.forEach((marker) => {
+      marker.map = null;
+    });
+    markersRef.current.clear();
+
+    if (places.length === 0) return;
+
+    const bounds = new google.maps.LatLngBounds();
+
+    places.forEach((place) => {
+      const pos = { lat: place.lat, lng: place.lng };
+      bounds.extend(pos);
+
+      const meta = CATEGORY_META[place.category];
+      const el = document.createElement("div");
+      el.className = "nm-marker";
+      el.dataset.id = place.id;
+      el.innerHTML = `
+        <button type="button" aria-label="${place.name}" style="--mc:${meta.color}">
+          <span class="nm-marker__emoji">${meta.emoji}</span>
+          <span class="nm-marker__name">${place.name}</span>
+        </button>`;
+      el.querySelector("button")!.addEventListener("click", (e) => {
+        e.stopPropagation();
+        onSelectRef.current(place.id);
+      });
+
+      const marker = new google.maps.marker.AdvancedMarkerElement({
+        position: pos,
+        map,
+        content: el,
+        title: place.name,
+      });
+      markersRef.current.set(place.id, marker);
+    });
+
+    map.fitBounds(bounds, { top: 60, right: 60, bottom: 60, left: 60 });
+
+    return () => {
+      markersRef.current.forEach((marker) => {
+        marker.map = null;
+      });
+      markersRef.current.clear();
+    };
+  }, [places, ready]);
+
+  // 선택된 장소 강조 + smooth fly-to (pan + animated zoom)
+  useEffect(() => {
+    if (!ready || !mapRef.current) return;
+
+    // Always update marker highlights on every re-run (filter changes included)
+    markersRef.current.forEach((marker, id) => {
+      const el = marker.content as HTMLElement;
+      el.classList.toggle("nm-marker--active", id === selectedId);
+      marker.zIndex = id === selectedId ? 100 : 1;
+    });
+
+    // Only fly-to when selectedId actually changes to a new value
+    if (selectedId && selectedId !== lastFlownIdRef.current) {
+      const place = places.find((p) => p.id === selectedId);
+      if (place) {
+        lastFlownIdRef.current = selectedId;
+        const map = mapRef.current;
+        const TARGET_ZOOM = 15;
+
+        // Cancel any ongoing zoom animation before starting a new one
+        if (zoomRafRef.current !== null) {
+          cancelAnimationFrame(zoomRafRef.current);
+          zoomRafRef.current = null;
+        }
+
+        const prefersReduced = window.matchMedia(
+          "(prefers-reduced-motion: reduce)",
+        ).matches;
+        if (prefersReduced) {
+          // Jump without animation for reduced-motion users.
+          map.setCenter({ lat: place.lat, lng: place.lng });
+          map.setZoom(TARGET_ZOOM);
+          return;
+        }
+
+        // Pan immediately — Google Maps pan is inherently smooth
+        map.panTo({ lat: place.lat, lng: place.lng });
+
+        // Animate zoom with ease-out cubic over ~600 ms
+        const startZoom: number = map.getZoom() ?? 7;
+        if (startZoom < TARGET_ZOOM) {
+          const startTime = performance.now();
+          const DURATION = 600;
+
+          const step = (now: number) => {
+            const elapsed = now - startTime;
+            const progress = Math.min(elapsed / DURATION, 1);
+            const eased = 1 - Math.pow(1 - progress, 3);
+            map.setZoom(startZoom + (TARGET_ZOOM - startZoom) * eased);
+            if (progress < 1) {
+              zoomRafRef.current = requestAnimationFrame(step);
+            } else {
+              zoomRafRef.current = null;
+            }
+          };
+          zoomRafRef.current = requestAnimationFrame(step);
+        }
+      }
+    } else if (!selectedId) {
+      // Reset tracked id when selection is cleared so the same place re-flies next time
+      lastFlownIdRef.current = null;
+    }
+
+    return () => {
+      if (zoomRafRef.current !== null) {
+        cancelAnimationFrame(zoomRafRef.current);
+        zoomRafRef.current = null;
+      }
+    };
+  }, [selectedId, ready, places]);
+
+  // 현재 위치 마커 — userLocation이 생기면 표시하고, 최초 1회 그쪽으로 중심 이동
+  useEffect(() => {
+    if (!ready || !mapRef.current || !window.google || !userLocation) return;
+    const google = window.google;
+    const pos = { lat: userLocation.lat, lng: userLocation.lng };
+
+    if (!meMarkerRef.current) {
+      const el = document.createElement("div");
+      el.className = "nm-here";
+      el.setAttribute("aria-hidden", "true");
+      meMarkerRef.current = new google.maps.marker.AdvancedMarkerElement({
+        position: pos,
+        map: mapRef.current,
+        content: el,
+        zIndex: 50,
+      });
+    } else {
+      meMarkerRef.current.position = pos;
+    }
+
+    if (!didCenterOnMe.current && places.length === 0) {
+      mapRef.current.setZoom(12);
+      mapRef.current.setCenter(pos);
+      didCenterOnMe.current = true;
+    }
+  }, [userLocation, ready, places.length]);
+
+  const recenterToMe = () => {
+    if (!mapRef.current || !userLocation) return;
+    mapRef.current.setZoom(12);
+    mapRef.current.panTo({ lat: userLocation.lat, lng: userLocation.lng });
+  };
+
+  if (error) {
+    return (
+      <div className="flex h-full w-full items-center justify-center bg-surface-2 p-8 text-center">
+        <div className="max-w-sm">
+          <p className="text-lg font-semibold text-ink">
+            {t("map.errorTitle")}
+          </p>
+          <p className="mt-2 text-sm text-muted">{error}</p>
+          <p className="mt-4 rounded-lg bg-surface-3 p-3 text-left text-xs text-body">
+            {t("map.errorHint")}
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="relative h-full w-full">
+      <div
+        ref={containerRef}
+        className="h-full w-full"
+        role="application"
+        aria-label={t("app.title")}
+      />
+      {userLocation && (
+        <button
+          type="button"
+          onClick={recenterToMe}
+          className="absolute right-3 top-3 z-10 flex items-center gap-1.5 rounded-full border border-hairline bg-surface-1/95 px-3 py-2 text-xs font-semibold text-body shadow-md backdrop-blur transition hover:bg-surface-1"
+        >
+          <span aria-hidden="true">📍</span>
+          {t("map.recenter")}
+        </button>
+      )}
+    </div>
+  );
+}

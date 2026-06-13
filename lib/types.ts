@@ -1,3 +1,5 @@
+import type { LocaleMap } from "./i18n/localizeField";
+
 // 장소 분류 (디지털 노마드 관점)
 export type Category =
   | "cafe" // 카페
@@ -26,10 +28,33 @@ export interface LinkRef {
   url: string;
 }
 
-export interface VisitRecord {
+export interface Comment {
   date?: string; // 방문/체류 시작일 (YYYY-MM 또는 YYYY-MM-DD)
   duration?: string; // 체류 기간 (예: "3박 4일", "2시간")
+  /** @deprecated Use note_i18n. Retained as ko shim until all records migrated. */
   note?: string; // 개인 코멘트 / 팁
+  note_i18n?: LocaleMap; // 로컬라이즈된 코멘트
+}
+
+export interface RouteStop {
+  lat: number;
+  lng: number;
+  label: string;
+  city: string;
+  country: string;
+}
+
+export interface RouteArc {
+  startLat: number;
+  startLng: number;
+  endLat: number;
+  endLng: number;
+  label: string;
+}
+
+export interface RouteData {
+  stops: RouteStop[];
+  arcs: RouteArc[];
 }
 
 export interface Place {
@@ -40,11 +65,13 @@ export interface Place {
   lat: number;
   lng: number;
   address?: string;
+  /** @deprecated Use description_i18n. Retained as ko shim until all records migrated. */
   description: string; // 한 줄 ~ 짧은 설명
+  description_i18n?: LocaleMap; // 로컬라이즈된 설명
   photos: string[]; // 사진 URL 배열 (첫 번째가 대표)
   ratings: NomadRatings;
   tags?: string[];
   links?: LinkRef[]; // 외부 URL / 지도 링크 / 접근 안내
   channels?: LinkRef[]; // 홍보 채널 (인스타, 블로그, 유튜브 등)
-  visit?: VisitRecord;
+  comment?: Comment;
 }

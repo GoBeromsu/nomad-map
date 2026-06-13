@@ -1,0 +1,804 @@
+{
+  "stops": [
+    {
+      "lat": 38.0374,
+      "lng": -122.8032,
+      "label": "Inverness, United States",
+      "country": "United States",
+      "city": "Inverness"
+    },
+    {
+      "lat": 64.6557,
+      "lng": -17.1996,
+      "label": "Fosshóll, Iceland",
+      "country": "Iceland",
+      "city": "Fosshóll"
+    },
+    {
+      "lat": 34.975,
+      "lng": 127.0296,
+      "label": "South Jeolla, South Korea",
+      "country": "South Korea",
+      "city": "South Jeolla"
+    },
+    {
+      "lat": 43.0085,
+      "lng": 141.387,
+      "label": "Sapporo, Japan",
+      "country": "Japan",
+      "city": "Sapporo"
+    },
+    {
+      "lat": 43.0085,
+      "lng": 141.387,
+      "label": "Sapporo, Japan",
+      "country": "Japan",
+      "city": "Sapporo"
+    },
+    {
+      "lat": 37.5155,
+      "lng": 128.2446,
+      "label": "Gangwon, South Korea",
+      "country": "South Korea",
+      "city": "Gangwon"
+    },
+    {
+      "lat": 36.2018,
+      "lng": 126.279,
+      "label": "South Jeolla, South Korea",
+      "country": "South Korea",
+      "city": "South Jeolla"
+    },
+    {
+      "lat": 15.986,
+      "lng": 108.2849,
+      "label": "Da Nang, Vietnam",
+      "country": "Vietnam",
+      "city": "Da Nang"
+    },
+    {
+      "lat": 35.3324,
+      "lng": 126.8692,
+      "label": "Gwangju, South Korea",
+      "country": "South Korea",
+      "city": "Gwangju"
+    },
+    {
+      "lat": 35.0645,
+      "lng": 135.1793,
+      "label": "Tambasasayama, Japan",
+      "country": "Japan",
+      "city": "Tambasasayama"
+    },
+    {
+      "lat": 35.0519,
+      "lng": 127.1092,
+      "label": "광주광역시, South Korea",
+      "country": "South Korea",
+      "city": "광주광역시"
+    },
+    {
+      "lat": 35.0628,
+      "lng": 135.1728,
+      "label": "Tambasasayama, Japan",
+      "country": "Japan",
+      "city": "Tambasasayama"
+    },
+    {
+      "lat": 35.3053,
+      "lng": 126.9763,
+      "label": "여수시, South Korea",
+      "country": "South Korea",
+      "city": "여수시"
+    },
+    {
+      "lat": 43.0491,
+      "lng": 141.3288,
+      "label": "Sapporo, Japan",
+      "country": "Japan",
+      "city": "Sapporo"
+    },
+    {
+      "lat": 35.1144,
+      "lng": 126.9987,
+      "label": "Gwangju, South Korea",
+      "country": "South Korea",
+      "city": "Gwangju"
+    },
+    {
+      "lat": 37.928,
+      "lng": 127.6625,
+      "label": "춘천시, South Korea",
+      "country": "South Korea",
+      "city": "춘천시"
+    },
+    {
+      "lat": 35.0052,
+      "lng": 127.3095,
+      "label": "South Jeolla, South Korea",
+      "country": "South Korea",
+      "city": "South Jeolla"
+    },
+    {
+      "lat": 34.7949,
+      "lng": 126.355,
+      "label": "Mokpo, South Korea",
+      "country": "South Korea",
+      "city": "Mokpo"
+    },
+    {
+      "lat": 34.975,
+      "lng": 127.0125,
+      "label": "목포시, South Korea",
+      "country": "South Korea",
+      "city": "목포시"
+    },
+    {
+      "lat": 35.5507,
+      "lng": 127.152,
+      "label": "Gwangju, South Korea",
+      "country": "South Korea",
+      "city": "Gwangju"
+    },
+    {
+      "lat": 33.7002,
+      "lng": 132.6497,
+      "label": "Iyo, Japan",
+      "country": "Japan",
+      "city": "Iyo"
+    },
+    {
+      "lat": 35.4249,
+      "lng": 127.1722,
+      "label": "Gyeonggi-do, South Korea",
+      "country": "South Korea",
+      "city": "Gyeonggi-do"
+    },
+    {
+      "lat": 40.2485,
+      "lng": 124.2907,
+      "label": "Shenyang, China",
+      "country": "China",
+      "city": "Shenyang"
+    },
+    {
+      "lat": 38.877,
+      "lng": 121.4344,
+      "label": "Lushun, China",
+      "country": "China",
+      "city": "Lushun"
+    },
+    {
+      "lat": 42.1483,
+      "lng": 128.0773,
+      "label": "Yanbian, China",
+      "country": "China",
+      "city": "Yanbian"
+    },
+    {
+      "lat": 42.7199,
+      "lng": 129.1921,
+      "label": "Yanbian, China",
+      "country": "China",
+      "city": "Yanbian"
+    },
+    {
+      "lat": 41.7765,
+      "lng": 123.4424,
+      "label": "Shenyang, China",
+      "country": "China",
+      "city": "Shenyang"
+    },
+    {
+      "lat": 35.6118,
+      "lng": 127.2773,
+      "label": "Gyeonggi-do, South Korea",
+      "country": "South Korea",
+      "city": "Gyeonggi-do"
+    },
+    {
+      "lat": 53.0827,
+      "lng": -1.459,
+      "label": "London, United Kingdom",
+      "country": "United Kingdom",
+      "city": "London"
+    },
+    {
+      "lat": 35.1504,
+      "lng": 128.4378,
+      "label": "광명시, South Korea",
+      "country": "South Korea",
+      "city": "광명시"
+    },
+    {
+      "lat": 37.449,
+      "lng": 126.4491,
+      "label": "Gyeonggi-do, South Korea",
+      "country": "South Korea",
+      "city": "Gyeonggi-do"
+    },
+    {
+      "lat": 24.488,
+      "lng": 54.656,
+      "label": "Abu Dhabi, United Arab Emirates",
+      "country": "United Arab Emirates",
+      "city": "Abu Dhabi"
+    },
+    {
+      "lat": 30.0244,
+      "lng": 47.8689,
+      "label": "Basra, Kuwait",
+      "country": "Kuwait",
+      "city": "Basra"
+    },
+    {
+      "lat": 53.3563,
+      "lng": -1.6936,
+      "label": "Sheffield, United Kingdom",
+      "country": "United Kingdom",
+      "city": "Sheffield"
+    },
+    {
+      "lat": 33.2963,
+      "lng": 131.1739,
+      "label": "Kurume, Japan",
+      "country": "Japan",
+      "city": "Kurume"
+    },
+    {
+      "lat": 53.3826,
+      "lng": -1.4761,
+      "label": "Sheffield, United Kingdom",
+      "country": "United Kingdom",
+      "city": "Sheffield"
+    },
+    {
+      "lat": 53.3848,
+      "lng": -1.8479,
+      "label": "Sheffield, United Kingdom",
+      "country": "United Kingdom",
+      "city": "Sheffield"
+    },
+    {
+      "lat": 45.6278,
+      "lng": 9.2191,
+      "label": "Milan, Italy",
+      "country": "Italy",
+      "city": "Milan"
+    },
+    {
+      "lat": 53.3834,
+      "lng": -1.5014,
+      "label": "Sheffield, United Kingdom",
+      "country": "United Kingdom",
+      "city": "Sheffield"
+    },
+    {
+      "lat": 52.316,
+      "lng": 4.6344,
+      "label": "Badhoevedorp, Netherlands",
+      "country": "Netherlands",
+      "city": "Badhoevedorp"
+    },
+    {
+      "lat": 37.4527,
+      "lng": 126.6895,
+      "label": "인천광역시, South Korea",
+      "country": "South Korea",
+      "city": "인천광역시"
+    },
+    {
+      "lat": 33.9644,
+      "lng": 126.8789,
+      "label": "여수시, South Korea",
+      "country": "South Korea",
+      "city": "여수시"
+    },
+    {
+      "lat": 37.5078,
+      "lng": 126.5331,
+      "label": "Gyeonggi-do, South Korea",
+      "country": "South Korea",
+      "city": "Gyeonggi-do"
+    },
+    {
+      "lat": 52.3044,
+      "lng": 4.7579,
+      "label": "Luchthaven Schiphol, Netherlands",
+      "country": "Netherlands",
+      "city": "Luchthaven Schiphol"
+    },
+    {
+      "lat": 53.2471,
+      "lng": -2.9149,
+      "label": "Sheffield, United Kingdom",
+      "country": "United Kingdom",
+      "city": "Sheffield"
+    },
+    {
+      "lat": 35.4298,
+      "lng": 128.6867,
+      "label": "South Jeolla, South Korea",
+      "country": "South Korea",
+      "city": "South Jeolla"
+    },
+    {
+      "lat": 35.8021,
+      "lng": 129.3011,
+      "label": "North Gyeongsang, South Korea",
+      "country": "South Korea",
+      "city": "North Gyeongsang"
+    },
+    {
+      "lat": 54.0253,
+      "lng": -1.9007,
+      "label": "Sheffield, United Kingdom",
+      "country": "United Kingdom",
+      "city": "Sheffield"
+    },
+    {
+      "lat": 51.9991,
+      "lng": -0.5489,
+      "label": "London, United Kingdom",
+      "country": "United Kingdom",
+      "city": "London"
+    },
+    {
+      "lat": 48.9477,
+      "lng": 2.3108,
+      "label": "Paris, France",
+      "country": "France",
+      "city": "Paris"
+    },
+    {
+      "lat": 53.3604,
+      "lng": -1.4714,
+      "label": "Sheffield, United Kingdom",
+      "country": "United Kingdom",
+      "city": "Sheffield"
+    },
+    {
+      "lat": 50.7876,
+      "lng": 0.1416,
+      "label": "Seaford, United Kingdom",
+      "country": "United Kingdom",
+      "city": "Seaford"
+    },
+    {
+      "lat": 53.3317,
+      "lng": -1.8678,
+      "label": "Manchester, United Kingdom",
+      "country": "United Kingdom",
+      "city": "Manchester"
+    },
+    {
+      "lat": 48.194,
+      "lng": 4.1863,
+      "label": "Saint-Parres-lès-Vaudes, France",
+      "country": "France",
+      "city": "Saint-Parres-lès-Vaudes"
+    },
+    {
+      "lat": 46.6407,
+      "lng": 7.8795,
+      "label": "Grindelwald, Switzerland",
+      "country": "Switzerland",
+      "city": "Grindelwald"
+    },
+    {
+      "lat": 50.5159,
+      "lng": 1.9385,
+      "label": "Wahagnies, France",
+      "country": "France",
+      "city": "Wahagnies"
+    },
+    {
+      "lat": 53.3178,
+      "lng": -1.6071,
+      "label": "Sheffield, United Kingdom",
+      "country": "United Kingdom",
+      "city": "Sheffield"
+    },
+    {
+      "lat": 24.453,
+      "lng": 54.6448,
+      "label": "Abu Dhabi, United Arab Emirates",
+      "country": "United Arab Emirates",
+      "city": "Abu Dhabi"
+    },
+    {
+      "lat": 34.9831,
+      "lng": 127.3714,
+      "label": "South Chungcheong, South Korea",
+      "country": "South Korea",
+      "city": "South Chungcheong"
+    }
+  ],
+  "arcs": [
+    {
+      "startLat": 38.0374,
+      "startLng": -122.8032,
+      "endLat": 64.6557,
+      "endLng": -17.1996,
+      "label": "Inverness, United States → Fosshóll, Iceland"
+    },
+    {
+      "startLat": 64.6557,
+      "startLng": -17.1996,
+      "endLat": 34.975,
+      "endLng": 127.0296,
+      "label": "Fosshóll, Iceland → South Jeolla, South Korea"
+    },
+    {
+      "startLat": 34.975,
+      "startLng": 127.0296,
+      "endLat": 43.0085,
+      "endLng": 141.387,
+      "label": "South Jeolla, South Korea → Sapporo, Japan"
+    },
+    {
+      "startLat": 43.0085,
+      "startLng": 141.387,
+      "endLat": 37.5155,
+      "endLng": 128.2446,
+      "label": "Sapporo, Japan → Gangwon, South Korea"
+    },
+    {
+      "startLat": 37.5155,
+      "startLng": 128.2446,
+      "endLat": 36.2018,
+      "endLng": 126.279,
+      "label": "Gangwon, South Korea → South Jeolla, South Korea"
+    },
+    {
+      "startLat": 36.2018,
+      "startLng": 126.279,
+      "endLat": 15.986,
+      "endLng": 108.2849,
+      "label": "South Jeolla, South Korea → Da Nang, Vietnam"
+    },
+    {
+      "startLat": 15.986,
+      "startLng": 108.2849,
+      "endLat": 35.3324,
+      "endLng": 126.8692,
+      "label": "Da Nang, Vietnam → Gwangju, South Korea"
+    },
+    {
+      "startLat": 35.3324,
+      "startLng": 126.8692,
+      "endLat": 35.0645,
+      "endLng": 135.1793,
+      "label": "Gwangju, South Korea → Tambasasayama, Japan"
+    },
+    {
+      "startLat": 35.0645,
+      "startLng": 135.1793,
+      "endLat": 35.0519,
+      "endLng": 127.1092,
+      "label": "Tambasasayama, Japan → 광주광역시, South Korea"
+    },
+    {
+      "startLat": 35.0519,
+      "startLng": 127.1092,
+      "endLat": 35.0628,
+      "endLng": 135.1728,
+      "label": "광주광역시, South Korea → Tambasasayama, Japan"
+    },
+    {
+      "startLat": 35.0628,
+      "startLng": 135.1728,
+      "endLat": 35.3053,
+      "endLng": 126.9763,
+      "label": "Tambasasayama, Japan → 여수시, South Korea"
+    },
+    {
+      "startLat": 35.3053,
+      "startLng": 126.9763,
+      "endLat": 43.0491,
+      "endLng": 141.3288,
+      "label": "여수시, South Korea → Sapporo, Japan"
+    },
+    {
+      "startLat": 43.0491,
+      "startLng": 141.3288,
+      "endLat": 35.1144,
+      "endLng": 126.9987,
+      "label": "Sapporo, Japan → Gwangju, South Korea"
+    },
+    {
+      "startLat": 35.1144,
+      "startLng": 126.9987,
+      "endLat": 37.928,
+      "endLng": 127.6625,
+      "label": "Gwangju, South Korea → 춘천시, South Korea"
+    },
+    {
+      "startLat": 37.928,
+      "startLng": 127.6625,
+      "endLat": 35.0052,
+      "endLng": 127.3095,
+      "label": "춘천시, South Korea → South Jeolla, South Korea"
+    },
+    {
+      "startLat": 35.0052,
+      "startLng": 127.3095,
+      "endLat": 34.7949,
+      "endLng": 126.355,
+      "label": "South Jeolla, South Korea → Mokpo, South Korea"
+    },
+    {
+      "startLat": 34.7949,
+      "startLng": 126.355,
+      "endLat": 34.975,
+      "endLng": 127.0125,
+      "label": "Mokpo, South Korea → 목포시, South Korea"
+    },
+    {
+      "startLat": 34.975,
+      "startLng": 127.0125,
+      "endLat": 35.5507,
+      "endLng": 127.152,
+      "label": "목포시, South Korea → Gwangju, South Korea"
+    },
+    {
+      "startLat": 35.5507,
+      "startLng": 127.152,
+      "endLat": 33.7002,
+      "endLng": 132.6497,
+      "label": "Gwangju, South Korea → Iyo, Japan"
+    },
+    {
+      "startLat": 33.7002,
+      "startLng": 132.6497,
+      "endLat": 35.4249,
+      "endLng": 127.1722,
+      "label": "Iyo, Japan → Gyeonggi-do, South Korea"
+    },
+    {
+      "startLat": 35.4249,
+      "startLng": 127.1722,
+      "endLat": 40.2485,
+      "endLng": 124.2907,
+      "label": "Gyeonggi-do, South Korea → Shenyang, China"
+    },
+    {
+      "startLat": 40.2485,
+      "startLng": 124.2907,
+      "endLat": 38.877,
+      "endLng": 121.4344,
+      "label": "Shenyang, China → Lushun, China"
+    },
+    {
+      "startLat": 38.877,
+      "startLng": 121.4344,
+      "endLat": 42.1483,
+      "endLng": 128.0773,
+      "label": "Lushun, China → Yanbian, China"
+    },
+    {
+      "startLat": 42.7199,
+      "startLng": 129.1921,
+      "endLat": 41.7765,
+      "endLng": 123.4424,
+      "label": "Yanbian, China → Shenyang, China"
+    },
+    {
+      "startLat": 41.7765,
+      "startLng": 123.4424,
+      "endLat": 35.6118,
+      "endLng": 127.2773,
+      "label": "Shenyang, China → Gyeonggi-do, South Korea"
+    },
+    {
+      "startLat": 35.6118,
+      "startLng": 127.2773,
+      "endLat": 53.0827,
+      "endLng": -1.459,
+      "label": "Gyeonggi-do, South Korea → London, United Kingdom"
+    },
+    {
+      "startLat": 53.0827,
+      "startLng": -1.459,
+      "endLat": 35.1504,
+      "endLng": 128.4378,
+      "label": "London, United Kingdom → 광명시, South Korea"
+    },
+    {
+      "startLat": 35.1504,
+      "startLng": 128.4378,
+      "endLat": 37.449,
+      "endLng": 126.4491,
+      "label": "광명시, South Korea → Gyeonggi-do, South Korea"
+    },
+    {
+      "startLat": 37.449,
+      "startLng": 126.4491,
+      "endLat": 24.488,
+      "endLng": 54.656,
+      "label": "Gyeonggi-do, South Korea → Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "startLat": 24.488,
+      "startLng": 54.656,
+      "endLat": 30.0244,
+      "endLng": 47.8689,
+      "label": "Abu Dhabi, United Arab Emirates → Basra, Kuwait"
+    },
+    {
+      "startLat": 30.0244,
+      "startLng": 47.8689,
+      "endLat": 53.3563,
+      "endLng": -1.6936,
+      "label": "Basra, Kuwait → Sheffield, United Kingdom"
+    },
+    {
+      "startLat": 53.3563,
+      "startLng": -1.6936,
+      "endLat": 33.2963,
+      "endLng": 131.1739,
+      "label": "Sheffield, United Kingdom → Kurume, Japan"
+    },
+    {
+      "startLat": 33.2963,
+      "startLng": 131.1739,
+      "endLat": 53.3826,
+      "endLng": -1.4761,
+      "label": "Kurume, Japan → Sheffield, United Kingdom"
+    },
+    {
+      "startLat": 53.3848,
+      "startLng": -1.8479,
+      "endLat": 45.6278,
+      "endLng": 9.2191,
+      "label": "Sheffield, United Kingdom → Milan, Italy"
+    },
+    {
+      "startLat": 45.6278,
+      "startLng": 9.2191,
+      "endLat": 53.3834,
+      "endLng": -1.5014,
+      "label": "Milan, Italy → Sheffield, United Kingdom"
+    },
+    {
+      "startLat": 53.3834,
+      "startLng": -1.5014,
+      "endLat": 52.316,
+      "endLng": 4.6344,
+      "label": "Sheffield, United Kingdom → Badhoevedorp, Netherlands"
+    },
+    {
+      "startLat": 52.316,
+      "startLng": 4.6344,
+      "endLat": 37.4527,
+      "endLng": 126.6895,
+      "label": "Badhoevedorp, Netherlands → 인천광역시, South Korea"
+    },
+    {
+      "startLat": 37.4527,
+      "startLng": 126.6895,
+      "endLat": 33.9644,
+      "endLng": 126.8789,
+      "label": "인천광역시, South Korea → 여수시, South Korea"
+    },
+    {
+      "startLat": 33.9644,
+      "startLng": 126.8789,
+      "endLat": 37.5078,
+      "endLng": 126.5331,
+      "label": "여수시, South Korea → Gyeonggi-do, South Korea"
+    },
+    {
+      "startLat": 37.5078,
+      "startLng": 126.5331,
+      "endLat": 52.3044,
+      "endLng": 4.7579,
+      "label": "Gyeonggi-do, South Korea → Luchthaven Schiphol, Netherlands"
+    },
+    {
+      "startLat": 52.3044,
+      "startLng": 4.7579,
+      "endLat": 53.2471,
+      "endLng": -2.9149,
+      "label": "Luchthaven Schiphol, Netherlands → Sheffield, United Kingdom"
+    },
+    {
+      "startLat": 53.2471,
+      "startLng": -2.9149,
+      "endLat": 35.4298,
+      "endLng": 128.6867,
+      "label": "Sheffield, United Kingdom → South Jeolla, South Korea"
+    },
+    {
+      "startLat": 35.4298,
+      "startLng": 128.6867,
+      "endLat": 35.8021,
+      "endLng": 129.3011,
+      "label": "South Jeolla, South Korea → North Gyeongsang, South Korea"
+    },
+    {
+      "startLat": 35.8021,
+      "startLng": 129.3011,
+      "endLat": 54.0253,
+      "endLng": -1.9007,
+      "label": "North Gyeongsang, South Korea → Sheffield, United Kingdom"
+    },
+    {
+      "startLat": 54.0253,
+      "startLng": -1.9007,
+      "endLat": 51.9991,
+      "endLng": -0.5489,
+      "label": "Sheffield, United Kingdom → London, United Kingdom"
+    },
+    {
+      "startLat": 51.9991,
+      "startLng": -0.5489,
+      "endLat": 48.9477,
+      "endLng": 2.3108,
+      "label": "London, United Kingdom → Paris, France"
+    },
+    {
+      "startLat": 48.9477,
+      "startLng": 2.3108,
+      "endLat": 53.3604,
+      "endLng": -1.4714,
+      "label": "Paris, France → Sheffield, United Kingdom"
+    },
+    {
+      "startLat": 53.3604,
+      "startLng": -1.4714,
+      "endLat": 50.7876,
+      "endLng": 0.1416,
+      "label": "Sheffield, United Kingdom → Seaford, United Kingdom"
+    },
+    {
+      "startLat": 50.7876,
+      "startLng": 0.1416,
+      "endLat": 53.3317,
+      "endLng": -1.8678,
+      "label": "Seaford, United Kingdom → Manchester, United Kingdom"
+    },
+    {
+      "startLat": 53.3317,
+      "startLng": -1.8678,
+      "endLat": 48.194,
+      "endLng": 4.1863,
+      "label": "Manchester, United Kingdom → Saint-Parres-lès-Vaudes, France"
+    },
+    {
+      "startLat": 48.194,
+      "startLng": 4.1863,
+      "endLat": 46.6407,
+      "endLng": 7.8795,
+      "label": "Saint-Parres-lès-Vaudes, France → Grindelwald, Switzerland"
+    },
+    {
+      "startLat": 46.6407,
+      "startLng": 7.8795,
+      "endLat": 50.5159,
+      "endLng": 1.9385,
+      "label": "Grindelwald, Switzerland → Wahagnies, France"
+    },
+    {
+      "startLat": 50.5159,
+      "startLng": 1.9385,
+      "endLat": 53.3178,
+      "endLng": -1.6071,
+      "label": "Wahagnies, France → Sheffield, United Kingdom"
+    },
+    {
+      "startLat": 53.3178,
+      "startLng": -1.6071,
+      "endLat": 24.453,
+      "endLng": 54.6448,
+      "label": "Sheffield, United Kingdom → Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "startLat": 24.453,
+      "startLng": 54.6448,
+      "endLat": 34.9831,
+      "endLng": 127.3714,
+      "label": "Abu Dhabi, United Arab Emirates → South Chungcheong, South Korea"
+    }
+  ]
+}

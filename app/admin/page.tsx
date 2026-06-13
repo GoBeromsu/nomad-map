@@ -5,6 +5,8 @@ import dynamic from "next/dynamic";
 import { getAllPlaces } from "@/lib/places";
 import { CATEGORY_META, RATING_KEYS, STATUS_META } from "@/lib/constants";
 import { useI18n } from "@/lib/i18n/I18nProvider";
+import { LOCALES, type Locale } from "@/lib/i18n/config";
+import { type LocaleMap } from "@/lib/i18n/localizeField";
 import type { Category, LinkRef, NomadRatings, Place, Status } from "@/lib/types";
 
 const LocationPicker = dynamic(() => import("@/components/LocationPicker"), {
@@ -40,7 +42,7 @@ export default function AdminPage() {
   const [lat, setLat] = useState(37.5663);
   const [lng, setLng] = useState(126.9779);
   const [address, setAddress] = useState("");
-  const [description, setDescription] = useState("");
+  const [descriptionI18n, setDescriptionI18n] = useState<LocaleMap>({ ko: "" });
   const [ratings, setRatings] = useState<NomadRatings>(EMPTY_RATINGS);
   const [tags, setTags] = useState("");
   const [photos, setPhotos] = useState<string[]>([]);
@@ -48,7 +50,8 @@ export default function AdminPage() {
   const [channels, setChannels] = useState<LinkRef[]>([{ label: "", url: "" }]);
   const [visitDate, setVisitDate] = useState("");
   const [visitDuration, setVisitDuration] = useState("");
-  const [visitNote, setVisitNote] = useState("");
+  const [commentNoteI18n, setCommentNoteI18n] = useState<LocaleMap>({});
+  const [activeLang, setActiveLang] = useState<Locale>("ko");
 
   const [uploading, setUploading] = useState(false);
   const [uploadMsg, setUploadMsg] = useState<string | null>(null);
@@ -57,6 +60,7 @@ export default function AdminPage() {
   const place: Place = useMemo(() => {
     const clean = (arr: LinkRef[]) =>
       arr.filter((l) => l.label.trim() && l.url.trim());
+    const hasNote = Object.values(commentNoteI18n).some(Boolean);
     return {
       id: slugify(name) || "new-place",
       name: name.trim(),
@@ -65,7 +69,8 @@ export default function AdminPage() {
       lat: Number(lat.toFixed(6)),
       lng: Number(lng.toFixed(6)),
       address: address.trim() || undefined,
-      description: description.trim(),
+      description: descriptionI18n.ko ?? "",
+      description_i18n: descriptionI18n,
       photos,
       ratings,
       tags: tags
@@ -74,18 +79,19 @@ export default function AdminPage() {
         .filter(Boolean),
       links: clean(links),
       channels: clean(channels),
-      visit:
-        visitDate || visitDuration || visitNote
+      comment:
+        visitDate || visitDuration || hasNote
           ? {
               date: visitDate || undefined,
               duration: visitDuration || undefined,
-              note: visitNote || undefined,
+              note: commentNoteI18n.ko || undefined,
+              note_i18n: hasNote ? commentNoteI18n : undefined,
             }
           : undefined,
     };
   }, [
-    name, category, status, lat, lng, address, description, photos, ratings,
-    tags, links, channels, visitDate, visitDuration, visitNote,
+    name, category, status, lat, lng, address, descriptionI18n, photos, ratings,
+    tags, links, channels, visitDate, visitDuration, commentNoteI18n,
   ]);
 
   const singleJson = JSON.stringify(place, null, 2);
@@ -138,15 +144,15 @@ export default function AdminPage() {
   }
 
   return (
-    <main className="mx-auto min-h-dvh max-w-2xl px-4 py-8">
+    <main className="mx-auto min-h-dvh max-w-2xl bg-canvas px-4 py-8 text-ink">
       <header className="mb-6">
-        <a href="/" className="text-sm text-neutral-400 hover:text-neutral-600">
+        <a href="/" className="text-sm text-muted hover:text-ink">
           ← 지도로
         </a>
         <h1 className="mt-2 text-2xl font-bold">관리자 · 장소 추가</h1>
-        <p className="mt-1 text-sm text-neutral-500">
+        <p className="mt-1 text-sm text-muted">
           사진을 업로드하고 정보를 입력한 뒤, 생성된 JSON을{" "}
-          <code className="rounded bg-neutral-100 px-1">data/places.json</code>{" "}
+          <code className="rounded bg-surface-3 px-1">data/places.json</code>{" "}
           에 반영해 커밋하면 배포됩니다. (사용자에게는 읽기 전용)
         </p>
       </header>
@@ -171,11 +177,11 @@ export default function AdminPage() {
           aria-label="사진 파일 선택"
           onChange={(e) => handleUpload(e.target.files)}
           disabled={uploading}
-          className="block w-full text-sm text-neutral-600 file:mr-3 file:rounded-lg file:border-0 file:bg-neutral-900 file:px-4 file:py-2 file:text-sm file:font-medium file:text-white"
+          className="block w-full text-sm text-body file:mr-3 file:rounded-lg file:border-0 file:bg-cta file:px-4 file:py-2 file:text-sm file:font-medium file:text-cta-ink"
         />
-        {uploading && <p className="mt-2 text-xs text-neutral-400">업로드 중…</p>}
+        {uploading && <p className="mt-2 text-xs text-muted">업로드 중…</p>}
         {uploadMsg && (
-          <p className="mt-2 text-xs text-neutral-600">{uploadMsg}</p>
+          <p className="mt-2 text-xs text-body">{uploadMsg}</p>
         )}
         {photos.length > 0 && (
           <div className="mt-3 flex flex-wrap gap-2">
@@ -195,7 +201,7 @@ export default function AdminPage() {
                   className="absolute -right-2 -top-2 flex h-8 w-8 items-center justify-center rounded-full text-white"
                   aria-label={`${i + 1}번째 사진 삭제`}
                 >
-                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-neutral-900 text-xs">
+                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-cta text-cta-ink text-xs">
                     ✕
                   </span>
                 </button>
@@ -229,9 +235,15 @@ export default function AdminPage() {
         <Field label="주소">
           <input value={address} onChange={(e) => setAddress(e.target.value)} className="input" placeholder="서울 마포구 …" />
         </Field>
-        <Field label="설명">
-          <textarea value={description} onChange={(e) => setDescription(e.target.value)} rows={3} className="input" placeholder="디지털 노마드 관점에서 어떤 곳인지" />
-        </Field>
+        <LocaleTabField
+          label="설명"
+          map={descriptionI18n}
+          onChange={setDescriptionI18n}
+          rows={3}
+          placeholder="디지털 노마드 관점에서 어떤 곳인지"
+          activeLang={activeLang}
+          onLangChange={setActiveLang}
+        />
         <Field label="태그 (쉼표로 구분)">
           <input value={tags} onChange={(e) => setTags(e.target.value)} className="input" placeholder="로스터리, 넓은좌석, 2층작업석" />
         </Field>
@@ -255,7 +267,7 @@ export default function AdminPage() {
         <div className="space-y-3">
           {RATING_KEYS.map((key) => (
             <div key={key} className="flex items-center gap-3">
-              <label htmlFor={`rating-${key}`} className="w-16 text-sm text-neutral-600">{t(`rating.${key}`)}</label>
+              <label htmlFor={`rating-${key}`} className="w-16 text-sm text-muted">{t(`rating.${key}`)}</label>
               <input
                 id={`rating-${key}`}
                 type="range" min={1} max={5} value={ratings[key]}
@@ -276,13 +288,20 @@ export default function AdminPage() {
         <LinkEditor rows={channels} onChange={setChannels} placeholder={["인스타그램", "https://instagram.com/…"]} />
       </Section>
 
-      {/* 방문 기록 */}
-      <Section title="방문 기록">
+      {/* 코멘트 */}
+      <Section title="코멘트">
         <div className="grid grid-cols-2 gap-3">
           <Field label="방문 시기"><input value={visitDate} onChange={(e) => setVisitDate(e.target.value)} className="input" placeholder="2026-03" /></Field>
           <Field label="체류 기간"><input value={visitDuration} onChange={(e) => setVisitDuration(e.target.value)} className="input" placeholder="3시간 / 3박4일" /></Field>
         </div>
-        <Field label="코멘트 / 팁"><textarea value={visitNote} onChange={(e) => setVisitNote(e.target.value)} rows={2} className="input" /></Field>
+        <LocaleTabField
+          label="노트 / 팁"
+          map={commentNoteI18n}
+          onChange={setCommentNoteI18n}
+          rows={2}
+          activeLang={activeLang}
+          onLangChange={setActiveLang}
+        />
       </Section>
 
       {/* 출력 */}
@@ -291,15 +310,15 @@ export default function AdminPage() {
           <button
             type="button"
             onClick={() => { navigator.clipboard.writeText(singleJson); setCopied(true); setTimeout(() => setCopied(false), 1500); }}
-            className="rounded-lg bg-neutral-900 px-4 py-2 text-sm font-medium text-white"
+            className="rounded-lg bg-cta px-4 py-2 text-sm font-medium text-cta-ink"
           >
             {copied ? "복사됨!" : "이 장소 JSON 복사"}
           </button>
-          <button type="button" onClick={downloadJson} className="rounded-lg border border-neutral-300 px-4 py-2 text-sm font-medium">
+          <button type="button" onClick={downloadJson} className="rounded-lg border border-hairline px-4 py-2 text-sm font-medium">
             병합된 places.json 다운로드
           </button>
         </div>
-        <pre className="mt-3 max-h-72 overflow-auto rounded-lg bg-neutral-900 p-3 text-xs text-neutral-100">
+        <pre className="mt-3 max-h-72 overflow-auto rounded-lg bg-surface-3 p-3 text-xs text-body">
           {singleJson}
         </pre>
       </Section>
@@ -309,8 +328,8 @@ export default function AdminPage() {
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <section className="mb-6 rounded-2xl border border-neutral-200 bg-white p-5">
-      <h2 className="mb-3 text-sm font-semibold text-neutral-800">{title}</h2>
+    <section className="mb-6 rounded-2xl border border-hairline bg-surface-1 p-5">
+      <h2 className="mb-3 text-sm font-semibold text-body">{title}</h2>
       {children}
     </section>
   );
@@ -319,9 +338,54 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 function Field({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <label className="mb-3 block">
-      <span className="mb-1 block text-xs font-medium text-neutral-500">{label}</span>
+      <span className="mb-1 block text-xs font-medium text-muted">{label}</span>
       {children}
     </label>
+  );
+}
+
+function LocaleTabField({
+  label,
+  map,
+  onChange,
+  rows = 3,
+  placeholder,
+  activeLang,
+  onLangChange,
+}: {
+  label: string;
+  map: LocaleMap;
+  onChange: (updated: LocaleMap) => void;
+  rows?: number;
+  placeholder?: string;
+  activeLang: Locale;
+  onLangChange: (l: Locale) => void;
+}) {
+  return (
+    <div className="mb-3">
+      <span className="mb-1 block text-xs font-medium text-muted">{label}</span>
+      <div className="mb-1.5 flex flex-wrap gap-1">
+        {LOCALES.map((l) => (
+          <button
+            key={l}
+            type="button"
+            onClick={() => onLangChange(l)}
+            className={`rounded px-2 py-0.5 text-xs font-medium ${
+              activeLang === l ? "bg-cta text-cta-ink" : "border border-hairline text-muted"
+            }`}
+          >
+            {l.toUpperCase()}
+          </button>
+        ))}
+      </div>
+      <textarea
+        value={map[activeLang] ?? ""}
+        onChange={(e) => onChange({ ...map, [activeLang]: e.target.value })}
+        rows={rows}
+        className="input w-full"
+        placeholder={placeholder}
+      />
+    </div>
   );
 }
 
@@ -353,7 +417,7 @@ function LinkEditor({
           <button
             type="button"
             onClick={() => onChange(rows.length === 1 ? [{ label: "", url: "" }] : rows.filter((_, idx) => idx !== i))}
-            className="shrink-0 rounded-lg border border-neutral-200 px-3 text-sm text-neutral-400"
+            className="shrink-0 rounded-lg border border-hairline px-3 text-sm text-muted"
             aria-label="행 삭제"
           >
             ✕
@@ -363,7 +427,7 @@ function LinkEditor({
       <button
         type="button"
         onClick={() => onChange([...rows, { label: "", url: "" }])}
-        className="text-sm text-neutral-500 hover:text-neutral-800"
+        className="text-sm text-muted hover:text-ink"
       >
         + 행 추가
       </button>

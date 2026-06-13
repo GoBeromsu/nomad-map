@@ -71,7 +71,7 @@ export default function LocationPicker({
 
   if (error) {
     return (
-      <div className="rounded-lg bg-amber-50 p-3 text-xs text-amber-700">
+      <div className="rounded-lg border border-hairline bg-surface-2 p-3 text-xs text-accent-yellow">
         지도 로드 실패: {error} — 위도/경도를 직접 입력하세요.
       </div>
     );
@@ -86,21 +86,21 @@ export default function LocationPicker({
           onChange={(e) => setKeyword(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && (e.preventDefault(), search())}
           placeholder="장소/주소 검색 (예: 프릳츠 마포)"
-          className="flex-1 rounded-lg border border-neutral-200 px-3 py-2 text-sm outline-none focus:border-neutral-400"
+          className="input flex-1"
         />
         <button
           type="button"
           onClick={search}
-          className="rounded-lg bg-neutral-900 px-3 py-2 text-sm font-medium text-white"
+          className="rounded-lg bg-cta px-3 py-2 text-sm font-medium text-cta-ink"
         >
           검색
         </button>
       </div>
       <div
         ref={ref}
-        className="h-56 w-full overflow-hidden rounded-lg border border-neutral-200"
+        className="h-56 w-full overflow-hidden rounded-lg border border-hairline"
       />
-      <p className="text-xs text-neutral-400">
+      <p className="text-xs text-muted">
         지도를 클릭하거나 검색해서 위치를 지정하세요. 현재: {lat.toFixed(5)},{" "}
         {lng.toFixed(5)}
       </p>

@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { loadKakaoMaps } from "@/lib/kakao";
 import { CATEGORY_META } from "@/lib/constants";
 import { useI18n } from "@/lib/i18n/I18nProvider";
+import { useTheme } from "@/lib/theme/ThemeProvider";
 import type { Place } from "@/lib/types";
 
 interface MapViewProps {
@@ -20,11 +21,13 @@ export default function MapView({
   userLocation,
 }: MapViewProps) {
   const { t } = useI18n();
+  const { theme } = useTheme();
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<any>(null);
   const overlaysRef = useRef<Map<string, any>>(new Map());
   const meMarkerRef = useRef<any>(null);
   const didCenterOnMe = useRef(false);
+  const lastFlyToId = useRef<string | null>(null);
   const onSelectRef = useRef(onSelect);
   onSelectRef.current = onSelect;
 
@@ -49,6 +52,15 @@ export default function MapView({
       cancelled = true;
     };
   }, []);
+
+  // LIMITATION: Kakao lacks full JSON dark styling — apply a subtle CSS filter
+  // to the map container so it doesn't glare against the dark UI.
+  // Markers remain theme-aware via .nm-marker and are unaffected by this mild filter.
+  useEffect(() => {
+    if (!containerRef.current) return;
+    containerRef.current.style.filter =
+      theme === "dark" ? "brightness(0.85) contrast(1.05)" : "";
+  }, [theme]);
 
   // 마커(커스텀 오버레이) 렌더링 — 필터된 목록이 바뀔 때마다 갱신
   useEffect(() => {
@@ -100,7 +112,7 @@ export default function MapView({
     };
   }, [places, ready]);
 
-  // 선택된 장소 강조 + 중심 이동
+  // 선택된 장소 강조 + 중심 이동 (fly-to)
   useEffect(() => {
     if (!ready || !mapRef.current || !window.kakao) return;
     overlaysRef.current.forEach((ov, id) => {
@@ -109,12 +121,25 @@ export default function MapView({
       if (id === selectedId) ov.setZIndex(100);
       else ov.setZIndex(1);
     });
-    if (selectedId) {
+    // Only animate fly-to when selectedId actually changed to a new non-null value.
+    // Re-runs caused by places array changes (filtering) skip the zoom so the
+    // camera does not yank while the user is just filtering.
+    if (selectedId && selectedId !== lastFlyToId.current) {
       const place = places.find((p) => p.id === selectedId);
       if (place) {
-        mapRef.current.panTo(
-          new window.kakao.maps.LatLng(place.lat, place.lng),
-        );
+        const latlng = new window.kakao.maps.LatLng(place.lat, place.lng);
+        const prefersReduced = window.matchMedia(
+          "(prefers-reduced-motion: reduce)",
+        ).matches;
+        if (prefersReduced) {
+          // Jump without animation for reduced-motion users.
+          mapRef.current.setLevel(4);
+          mapRef.current.setCenter(latlng);
+        } else {
+          mapRef.current.panTo(latlng);
+          mapRef.current.setLevel(4, { animate: { duration: 450 } });
+        }
+        lastFlyToId.current = selectedId;
       }
     }
   }, [selectedId, ready, places]);
@@ -158,13 +183,13 @@ export default function MapView({
 
   if (error) {
     return (
-      <div className="flex h-full w-full items-center justify-center bg-neutral-100 p-8 text-center">
+      <div className="flex h-full w-full items-center justify-center bg-surface-2 p-8 text-center">
         <div className="max-w-sm">
-          <p className="text-lg font-semibold text-neutral-800">
+          <p className="text-lg font-semibold text-ink">
             {t("map.errorTitle")}
           </p>
-          <p className="mt-2 text-sm text-neutral-500">{error}</p>
-          <p className="mt-4 rounded-lg bg-neutral-200 p-3 text-left text-xs text-neutral-600">
+          <p className="mt-2 text-sm text-muted">{error}</p>
+          <p className="mt-4 rounded-lg bg-surface-3 p-3 text-left text-xs text-body">
             {t("map.errorHint")}
           </p>
         </div>
@@ -184,7 +209,7 @@ export default function MapView({
         <button
           type="button"
           onClick={recenterToMe}
-          className="absolute right-3 top-3 z-10 flex items-center gap-1.5 rounded-full border border-neutral-200 bg-white/95 px-3 py-2 text-xs font-semibold text-neutral-700 shadow-md backdrop-blur transition hover:bg-white"
+          className="absolute right-3 top-3 z-10 flex items-center gap-1.5 rounded-full border border-hairline bg-surface-1/95 px-3 py-2 text-xs font-semibold text-body shadow-md backdrop-blur transition hover:bg-surface-1"
         >
           <span aria-hidden="true">📍</span>
           {t("map.recenter")}

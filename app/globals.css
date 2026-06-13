@@ -1,13 +1,66 @@
 @import "tailwindcss";
 
+/* ── Tailwind v4: class-based dark variant ───────────────────────────────── */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ── Design token CSS custom properties ─────────────────────────────────── */
 :root {
+  color-scheme: light;
+
+  --canvas: #faf7f2;
+  --surface-1: #ffffff;
+  --surface-2: #fbf8f3;
+  --surface-3: #f3ede3;
+  --hairline: #e7ded0;
+  --ink: #2a2723;
+  --body: #57514a;
+  --muted: #a39a8c;
+  --cta: #1f1b16;
+  --cta-ink: #ffffff;
+  --accent-blue: #57c1ff;
+  --accent-red: #ff6161;
+  --accent-green: #59d499;
+  --accent-yellow: #ffc533;
+
   --font-sans:
     -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard",
     "Segoe UI", "Noto Sans KR", Roboto, "Helvetica Neue", sans-serif;
 }
 
+.dark {
+  color-scheme: dark;
+
+  --canvas: #07080a;
+  --surface-1: #0d0d0d;
+  --surface-2: #101111;
+  --surface-3: #121212;
+  --hairline: #242728;
+  --ink: #f4f4f6;
+  --body: #cdcdcd;
+  --muted: #8a8f98;
+  --cta: #ffffff;
+  --cta-ink: #07080a;
+  /* Accents are identical in both themes */
+}
+
+/* ── Tailwind v4 theme mapping ───────────────────────────────────────────── */
 @theme inline {
   --font-sans: var(--font-sans);
+
+  --color-canvas: var(--canvas);
+  --color-surface-1: var(--surface-1);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-hairline: var(--hairline);
+  --color-ink: var(--ink);
+  --color-body: var(--body);
+  --color-muted: var(--muted);
+  --color-cta: var(--cta);
+  --color-cta-ink: var(--cta-ink);
+  --color-accent-blue: var(--accent-blue);
+  --color-accent-red: var(--accent-red);
+  --color-accent-green: var(--accent-green);
+  --color-accent-yellow: var(--accent-yellow);
 }
 
 html,
@@ -23,15 +76,19 @@ body {
 .input {
   width: 100%;
   border-radius: 0.5rem;
-  border: 1px solid #e5e5e5;
-  background: #ffffff;
+  border: 1px solid var(--hairline);
+  background: var(--surface-1);
+  color: var(--ink);
   padding: 0.5rem 0.75rem;
   font-size: 0.875rem;
   outline: none;
   transition: border-color 0.12s ease;
 }
 .input:focus {
-  border-color: #a3a3a3;
+  border-color: var(--muted);
+}
+.input::placeholder {
+  color: var(--muted);
 }
 
 /* ── Kakao 커스텀 마커 ───────────────────────────── */
@@ -40,13 +97,13 @@ body {
   align-items: center;
   gap: 5px;
   padding: 4px 10px 4px 6px;
-  border: 2px solid var(--mc, #404040);
+  border: 2px solid var(--mc, var(--hairline));
   border-radius: 9999px;
-  background: #ffffff;
+  background: var(--surface-1);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
   font-size: 12px;
   font-weight: 600;
-  color: #262626;
+  color: var(--ink);
   cursor: pointer;
   white-space: nowrap;
   transition:
@@ -71,8 +128,8 @@ body {
 }
 
 .nm-marker--active button {
-  background: var(--mc, #262626);
-  color: #ffffff;
+  background: var(--mc, var(--cta));
+  color: var(--cta-ink);
   transform: scale(1.06);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
@@ -82,9 +139,9 @@ body {
   width: 16px;
   height: 16px;
   border-radius: 9999px;
-  background: #2563eb;
-  border: 3px solid #ffffff;
-  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.4);
+  background: var(--accent-blue);
+  border: 3px solid var(--canvas);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent-blue) 40%, transparent);
   position: relative;
 }
 .nm-here::after {
@@ -92,7 +149,7 @@ body {
   position: absolute;
   inset: -8px;
   border-radius: 9999px;
-  background: rgba(37, 99, 235, 0.18);
+  background: color-mix(in srgb, var(--accent-blue) 18%, transparent);
   animation: nm-pulse 1.8s ease-out infinite;
 }
 @keyframes nm-pulse {

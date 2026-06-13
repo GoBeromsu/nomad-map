@@ -34,7 +34,8 @@
     "loading": "Karte wird geladen …",
     "errorTitle": "Karte konnte nicht geladen werden",
     "errorHint": "Trage deinen Kakao-JavaScript-Schlüssel in NEXT_PUBLIC_KAKAO_MAP_KEY ein und stelle sicher, dass die Website-Domain in der Kakao Developers-Konsole registriert ist.",
-    "recenter": "Mein Standort"
+    "recenter": "Mein Standort",
+    "backToGlobe": "Zurück zum Globus"
   },
   "list": {
     "empty": "Keine Orte entsprechen deinen Filtern.",
@@ -44,12 +45,17 @@
   },
   "detail": {
     "ratings": "Nomaden-Bewertung",
-    "visit": "Besuchsprotokoll",
+    "comment": "Kommentar",
     "links": "Links",
     "channels": "Kanäle"
   },
   "common": {
     "close": "Schließen",
     "language": "Sprache"
+  },
+  "intro": {
+    "tagline": "Die Orte, an denen ich war, auf dem Globus",
+    "enter": "Karte erkunden",
+    "skip": "Überspringen"
   }
 }

@@ -34,7 +34,8 @@
     "loading": "Đang tải bản đồ…",
     "errorTitle": "Không thể tải bản đồ",
     "errorHint": "Đặt Kakao JavaScript key vào NEXT_PUBLIC_KAKAO_MAP_KEY và đảm bảo domain của trang web đã được đăng ký trong Kakao Developers console.",
-    "recenter": "Vị trí của tôi"
+    "recenter": "Vị trí của tôi",
+    "backToGlobe": "Quay lại địa cầu"
   },
   "list": {
     "empty": "Không có địa điểm nào phù hợp với bộ lọc của bạn.",
@@ -44,12 +45,17 @@
   },
   "detail": {
     "ratings": "Đánh giá Nomad",
-    "visit": "Nhật ký ghé thăm",
+    "comment": "Bình luận",
     "links": "Liên kết",
     "channels": "Kênh"
   },
   "common": {
     "close": "Đóng",
     "language": "Ngôn ngữ"
+  },
+  "intro": {
+    "tagline": "Những nơi tôi đã ở, trên toàn cầu",
+    "enter": "Xem bản đồ",
+    "skip": "Bỏ qua"
   }
 }

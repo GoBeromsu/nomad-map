@@ -34,7 +34,8 @@
     "loading": "Cargando mapa…",
     "errorTitle": "No se pudo cargar el mapa",
     "errorHint": "Establece tu clave JavaScript de Kakao en NEXT_PUBLIC_KAKAO_MAP_KEY y asegúrate de que el dominio del sitio esté registrado en la consola de Kakao Developers.",
-    "recenter": "Mi ubicación"
+    "recenter": "Mi ubicación",
+    "backToGlobe": "Volver al globo"
   },
   "list": {
     "empty": "Ningún lugar coincide con tus filtros.",
@@ -44,12 +45,17 @@
   },
   "detail": {
     "ratings": "Valoración nómada",
-    "visit": "Registro de visitas",
+    "comment": "Comentario",
     "links": "Enlaces",
     "channels": "Canales"
   },
   "common": {
     "close": "Cerrar",
     "language": "Idioma"
+  },
+  "intro": {
+    "tagline": "Los lugares donde me quedé, en el globo",
+    "enter": "Explorar el mapa",
+    "skip": "Omitir"
   }
 }

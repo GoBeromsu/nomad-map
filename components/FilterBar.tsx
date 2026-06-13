@@ -36,15 +36,17 @@ export default function FilterBar({
 
   return (
     <div className="space-y-3">
+      {/* Search input — .input class handles theme-aware border/bg/text/placeholder */}
       <input
         type="search"
         value={filters.query}
         onChange={(e) => onChange({ ...filters, query: e.target.value })}
         placeholder={t("filter.searchPlaceholder")}
         aria-label={t("filter.searchPlaceholder")}
-        className="w-full rounded-lg border border-neutral-200 bg-white px-3 py-2 text-sm outline-none transition focus:border-neutral-400 focus:ring-2 focus:ring-neutral-100"
+        className="input"
       />
 
+      {/* Category chips */}
       <div className="flex flex-wrap gap-1.5">
         {(Object.keys(CATEGORY_META) as Category[]).map((c) => {
           const active = filters.categories.has(c);
@@ -57,8 +59,8 @@ export default function FilterBar({
               aria-pressed={active}
               className={`rounded-full border px-2.5 py-1 text-xs font-medium transition ${
                 active
-                  ? "border-transparent text-white ring-2 ring-offset-1 ring-neutral-500"
-                  : "border-neutral-200 bg-white text-neutral-600 hover:bg-neutral-50"
+                  ? "border-transparent text-cta-ink"
+                  : "border-hairline bg-surface-2 text-body hover:bg-surface-3"
               }`}
               style={active ? { background: meta.color } : undefined}
             >
@@ -68,22 +70,21 @@ export default function FilterBar({
         })}
       </div>
 
+      {/* Status chips */}
       <div className="flex flex-wrap gap-1.5">
         {(Object.keys(STATUS_META) as Status[]).map((s) => {
           const active = filters.statuses.has(s);
-          const meta = STATUS_META[s];
           return (
             <button
               key={s}
               type="button"
               onClick={() => toggleStatus(s)}
               aria-pressed={active}
-              className="rounded-full px-2.5 py-1 text-xs font-medium transition"
-              style={{
-                background: active ? meta.bg : "transparent",
-                color: active ? meta.color : "#737373",
-                border: `${active ? "2px" : "1px"} solid ${active ? meta.color : "#e5e5e5"}`,
-              }}
+              className={`rounded-full border px-2.5 py-1 text-xs font-medium transition ${
+                active
+                  ? "border-transparent bg-cta text-cta-ink"
+                  : "border-hairline bg-surface-2 text-body hover:bg-surface-3"
+              }`}
             >
               {t(`status.${s}`)}
             </button>
@@ -91,7 +92,8 @@ export default function FilterBar({
         })}
       </div>
 
-      <p className="text-xs text-neutral-400">
+      {/* Result count */}
+      <p className="text-xs text-muted">
         {t("filter.count", { total, shown })}
       </p>
     </div>

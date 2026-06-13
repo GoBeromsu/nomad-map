@@ -34,7 +34,8 @@
     "loading": "Chargement de la carte…",
     "errorTitle": "Impossible de charger la carte",
     "errorHint": "Renseignez votre clé JavaScript Kakao dans NEXT_PUBLIC_KAKAO_MAP_KEY et assurez-vous que le domaine du site est enregistré dans la console Kakao Developers.",
-    "recenter": "Ma position"
+    "recenter": "Ma position",
+    "backToGlobe": "Retour au globe"
   },
   "list": {
     "empty": "Aucun lieu ne correspond à vos filtres.",
@@ -44,12 +45,17 @@
   },
   "detail": {
     "ratings": "Avis nomade",
-    "visit": "Journal de visites",
+    "comment": "Commentaire",
     "links": "Liens",
     "channels": "Chaînes"
   },
   "common": {
     "close": "Fermer",
     "language": "Langue"
+  },
+  "intro": {
+    "tagline": "Les endroits où j'ai séjourné, sur le globe",
+    "enter": "Explorer la carte",
+    "skip": "Passer"
   }
 }

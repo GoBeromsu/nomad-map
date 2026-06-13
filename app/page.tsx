@@ -1,5 +1,5 @@
 import AppHeader from "@/components/AppHeader";
-import Explorer from "@/components/Explorer";
+import AppShell from "@/components/AppShell";
 import { getAllPlaces } from "@/lib/places";
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="flex h-dvh flex-col">
       <AppHeader />
-      <Explorer places={places} />
+      <AppShell places={places} />
     </main>
   );
 }

@@ -34,7 +34,8 @@
     "loading": "Loading map…",
     "errorTitle": "Couldn't load the map",
     "errorHint": "Set your Kakao JavaScript key in NEXT_PUBLIC_KAKAO_MAP_KEY and make sure the site domain is registered in the Kakao Developers console.",
-    "recenter": "My location"
+    "recenter": "My location",
+    "backToGlobe": "Back to globe"
   },
   "list": {
     "empty": "No places match your filters.",
@@ -44,12 +45,17 @@
   },
   "detail": {
     "ratings": "Nomad rating",
-    "visit": "Visit log",
+    "comment": "Comment",
     "links": "Links",
     "channels": "Channels"
   },
   "common": {
     "close": "Close",
     "language": "Language"
+  },
+  "intro": {
+    "tagline": "The places I've stayed, mapped across the globe",
+    "enter": "Explore the map",
+    "skip": "Skip"
   }
 }

@@ -16,4 +16,7 @@ PROPOSED → ACCEPTED → (SUPERSEDED | DEPRECATED)
 
 | ADR | Title | Status | Date |
 |-----|-------|--------|------|
-| (none yet) | | | |
+| ADR-001 | Design System Foundation — Dark Chrome + Warm Globe Hero | Accepted | 2026-06-13 |
+| ADR-002 | Dual Theme System with Auto-Detection | Accepted | 2026-06-13 |
+| ADR-003 | Globe-First Hybrid Navigation Model | Accepted | 2026-06-13 |
+| ADR-004 | Immersive Navigation — Click-to-Fly Map Motion & Cinematic Globe→Map Handoff | Accepted | 2026-06-13 |

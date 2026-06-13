@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import dynamic from "next/dynamic";
 import FilterBar, { type Filters } from "./FilterBar";
+import PlaceMap from "./PlaceMap";
 import PlaceListItem from "./PlaceListItem";
 import PlaceDetail from "./PlaceDetail";
 import { useGeolocation } from "@/lib/useGeolocation";
@@ -10,24 +10,17 @@ import { haversineKm } from "@/lib/geo";
 import { useI18n } from "@/lib/i18n/I18nProvider";
 import type { Category, Place, Status } from "@/lib/types";
 
-function MapLoading() {
-  const { t } = useI18n();
-  return (
-    <div className="flex h-full w-full items-center justify-center bg-neutral-100 text-sm text-neutral-400">
-      {t("map.loading")}
-    </div>
-  );
-}
-
-// 지도는 클라이언트 전용 (Kakao SDK가 window 필요)
-const MapView = dynamic(() => import("./MapView"), {
-  ssr: false,
-  loading: () => <MapLoading />,
-});
+const SIDEBAR_KEY = "nm-sidebar-collapsed";
 
 export default function Explorer({ places }: { places: Place[] }) {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [mobileListOpen, setMobileListOpen] = useState(false);
+  // Default expanded (false = not collapsed). Lazy initializer reads localStorage
+  // on the client; returns false on SSR (typeof window guard) to keep hydration stable.
+  const [sidebarCollapsed, setSidebarCollapsed] = useState<boolean>(() => {
+    if (typeof window === "undefined") return false;
+    return localStorage.getItem(SIDEBAR_KEY) === "true";
+  });
   const [filters, setFilters] = useState<Filters>({
     query: "",
     categories: new Set<Category>(),
@@ -36,6 +29,14 @@ export default function Explorer({ places }: { places: Place[] }) {
   const sheetCloseRef = useRef<HTMLButtonElement>(null);
   const { coords: userLocation } = useGeolocation();
   const { t } = useI18n();
+
+  const toggleSidebar = () => {
+    setSidebarCollapsed((prev) => {
+      const next = !prev;
+      localStorage.setItem(SIDEBAR_KEY, String(next));
+      return next;
+    });
+  };
 
   const filtered = useMemo(() => {
     const q = filters.query.trim().toLowerCase();
@@ -103,7 +104,7 @@ export default function Explorer({ places }: { places: Place[] }) {
 
   const renderList = () =>
     filtered.length === 0 ? (
-      <p className="px-2 py-8 text-center text-sm text-neutral-400">
+      <p className="px-2 py-8 text-center text-sm text-muted">
         {t("list.empty")}
       </p>
     ) : (
@@ -127,31 +128,62 @@ export default function Explorer({ places }: { places: Place[] }) {
 
   return (
     <div className="relative flex flex-1 overflow-hidden">
-      {/* 데스크톱 사이드바: 필터 + 목록 */}
-      <aside className="hidden w-[360px] shrink-0 flex-col border-r border-neutral-200 bg-white md:flex">
-        <div className="border-b border-neutral-100 p-4">
-          <FilterBar
-            filters={filters}
-            onChange={setFilters}
-            total={places.length}
-            shown={filtered.length}
-          />
+      {/* 데스크톱 사이드바: 필터 + 목록 — 사용자가 접고 펼칠 수 있음 */}
+      <aside
+        className={`hidden shrink-0 flex-col overflow-hidden border-r border-hairline bg-surface-1 transition-all duration-300 ease-in-out md:flex ${
+          sidebarCollapsed ? "w-0 opacity-0" : "w-[360px] opacity-100"
+        }`}
+      >
+        {/* 필터 + 접기 버튼 행 */}
+        <div className="flex items-start gap-2 border-b border-hairline p-4">
+          <div className="min-w-0 flex-1">
+            <FilterBar
+              filters={filters}
+              onChange={setFilters}
+              total={places.length}
+              shown={filtered.length}
+            />
+          </div>
+          {/* 사이드바 접기 버튼 (◀) */}
+          <button
+            type="button"
+            onClick={toggleSidebar}
+            aria-label="사이드바 접기 / Collapse sidebar"
+            aria-expanded={true}
+            className="mt-0.5 flex shrink-0 items-center justify-center rounded-md p-1.5 text-xs text-muted transition hover:bg-surface-2 hover:text-ink"
+          >
+            ◀
+          </button>
         </div>
         <div className="flex-1 overflow-y-auto p-3">{renderList()}</div>
       </aside>
 
       {/* 지도 */}
       <div className="relative flex-1">
-        <MapView
+        <PlaceMap
           places={filtered}
           selectedId={selectedId}
           onSelect={handleSelect}
           userLocation={userLocation}
         />
 
+        {/* 사이드바 펼치기 버튼 (▶): 접혔을 때만 표시, 데스크톱 전용.
+            AppShell의 🌍 버튼이 left-3 top-3 에 있으므로 left-14 top-3 으로 오프셋. */}
+        {sidebarCollapsed && (
+          <button
+            type="button"
+            onClick={toggleSidebar}
+            aria-label="사이드바 펼치기 / Expand sidebar"
+            aria-expanded={false}
+            className="absolute left-14 top-3 z-10 hidden items-center justify-center rounded-md border border-hairline bg-surface-1 p-2 text-xs text-muted transition hover:text-ink md:flex"
+          >
+            ▶
+          </button>
+        )}
+
         {/* 데스크톱: 상세 floating 패널 */}
         {selected && (
-          <div className="absolute right-4 top-4 z-20 hidden max-h-[calc(100%-2rem)] w-[380px] overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-xl md:block">
+          <div className="absolute right-4 top-4 z-20 hidden max-h-[calc(100%-2rem)] w-[380px] overflow-hidden rounded-2xl border border-hairline bg-surface-1 shadow-sm md:block">
             <PlaceDetail place={selected} onClose={() => setSelectedId(null)} />
           </div>
         )}
@@ -160,7 +192,7 @@ export default function Explorer({ places }: { places: Place[] }) {
         <button
           type="button"
           onClick={() => setMobileListOpen(true)}
-          className="absolute bottom-4 left-1/2 z-10 -translate-x-1/2 rounded-full bg-neutral-900 px-5 py-2.5 text-sm font-semibold text-white shadow-lg md:hidden"
+          className="absolute bottom-4 left-1/2 z-10 -translate-x-1/2 rounded-full bg-cta px-5 py-2.5 text-sm font-semibold text-cta-ink md:hidden"
         >
           {t("list.openMobile")} ({filtered.length})
         </button>
@@ -170,10 +202,10 @@ export default function Explorer({ places }: { places: Place[] }) {
       {selected && (
         <div className="fixed inset-0 z-40 md:hidden">
           <div
-            className="absolute inset-0 bg-black/30"
+            className="absolute inset-0 bg-black/40"
             onClick={() => setSelectedId(null)}
           />
-          <div className="absolute inset-x-0 bottom-0 max-h-[80dvh] overflow-hidden rounded-t-2xl border-t border-neutral-200 bg-white shadow-2xl">
+          <div className="absolute inset-x-0 bottom-0 max-h-[80dvh] overflow-hidden rounded-t-2xl border-t border-hairline bg-surface-1">
             <PlaceDetail place={selected} onClose={() => setSelectedId(null)} />
           </div>
         </div>
@@ -183,7 +215,7 @@ export default function Explorer({ places }: { places: Place[] }) {
       {mobileListOpen && (
         <div className="fixed inset-0 z-50 md:hidden">
           <div
-            className="absolute inset-0 bg-black/30"
+            className="absolute inset-0 bg-black/40"
             onClick={() => setMobileListOpen(false)}
           />
           <div
@@ -191,10 +223,10 @@ export default function Explorer({ places }: { places: Place[] }) {
             aria-modal="true"
             aria-labelledby="mobile-list-title"
             onKeyDown={handleSheetKeyDown}
-            className="absolute inset-x-0 bottom-0 flex max-h-[85dvh] flex-col rounded-t-2xl bg-white"
+            className="absolute inset-x-0 bottom-0 flex max-h-[85dvh] flex-col rounded-t-2xl border-t border-hairline bg-surface-1"
           >
-            <div className="flex items-center justify-between border-b border-neutral-100 p-4">
-              <h2 id="mobile-list-title" className="text-sm font-semibold">
+            <div className="flex items-center justify-between border-b border-hairline p-4">
+              <h2 id="mobile-list-title" className="text-sm font-semibold text-ink">
                 {t("list.title")}
               </h2>
               <button
@@ -202,12 +234,12 @@ export default function Explorer({ places }: { places: Place[] }) {
                 type="button"
                 onClick={() => setMobileListOpen(false)}
                 aria-label={t("common.close")}
-                className="text-neutral-400"
+                className="text-muted transition hover:text-ink"
               >
                 ✕
               </button>
             </div>
-            <div className="border-b border-neutral-100 p-4">
+            <div className="border-b border-hairline p-4">
               <FilterBar
                 filters={filters}
                 onChange={setFilters}

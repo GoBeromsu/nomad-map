@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { I18nProvider } from "@/lib/i18n/I18nProvider";
+import { ThemeProvider } from "@/lib/theme/ThemeProvider";
 
 export const metadata: Metadata = {
   title: "노마드 맵 · 한국 디지털 노마드 장소 기록",
@@ -14,15 +15,25 @@ export const metadata: Metadata = {
   },
 };
 
+// Anti-FOUC: applied synchronously before first paint.
+// Reads "nm-theme" from localStorage; falls back to prefers-color-scheme;
+// defaults to dark per ADR-002.
+const themeScript = `(function(){try{var t=localStorage.getItem('nm-theme');if(t==='light'){}else if(t==='dark'){document.documentElement.classList.add('dark');}else{if(!window.matchMedia('(prefers-color-scheme: light)').matches){document.documentElement.classList.add('dark');}}}catch(e){document.documentElement.classList.add('dark');}})();`;
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className="h-full">
-      <body className="flex min-h-full flex-col bg-neutral-50 text-neutral-900 antialiased">
-        <I18nProvider>{children}</I18nProvider>
+    <html lang="ko" className="h-full" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
+      <body className="flex min-h-full flex-col bg-canvas text-ink transition-colors antialiased">
+        <ThemeProvider>
+          <I18nProvider>{children}</I18nProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

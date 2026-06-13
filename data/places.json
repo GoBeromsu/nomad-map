@@ -8,6 +8,16 @@
     "lng": 126.902948,
     "address": "제주특별자치도 제주시 구좌읍 종달로1길",
     "description": "구좌읍 종달리에 위치한 자전거 테마 게스트하우스. 호스트가 직접 설계·시공한 친환경 목조 건물로 성산일출봉과 우도를 조망할 수 있다. 노마드라면 제주 동쪽 탐방 베이스캠프로 쓰기 좋다.",
+    "description_i18n": {
+      "ko": "구좌읍 종달리에 위치한 자전거 테마 게스트하우스. 호스트가 직접 설계·시공한 친환경 목조 건물로 성산일출봉과 우도를 조망할 수 있다. 노마드라면 제주 동쪽 탐방 베이스캠프로 쓰기 좋다.",
+      "en": "A bicycle-themed guesthouse in Jongdal-ri, Gujwa-eup. Built by the host using eco-friendly timber, the structure offers views of Seongsan Ilchulbong and Udo Island. An ideal base camp for nomads exploring eastern Jeju.",
+      "ja": "旧左邑鍾達里にある自転車テーマのゲストハウス。オーナーが自ら設計・施工した環境に優しい木造建物で、城山日出峰と牛島を望める。東済州を拠点にするノマドに最適。",
+      "zh": "位于旧左邑鍾达里的自行车主题民宿。由主人亲自设计建造的环保木结构建筑，可俯瞰城山日出峰和牛岛。是探索济州岛东部的游牧工作者的理想大本营。",
+      "es": "Casa de huéspedes temática de bicicletas en Jongdal-ri, Gujwa-eup. Construida con madera ecológica por el propio anfitrión, ofrece vistas al Seongsan Ilchulbong y la isla Udo. Ideal como campamento base para nómadas que exploran el este de Jeju.",
+      "fr": "Maison d'hôtes à thème vélo à Jongdal-ri, Gujwa-eup. Construite en bois écologique par le propriétaire lui-même, avec vue sur Seongsan Ilchulbong et l'île Udo. Parfait comme base pour les nomades explorant l'est de Jeju.",
+      "de": "Fahrrad-Themen-Gästehaus in Jongdal-ri, Gujwa-eup. Vom Gastgeber selbst aus ökologischem Holz gebaut, mit Blick auf Seongsan Ilchulbong und Udo Island. Ideal als Basislager für Nomaden, die den Osten Jejus erkunden.",
+      "vi": "Nhà khách theo chủ đề xe đạp ở Jongdal-ri, Gujwa-eup. Được xây dựng bằng gỗ thân thiện với môi trường bởi chủ nhà, với tầm nhìn ra Seongsan Ilchulbong và đảo Udo. Lý tưởng làm căn cứ cho những nomad khám phá phía đông Jeju."
+    },
     "photos": [],
     "ratings": {
       "wifi": 3,
@@ -31,10 +41,20 @@
       }
     ],
     "channels": [],
-    "visit": {
+    "comment": {
       "date": "2026-04-14",
       "duration": "2박",
-      "note": "스트레스로 당일 충동 예약. 무계획 제주 여행 베이스. 성산일출봉 방향 조용한 동쪽 위치."
+      "note": "스트레스로 당일 충동 예약. 무계획 제주 여행 베이스. 성산일출봉 방향 조용한 동쪽 위치.",
+      "note_i18n": {
+        "ko": "스트레스로 당일 충동 예약. 무계획 제주 여행 베이스. 성산일출봉 방향 조용한 동쪽 위치.",
+        "en": "A spontaneous same-day booking to escape stress. Base for an unplanned Jeju trip. Quiet eastern location toward Seongsan Ilchulbong.",
+        "ja": "ストレス解消のため当日衝動予約。無計画な済州旅行の拠点。城山日出峰方向の静かな東側。",
+        "zh": "因压力大当天临时预订。作为无计划济州旅行的大本营。安静的东部位置，朝向城山日出峰。",
+        "es": "Reserva impulsiva el mismo día para escapar del estrés. Base para un viaje espontáneo a Jeju. Ubicación tranquila en el este hacia Seongsan Ilchulbong.",
+        "fr": "Réservation impulsive le jour même pour s'évader du stress. Base pour un voyage spontané à Jeju. Emplacement calme à l'est vers Seongsan Ilchulbong.",
+        "de": "Spontanbuchung am selben Tag, um Stress abzubauen. Basis für eine ungeplante Jeju-Reise. Ruhige östliche Lage in Richtung Seongsan Ilchulbong.",
+        "vi": "Đặt phòng bốc đồng trong ngày để giải tỏa căng thẳng. Căn cứ cho chuyến du lịch Jeju không có kế hoạch. Vị trí yên tĩnh ở phía đông hướng về Seongsan Ilchulbong."
+      }
     }
   },
   {
@@ -46,6 +66,16 @@
     "lng": 126.235819,
     "address": "제주특별자치도 제주시 한림읍 금능리",
     "description": "2026년 6월 제주 여행 Day2에 묵은 콘도. 금능해수욕장 산책 후 밤늦게 입실했음에도 숙소가 괜찮아 재이용 후보로 기록됐다. 한림·금능 권역 탐방 시 베이스로 적합하다.",
+    "description_i18n": {
+      "ko": "2026년 6월 제주 여행 Day2에 묵은 콘도. 금능해수욕장 산책 후 밤늦게 입실했음에도 숙소가 괜찮아 재이용 후보로 기록됐다. 한림·금능 권역 탐방 시 베이스로 적합하다.",
+      "en": "Condo stayed on Day 2 of a June 2026 Jeju trip. Despite late check-in after an evening walk on Geumneung Beach, the place was solid enough to shortlist for a return stay. A good base for exploring the Hallim and Geumneung area.",
+      "ja": "2026年6月済州旅行2日目に宿泊したコンドミニアム。金陵海水浴場の散歩後に深夜入室したにもかかわらず、宿泊施設が気に入り再利用候補に。翰林・金陵エリアの拠点として適している。",
+      "zh": "2026年6月济州旅行第2天入住的公寓式酒店。晚上散步金陵海滩后深夜入住，住宿条件不错，已列入回访候选。是探索翰林和金陵地区的理想据点。",
+      "es": "Condo en el que se pernoctó el Día 2 del viaje a Jeju en junio de 2026. A pesar del check-in tardío después de un paseo nocturno por la playa de Geumneung, el alojamiento fue suficientemente bueno para ser candidato a una segunda visita. Buena base para explorar la zona de Hallim y Geumneung.",
+      "fr": "Condo séjourné lors du Jour 2 d'un voyage à Jeju en juin 2026. Malgré un enregistrement tardif après une promenade du soir sur la plage de Geumneung, le logement était assez bien pour être candidat à un retour. Bonne base pour explorer la région de Hallim et Geumneung.",
+      "de": "Apartment, das am Tag 2 einer Jeju-Reise im Juni 2026 bewohnt wurde. Trotz spätem Check-in nach einem Abendspaziergang am Geumneung Beach war die Unterkunft gut genug, um als Kandidat für einen erneuten Aufenthalt vorgemerkt zu werden. Gute Basis für die Erkundung der Region Hallim und Geumneung.",
+      "vi": "Căn hộ lưu trú vào Ngày 2 trong chuyến đi Jeju tháng 6 năm 2026. Dù nhận phòng muộn sau khi đi dạo buổi tối ở bãi biển Geumneung, nơi ở khá tốt và được đưa vào danh sách để quay lại. Căn cứ tốt để khám phá khu vực Hallim và Geumneung."
+    },
     "photos": [],
     "ratings": {
       "wifi": 3,
@@ -62,10 +92,20 @@
     ],
     "links": [],
     "channels": [],
-    "visit": {
+    "comment": {
       "date": "2026-06-09",
       "duration": "1박",
-      "note": "숙소 괜찮았음. 금능해수욕장 산책·교촌치킨 저녁 후 입실. 재이용 의사."
+      "note": "숙소 괜찮았음. 금능해수욕장 산책·교촌치킨 저녁 후 입실. 재이용 의사.",
+      "note_i18n": {
+        "ko": "숙소 괜찮았음. 금능해수욕장 산책·교촌치킨 저녁 후 입실. 재이용 의사.",
+        "en": "Accommodation was good. Checked in after an evening walk at Geumneung Beach and chicken for dinner. Would stay again.",
+        "ja": "宿泊施設は良かった。金陵海水浴場の散歩と夕食後に入室。再利用意向あり。",
+        "zh": "住宿不错。在金陵海滩散步和吃完晚饭后入住。有意再次入住。",
+        "es": "El alojamiento estuvo bien. Hice check-in después de un paseo por la playa de Geumneung y cenar. Repetiría.",
+        "fr": "Le logement était bien. Arrivée après une promenade à la plage de Geumneung et le dîner. Prêt à y revenir.",
+        "de": "Unterkunft war gut. Nach einem Abendspaziergang am Geumneung Beach und Abendessen eingecheckt. Würde wieder buchen.",
+        "vi": "Chỗ ở khá tốt. Nhận phòng sau khi đi dạo ở bãi biển Geumneung và ăn tối. Muốn quay lại."
+      }
     }
   },
   {
@@ -77,6 +117,16 @@
     "lng": 127.028308,
     "address": "서울특별시 강남구 강남대로 지하 396",
     "description": "강남역 인근 24시간 찜질방·사우나. 1박 약 15,000원으로 이불 제공, 조용한 환경 덕에 서울 출장 시 가성비 숙박지로 반복 이용하게 된다. 강남 일정과 동선이 짧아 야간 이동 부담이 없다.",
+    "description_i18n": {
+      "ko": "강남역 인근 24시간 찜질방·사우나. 1박 약 15,000원으로 이불 제공, 조용한 환경 덕에 서울 출장 시 가성비 숙박지로 반복 이용하게 된다. 강남 일정과 동선이 짧아 야간 이동 부담이 없다.",
+      "en": "A 24-hour jjimjilbang and sauna near Gangnam Station. At about 15,000 KRW per night with bedding provided and a quiet atmosphere, it's a budget-friendly sleep spot during Seoul business trips. Staying here keeps commutes short for a Gangnam-heavy schedule.",
+      "ja": "江南駅近くの24時間チムジルバン・サウナ。1泊約15,000ウォンで布団付き、静かな環境のおかげでソウル出張時のコスパ宿として繰り返し利用する。江南の予定と動線が短く夜間移動の負担がない。",
+      "zh": "江南站附近的24小时汗蒸幕·桑拿。每晚约15,000韩元，提供被褥，环境安静，是首尔出差时性价比高的住宿地。与江南行程路线短，无需担心夜间移动。",
+      "es": "Jjimjilbang y sauna de 24 horas cerca de la estación de Gangnam. Con un precio de unos 15,000 KRW por noche con ropa de cama incluida y ambiente tranquilo, se convierte en un alojamiento económico durante los viajes de negocios a Seúl. La corta distancia a la agenda de Gangnam elimina el estrés de los desplazamientos nocturnos.",
+      "fr": "Jjimjilbang et sauna ouvert 24h/24 près de la station de Gangnam. À environ 15 000 KRW par nuit avec literie fournie et une ambiance calme, c'est un hébergement économique pour les déplacements professionnels à Séoul. La proximité du circuit Gangnam évite les trajets nocturnes.",
+      "de": "24-Stunden-Jjimjilbang und Sauna in der Nähe der Station Gangnam. Für rund 15.000 KRW pro Nacht inklusive Bettwäsche und in ruhiger Umgebung wird es zur erschwinglichen Unterkunft bei Geschäftsreisen nach Seoul. Die kurze Strecke zum Gangnam-Programm erspart nächtliche Fahrten.",
+      "vi": "Jjimjilbang và sauna 24 giờ gần ga Gangnam. Với giá khoảng 15.000 KRW mỗi đêm, có chăn màn và môi trường yên tĩnh, đây là chỗ ở tiết kiệm khi công tác ở Seoul. Khoảng cách ngắn đến lịch trình Gangnam giúp tránh lo lắng về di chuyển đêm."
+    },
     "photos": [],
     "ratings": {
       "wifi": 2,
@@ -95,15 +145,25 @@
     ],
     "links": [
       {
-        "label": "공식 사이트",
-        "url": "http://gangnamkorea.dothome.co.kr/"
+        "label": "네이버지도",
+        "url": "https://map.naver.com/p/search/강남%20코리아%2024시%20찜질방"
       }
     ],
     "channels": [],
-    "visit": {
+    "comment": {
       "date": "2026-04-25",
       "duration": "1박 (총 3회 이용)",
-      "note": "조용하고 이불 제공. 매우 만족. 4월·5월 서울 체류 시 반복 재이용 확정."
+      "note": "조용하고 이불 제공. 매우 만족. 4월·5월 서울 체류 시 반복 재이용 확정.",
+      "note_i18n": {
+        "ko": "조용하고 이불 제공. 매우 만족. 4월·5월 서울 체류 시 반복 재이용 확정.",
+        "en": "Quiet with bedding provided. Very satisfied. Confirmed repeat use during Seoul stays in April and May.",
+        "ja": "静かで布団付き。非常に満足。4月・5月のソウル滞在中に繰り返し再利用確定。",
+        "zh": "安静且提供被褥。非常满意。确认4月和5月首尔逗留期间反复使用。",
+        "es": "Tranquilo y con ropa de cama. Muy satisfecho. Confirmada la reutilización repetida durante las estancias en Seúl en abril y mayo.",
+        "fr": "Calme avec literie fournie. Très satisfait. Réutilisation confirmée lors des séjours à Séoul en avril et mai.",
+        "de": "Ruhig mit Bettwäsche inklusive. Sehr zufrieden. Wiederholte Nutzung während Seoul-Aufenthalten im April und Mai bestätigt.",
+        "vi": "Yên tĩnh và có chăn màn. Rất hài lòng. Xác nhận sử dụng lại trong các chuyến ở Seoul vào tháng 4 và tháng 5."
+      }
     }
   },
   {
@@ -111,10 +171,20 @@
     "name": "한담 해변",
     "category": "recovery",
     "status": "recommended",
-    "lat": 33.4634,
-    "lng": 126.3038,
+    "lat": 33.46222,
+    "lng": 126.31018,
     "address": "제주특별자치도 제주시 애월읍 애월로1길 26-4",
     "description": "애월읍 한담에서 곽지까지 이어지는 1.2km 해안산책로. 현무암 해안과 에메랄드빛 바다가 어우러져 제주 대표 힐링 스팟으로 꼽힌다. 인접한 한담 카페거리에서 작업 후 바람 쐬러 걷기 좋다.",
+    "description_i18n": {
+      "ko": "애월읍 한담에서 곽지까지 이어지는 1.2km 해안산책로. 현무암 해안과 에메랄드빛 바다가 어우러져 제주 대표 힐링 스팟으로 꼽힌다. 인접한 한담 카페거리에서 작업 후 바람 쐬러 걷기 좋다.",
+      "en": "A 1.2 km coastal trail connecting Handam and Gwakji in Aewol-eup. The basalt shoreline paired with emerald waters makes it one of Jeju's top healing spots. Perfect for a refreshing stroll after working at nearby Handam Café Street.",
+      "ja": "涯月邑の漢潭から郭支まで続く1.2kmの海岸散策路。玄武岩の海岸とエメラルドの海が調和し、済州屈指の癒しスポット。近くの漢潭カフェ通りで作業した後の気晴らし散歩に最適。",
+      "zh": "从涯月邑汉潭到郭支延伸1.2公里的海岸步道。玄武岩海岸与碧绿色大海相得益彰，被誉为济州岛代表性的放松景点。在附近的汉潭咖啡街工作后，很适合散步吹吹风。",
+      "es": "Un sendero costero de 1,2 km que une Handam y Gwakji en Aewol-eup. La costa de basalto junto con las aguas color esmeralda lo convierten en uno de los principales lugares de relax de Jeju. Perfecto para un paseo revitalizante después de trabajar en la cercana Calle Café Handam.",
+      "fr": "Un sentier côtier de 1,2 km reliant Handam et Gwakji à Aewol-eup. Le littoral de basalte associé aux eaux émeraude en fait l'un des hauts lieux de ressourcement de Jeju. Parfait pour une promenade vivifiante après avoir travaillé dans la rue des cafés Handam toute proche.",
+      "de": "Ein 1,2 km langer Küstenwanderweg, der Handam und Gwakji in Aewol-eup verbindet. Die Basaltküste kombiniert mit dem smaragdgrünen Wasser macht ihn zu einem der besten Erholungsorte Jejus. Ideal für einen belebenden Spaziergang nach dem Arbeiten in der nahe gelegenen Handam-Café-Straße.",
+      "vi": "Đường ven biển dài 1,2 km nối Handam và Gwakji ở Aewol-eup. Bờ biển đá bazan kết hợp với vùng nước màu ngọc lục bảo khiến đây trở thành một trong những điểm thư giãn hàng đầu của Jeju. Lý tưởng để dạo bộ thư thái sau khi làm việc ở Phố Cà Phê Handam gần đó."
+    },
     "photos": [],
     "ratings": {
       "wifi": 1,
@@ -128,8 +198,7 @@
       "한담",
       "해안산책로",
       "오션뷰",
-      "카페거리",
-      "이효리"
+      "카페거리"
     ],
     "links": [
       {
@@ -138,10 +207,20 @@
       }
     ],
     "channels": [],
-    "visit": {
+    "comment": {
       "date": "2026-06-09",
       "duration": "반나절",
-      "note": "이효리 언급으로 꼭 가고 싶었던 곳. 현무암 산책로와 에메랄드 바다."
+      "note": "방문 전부터 꼭 가고 싶었던 곳. 현무암 산책로와 에메랄드 바다.",
+      "note_i18n": {
+        "ko": "방문 전부터 꼭 가고 싶었던 곳. 현무암 산책로와 에메랄드 바다.",
+        "en": "A place I'd been wanting to visit for a long time. Basalt trail and emerald sea.",
+        "ja": "以前からぜひ行きたかった場所。玄武岩の散策路とエメラルドの海。",
+        "zh": "早就想去的地方。玄武岩步道和翡翠色的大海。",
+        "es": "Un lugar al que quería ir desde hace tiempo. Sendero de basalto y mar esmeralda.",
+        "fr": "Un endroit que je voulais visiter depuis longtemps. Sentier en basalte et mer émeraude.",
+        "de": "Ein Ort, den ich schon lange besuchen wollte. Basaltweg und smaragdgrünes Meer.",
+        "vi": "Nơi tôi đã muốn đến từ lâu. Đường đi bộ đá bazan và biển màu ngọc lục bảo."
+      }
     }
   },
   {
@@ -153,6 +232,16 @@
     "lng": 126.241935,
     "address": "제주특별자치도 제주시 한림읍 한림로 359",
     "description": "협재 해변 인근 오션뷰 카페. 연중무휴에 예약 없이 이용 가능하고 전면 주차가 편리해 제주 서부 카페 투어 필수 코스로 꼽힌다. 노트북 작업보다는 오션뷰 휴식에 적합하다.",
+    "description_i18n": {
+      "ko": "협재 해변 인근 오션뷰 카페. 연중무휴에 예약 없이 이용 가능하고 전면 주차가 편리해 제주 서부 카페 투어 필수 코스로 꼽힌다. 노트북 작업보다는 오션뷰 휴식에 적합하다.",
+      "en": "An ocean-view café near Hyeopjae Beach. Open year-round without reservations and with easy front parking, it's a must on any West Jeju café tour. Better suited for relaxing with a sea view than for laptop work.",
+      "ja": "挟才海水浴場近くのオーシャンビューカフェ。年中無休で予約不要、前面駐車が便利なため、済州西部カフェツアーの必須コース。ノートパソコン作業よりもオーシャンビューでのリラックスに適している。",
+      "zh": "协才海边附近的海景咖啡厅。全年无休，无需预约，前方停车方便，被列为济州岛西部咖啡之旅的必去之地。比起笔记本电脑工作，更适合享受海景休闲。",
+      "es": "Cafetería con vistas al mar cerca de la playa de Hyeopjae. Abierta todo el año sin reservas y con cómodo aparcamiento frontal, es un imprescindible en cualquier ruta de cafeterías del oeste de Jeju. Más apropiada para relajarse con vistas al mar que para trabajar con el portátil.",
+      "fr": "Un café avec vue sur la mer près de la plage de Hyeopjae. Ouvert toute l'année sans réservation et avec un parking pratique en façade, c'est un incontournable du circuit des cafés de l'ouest de Jeju. Plutôt adapté à la détente avec vue mer qu'au travail sur ordinateur.",
+      "de": "Ein Café mit Meerblick in der Nähe des Hyeopjae Beach. Ganzjährig geöffnet ohne Reservierung und mit bequemem Frontparkplatz, ein Muss auf jeder West-Jeju-Café-Tour. Besser geeignet zum Entspannen mit Meerblick als für die Arbeit am Laptop.",
+      "vi": "Quán cà phê view biển gần bãi biển Hyeopjae. Mở cửa quanh năm không cần đặt trước, đỗ xe phía trước thuận tiện, là điểm bắt buộc trong lộ trình quán cà phê miền Tây Jeju. Phù hợp để thư giãn ngắm biển hơn là làm việc với laptop."
+    },
     "photos": [],
     "ratings": {
       "wifi": 3,
@@ -176,10 +265,20 @@
         "url": "https://www.instagram.com/jejucomma/"
       }
     ],
-    "visit": {
+    "comment": {
       "date": "2026-06-10",
       "duration": "방문 예정",
-      "note": "Day3 방문 계획. 연중무휴 09:00–19:30 영업 확인."
+      "note": "Day3 방문 계획. 연중무휴 09:00–19:30 영업 확인.",
+      "note_i18n": {
+        "ko": "Day3 방문 계획. 연중무휴 09:00–19:30 영업 확인.",
+        "en": "Planned visit on Day 3. Confirmed hours: daily 09:00–19:30.",
+        "ja": "3日目訪問予定。年中無休 09:00–19:30 営業確認済み。",
+        "zh": "第3天计划参观。确认全年无休 09:00–19:30 营业。",
+        "es": "Visita planificada el Día 3. Horario confirmado: diario 09:00–19:30.",
+        "fr": "Visite prévue le Jour 3. Horaires confirmés : tous les jours 09h00–19h30.",
+        "de": "Besuch an Tag 3 geplant. Bestätigte Öffnungszeiten: täglich 09:00–19:30.",
+        "vi": "Dự kiến ghé thăm vào Ngày 3. Xác nhận giờ mở cửa: hàng ngày 09:00–19:30."
+      }
     }
   },
   {
@@ -187,10 +286,20 @@
     "name": "물의 교회",
     "category": "recovery",
     "status": "good",
-    "lat": 43.0264,
-    "lng": 142.7718,
+    "lat": 43.0648,
+    "lng": 142.6322,
     "address": "홋카이도 유후쓰군 시무캇푸촌 도마무",
     "description": "안도 타다오가 설계한 홋카이도 도마무의 숲속 예배당(1988년). 정면 유리벽이 열리면 연못 위 십자가와 공간이 하나로 합쳐지는 경험을 선사한다. 콘크리트·물·빛·자연이 가장 순수하게 구현된 안도 건축으로 꼽힌다.",
+    "description_i18n": {
+      "ko": "안도 타다오가 설계한 홋카이도 도마무의 숲속 예배당(1988년). 정면 유리벽이 열리면 연못 위 십자가와 공간이 하나로 합쳐지는 경험을 선사한다. 콘크리트·물·빛·자연이 가장 순수하게 구현된 안도 건축으로 꼽힌다.",
+      "en": "A forest chapel in Tomamu, Hokkaido, designed by Tadao Ando in 1988. When the glass front wall opens, the cross over the pond and the space merge into one seamless experience. Considered one of the purest expressions of Ando's architecture through concrete, water, light, and nature.",
+      "ja": "1988年に安藤忠雄が設計した北海道トマムの森の礼拝堂。正面のガラス壁が開くと、池の上の十字架と空間が一つに溶け合う体験を提供する。コンクリート・水・光・自然が最も純粋に体現された安藤建築として知られる。",
+      "zh": "安藤忠雄1988年设计的北海道留寿都的森林礼拜堂。正面玻璃墙打开后，水池上的十字架与空间融为一体，带来难忘的体验。被认为是安藤建筑中混凝土、水、光与自然最纯粹体现的作品之一。",
+      "es": "Una capilla en el bosque de Tomamu, Hokkaido, diseñada por Tadao Ando en 1988. Cuando la pared de cristal frontal se abre, la cruz sobre el estanque y el espacio se fusionan en una experiencia sin costuras. Considerada una de las expresiones más puras de la arquitectura de Ando a través del hormigón, el agua, la luz y la naturaleza.",
+      "fr": "Une chapelle forestière à Tomamu, Hokkaido, conçue par Tadao Ando en 1988. Lorsque la paroi vitrée s'ouvre, la croix au-dessus du bassin et l'espace se fondent en une expérience harmonieuse. Considérée comme l'une des expressions les plus pures de l'architecture d'Ando à travers le béton, l'eau, la lumière et la nature.",
+      "de": "Eine Waldkapelle in Tomamu, Hokkaido, entworfen von Tadao Ando im Jahr 1988. Wenn die gläserne Frontwand sich öffnet, verschmelzen das Kreuz über dem Teich und der Raum zu einem nahtlosen Erlebnis. Gilt als einer der reinsten Ausdrücke von Andos Architektur durch Beton, Wasser, Licht und Natur.",
+      "vi": "Một nhà nguyện trong rừng ở Tomamu, Hokkaido, được thiết kế bởi Tadao Ando năm 1988. Khi bức tường kính phía trước mở ra, cây thánh giá trên hồ và không gian hòa quyện thành một trải nghiệm liền mạch. Được coi là một trong những biểu hiện thuần khiết nhất kiến trúc Ando qua bê tông, nước, ánh sáng và thiên nhiên."
+    },
     "photos": [],
     "ratings": {
       "wifi": 1,
@@ -208,8 +317,7 @@
       "교회"
     ],
     "links": [],
-    "channels": [],
-    "visit": null
+    "channels": []
   },
   {
     "id": "예가-아이네오",
@@ -219,7 +327,17 @@
     "lat": 37.6007,
     "lng": 126.9139,
     "address": "서울특별시 은평구 갈현로4길 27",
-    "description": "서울 응암역 근처 깔끔한 한식당으로 이모 가게. 보쌈정식 추천, 셀프바 운영으로 가성비가 좋다. 은평구 방문 시 부담 없이 들를 수 있는 동네 맛집.",
+    "description": "서울 응암역 근처 깔끔한 한식당. 보쌈정식 추천, 셀프바 운영으로 가성비가 좋다. 은평구 방문 시 부담 없이 들를 수 있는 동네 맛집.",
+    "description_i18n": {
+      "ko": "서울 응암역 근처 깔끔한 한식당. 보쌈정식 추천, 셀프바 운영으로 가성비가 좋다. 은평구 방문 시 부담 없이 들를 수 있는 동네 맛집.",
+      "en": "A tidy Korean restaurant near Eungam Station in Seoul. The bossam set meal is recommended, and the self-service bar makes it good value. An easy neighborhood spot to drop into when visiting Eunpyeong-gu.",
+      "ja": "ソウルの鷹岩駅近くの清潔な韓食レストラン。ポッサム定食推薦、セルフバー運営でコスパが良い。恩平区を訪れる際に気軽に立ち寄れる地元グルメスポット。",
+      "zh": "首尔应岩站附近整洁的韩式餐厅。推荐猪肉套餐，自助吧运营，性价比高。游览恩平区时可以轻松光顾的街坊美食店。",
+      "es": "Un restaurante coreano ordenado cerca de la estación Eungam en Seúl. Se recomienda el menú de bossam, y la barra de autoservicio ofrece buena relación calidad-precio. Un lugar de barrio fácil de visitar cuando se está en Eunpyeong-gu.",
+      "fr": "Un restaurant coréen propre près de la station Eungam à Séoul. Le menu bossam est recommandé, et le bar en libre-service offre un bon rapport qualité-prix. Un endroit de quartier facile d'accès lors d'une visite à Eunpyeong-gu.",
+      "de": "Ein ordentliches koreanisches Restaurant in der Nähe der Station Eungam in Seoul. Das Bossam-Menü wird empfohlen, und die Selbstbedienungsbar bietet gutes Preis-Leistungs-Verhältnis. Ein unkomplizierter Nachbarschafts-Spot für Besuche in Eunpyeong-gu.",
+      "vi": "Nhà hàng Hàn Quốc gọn gàng gần ga Eungam ở Seoul. Đề xuất món cơm bossam, quầy tự phục vụ mang lại giá trị tốt. Điểm ăn uống khu phố dễ ghé khi đến thăm Eunpyeong-gu."
+    },
     "photos": [],
     "ratings": {
       "wifi": 1,
@@ -242,8 +360,7 @@
         "url": "https://www.diningcode.com/profile.php?rid=rqDP2WAbu6xq"
       }
     ],
-    "channels": [],
-    "visit": null
+    "channels": []
   },
   {
     "id": "니모메-빈티지라운지",
@@ -254,6 +371,16 @@
     "lng": 126.430942,
     "address": "제주특별자치도 제주시 일주서로 7335-8",
     "description": "제주시 외도동 연대포구 근처 오션뷰 빈티지 카페. 옛 전화기·카메라 소품으로 꾸며진 공간에 폴딩도어가 열리면 바다가 한눈에 들어온다. 공항 출발 전 마지막 제주 감성을 담기에 딱 좋은 위치다.",
+    "description_i18n": {
+      "ko": "제주시 외도동 연대포구 근처 오션뷰 빈티지 카페. 옛 전화기·카메라 소품으로 꾸며진 공간에 폴딩도어가 열리면 바다가 한눈에 들어온다. 공항 출발 전 마지막 제주 감성을 담기에 딱 좋은 위치다.",
+      "en": "An ocean-view vintage café near Yeomdae Port in Oedo-dong, Jeju City. Decorated with old phones and cameras, the space opens fully to the sea when the folding doors swing wide. Perfectly placed for soaking in one last taste of Jeju before heading to the airport.",
+      "ja": "済州市外都洞の連台浦口近くのオーシャンビューのヴィンテージカフェ。古い電話機やカメラの小物で飾られた空間は、フォールディングドアが開くと海が一望できる。空港出発前に最後の済州の感性を味わうのに最適な場所。",
+      "zh": "位于济州市外都洞莲台浦口附近的海景复古咖啡厅。以旧电话机和相机装饰的空间，折叠门打开后一眼望尽大海。是飞机出发前感受最后一丝济州情调的绝佳位置。",
+      "es": "Un café vintage con vistas al mar cerca del puerto de Yeomdae en Oedo-dong, ciudad de Jeju. Decorado con teléfonos y cámaras antiguas, el espacio se abre completamente al mar cuando las puertas plegables se abren de par en par. Perfectamente ubicado para absorber el último rincón de la esencia de Jeju antes de dirigirse al aeropuerto.",
+      "fr": "Un café vintage avec vue sur mer près du port de Yeomdae à Oedo-dong, ville de Jeju. Décoré de vieux téléphones et appareils photo, l'espace s'ouvre entièrement sur la mer quand les portes pliantes s'écartent. Idéalement placé pour savourer une dernière dose d'ambiance Jeju avant de se rendre à l'aéroport.",
+      "de": "Ein Meerblick-Vintage-Café in der Nähe des Yeomdae-Hafens in Oedo-dong, Jeju City. Mit alten Telefonen und Kameras dekoriert, öffnet sich der Raum vollständig zum Meer, wenn die Falttüren aufgehen. Perfekt gelegen, um den letzten Hauch Jeju-Feeling einzusaugen, bevor es zum Flughafen geht.",
+      "vi": "Quán cà phê cổ điển view biển gần Cảng Yeomdae ở Oedo-dong, Thành phố Jeju. Được trang trí bằng điện thoại và máy ảnh cũ, không gian mở ra hướng biển hoàn toàn khi cửa gấp mở ra. Vị trí hoàn hảo để cảm nhận Jeju lần cuối trước khi ra sân bay."
+    },
     "photos": [],
     "ratings": {
       "wifi": 3,
@@ -272,10 +399,20 @@
     ],
     "links": [],
     "channels": [],
-    "visit": {
+    "comment": {
       "date": "2026-06-11",
       "duration": "1시간 내외",
-      "note": "공항 가기 전 마지막 카페. 폴딩도어 개방형 좌석과 야외 테라스, 오션뷰 인상적."
+      "note": "공항 가기 전 마지막 카페. 폴딩도어 개방형 좌석과 야외 테라스, 오션뷰 인상적.",
+      "note_i18n": {
+        "ko": "공항 가기 전 마지막 카페. 폴딩도어 개방형 좌석과 야외 테라스, 오션뷰 인상적.",
+        "en": "Last café before the airport. Impressive open folding-door seating, outdoor terrace, and ocean view.",
+        "ja": "空港前の最後のカフェ。フォールディングドア開放席と屋外テラス、オーシャンビューが印象的。",
+        "zh": "去机场前的最后一家咖啡厅。折叠门开放座位、户外露台和海景令人印象深刻。",
+        "es": "Último café antes del aeropuerto. Impresionante asiento abierto con puerta plegable, terraza exterior y vista al mar.",
+        "fr": "Dernier café avant l'aéroport. Sièges à portes pliantes ouvertes, terrasse extérieure et vue mer impressionnantes.",
+        "de": "Letztes Café vor dem Flughafen. Beeindruckende offene Falttür-Sitzplätze, Außenterrasse und Meerblick.",
+        "vi": "Quán cà phê cuối cùng trước khi ra sân bay. Chỗ ngồi mở cửa gấp ấn tượng, sân thượng ngoài trời và view biển tuyệt đẹp."
+      }
     }
   },
   {
@@ -287,6 +424,16 @@
     "lng": 127.665286,
     "address": "전라남도 여수시 거북선공원2길 21",
     "description": "여수의 중식당으로 짬뽕·유린기가 대표 메뉴다. 제주 여행 복귀 후 들른 곳으로 콩국수와 해물짬뽕을 먹었다. 합리적인 가격에 여수 로컬 분위기를 즐길 수 있다.",
+    "description_i18n": {
+      "ko": "여수의 중식당으로 짬뽕·유린기가 대표 메뉴다. 제주 여행 복귀 후 들른 곳으로 콩국수와 해물짬뽕을 먹었다. 합리적인 가격에 여수 로컬 분위기를 즐길 수 있다.",
+      "en": "A Chinese restaurant in Yeosu known for jjamppong and yuringi. Dropped in after returning from a Jeju trip — had konguksu and seafood jjamppong. Reasonably priced with a genuine local Yeosu vibe.",
+      "ja": "チャンポン・ユリンキが代表メニューの旅水（ヨス）の中華料理店。済州旅行復帰後に立ち寄り、コングクスとシーフードチャンポンを食べた。合理的な価格で旅水のローカル雰囲気が楽しめる。",
+      "zh": "丽水的中式餐厅，以炸酱面·炒虾仁为招牌菜。济州旅行回来后顺路光顾，吃了豆浆面和海鲜炸酱面。价格合理，可以享受丽水的本地气息。",
+      "es": "Un restaurante chino en Yeosu conocido por el jjamppong y el yuringi. Parada después de volver de un viaje a Jeju — konguksu y jjamppong de mariscos. Precio razonable y auténtico ambiente local de Yeosu.",
+      "fr": "Un restaurant chinois à Yeosu réputé pour le jjamppong et le yuringi. Arrêt après un retour de voyage à Jeju — konguksu et jjamppong aux fruits de mer. Prix raisonnable avec une vraie ambiance locale de Yeosu.",
+      "de": "Ein chinesisches Restaurant in Yeosu, bekannt für Jjamppong und Yuringi. Halt nach der Rückkehr von einer Jeju-Reise — Konguksu und Meeresfrüchte-Jjamppong bestellt. Günstiger Preis mit echtem lokalen Yeosu-Flair.",
+      "vi": "Nhà hàng Trung Hoa ở Yeosu nổi tiếng với jjamppong và yuringi. Ghé vào sau khi trở về từ chuyến đi Jeju — ăn konguksu và jjamppong hải sản. Giá cả hợp lý với không khí địa phương Yeosu thực sự."
+    },
     "photos": [],
     "ratings": {
       "wifi": 1,
@@ -310,10 +457,20 @@
       }
     ],
     "channels": [],
-    "visit": {
+    "comment": {
       "date": "2026-06-11",
       "duration": "점심",
-      "note": "제주 복귀 후 저녁. 콩국수 + 해물짬뽕. 만족스러운 마무리 식사."
+      "note": "제주 복귀 후 저녁. 콩국수 + 해물짬뽕. 만족스러운 마무리 식사.",
+      "note_i18n": {
+        "ko": "제주 복귀 후 저녁. 콩국수 + 해물짬뽕. 만족스러운 마무리 식사.",
+        "en": "Dinner after returning from Jeju. Konguksu + seafood jjamppong. A satisfying final meal.",
+        "ja": "済州復帰後の夕食。コングクス＋シーフードチャンポン。満足のいく締めの食事。",
+        "zh": "济州回来后的晚饭。豆浆面+海鲜炸酱面。令人满意的收尾一餐。",
+        "es": "Cena después de volver de Jeju. Konguksu + jjamppong de mariscos. Una comida final satisfactoria.",
+        "fr": "Dîner après le retour de Jeju. Konguksu + jjamppong aux fruits de mer. Un repas final satisfaisant.",
+        "de": "Abendessen nach der Rückkehr von Jeju. Konguksu + Meeresfrüchte-Jjamppong. Ein befriedigendes Abschlussessen.",
+        "vi": "Bữa tối sau khi trở về từ Jeju. Konguksu + jjamppong hải sản. Bữa ăn kết thúc thỏa mãn."
+      }
     }
   },
   {
@@ -325,6 +482,16 @@
     "lng": 126.309728,
     "address": "제주특별자치도 제주시 애월읍 애월로1길 24-9",
     "description": "애월 한담 해변 도보 거리의 타코 전문점. 테이크아웃 후 한담 해안산책로에서 먹기 좋은 위치다. 화요일 정기휴무이므로 방문 전 요일 확인 필수.",
+    "description_i18n": {
+      "ko": "애월 한담 해변 도보 거리의 타코 전문점. 테이크아웃 후 한담 해안산책로에서 먹기 좋은 위치다. 화요일 정기휴무이므로 방문 전 요일 확인 필수.",
+      "en": "A taco shop within walking distance of Handam Beach in Aewol. Great for grabbing takeout and eating along the Handam coastal trail. Note the regular Tuesday closure — check the day before visiting.",
+      "ja": "涯月の漢潭海岸まで徒歩圏内のタコ専門店。テイクアウト後に漢潭海岸遊歩道で食べるのに最適な場所。火曜日が定休日なので訪問前に曜日確認必須。",
+      "zh": "距涯月汉潭海滩步行即到的塔可专卖店。外带后在汉潭海岸步道边走边吃，位置绝佳。每周二定期休息，参观前务必确认星期几。",
+      "es": "Una taquería a poca distancia a pie de la playa de Handam en Aewol. Ideal para pedir para llevar y comer a lo largo del sendero costero de Handam. Recuerda el cierre regular los martes: confirma el día antes de visitar.",
+      "fr": "Une taqueria à distance à pied de la plage de Handam à Aewol. Idéal pour emporter et manger le long du sentier côtier de Handam. Attention à la fermeture régulière le mardi — vérifiez le jour avant de visiter.",
+      "de": "Eine Taco-Bar in Gehweite von Handam Beach in Aewol. Ideal für Takeout und Essen entlang des Handam-Küstenwanderwegs. Beachten Sie die regelmäßige Schließung dienstags — überprüfen Sie den Tag vor dem Besuch.",
+      "vi": "Tiệm taco cách bãi biển Handam ở Aewol vài bước chân. Tuyệt vời để mang đi và ăn dọc theo đường ven biển Handam. Lưu ý đóng cửa thường xuyên vào thứ Ba — kiểm tra ngày trước khi ghé thăm."
+    },
     "photos": [],
     "ratings": {
       "wifi": 1,
@@ -348,10 +515,20 @@
         "url": "https://www.instagram.com/bittles_taco/"
       }
     ],
-    "visit": {
+    "comment": {
       "date": "2026-06-09",
       "duration": "점심",
-      "note": "Day2 점심 실방문. 당초 테이크아웃 계획이었으나 현장 점심으로 변경."
+      "note": "Day2 점심 실방문. 당초 테이크아웃 계획이었으나 현장 점심으로 변경.",
+      "note_i18n": {
+        "ko": "Day2 점심 실방문. 당초 테이크아웃 계획이었으나 현장 점심으로 변경.",
+        "en": "Actual Day 2 lunch visit. Originally planned as takeout but ended up eating on-site.",
+        "ja": "2日目のランチ実訪問。当初はテイクアウト予定だったが現地ランチに変更。",
+        "zh": "第2天午餐实地参观。原本计划外带，现场改为堂食。",
+        "es": "Visita real de almuerzo en el Día 2. Planeado como para llevar pero terminó comiendo en el lugar.",
+        "fr": "Visite réelle du déjeuner le Jour 2. Initialement prévu en emporter mais finalement mangé sur place.",
+        "de": "Tatsächlicher Mittagsbesuch an Tag 2. Ursprünglich als Takeout geplant, aber vor Ort gegessen.",
+        "vi": "Ghé thực tế ăn trưa Ngày 2. Ban đầu dự định mang về nhưng cuối cùng ăn tại chỗ."
+      }
     }
   },
   {
@@ -359,10 +536,20 @@
     "name": "바솔트 크로스핏",
     "category": "other",
     "status": "good",
-    "lat": 33.4948,
-    "lng": 126.4432,
+    "lat": 33.49688,
+    "lng": 126.45173,
     "address": "제주특별자치도 제주시 테우해안로 168",
     "description": "이호테우 해변 앞 통유리 오션뷰 크로스핏 박스. 드롭인 사전 네이버 예약이 필수이며 새벽 7시부터 타임이 운영된다. 제주 체류 중 운동 루틴을 유지하고 싶은 노마드에게 추천.",
+    "description_i18n": {
+      "ko": "이호테우 해변 앞 통유리 오션뷰 크로스핏 박스. 드롭인 사전 네이버 예약이 필수이며 새벽 7시부터 타임이 운영된다. 제주 체류 중 운동 루틴을 유지하고 싶은 노마드에게 추천.",
+      "en": "A CrossFit box with floor-to-ceiling ocean views right in front of Iho Tewoo Beach. Drop-in requires advance Naver booking, with sessions starting from 7 AM. Recommended for nomads who want to keep their fitness routine during a Jeju stay.",
+      "ja": "利湖テウビーチ前の全面ガラスのオーシャンビュークロスフィットジム。ドロップイン事前ネイバー予約が必須で、早朝7時からタイムが運営される。済州滞在中にトレーニングルーティンを維持したいノマドに推薦。",
+      "zh": "利湖碲偶海滩前全落地窗海景CrossFit训练室。报名参加前需要提前在Naver上预约，从早上7点开始运营课程。推荐给在济州旅居期间想保持健身习惯的数字游民。",
+      "es": "Un box de CrossFit con vistas al océano de suelo a techo justo frente a la playa de Iho Tewoo. El drop-in requiere reserva previa en Naver, con sesiones que comienzan desde las 7 AM. Recomendado para nómadas que quieren mantener su rutina de ejercicio durante una estancia en Jeju.",
+      "fr": "Une box CrossFit avec vue mer du sol au plafond juste devant la plage d'Iho Tewoo. Le drop-in nécessite une réservation préalable sur Naver, avec des séances démarrant dès 7h du matin. Recommandé pour les nomades qui veulent maintenir leur routine de fitness durant un séjour à Jeju.",
+      "de": "Eine CrossFit-Box mit raumhohem Meerblick direkt vor dem Iho Tewoo Beach. Drop-in erfordert Vorabreservierung über Naver, mit Sessions ab 7 Uhr morgens. Empfohlen für Nomaden, die während eines Jeju-Aufenthalts ihre Fitnessroutine aufrechterhalten wollen.",
+      "vi": "Phòng CrossFit với tầm nhìn ra biển toàn cảnh ngay trước bãi biển Iho Tewoo. Drop-in yêu cầu đặt trước trên Naver, các buổi bắt đầu từ 7 giờ sáng. Đề xuất cho những nomad muốn duy trì thói quen tập luyện trong khi ở Jeju."
+    },
     "photos": [],
     "ratings": {
       "wifi": 2,
@@ -382,14 +569,24 @@
     "links": [
       {
         "label": "네이버플레이스",
-        "url": "https://m.place.naver.com/place/1382274491"
+        "url": "https://map.naver.com/p/entry/place/1382274491"
       }
     ],
     "channels": [],
-    "visit": {
+    "comment": {
       "date": "2026-06-10",
       "duration": "1회 드롭인",
-      "note": "Day3 10:00 모닝 와드 예정. 통유리 오션뷰."
+      "note": "Day3 10:00 모닝 와드 예정. 통유리 오션뷰.",
+      "note_i18n": {
+        "ko": "Day3 10:00 모닝 와드 예정. 통유리 오션뷰.",
+        "en": "Planned for the 10:00 morning WOD on Day 3. Floor-to-ceiling ocean view.",
+        "ja": "3日目10:00朝のWOD予定。全面ガラスのオーシャンビュー。",
+        "zh": "第3天10:00晨练WOD计划。全落地窗海景。",
+        "es": "Planificado para el WOD matutino de las 10:00 del Día 3. Vista al océano de suelo a techo.",
+        "fr": "Prévu pour le WOD matinal de 10h le Jour 3. Vue mer du sol au plafond.",
+        "de": "Für das morgendliche WOD um 10:00 Uhr an Tag 3 geplant. Raumhoher Meerblick.",
+        "vi": "Lên kế hoạch cho buổi WOD sáng 10:00 vào Ngày 3. View biển toàn cảnh."
+      }
     }
   },
   {
@@ -401,6 +598,16 @@
     "lng": 126.328973,
     "address": "제주특별자치도 제주시 애월읍",
     "description": "제주 애월권 미니스쿠터·전기자전거 렌탈샵. 마이리얼트립에서 이용권을 판매하며 한담~애월 해안 코스를 스쿠터로 즐기기 위한 출발지로 활용된다.",
+    "description_i18n": {
+      "ko": "제주 애월권 미니스쿠터·전기자전거 렌탈샵. 마이리얼트립에서 이용권을 판매하며 한담~애월 해안 코스를 스쿠터로 즐기기 위한 출발지로 활용된다.",
+      "en": "A mini-scooter and e-bike rental shop in the Aewol area of Jeju. Vouchers are sold on Myrealtrip; it serves as the starting point for riding the Handam-to-Aewol coastal route by scooter.",
+      "ja": "済州涯月エリアのミニスクーター・電動自転車レンタルショップ。マイリアルトリップで利用券が販売されており、漢潭〜涯月海岸コースをスクーターで楽しむ出発地として活用される。",
+      "zh": "济州涯月区域的迷你摩托车和电动自行车租赁店。在Myrealtrip上销售优惠券，是乘坐摩托车游览汉潭至涯月海岸线路的出发地。",
+      "es": "Una tienda de alquiler de minimotos y bicicletas eléctricas en la zona de Aewol en Jeju. Los vales se venden en Myrealtrip; sirve como punto de partida para recorrer en moto la ruta costera de Handam a Aewol.",
+      "fr": "Une boutique de location de mini-scooters et vélos électriques dans la zone d'Aewol à Jeju. Les bons sont vendus sur Myrealtrip ; elle sert de point de départ pour parcourir la route côtière de Handam à Aewol en scooter.",
+      "de": "Ein Verleih für Miniscooter und E-Bikes in der Aewol-Gegend auf Jeju. Gutscheine werden über Myrealtrip verkauft; dient als Ausgangspunkt für die Küstenroute von Handam nach Aewol per Scooter.",
+      "vi": "Cửa hàng cho thuê xe tay ga mini và xe đạp điện ở khu vực Aewol, Jeju. Voucher được bán trên Myrealtrip; phục vụ là điểm xuất phát để đi xe ga theo tuyến ven biển Handam đến Aewol."
+    },
     "photos": [],
     "ratings": {
       "wifi": 1,
@@ -424,10 +631,20 @@
       }
     ],
     "channels": [],
-    "visit": {
+    "comment": {
       "date": "2026-06-10",
       "duration": "반나절",
-      "note": "Day3 스쿠터 코스 출발지 예정."
+      "note": "Day3 스쿠터 코스 출발지 예정.",
+      "note_i18n": {
+        "ko": "Day3 스쿠터 코스 출발지 예정.",
+        "en": "Planned starting point for the Day 3 scooter route.",
+        "ja": "3日目スクーターコース出発地予定。",
+        "zh": "第3天摩托车路线出发地计划。",
+        "es": "Punto de partida planificado para la ruta en moto del Día 3.",
+        "fr": "Point de départ prévu pour la route en scooter du Jour 3.",
+        "de": "Geplanter Startpunkt für die Scooter-Route an Tag 3.",
+        "vi": "Điểm xuất phát dự kiến cho tuyến xe ga Ngày 3."
+      }
     }
   },
   {
@@ -439,6 +656,16 @@
     "lng": 126.902569,
     "address": "제주특별자치도 제주시 구좌읍 종달리 746",
     "description": "구좌읍 종달리의 조용한 카페. 글을 쓰다 보면 마음이 평안해지는 분위기로, 노트북 작업이나 사색에 집중하기 좋다. 성산일출봉 방향 동쪽 제주 탐방 시 들르기 좋은 숨은 공간.",
+    "description_i18n": {
+      "ko": "구좌읍 종달리의 조용한 카페. 글을 쓰다 보면 마음이 평안해지는 분위기로, 노트북 작업이나 사색에 집중하기 좋다. 성산일출봉 방향 동쪽 제주 탐방 시 들르기 좋은 숨은 공간.",
+      "en": "A quiet café in Jongdal-ri, Gujwa-eup. Writing there brings a calm, peaceful feeling — ideal for focused laptop work or contemplation. A hidden gem worth stopping at when exploring eastern Jeju toward Seongsan Ilchulbong.",
+      "ja": "旧左邑鍾達里の静かなカフェ。文章を書いていると心が穏やかになる雰囲気で、ノートパソコン作業や思索に集中しやすい。城山日出峰方向の東済州探訪時に立ち寄りたい隠れた空間。",
+      "zh": "旧左邑鍾达里的安静咖啡厅。在那里写文章会让人内心平静，非常适合专注于笔记本电脑工作或沉思。在向城山日出峰方向探索济州东部时，值得顺路拜访的隐藏空间。",
+      "es": "Un café tranquilo en Jongdal-ri, Gujwa-eup. Escribir allí trae una sensación calmada y apacible, ideal para el trabajo enfocado con el portátil o la contemplación. Un lugar escondido que vale la pena visitar al explorar el este de Jeju hacia Seongsan Ilchulbong.",
+      "fr": "Un café calme à Jongdal-ri, Gujwa-eup. Écrire là-bas procure un sentiment de calme et de paix — idéal pour travailler de manière concentrée sur ordinateur ou pour la contemplation. Un joyau caché à visiter lors de l'exploration de l'est de Jeju vers Seongsan Ilchulbong.",
+      "de": "Ein ruhiges Café in Jongdal-ri, Gujwa-eup. Beim Schreiben dort stellt sich ein ruhiges, friedliches Gefühl ein — ideal für konzentriertes Laptop-Arbeiten oder Kontemplation. Ein verstecktes Juwel, das es wert ist, auf einer Erkundung des östlichen Jejus in Richtung Seongsan Ilchulbong anzuhalten.",
+      "vi": "Quán cà phê yên tĩnh ở Jongdal-ri, Gujwa-eup. Viết lách ở đó mang lại cảm giác bình yên, lý tưởng để tập trung làm việc trên laptop hoặc suy ngẫm. Một viên ngọc ẩn đáng ghé thăm khi khám phá phía đông Jeju hướng về Seongsan Ilchulbong."
+    },
     "photos": [],
     "ratings": {
       "wifi": 3,
@@ -456,10 +683,20 @@
     ],
     "links": [],
     "channels": [],
-    "visit": {
+    "comment": {
       "date": "2026-04-15",
       "duration": "오후",
-      "note": "글을 쓰다 보니 마음이 평안해졌다. 사색과 작업 모두 잘 되는 조용한 곳."
+      "note": "글을 쓰다 보니 마음이 평안해졌다. 사색과 작업 모두 잘 되는 조용한 곳.",
+      "note_i18n": {
+        "ko": "글을 쓰다 보니 마음이 평안해졌다. 사색과 작업 모두 잘 되는 조용한 곳.",
+        "en": "Writing there brought a sense of peace. A quiet place where both reflection and work flow well.",
+        "ja": "文章を書いていると心が穏やかになった。思索も作業も捗る静かな場所。",
+        "zh": "在那里写作让内心平静下来。既适合沉思又适合工作的安静场所。",
+        "es": "Escribir allí trajo una sensación de paz. Un lugar tranquilo donde tanto la reflexión como el trabajo fluyen bien.",
+        "fr": "Écrire là-bas a apporté une sensation de paix. Un endroit calme où la réflexion et le travail vont de pair.",
+        "de": "Das Schreiben dort brachte ein Gefühl von Frieden. Ein ruhiger Ort, an dem sowohl Nachdenken als auch Arbeiten gut funktionieren.",
+        "vi": "Viết lách ở đó mang lại cảm giác bình yên. Nơi yên tĩnh mà cả suy nghĩ lẫn làm việc đều trôi chảy."
+      }
     }
   },
   {
@@ -471,6 +708,16 @@
     "lng": 126.43719,
     "address": "제주특별자치도 제주시 일주서로 7400",
     "description": "제주공항 인근 수제버거 전문점. 화요일 정기휴무이며 평일 브레이크타임(15:00–17:00)이 있다. 공항 도착 후 첫 끼니로 접근성이 좋다.",
+    "description_i18n": {
+      "ko": "제주공항 인근 수제버거 전문점. 화요일 정기휴무이며 평일 브레이크타임(15:00–17:00)이 있다. 공항 도착 후 첫 끼니로 접근성이 좋다.",
+      "en": "A craft burger spot close to Jeju Airport. Closed on Tuesdays, with a weekday break from 15:00 to 17:00. Conveniently located for a first meal right after arriving at the airport.",
+      "ja": "済州空港近くの手作りバーガー専門店。火曜日が定休日で、平日はブレイクタイム（15:00–17:00）がある。空港到着後の最初の食事として利便性が高い。",
+      "zh": "济州机场附近的手工汉堡专卖店。每周二定期休息，工作日有休息时间（15:00–17:00）。作为抵达机场后的第一顿饭，交通便利。",
+      "es": "Una hamburguesería artesanal cerca del aeropuerto de Jeju. Cerrado los martes, con un descanso entre las 15:00 y las 17:00 entre semana. Convenientemente ubicado para una primera comida justo después de llegar al aeropuerto.",
+      "fr": "Un restaurant de burgers artisanaux proche de l'aéroport de Jeju. Fermé le mardi, avec une pause en semaine de 15h à 17h. Idéalement situé pour un premier repas juste après l'arrivée à l'aéroport.",
+      "de": "Ein Handwerker-Burger-Laden in der Nähe des Flughafens Jeju. Dienstags geschlossen, mit einer Pause von 15:00 bis 17:00 an Werktagen. Günstig gelegen für eine erste Mahlzeit direkt nach der Ankunft am Flughafen.",
+      "vi": "Quán burger thủ công gần sân bay Jeju. Đóng cửa vào thứ Ba, có giờ nghỉ buổi chiều từ 15:00 đến 17:00 các ngày trong tuần. Vị trí thuận tiện cho bữa ăn đầu tiên ngay sau khi đến sân bay."
+    },
     "photos": [],
     "ratings": {
       "wifi": 2,
@@ -487,10 +734,20 @@
     ],
     "links": [],
     "channels": [],
-    "visit": {
+    "comment": {
       "date": "2026-06-08",
       "duration": "점심",
-      "note": "Day1 점심 후보로 방문. 공항 인근 위치 편리."
+      "note": "Day1 점심 후보로 방문. 공항 인근 위치 편리.",
+      "note_i18n": {
+        "ko": "Day1 점심 후보로 방문. 공항 인근 위치 편리.",
+        "en": "Visited as a lunch option on Day 1. Convenient location near the airport.",
+        "ja": "1日目のランチ候補として訪問。空港近くの便利な場所。",
+        "zh": "第1天作为午餐候选参观。机场附近位置方便。",
+        "es": "Visitado como opción de almuerzo el Día 1. Ubicación conveniente cerca del aeropuerto.",
+        "fr": "Visité comme option déjeuner le Jour 1. Emplacement pratique près de l'aéroport.",
+        "de": "Als Mittagsoption an Tag 1 besucht. Praktische Lage in Flughafennähe.",
+        "vi": "Ghé thăm như một lựa chọn bữa trưa vào Ngày 1. Vị trí thuận tiện gần sân bay."
+      }
     }
   },
   {
@@ -498,10 +755,20 @@
     "name": "유민미술관",
     "category": "recovery",
     "status": "recommended",
-    "lat": 33.4238,
-    "lng": 126.9305,
+    "lat": 33.4292,
+    "lng": 126.93223,
     "address": "제주특별자치도 서귀포시 성산읍 섭지코지로 107",
     "description": "안도 타다오가 설계한 섭지코지의 아르누보 컬렉션 미술관. 물·바람·빛·소리를 건축으로 끌어들인 공간을 거닐다 보면 발걸음 소리가 뒤에서 들리는 독특한 청각 경험을 할 수 있다. 건축과 자연을 동시에 감상하고 싶은 여행자에게 강력 추천.",
+    "description_i18n": {
+      "ko": "안도 타다오가 설계한 섭지코지의 아르누보 컬렉션 미술관. 물·바람·빛·소리를 건축으로 끌어들인 공간을 거닐다 보면 발걸음 소리가 뒤에서 들리는 독특한 청각 경험을 할 수 있다. 건축과 자연을 동시에 감상하고 싶은 여행자에게 강력 추천.",
+      "en": "An Art Nouveau collection museum at Seopjikoji, designed by Tadao Ando. As you walk through the space where water, wind, light, and sound are woven into the architecture, you experience the unique sensation of footsteps echoing behind you. Highly recommended for travelers who want to appreciate architecture and nature simultaneously.",
+      "ja": "安藤忠雄が設計した渉地可支のアールヌーボーコレクション美術館。水・風・光・音を建築に引き込んだ空間を歩くと、足音が後ろから聴こえるユニークな聴覚体験ができる。建築と自然を同時に楽しみたい旅行者に強力推薦。",
+      "zh": "安藤忠雄设计的涉地可支新艺术派收藏美术馆。漫步于将水、风、光、声融入建筑的空间里，可以感受到脚步声从身后传来的独特听觉体验。强烈推荐给想同时欣赏建筑和自然的旅行者。",
+      "es": "Un museo de colección Art Nouveau en Seopjikoji, diseñado por Tadao Ando. Al pasear por el espacio donde el agua, el viento, la luz y el sonido están entretejidos en la arquitectura, se experimenta la singular sensación de pasos que hacen eco detrás. Muy recomendado para viajeros que quieren apreciar arquitectura y naturaleza al mismo tiempo.",
+      "fr": "Un musée de collection Art Nouveau à Seopjikoji, conçu par Tadao Ando. En se promenant dans l'espace où l'eau, le vent, la lumière et le son sont tissés dans l'architecture, on vit l'expérience auditive unique de pas qui résonnent dans le dos. Fortement recommandé aux voyageurs qui veulent apprécier architecture et nature simultanément.",
+      "de": "Ein Art-Nouveau-Sammlungsmuseum in Seopjikoji, entworfen von Tadao Ando. Beim Spaziergang durch den Raum, in dem Wasser, Wind, Licht und Klang in die Architektur eingewoben sind, erlebt man das einzigartige Gefühl von Schritten, die von hinten nachklingen. Sehr empfohlen für Reisende, die Architektur und Natur gleichzeitig genießen möchten.",
+      "vi": "Bảo tàng bộ sưu tập Art Nouveau ở Seopjikoji, do Tadao Ando thiết kế. Khi đi qua không gian nơi nước, gió, ánh sáng và âm thanh được dệt vào kiến trúc, bạn trải nghiệm cảm giác độc đáo khi tiếng bước chân vang lại từ phía sau. Được khuyên dùng mạnh mẽ cho những du khách muốn thưởng thức kiến trúc và thiên nhiên cùng lúc."
+    },
     "photos": [],
     "ratings": {
       "wifi": 1,
@@ -520,10 +787,20 @@
     ],
     "links": [],
     "channels": [],
-    "visit": {
+    "comment": {
       "date": "2026-04-15",
       "duration": "오전",
-      "note": "셜록현준 영상 보고 방문. 높은 층고와 콘크리트 공간, 발소리 울림이 인상 깊었다."
+      "note": "영상 콘텐츠 보고 방문. 높은 층고와 콘크리트 공간, 발소리 울림이 인상 깊었다.",
+      "note_i18n": {
+        "ko": "영상 콘텐츠 보고 방문. 높은 층고와 콘크리트 공간, 발소리 울림이 인상 깊었다.",
+        "en": "Visited after watching a video feature on the museum. The soaring ceiling, concrete space, and echoing footsteps were deeply impressive.",
+        "ja": "動画コンテンツを見て訪問。高い天井高とコンクリートの空間、足音の響きが印象深かった。",
+        "zh": "看了视频内容后前往参观。高挑的层高与混凝土空间、脚步声的回响给人留下了深刻印象。",
+        "es": "Visita después de ver un documental en vídeo sobre el museo. Los techos elevados, el espacio de hormigón y los pasos que resuenan dejaron una profunda impresión.",
+        "fr": "Visite après avoir regardé un contenu vidéo sur le musée. Les hauts plafonds, l'espace en béton et le son des pas qui résonnent ont laissé une profonde impression.",
+        "de": "Besuch nach dem Ansehen eines Videobeitrags über das Museum. Die hohen Decken, der Betonraum und das Echo der Schritte hinterließen einen tiefen Eindruck.",
+        "vi": "Ghé thăm sau khi xem một video về bảo tàng. Trần cao, không gian bê tông và tiếng bước chân vang vọng để lại ấn tượng sâu sắc."
+      }
     }
   },
   {
@@ -535,6 +812,16 @@
     "lng": 126.426895,
     "address": "제주특별자치도 제주시 연대마을길 34-10",
     "description": "제주시 외도이동 이호테우 권역 인근의 조용한 포구. 관광지화되지 않은 로컬 산책 포인트로 니모메 빈티지라운지와 가까워 카페 방문 전후 걷기 좋다.",
+    "description_i18n": {
+      "ko": "제주시 외도이동 이호테우 권역 인근의 조용한 포구. 관광지화되지 않은 로컬 산책 포인트로 니모메 빈티지라운지와 가까워 카페 방문 전후 걷기 좋다.",
+      "en": "A quiet harbor near the Iho Tewoo area in Oedo-dong, Jeju City. A non-touristy local walking spot, conveniently close to Nimome Vintage Lounge for a stroll before or after a café visit.",
+      "ja": "済州市外都洞の利湖テウエリア近くの静かな漁港。観光地化されていないローカル散歩スポットで、ニモメビンテージラウンジに近く、カフェ訪問の前後に歩くのに便利。",
+      "zh": "济州市外都洞利湖地区附近的安静小港口。是未被旅游化的本地散步地点，靠近니모메빈티지라운지，适合在咖啡厅前后散步。",
+      "es": "Un puerto tranquilo cerca del área de Iho Tewoo en Oedo-dong, ciudad de Jeju. Un lugar de paseo local sin turistas, convenientemente cerca de Nimome Vintage Lounge para un paseo antes o después de la visita al café.",
+      "fr": "Un port tranquille près de la zone d'Iho Tewoo à Oedo-dong, ville de Jeju. Un lieu de promenade local non touristique, à proximité du Nimome Vintage Lounge pour une balade avant ou après la visite du café.",
+      "de": "Ein ruhiger Hafen in der Nähe der Iho-Tewoo-Zone in Oedo-dong, Jeju City. Ein nicht touristischer lokaler Spazierort, bequem nahe dem Nimome Vintage Lounge für einen Spaziergang vor oder nach dem Café-Besuch.",
+      "vi": "Bến cảng yên tĩnh gần khu vực Iho Tewoo ở Oedo-dong, Thành phố Jeju. Điểm đi dạo địa phương chưa bị du lịch hóa, gần Nimome Vintage Lounge để đi bộ trước hoặc sau khi ghé quán cà phê."
+    },
     "photos": [],
     "ratings": {
       "wifi": 1,
@@ -552,10 +839,20 @@
     ],
     "links": [],
     "channels": [],
-    "visit": {
+    "comment": {
       "date": "2026-06-08",
       "duration": "산책",
-      "note": "Day1 자유 동선 중 선택적 방문."
+      "note": "Day1 자유 동선 중 선택적 방문.",
+      "note_i18n": {
+        "ko": "Day1 자유 동선 중 선택적 방문.",
+        "en": "An optional stop during the free-form itinerary on Day 1.",
+        "ja": "1日目の自由動線の中での選択的訪問。",
+        "zh": "第1天自由行程中的选择性参观。",
+        "es": "Una parada opcional durante el itinerario libre del Día 1.",
+        "fr": "Un arrêt facultatif lors de l'itinéraire libre du Jour 1.",
+        "de": "Ein optionaler Halt während des freien Reiseprogramms an Tag 1.",
+        "vi": "Điểm dừng tùy chọn trong lịch trình tự do vào Ngày 1."
+      }
     }
   },
   {
@@ -567,6 +864,16 @@
     "lng": 126.356842,
     "address": "제주특별자치도 제주시 애월읍 부룡수길 35-14",
     "description": "제주 애월의 귀신 체험·VR 가상체험관 복합 시설. 카페·레스토랑·펜션까지 갖춰 비 오는 날 애월 실내 오락거리로 적합하다. 10:00–22:00 운영으로 저녁 방문도 가능.",
+    "description_i18n": {
+      "ko": "제주 애월의 귀신 체험·VR 가상체험관 복합 시설. 카페·레스토랑·펜션까지 갖춰 비 오는 날 애월 실내 오락거리로 적합하다. 10:00–22:00 운영으로 저녁 방문도 가능.",
+      "en": "A multi-facility complex in Aewol, Jeju, combining a haunted house, VR experience, café, restaurant, and guesthouse. A solid indoor option for a rainy day in Aewol. Open 10:00–22:00, so evening visits are possible.",
+      "ja": "済州涯月のお化け屋敷・VR仮想体験館複合施設。カフェ・レストラン・ペンションも完備しており、雨の日の涯月室内エンターテインメントに適している。10:00–22:00運営で夜間訪問も可能。",
+      "zh": "济州涯月集鬼屋体验、VR虚拟体验于一体的综合设施。附带咖啡厅、餐厅、民宿，适合雨天在涯月室内消遣。10:00–22:00运营，也可以在傍晚前往。",
+      "es": "Un complejo multifuncional en Aewol, Jeju, que combina casa del terror, experiencia VR, café, restaurante y alojamiento. Una opción de interior sólida para un día lluvioso en Aewol. Abierto de 10:00 a 22:00, por lo que las visitas nocturnas son posibles.",
+      "fr": "Un complexe multi-activités à Aewol, Jeju, combinant maison hantée, expérience VR, café, restaurant et hébergement. Une bonne option intérieure pour un jour de pluie à Aewol. Ouvert de 10h à 22h, les visites en soirée sont donc possibles.",
+      "de": "Ein Mehrzweckkomplex in Aewol, Jeju, der ein Geisterhaus, VR-Erlebnis, Café, Restaurant und Unterkunft kombiniert. Eine solide Option für drinnen an einem Regentag in Aewol. Geöffnet 10:00–22:00, also sind auch Abendbesuche möglich.",
+      "vi": "Tổ hợp đa chức năng ở Aewol, Jeju, kết hợp nhà ma, trải nghiệm VR, quán cà phê, nhà hàng và nhà nghỉ. Lựa chọn trong nhà tốt cho ngày mưa ở Aewol. Mở cửa 10:00–22:00, có thể ghé thăm vào buổi tối."
+    },
     "photos": [],
     "ratings": {
       "wifi": 2,
@@ -589,10 +896,20 @@
       }
     ],
     "channels": [],
-    "visit": {
+    "comment": {
       "date": "2026-06-10",
       "duration": "방문 예정",
-      "note": "Day3 일정 중 들르는 스팟으로 계획."
+      "note": "Day3 일정 중 들르는 스팟으로 계획.",
+      "note_i18n": {
+        "ko": "Day3 일정 중 들르는 스팟으로 계획.",
+        "en": "Planned as a stop along the Day 3 itinerary.",
+        "ja": "3日目の日程中に立ち寄るスポットとして計画。",
+        "zh": "计划作为第3天行程中的一个停留点。",
+        "es": "Planificado como parada en el itinerario del Día 3.",
+        "fr": "Prévu comme arrêt dans l'itinéraire du Jour 3.",
+        "de": "Als Halt auf dem Reiseprogramm von Tag 3 geplant.",
+        "vi": "Được lên kế hoạch là điểm dừng trong lịch trình Ngày 3."
+      }
     }
   },
   {
@@ -604,6 +921,16 @@
     "lng": 126.389919,
     "address": "제주특별자치도 제주시 애월읍 수산리",
     "description": "애월읍 수산리의 복층 독채 감성 펜션(에어비앤비). 멀리 바다가 보이는 뷰가 인상적이다. 한담 카페거리까지 차로 13분 거리라 애월 생활권 탐색 베이스로 좋다.",
+    "description_i18n": {
+      "ko": "애월읍 수산리의 복층 독채 감성 펜션(에어비앤비). 멀리 바다가 보이는 뷰가 인상적이다. 한담 카페거리까지 차로 13분 거리라 애월 생활권 탐색 베이스로 좋다.",
+      "en": "A double-story private house guesthouse (Airbnb) in Susan-ri, Aewol-eup. The distant ocean view is striking. Just 13 minutes by car from Handam Café Street, making it a great base for exploring the Aewol area.",
+      "ja": "涯月邑水山里の複層独棟感性ペンション（エアビーアンドビー）。遠くに見える海の眺めが印象的。漢潭カフェ通りまで車で13分と、涯月生活圏を探索する拠点として最適。",
+      "zh": "涯月邑水山里的复式独栋感性民宿（Airbnb）。远处可见大海的视野令人印象深刻。距汉潭咖啡街驾车13分钟，是探索涯月生活区的好大本营。",
+      "es": "Una casa de huéspedes privada de dos pisos (Airbnb) en Susan-ri, Aewol-eup. La vista lejana al océano es llamativa. A solo 13 minutos en coche de la Calle Café Handam, lo que lo convierte en una gran base para explorar la zona de Aewol.",
+      "fr": "Une maison d'hôtes privée à deux étages (Airbnb) à Susan-ri, Aewol-eup. La vue lointaine sur l'océan est frappante. À seulement 13 minutes en voiture de la rue des cafés Handam, ce qui en fait une excellente base pour explorer la zone d'Aewol.",
+      "de": "Ein zweistöckiges Privathaus-Gästehaus (Airbnb) in Susan-ri, Aewol-eup. Der entfernte Meerblick ist beeindruckend. Nur 13 Minuten mit dem Auto von der Handam-Café-Straße entfernt, was es zu einer großartigen Basis für die Erkundung der Aewol-Gegend macht.",
+      "vi": "Nhà khách riêng hai tầng (Airbnb) ở Susan-ri, Aewol-eup. Tầm nhìn ra biển xa ấn tượng. Chỉ 13 phút lái xe từ Phố Cà Phê Handam, là căn cứ tuyệt vời để khám phá khu vực Aewol."
+    },
     "photos": [],
     "ratings": {
       "wifi": 3,
@@ -628,10 +955,20 @@
       }
     ],
     "channels": [],
-    "visit": {
+    "comment": {
       "date": "2026-06-10",
       "duration": "1박",
-      "note": "바다가 저 멀리 보이는 게 참 좋았음. 하나로마트 광어회+라면 야식."
+      "note": "바다가 저 멀리 보이는 게 참 좋았음. 하나로마트 광어회+라면 야식.",
+      "note_i18n": {
+        "ko": "바다가 저 멀리 보이는 게 참 좋았음. 하나로마트 광어회+라면 야식.",
+        "en": "The distant glimpse of the ocean was wonderful. Late-night snack of sliced halibut sashimi from Hanaro Mart plus instant noodles.",
+        "ja": "遠くに海が見えるのがとても良かった。ハナロマートのヒラメの刺身＋ラーメン夜食。",
+        "zh": "远远能看到大海，真的太好了。在하나로마트买的比目鱼生鱼片+泡面当夜宵。",
+        "es": "El lejano atisbo del océano era maravilloso. Tentempié nocturno de sashimi de fletán de Hanaro Mart más fideos instantáneos.",
+        "fr": "Le lointain aperçu de l'océan était merveilleux. Encas nocturne de sashimi de flétan de Hanaro Mart plus des nouilles instantanées.",
+        "de": "Der entfernte Blick auf den Ozean war wunderschön. Spätabendsnack aus Heilbutt-Sashimi vom Hanaro Mart plus Instantnudeln.",
+        "vi": "Nhìn thấy biển ở xa thật tuyệt vời. Ăn khuya với sashimi cá bơn từ Hanaro Mart cộng mì ăn liền."
+      }
     }
   },
   {
@@ -643,6 +980,16 @@
     "lng": 126.328973,
     "address": "제주특별자치도 제주시 애월읍",
     "description": "제주 애월 권역 식당. 여행 일정 중 점심 후보로 올랐으나 온라인 정보가 부족해 방문 전 네이버플레이스 직접 확인이 필요하다.",
+    "description_i18n": {
+      "ko": "제주 애월 권역 식당. 여행 일정 중 점심 후보로 올랐으나 온라인 정보가 부족해 방문 전 네이버플레이스 직접 확인이 필요하다.",
+      "en": "A restaurant in the Aewol area of Jeju. Listed as a lunch candidate during the trip, though sparse online information means checking Naver Place directly before visiting is essential.",
+      "ja": "済州涯月エリアのレストラン。旅行日程中のランチ候補として挙がったが、オンライン情報が乏しいため訪問前にネイバープレイスを直接確認が必要。",
+      "zh": "济州涯月区域的餐厅。行程中列为午餐候选，但网上信息不足，需要参观前直接查看Naver Place确认。",
+      "es": "Un restaurante en la zona de Aewol de Jeju. Listado como candidato para el almuerzo durante el viaje, aunque la escasa información en línea significa que es esencial verificar Naver Place directamente antes de visitar.",
+      "fr": "Un restaurant dans la zone d'Aewol à Jeju. Listé comme candidat pour le déjeuner pendant le voyage, bien que le peu d'informations en ligne signifie qu'il est essentiel de vérifier Naver Place directement avant de visiter.",
+      "de": "Ein Restaurant in der Aewol-Zone auf Jeju. Als Mittagskandidat während der Reise gelistet, obwohl die spärlichen Online-Informationen bedeuten, dass ein direktes Überprüfen von Naver Place vor dem Besuch unerlässlich ist.",
+      "vi": "Nhà hàng ở khu vực Aewol của Jeju. Được liệt kê là ứng viên bữa trưa trong chuyến đi, tuy nhiên thông tin trực tuyến còn ít nên cần kiểm tra trực tiếp trên Naver Place trước khi ghé thăm."
+    },
     "photos": [],
     "ratings": {
       "wifi": 2,
@@ -658,10 +1005,20 @@
     ],
     "links": [],
     "channels": [],
-    "visit": {
+    "comment": {
       "date": "2026-06-10",
       "duration": "점심 예정",
-      "note": "Day3 점심 후보."
+      "note": "Day3 점심 후보.",
+      "note_i18n": {
+        "ko": "Day3 점심 후보.",
+        "en": "Lunch candidate for Day 3.",
+        "ja": "3日目のランチ候補。",
+        "zh": "第3天的午餐候选。",
+        "es": "Candidato para el almuerzo del Día 3.",
+        "fr": "Candidat pour le déjeuner du Jour 3.",
+        "de": "Mittagskandidat für Tag 3.",
+        "vi": "Ứng viên bữa trưa Ngày 3."
+      }
     }
   },
   {
@@ -669,10 +1026,20 @@
     "name": "금능해수욕장",
     "category": "recovery",
     "status": "recommended",
-    "lat": 33.394,
-    "lng": 126.2398,
+    "lat": 33.39045,
+    "lng": 126.23589,
     "address": "제주특별자치도 제주시 한림읍 금능길 119-10",
     "description": "한림읍 협재 해수욕장 인접한 금능 해변. 에메랄드빛 바다와 비교적 한적한 분위기로 제주 서부 해변 중 로컬 감성이 살아있다. 산책만 해도 충분히 만족스러운 곳.",
+    "description_i18n": {
+      "ko": "한림읍 협재 해수욕장 인접한 금능 해변. 에메랄드빛 바다와 비교적 한적한 분위기로 제주 서부 해변 중 로컬 감성이 살아있다. 산책만 해도 충분히 만족스러운 곳.",
+      "en": "Geumneung Beach, adjacent to Hyeopjae Beach in Hallim-eup. With emerald waters and a relatively uncrowded atmosphere, it retains a local feel among the west Jeju beaches. A stroll alone makes the visit worthwhile.",
+      "ja": "翰林邑の挟才海水浴場に隣接する金陵海岸。エメラルド色の海と比較的静かな雰囲気で、済州西部のビーチの中でローカル感が息づいている。散歩するだけで十分満足できる場所。",
+      "zh": "翰林邑协才海水浴场附近的金陵海滩。翡翠色的大海和相对幽静的氛围，在济州西部海滩中保留了本地气息。仅仅散步就足以令人满意的地方。",
+      "es": "La playa de Geumneung, adyacente a la playa de Hyeopjae en Hallim-eup. Con aguas color esmeralda y un ambiente relativamente tranquilo, mantiene un aire local entre las playas del oeste de Jeju. Un simple paseo ya vale la visita.",
+      "fr": "La plage de Geumneung, adjacente à la plage de Hyeopjae à Hallim-eup. Avec ses eaux émeraude et une atmosphère relativement tranquille, elle garde un esprit local parmi les plages de l'ouest de Jeju. Une simple promenade suffit à rendre la visite mémorable.",
+      "de": "Geumneung Beach, angrenzend an Hyeopjae Beach in Hallim-eup. Mit smaragdgrünem Wasser und einer relativ ruhigen Atmosphäre behält er ein lokales Flair unter den West-Jeju-Stränden. Ein Spaziergang allein macht den Besuch lohnenswert.",
+      "vi": "Bãi biển Geumneung, cạnh bãi biển Hyeopjae ở Hallim-eup. Với nước biển màu ngọc lục bảo và không khí tương đối yên tĩnh, nơi đây giữ được cảm giác địa phương giữa các bãi biển miền Tây Jeju. Chỉ đi dạo thôi đã đủ hài lòng."
+    },
     "photos": [],
     "ratings": {
       "wifi": 1,
@@ -691,10 +1058,20 @@
     ],
     "links": [],
     "channels": [],
-    "visit": {
+    "comment": {
       "date": "2026-06-09",
       "duration": "오후 산책",
-      "note": "바다를 거닌 시간이 이번 제주 여행에서 좋았던 점으로 꼽힘."
+      "note": "바다를 거닌 시간이 이번 제주 여행에서 좋았던 점으로 꼽힘.",
+      "note_i18n": {
+        "ko": "바다를 거닌 시간이 이번 제주 여행에서 좋았던 점으로 꼽힘.",
+        "en": "The time spent walking along the sea stood out as one of the highlights of this Jeju trip.",
+        "ja": "海を歩いた時間が今回の済州旅行での良かった点として挙げられた。",
+        "zh": "在海边漫步的时光被列为本次济州旅行中最美好的时刻之一。",
+        "es": "El tiempo pasado caminando a lo largo del mar se destacó como uno de los puntos culminantes de este viaje a Jeju.",
+        "fr": "Le temps passé à marcher le long de la mer s'est distingué comme l'un des points forts de ce voyage à Jeju.",
+        "de": "Die Zeit beim Spazieren am Meer wurde als eines der Highlights dieser Jeju-Reise hervorgehoben.",
+        "vi": "Thời gian đi dạo dọc theo biển nổi bật như một trong những điểm nhấn của chuyến đi Jeju này."
+      }
     }
   },
   {
@@ -706,6 +1083,16 @@
     "lng": 126.389919,
     "address": "제주특별자치도 제주시 애월읍 수산리",
     "description": "애월읍 수산리 소재 불교 암자. 1933년 창건 후 4·3 때 소실, 1981년 재건된 역사 사찰이다. 트립레시피 숙소 인근에서 저녁 산책 코스로 적합하다.",
+    "description_i18n": {
+      "ko": "애월읍 수산리 소재 불교 암자. 1933년 창건 후 4·3 때 소실, 1981년 재건된 역사 사찰이다. 트립레시피 숙소 인근에서 저녁 산책 코스로 적합하다.",
+      "en": "A Buddhist hermitage in Susan-ri, Aewol-eup. Founded in 1933, destroyed during the April 3rd Incident, and rebuilt in 1981. A good evening stroll from the nearby Trip Recipe accommodation.",
+      "ja": "涯月邑水山里にある仏教庵。1933年創建後、4·3事件で消失し1981年に再建された歴史ある寺院。トリップレシピ宿舎近くで夕方の散歩コースに適している。",
+      "zh": "位于涯月邑水山里的佛教庵寺。1933年创建后，于4·3事件时毁坏，1981年重建的历史古刹。适合在附近의트립레시피住宿散步的晚间路线。",
+      "es": "Un ermitorio budista en Susan-ri, Aewol-eup. Fundado en 1933, destruido durante el Incidente del 3 de abril y reconstruido en 1981. Un buen paseo vespertino desde el cercano alojamiento Trip Recipe.",
+      "fr": "Un ermitage bouddhiste à Susan-ri, Aewol-eup. Fondé en 1933, détruit pendant l'Incident du 3 avril et reconstruit en 1981. Une bonne promenade en soirée depuis l'hébergement Trip Recipe à proximité.",
+      "de": "Eine buddhistische Einsiedelei in Susan-ri, Aewol-eup. 1933 gegründet, beim Zwischenfall vom 3. April zerstört und 1981 wieder aufgebaut. Ein guter Abendspaziergang vom nahe gelegenen Trip Recipe Unterkunft.",
+      "vi": "Thảo am Phật giáo ở Susan-ri, Aewol-eup. Thành lập năm 1933, bị phá hủy trong sự kiện ngày 3 tháng 4 và xây dựng lại năm 1981. Đường đi dạo buổi tối tốt từ chỗ ở Trip Recipe gần đó."
+    },
     "photos": [],
     "ratings": {
       "wifi": 1,
@@ -723,10 +1110,20 @@
     ],
     "links": [],
     "channels": [],
-    "visit": {
+    "comment": {
       "date": "2026-06-10",
       "duration": "저녁 산책",
-      "note": "Day3 저녁 산책 장소."
+      "note": "Day3 저녁 산책 장소.",
+      "note_i18n": {
+        "ko": "Day3 저녁 산책 장소.",
+        "en": "Evening stroll destination on Day 3.",
+        "ja": "3日目の夕方散歩の場所。",
+        "zh": "第3天的晚间散步地点。",
+        "es": "Destino de paseo vespertino el Día 3.",
+        "fr": "Destination de promenade du soir le Jour 3.",
+        "de": "Abendspaziergang-Ziel an Tag 3.",
+        "vi": "Điểm đi dạo buổi tối Ngày 3."
+      }
     }
   },
   {
@@ -734,10 +1131,20 @@
     "name": "이호테우해수욕장",
     "category": "recovery",
     "status": "recommended",
-    "lat": 33.5063,
-    "lng": 126.4636,
+    "lat": 33.49738,
+    "lng": 126.45269,
     "address": "제주특별자치도 제주시 이호일동 1600-2",
     "description": "붉은·흰 조랑말 등대가 상징인 제주시 대표 일몰 해변. 도두봉·도두해수파크와 인접해 있어 제주 북부 반나절 코스로 함께 묶기 좋다. 일몰 시간대 방문을 강력 추천.",
+    "description_i18n": {
+      "ko": "붉은·흰 조랑말 등대가 상징인 제주시 대표 일몰 해변. 도두봉·도두해수파크와 인접해 있어 제주 북부 반나절 코스로 함께 묶기 좋다. 일몰 시간대 방문을 강력 추천.",
+      "en": "Jeju City's iconic sunset beach, symbolized by its red and white horse lighthouses. Close to Dodu Oreum and Dodu Seawater Park, making it easy to combine into a half-day north Jeju loop. A sunset-hour visit is strongly recommended.",
+      "ja": "赤と白の子馬灯台がシンボルの済州市代表の夕日海岸。道頭峰・道頭海水パークと隣接しており、済州北部の半日コースとして一緒に組み込みやすい。夕日の時間帯の訪問を強力推薦。",
+      "zh": "以红白两色小马灯塔为象征的济州市代表日落海滩。与道头峰、道头海水公园毗邻，便于组合成济州北部半日游路线。强烈推荐在日落时分前往。",
+      "es": "La playa de atardecer icónica de la ciudad de Jeju, simbolizada por sus faros en forma de caballos rojo y blanco. Cerca del Oreum Dodu y el Parque de Agua de Mar Dodu, fácil de combinar en un circuito de medio día por el norte de Jeju. Se recomienda encarecidamente visitar a la hora del atardecer.",
+      "fr": "La plage emblématique du coucher de soleil de la ville de Jeju, symbolisée par ses phares en forme de chevaux rouge et blanc. Proche du Dodu Oreum et du Parc d'Eau de Mer Dodu, facile à combiner dans une boucle d'une demi-journée au nord de Jeju. Une visite à l'heure du coucher de soleil est fortement recommandée.",
+      "de": "Jeju Citys ikonischer Sonnenuntergangs-Strand, symbolisiert durch seine rot-weißen Pferde-Leuchttürme. In der Nähe des Dodu Oreum und des Dodu Meerwasserparks, leicht in einer Halbtagestour durch Nordjeju zu kombinieren. Ein Besuch zur Sonnenuntergangszeit wird dringend empfohlen.",
+      "vi": "Bãi biển hoàng hôn biểu tượng của Thành phố Jeju, với cặp ngọn hải đăng hình ngựa đỏ và trắng. Gần Dodu Oreum và Công viên Nước biển Dodu, dễ dàng kết hợp trong tour nửa ngày miền Bắc Jeju. Đặc biệt khuyến nghị ghé thăm vào giờ hoàng hôn."
+    },
     "photos": [],
     "ratings": {
       "wifi": 1,
@@ -760,10 +1167,20 @@
       }
     ],
     "channels": [],
-    "visit": {
+    "comment": {
       "date": "2026-06-08",
       "duration": "오후~일몰",
-      "note": "Day1 해변 산책 및 일몰 감상."
+      "note": "Day1 해변 산책 및 일몰 감상.",
+      "note_i18n": {
+        "ko": "Day1 해변 산책 및 일몰 감상.",
+        "en": "Day 1 beach walk and sunset viewing.",
+        "ja": "1日目の海岸散歩と夕日鑑賞。",
+        "zh": "第1天海滩散步和欣赏日落。",
+        "es": "Paseo por la playa y contemplación del atardecer el Día 1.",
+        "fr": "Promenade sur la plage et contemplation du coucher de soleil le Jour 1.",
+        "de": "Strandspaziergang und Sonnenuntergang beobachten an Tag 1.",
+        "vi": "Đi dạo bãi biển và ngắm hoàng hôn vào Ngày 1."
+      }
     }
   },
   {
@@ -771,10 +1188,20 @@
     "name": "도두봉",
     "category": "recovery",
     "status": "good",
-    "lat": 33.5105,
-    "lng": 126.4758,
+    "lat": 33.50791,
+    "lng": 126.46837,
     "address": "제주특별자치도 제주시 도두일동",
     "description": "제주공항 바로 옆 해발 65m 완만한 오름. 정상에서 제주공항과 북쪽 바다를 조망할 수 있는 일몰 명소다. 부담 없이 10~20분이면 오를 수 있어 이호테우 산책 후 이어 방문하기 좋다.",
+    "description_i18n": {
+      "ko": "제주공항 바로 옆 해발 65m 완만한 오름. 정상에서 제주공항과 북쪽 바다를 조망할 수 있는 일몰 명소다. 부담 없이 10~20분이면 오를 수 있어 이호테우 산책 후 이어 방문하기 좋다.",
+      "en": "A gentle 65m oreum right next to Jeju Airport. The summit offers views of the airport and the northern sea, making it a popular sunset spot. Takes only 10–20 minutes to climb, perfect for linking with a visit to Iho Tewoo Beach.",
+      "ja": "済州空港のすぐ隣の標高65mの緩やかなオルム。頂上から済州空港と北側の海を眺められる夕日の名所。10〜20分で登れるので、利湖テウ散策後に続けて訪れるのに最適。",
+      "zh": "紧邻济州机场的海拔65米平缓的오름（小火山）。从山顶可以俯瞰济州机场和北部海域，是著名的日落景点。10-20分钟即可登顶，非常适合利湖테우散步后继续参观。",
+      "es": "Un suave oreum de 65 m justo al lado del aeropuerto de Jeju. La cima ofrece vistas del aeropuerto y el mar norte, convirtiéndolo en un popular punto de observación del atardecer. Solo tarda 10-20 minutos en subir, perfecto para combinarlo con una visita a la playa de Iho Tewoo.",
+      "fr": "Un oreum plat de 65 m juste à côté de l'aéroport de Jeju. Le sommet offre des vues sur l'aéroport et la mer au nord, en faisant un spot coucher de soleil populaire. Monte en seulement 10–20 minutes, parfait pour enchaîner avec une visite à la plage d'Iho Tewoo.",
+      "de": "Ein sanfter 65m-Oreum direkt neben dem Jeju-Flughafen. Vom Gipfel bietet sich ein Blick auf den Flughafen und das nördliche Meer, was ihn zu einem beliebten Sonnenuntergangs-Spot macht. Nur 10–20 Minuten zu ersteigen, ideal um es mit einem Besuch am Iho Tewoo Beach zu verbinden.",
+      "vi": "Ngọn đồi Oreum thoải 65m ngay cạnh sân bay Jeju. Từ đỉnh có thể ngắm nhìn sân bay và biển phía Bắc, là điểm ngắm hoàng hôn nổi tiếng. Chỉ mất 10-20 phút để leo lên, hoàn hảo để kết hợp với chuyến thăm bãi biển Iho Tewoo."
+    },
     "photos": [],
     "ratings": {
       "wifi": 1,
@@ -793,10 +1220,20 @@
     ],
     "links": [],
     "channels": [],
-    "visit": {
+    "comment": {
       "date": "2026-06-08",
       "duration": "일몰 후 동선",
-      "note": "Day1 이호테우 일몰 후 동선."
+      "note": "Day1 이호테우 일몰 후 동선.",
+      "note_i18n": {
+        "ko": "Day1 이호테우 일몰 후 동선.",
+        "en": "Part of the Day 1 route after the sunset at Iho Tewoo Beach.",
+        "ja": "1日目の利湖テウ日没後の動線。",
+        "zh": "第1天利湖테우日落后的行程路线。",
+        "es": "Parte del recorrido del Día 1 después del atardecer en la playa de Iho Tewoo.",
+        "fr": "Partie du circuit du Jour 1 après le coucher de soleil à la plage d'Iho Tewoo.",
+        "de": "Teil der Route an Tag 1 nach dem Sonnenuntergang am Iho Tewoo Beach.",
+        "vi": "Một phần trong lịch trình Ngày 1 sau khi ngắm hoàng hôn ở bãi biển Iho Tewoo."
+      }
     }
   },
   {
@@ -808,6 +1245,16 @@
     "lng": 126.9695,
     "address": "서울특별시 종로구 자하문로",
     "description": "서촌 한옥 숙소. 맛있는 스콘과 향긋한 커피로 웰컴푸드를 제공하고 편백욕조가 갖춰져 있다. 경복궁·청와대·통인시장이 도보 거리이며 주변 맛집도 풍부해 서울 여행 베이스로 손색없다.",
+    "description_i18n": {
+      "ko": "서촌 한옥 숙소. 맛있는 스콘과 향긋한 커피로 웰컴푸드를 제공하고 편백욕조가 갖춰져 있다. 경복궁·청와대·통인시장이 도보 거리이며 주변 맛집도 풍부해 서울 여행 베이스로 손색없다.",
+      "en": "A hanok guesthouse in Seochon. Welcomes guests with freshly baked scones and aromatic coffee, plus a cypress bathtub. Gyeongbokgung Palace, Cheongwadae, and Tongin Market are all within walking distance, with plenty of good restaurants nearby — an excellent Seoul base.",
+      "ja": "西村の韓屋宿泊施設。美味しいスコーンと香り豊かなコーヒーでウェルカムフードを提供し、ヒノキバスタブが完備されている。景福宮・青瓦台・通仁市場が徒歩圏内で周辺の飲食店も充実しており、ソウル旅行のベースとして申し分ない。",
+      "zh": "西村韩屋住宿。提供美味司康饼和香醇咖啡作为迎宾食物，配备柏木浴缸。景福宫、青瓦台、通仁市场均在步行距离内，附近美食丰富，是首尔旅行的绝佳据点。",
+      "es": "Un alojamiento hanok en Seochon. Recibe a los huéspedes con scones recién horneados y café aromático, más una bañera de ciprés. El Palacio Gyeongbokgung, Cheongwadae y el mercado Tongin están todos a pie, con muchos buenos restaurantes cerca — una excelente base para Seúl.",
+      "fr": "Un hébergement hanok à Seochon. Accueille les clients avec des scones fraîchement préparés et du café aromatique, plus une baignoire en cyprès. Le Palais Gyeongbokgung, Cheongwadae et le marché Tongin sont tous à portée de marche, avec de nombreux bons restaurants à proximité — une excellente base pour Séoul.",
+      "de": "Eine Hanok-Unterkunft in Seochon. Begrüßt Gäste mit frisch gebackenen Scones und aromatischem Kaffee, plus einer Zypressbadewanne. Gyeongbokgung-Palast, Cheongwadae und Tongin-Markt sind alle zu Fuß erreichbar, mit vielen guten Restaurants in der Nähe — eine ausgezeichnete Seoul-Basis.",
+      "vi": "Nhà khách hanok ở Seochon. Đón khách bằng bánh scone nướng tươi và cà phê thơm ngon, cộng thêm bồn tắm gỗ bách. Cung điện Gyeongbokgung, Cheongwadae và chợ Tongin đều trong tầm đi bộ, với nhiều nhà hàng tốt gần đó — căn cứ Seoul xuất sắc."
+    },
     "photos": [],
     "ratings": {
       "wifi": 3,
@@ -825,8 +1272,7 @@
       "종로"
     ],
     "links": [],
-    "channels": [],
-    "visit": null
+    "channels": []
   },
   {
     "id": "마이못",
@@ -837,6 +1283,16 @@
     "lng": 126.389919,
     "address": "제주특별자치도 제주시 애월읍 수산리",
     "description": "제주 애월 수산리 인근 산책 장소. 정확한 위치는 방문 전 네이버지도에서 '마이못 제주'로 검색이 필요하다.",
+    "description_i18n": {
+      "ko": "제주 애월 수산리 인근 산책 장소. 정확한 위치는 방문 전 네이버지도에서 '마이못 제주'로 검색이 필요하다.",
+      "en": "A walking spot near Susan-ri in the Aewol area of Jeju. Search 'Maimost Jeju' on Naver Maps before visiting to get the exact location.",
+      "ja": "済州涯月の水山里近くの散歩スポット。正確な場所は訪問前にネイバーマップで'마이못 제주'と検索する必要がある。",
+      "zh": "济州涯月水山里附近的散步地点。参观前需要在Naver地图中搜索'마이못 제주'来确认具体位置。",
+      "es": "Un lugar para caminar cerca de Susan-ri en la zona de Aewol de Jeju. Busca '마이못 제주' en Naver Maps antes de visitar para obtener la ubicación exacta.",
+      "fr": "Un lieu de promenade près de Susan-ri dans la zone d'Aewol à Jeju. Cherchez '마이못 제주' sur Naver Maps avant de visiter pour obtenir l'emplacement exact.",
+      "de": "Ein Wanderort in der Nähe von Susan-ri in der Aewol-Zone auf Jeju. Suche '마이못 제주' auf Naver Maps vor dem Besuch, um den genauen Standort zu ermitteln.",
+      "vi": "Địa điểm đi dạo gần Susan-ri ở khu vực Aewol của Jeju. Tìm kiếm '마이못 제주' trên Naver Maps trước khi ghé thăm để xác định vị trí chính xác."
+    },
     "photos": [],
     "ratings": {
       "wifi": 1,
@@ -853,10 +1309,20 @@
     ],
     "links": [],
     "channels": [],
-    "visit": {
+    "comment": {
       "date": "2026-06-10",
       "duration": "산책 예정",
-      "note": "Day3 저녁 산책 후보지."
+      "note": "Day3 저녁 산책 후보지.",
+      "note_i18n": {
+        "ko": "Day3 저녁 산책 후보지.",
+        "en": "Candidate for the evening walk on Day 3.",
+        "ja": "3日目の夕方散歩候補地。",
+        "zh": "第3天晚间散步候选地。",
+        "es": "Candidato para el paseo vespertino del Día 3.",
+        "fr": "Candidat pour la promenade du soir du Jour 3.",
+        "de": "Kandidat für den Abendspaziergang an Tag 3.",
+        "vi": "Địa điểm ứng viên đi dạo buổi tối Ngày 3."
+      }
     }
   },
   {
@@ -864,10 +1330,20 @@
     "name": "도두해수파크",
     "category": "recovery",
     "status": "good",
-    "lat": 33.5136,
-    "lng": 126.4786,
+    "lat": 33.50844,
+    "lng": 126.47134,
     "address": "제주특별자치도 제주시 도두일동",
     "description": "제주시 도두동 24시간 찜질방으로 제주 유일의 미네랄 용천 해수 사우나를 갖추고 있다. 체크인/아웃 개념이 없고 짐 보관이 불가하지만 저렴하게 하룻밤을 보낼 수 있다. 이호테우·도두봉 동선과 연결된다.",
+    "description_i18n": {
+      "ko": "제주시 도두동 24시간 찜질방으로 제주 유일의 미네랄 용천 해수 사우나를 갖추고 있다. 체크인/아웃 개념이 없고 짐 보관이 불가하지만 저렴하게 하룻밤을 보낼 수 있다. 이호테우·도두봉 동선과 연결된다.",
+      "en": "A 24-hour jjimjilbang in Dodu-dong, Jeju City, boasting Jeju's only mineral spring seawater sauna. No formal check-in or check-out, and luggage storage is unavailable, but it's a cheap place to spend the night. Connects naturally with the Iho Tewoo and Dodu Oreum routes.",
+      "ja": "済州市道頭洞の24時間チムジルバン。済州唯一のミネラル湧泉海水サウナを備えている。チェックイン・アウトの概念がなく、荷物預かりも不可だが安く一夜を過ごせる。利湖テウ・道頭峰の動線と繋がる。",
+      "zh": "济州市道头洞的24小时汗蒸幕，拥有济州唯一的矿物泉海水桑拿。没有入住/退房概念，无法存放行李，但可以以低廉价格过夜。与利湖테우、道头峰动线相连。",
+      "es": "Un jjimjilbang de 24 horas en Dodu-dong, ciudad de Jeju, con la única sauna de agua de mar con fuente mineral de Jeju. Sin check-in ni check-out formal, y el almacenamiento de equipaje no está disponible, pero es un lugar barato para pasar la noche. Se conecta naturalmente con las rutas de Iho Tewoo y Dodu Oreum.",
+      "fr": "Un jjimjilbang de 24 heures à Dodu-dong, ville de Jeju, avec le seul sauna d'eau de mer à source minérale de Jeju. Pas de check-in ni de check-out formel, et le stockage des bagages n'est pas disponible, mais c'est un endroit bon marché pour passer la nuit. Se connecte naturellement avec les circuits d'Iho Tewoo et du Dodu Oreum.",
+      "de": "Ein 24-Stunden-Jjimjilbang in Dodu-dong, Jeju City, mit Jejus einziger mineralischer Quellwasser-Sauna. Kein formelles Check-in oder Check-out, und Gepäckaufbewahrung ist nicht verfügbar, aber es ist ein günstiger Ort, um die Nacht zu verbringen. Verbindet sich natürlich mit den Routen von Iho Tewoo und Dodu Oreum.",
+      "vi": "Jjimjilbang 24 giờ ở Dodu-dong, Thành phố Jeju, tự hào là sauna nước biển suối khoáng duy nhất của Jeju. Không có khái niệm nhận/trả phòng chính thức, không thể gửi hành lý nhưng là nơi ngủ qua đêm giá rẻ. Kết nối tự nhiên với các tuyến đường của Iho Tewoo và Dodu Oreum."
+    },
     "photos": [],
     "ratings": {
       "wifi": 1,
@@ -891,10 +1367,20 @@
       }
     ],
     "channels": [],
-    "visit": {
+    "comment": {
       "date": "2026-06-08",
       "duration": "1박",
-      "note": "Day1 이호테우 일몰 후 입실. 체크인/아웃 없음, 짐 보관 불가 주의."
+      "note": "Day1 이호테우 일몰 후 입실. 체크인/아웃 없음, 짐 보관 불가 주의.",
+      "note_i18n": {
+        "ko": "Day1 이호테우 일몰 후 입실. 체크인/아웃 없음, 짐 보관 불가 주의.",
+        "en": "Checked in on Day 1 after the sunset at Iho Tewoo. Note: no check-in/check-out, luggage storage unavailable.",
+        "ja": "1日目の利湖テウ日没後に入室。チェックイン/アウトなし、荷物預かり不可に注意。",
+        "zh": "第1天利湖테우日落后入住。注意：无入住/退房，无法存放行李。",
+        "es": "Entré el Día 1 después del atardecer en Iho Tewoo. Nota: sin check-in/check-out, almacenamiento de equipaje no disponible.",
+        "fr": "Arrivée le Jour 1 après le coucher de soleil à Iho Tewoo. Note : pas de check-in/check-out, stockage des bagages non disponible.",
+        "de": "Eingecheckt an Tag 1 nach dem Sonnenuntergang an Iho Tewoo. Hinweis: Kein Check-in/Check-out, Gepäckaufbewahrung nicht verfügbar.",
+        "vi": "Nhận phòng vào Ngày 1 sau khi ngắm hoàng hôn ở Iho Tewoo. Lưu ý: không có nhận/trả phòng, không có dịch vụ giữ hành lý."
+      }
     }
   },
   {
@@ -906,6 +1392,16 @@
     "lng": -0.0784,
     "address": "Byward St, London EC3R 5BJ, United Kingdom",
     "description": "런던 타워 옆에 자리한 역사 교회. 런던에서 기도와 묵상이 필요할 때 들를 수 있는 도심 속 공간이다.",
+    "description_i18n": {
+      "ko": "런던 타워 옆에 자리한 역사 교회. 런던에서 기도와 묵상이 필요할 때 들를 수 있는 도심 속 공간이다.",
+      "en": "A historic church next to the Tower of London. A quiet urban retreat in central London for prayer and contemplation.",
+      "ja": "ロンドン塔の隣に位置する歴史ある教会。ロンドンで祈りと黙想が必要なときに立ち寄れる都心の空間。",
+      "zh": "位于伦敦塔旁边的历史教堂。是在伦敦需要祈祷和冥思时可以光顾的都市空间。",
+      "es": "Una iglesia histórica junto a la Torre de Londres. Un refugio urbano tranquilo en el centro de Londres para la oración y la contemplación.",
+      "fr": "Une église historique à côté de la Tour de Londres. Un refuge urbain calme au centre de Londres pour la prière et la contemplation.",
+      "de": "Eine historische Kirche neben dem Tower of London. Ein ruhiger städtischer Rückzugsort im Zentrum Londons für Gebet und Besinnung.",
+      "vi": "Nhà thờ lịch sử bên cạnh Tháp London. Không gian đô thị yên tĩnh ở trung tâm London để cầu nguyện và suy ngẫm."
+    },
     "photos": [],
     "ratings": {
       "wifi": 1,
@@ -922,8 +1418,7 @@
       "묵상"
     ],
     "links": [],
-    "channels": [],
-    "visit": null
+    "channels": []
   },
   {
     "id": "antalya",
@@ -933,7 +1428,17 @@
     "lat": 36.8969,
     "lng": 30.7133,
     "address": "Antalya, Turkey",
-    "description": "터키 지중해 연안 도시. 무스타파가 추천해 준 여행지로 버킷리스트에 기록된 곳이다.",
+    "description": "터키 지중해 연안 도시. 지인의 추천으로 버킷리스트에 기록된 곳이다.",
+    "description_i18n": {
+      "ko": "터키 지중해 연안 도시. 지인의 추천으로 버킷리스트에 기록된 곳이다.",
+      "en": "A Mediterranean coastal city in Turkey. Recommended by an acquaintance and added to the bucket list.",
+      "ja": "トルコの地中海沿岸都市。知人の推薦でバケットリストに記録された場所。",
+      "zh": "土耳其地中海沿岸城市。经熟人推荐而记入心愿清单的地方。",
+      "es": "Una ciudad costera mediterránea en Turquía. Recomendada por un conocido y añadida a la lista de deseos.",
+      "fr": "Une ville côtière méditerranéenne en Turquie. Recommandée par une connaissance et ajoutée à la liste de souhaits.",
+      "de": "Eine mediterrane Küstenstadt in der Türkei. Von einem Bekannten empfohlen und auf die Bucket List gesetzt.",
+      "vi": "Thành phố ven biển Địa Trung Hải ở Thổ Nhĩ Kỳ. Được một người quen giới thiệu và thêm vào danh sách ước."
+    },
     "photos": [],
     "ratings": {
       "wifi": 3,
@@ -949,8 +1454,7 @@
       "추천여행지"
     ],
     "links": [],
-    "channels": [],
-    "visit": null
+    "channels": []
   },
   {
     "id": "brighton",
@@ -961,6 +1465,16 @@
     "lng": -0.1372,
     "address": "Brighton, East Sussex, United Kingdom",
     "description": "영국 남부 해안 도시. Sheffield에서 기차로 이동해 에어비앤비 숙박 후 Seven Sisters 하이킹을 위한 거점으로 활용했다. 런던에서 당일치기 또는 1박 기점으로 적합하다.",
+    "description_i18n": {
+      "ko": "영국 남부 해안 도시. Sheffield에서 기차로 이동해 에어비앤비 숙박 후 Seven Sisters 하이킹을 위한 거점으로 활용했다. 런던에서 당일치기 또는 1박 기점으로 적합하다.",
+      "en": "A coastal city in southern England. Used as a base for the Seven Sisters hiking route after travelling from Sheffield by train and staying via Airbnb. A good day-trip or one-night base from London.",
+      "ja": "イングランド南部の海岸都市。シェフィールドから電車で移動し、エアビーアンドビー宿泊後のセブン・シスターズハイキングの拠点として活用した。ロンドンからの日帰りまたは1泊の拠点として適している。",
+      "zh": "英国南部海岸城市。从谢菲尔德乘火车前往，在Airbnb住宿后，作为七姐妹悬崖徒步的据点。适合从伦敦出发的一日游或一晚的起点。",
+      "es": "Una ciudad costera en el sur de Inglaterra. Usada como base para la ruta de senderismo de las Siete Hermanas después de viajar desde Sheffield en tren y alojarse en Airbnb. Una buena base para una excursión de un día o una noche desde Londres.",
+      "fr": "Une ville côtière dans le sud de l'Angleterre. Utilisée comme base pour la randonnée des Seven Sisters après avoir voyagé en train depuis Sheffield et séjourné en Airbnb. Une bonne base pour une excursion d'une journée ou d'une nuit depuis Londres.",
+      "de": "Eine Küstenstadt im Süden Englands. Als Basis für die Seven Sisters Wanderroute genutzt, nachdem man mit dem Zug von Sheffield anreiste und via Airbnb übernachtete. Eine gute Tagesausflug- oder Ein-Nacht-Basis von London aus.",
+      "vi": "Thành phố ven biển ở miền Nam nước Anh. Được sử dụng làm căn cứ cho tuyến đường đi bộ Seven Sisters sau khi di chuyển từ Sheffield bằng tàu hỏa và lưu trú qua Airbnb. Căn cứ tốt để đi tham quan trong ngày hoặc một đêm từ London."
+    },
     "photos": [],
     "ratings": {
       "wifi": 3,
@@ -977,8 +1491,7 @@
       "에어비앤비"
     ],
     "links": [],
-    "channels": [],
-    "visit": null
+    "channels": []
   },
   {
     "id": "seven-sisters",
@@ -989,6 +1502,16 @@
     "lng": 0.155,
     "address": "Seven Sisters Country Park, East Sussex, United Kingdom",
     "description": "영국 남부의 백악 절벽(chalk cliff) 해안 하이킹 코스. Brighton에서 출발해 약 20km 도보로 이어진다. 절벽 감상과 사색을 겸한 긴 걷기 여정.",
+    "description_i18n": {
+      "ko": "영국 남부의 백악 절벽(chalk cliff) 해안 하이킹 코스. Brighton에서 출발해 약 20km 도보로 이어진다. 절벽 감상과 사색을 겸한 긴 걷기 여정.",
+      "en": "A chalk cliff coastal hiking trail in southern England. Starting from Brighton, it extends about 20 km on foot. A long walking journey combining cliff scenery with contemplation.",
+      "ja": "イングランド南部の白亜の断崖（チョーク崖）沿岸ハイキングコース。ブライトンから出発し約20kmの徒歩ルートが続く。断崖鑑賞と思索を兼ねた長い歩き旅。",
+      "zh": "英国南部的白垩悬崖（chalk cliff）海岸徒步路线。从布莱顿出发，延伸约20公里的步行路线。兼顾悬崖观赏和沉思的漫长徒步旅程。",
+      "es": "Una ruta de senderismo costera de acantilados de tiza en el sur de Inglaterra. Partiendo desde Brighton, se extiende unos 20 km a pie. Un largo viaje caminando combinando vistas de acantilados con contemplación.",
+      "fr": "Un sentier de randonnée côtier de falaises de craie dans le sud de l'Angleterre. Départ de Brighton, avec environ 20 km à pied. Un long voyage de marche combinant la contemplation des falaises et la réflexion.",
+      "de": "Ein Kreideküsten-Wanderweg im Süden Englands. Startend in Brighton, erstreckt er sich etwa 20 km zu Fuß. Eine lange Wanderung, die Kliffbeschauung mit Kontemplation vereint.",
+      "vi": "Tuyến đường đi bộ ven biển vách đá phấn ở miền Nam nước Anh. Xuất phát từ Brighton, kéo dài khoảng 20 km đi bộ. Hành trình đi bộ dài kết hợp ngắm vách đá và suy ngẫm."
+    },
     "photos": [],
     "ratings": {
       "wifi": 1,
@@ -1006,7 +1529,1138 @@
       "브라이튼근교"
     ],
     "links": [],
+    "channels": []
+  },
+  {
+    "id": "강남-벨지움재즈카페",
+    "name": "벨지움재즈카페",
+    "category": "cafe",
+    "status": "good",
+    "lat": 37.5087971080832,
+    "lng": 127.057639945478,
+    "address": "서울특별시 강남구 테헤란로83길 20",
+    "description": "강남 테헤란로 지하 재즈카페. 행사/네트워킹에 좋은 분위기.",
+    "description_i18n": {
+      "ko": "강남 테헤란로 지하 재즈카페. 행사/네트워킹에 좋은 분위기.",
+      "en": "A basement jazz café on Teheran-ro, Gangnam. A great atmosphere for events and networking.",
+      "ja": "江南テヘランロー地下のジャズカフェ。イベント・ネットワーキングに良い雰囲気。",
+      "zh": "江南德黑兰路地下室的爵士咖啡厅。适合举办活动和社交的好氛围。",
+      "es": "Un café de jazz en el sótano de Teheran-ro, Gangnam. Un gran ambiente para eventos y networking.",
+      "fr": "Un café jazz en sous-sol sur Teheran-ro, Gangnam. Une excellente atmosphère pour les événements et le réseautage.",
+      "de": "Ein Keller-Jazz-Café an der Teheran-ro, Gangnam. Eine großartige Atmosphäre für Events und Networking.",
+      "vi": "Quán cà phê nhạc jazz tầng hầm trên đường Teheran-ro, Gangnam. Không khí tuyệt vời cho các sự kiện và kết nối."
+    },
+    "photos": [],
+    "ratings": {
+      "wifi": 3,
+      "power": 3,
+      "seating": 3,
+      "quiet": 3,
+      "longStay": 2
+    },
+    "tags": [
+      "재즈카페",
+      "강남",
+      "네트워킹",
+      "지하카페"
+    ],
+    "links": [],
     "channels": [],
-    "visit": null
+    "comment": {
+      "date": "2026-05-29",
+      "duration": null,
+      "note": null,
+      "note_i18n": {
+        "ko": null,
+        "en": null,
+        "ja": null,
+        "zh": null,
+        "es": null,
+        "fr": null,
+        "de": null,
+        "vi": null
+      }
+    }
+  },
+  {
+    "id": "담양-새연리조트",
+    "name": "담양힐링파크 새연리조트",
+    "category": "accommodation",
+    "status": "good",
+    "lat": 35.2714404786854,
+    "lng": 126.960942207019,
+    "address": "전라남도 담양군 봉산면 탄금길 9-26",
+    "description": "담양 봉산면 글램핑·카라반 리조트. 카라반에 피아노 구비, 커플 리트릿에 좋음.",
+    "description_i18n": {
+      "ko": "담양 봉산면 글램핑·카라반 리조트. 카라반에 피아노 구비, 커플 리트릿에 좋음.",
+      "en": "A glamping and caravan resort in Bongsan-myeon, Damyang. Caravans come equipped with a piano — a lovely couples' retreat.",
+      "ja": "潭陽郡鳳山面のグランピング・キャラバンリゾート。キャラバンにピアノ完備、カップルリトリートに良い。",
+      "zh": "潭阳郡凤山面的豪华露营、房车度假村。房车配备钢琴，非常适合情侣度假。",
+      "es": "Un resort de glamping y caravana en Bongsan-myeon, Damyang. Las caravanas vienen equipadas con un piano — un encantador retiro para parejas.",
+      "fr": "Un resort de glamping et caravane à Bongsan-myeon, Damyang. Les caravanes sont équipées d'un piano — une belle retraite pour couples.",
+      "de": "Ein Glamping- und Wohnwagen-Resort in Bongsan-myeon, Damyang. Wohnwagen sind mit einem Klavier ausgestattet — ein schöner Paarrückzugsort.",
+      "vi": "Khu nghỉ glamping và caravan ở Bongsan-myeon, Damyang. Caravan được trang bị đàn piano — khu nghỉ dưỡng tuyệt vời cho các cặp đôi."
+    },
+    "photos": [],
+    "ratings": {
+      "wifi": 2,
+      "power": 3,
+      "seating": 2,
+      "quiet": 5,
+      "longStay": 4
+    },
+    "tags": [
+      "글램핑",
+      "담양",
+      "카라반",
+      "커플"
+    ],
+    "links": [
+      {
+        "label": "네이버",
+        "url": "https://naver.me/xtgU4IxN"
+      }
+    ],
+    "channels": [],
+    "comment": {
+      "date": "2026-02-13",
+      "duration": "1박",
+      "note": null,
+      "note_i18n": {
+        "ko": null,
+        "en": null,
+        "ja": null,
+        "zh": null,
+        "es": null,
+        "fr": null,
+        "de": null,
+        "vi": null
+      }
+    }
+  },
+  {
+    "id": "마포-글래드호텔",
+    "name": "글래드 마포",
+    "category": "accommodation",
+    "status": "good",
+    "lat": 37.5429309787932,
+    "lng": 126.951246054763,
+    "address": "서울특별시 마포구 마포대로 92",
+    "description": "마포 위치 호텔. 연남·홍대 권역 접근 편리.",
+    "description_i18n": {
+      "ko": "마포 위치 호텔. 연남·홍대 권역 접근 편리.",
+      "en": "A hotel in Mapo. Conveniently close to Yeonnam and Hongdae.",
+      "ja": "麻浦位置のホテル。延南・弘大エリアへのアクセスが便利。",
+      "zh": "位于麻浦的酒店。方便前往延南和弘大地区。",
+      "es": "Un hotel en Mapo. Convenientemente cercano a Yeonnam y Hongdae.",
+      "fr": "Un hôtel à Mapo. Commodément proche de Yeonnam et Hongdae.",
+      "de": "Ein Hotel in Mapo. Bequem nahe an Yeonnam und Hongdae.",
+      "vi": "Khách sạn ở Mapo. Thuận tiện gần khu vực Yeonnam và Hongdae."
+    },
+    "photos": [],
+    "ratings": {
+      "wifi": 3,
+      "power": 3,
+      "seating": 2,
+      "quiet": 4,
+      "longStay": 3
+    },
+    "tags": [
+      "호텔",
+      "마포",
+      "홍대",
+      "연남"
+    ],
+    "links": [],
+    "channels": [],
+    "comment": {
+      "date": "2023-12-07",
+      "duration": "2박",
+      "note": null,
+      "note_i18n": {
+        "ko": null,
+        "en": null,
+        "ja": null,
+        "zh": null,
+        "es": null,
+        "fr": null,
+        "de": null,
+        "vi": null
+      }
+    }
+  },
+  {
+    "id": "천안-온화무인호텔",
+    "name": "온화 (천안 감성무인호텔)",
+    "category": "accommodation",
+    "status": "good",
+    "lat": 36.812430926963,
+    "lng": 127.139948776355,
+    "address": "충청남도 천안시 서북구 양지9길 14",
+    "description": "천안 서북구 감성 무인호텔. 파티룸·사우나 보유, 무인 입실.",
+    "description_i18n": {
+      "ko": "천안 서북구 감성 무인호텔. 파티룸·사우나 보유, 무인 입실.",
+      "en": "A self check-in aesthetic hotel in Seo-buk-gu, Cheonan. Features a party room and sauna with fully unmanned entry.",
+      "ja": "天安市西北区の感性無人ホテル。パーティールーム・サウナ完備、無人入室。",
+      "zh": "天安市西北区的感性无人酒店。配有派对室和桑拿，无人入住。",
+      "es": "Un hotel estético de auto check-in en Seo-buk-gu, Cheonan. Incluye sala de fiestas y sauna con entrada completamente sin personal.",
+      "fr": "Un hôtel esthétique à enregistrement automatique à Seo-buk-gu, Cheonan. Dispose d'une salle de fête et d'un sauna avec une entrée entièrement sans personnel.",
+      "de": "Ein ästhetisches Self-Check-in-Hotel in Seo-buk-gu, Cheonan. Mit Partyraum und Sauna sowie vollständig unbemanntem Eingang.",
+      "vi": "Khách sạn tự check-in phong cách ở Seo-buk-gu, Cheonan. Có phòng tiệc và phòng sauna với lối vào hoàn toàn không có nhân viên."
+    },
+    "photos": [],
+    "ratings": {
+      "wifi": 3,
+      "power": 3,
+      "seating": 2,
+      "quiet": 4,
+      "longStay": 4
+    },
+    "tags": [
+      "무인호텔",
+      "천안",
+      "감성숙소",
+      "사우나"
+    ],
+    "links": [],
+    "channels": [],
+    "comment": {
+      "date": "2024-06-22",
+      "duration": "1박",
+      "note": null,
+      "note_i18n": {
+        "ko": null,
+        "en": null,
+        "ja": null,
+        "zh": null,
+        "es": null,
+        "fr": null,
+        "de": null,
+        "vi": null
+      }
+    }
+  },
+  {
+    "id": "saint-dunstan-east-garden",
+    "name": "Saint Dunstan in the East Church Garden",
+    "category": "other",
+    "status": "good",
+    "lat": 51.5103,
+    "lng": -0.0843,
+    "address": "Saint Dunstan's Hill, City of London EC3R 5DD, United Kingdom",
+    "description": "런던 시티 한복판에 있는 중세 교회 폐허 정원. 담쟁이덩굴이 뒤덮인 오래된 돌벽 사이로 고요하고 시원한 분위기가 흐른다. 평일에도 방문객이 적어 작업 사이 무전원 휴식 공간으로 활용하기 좋다.",
+    "description_i18n": {
+      "ko": "런던 시티 한복판에 있는 중세 교회 폐허 정원. 담쟁이덩굴이 뒤덮인 오래된 돌벽 사이로 고요하고 시원한 분위기가 흐른다. 평일에도 방문객이 적어 작업 사이 무전원 휴식 공간으로 활용하기 좋다.",
+      "en": "A ruined medieval church garden in the heart of the City of London. Old stone walls draped in ivy create a cool, quiet atmosphere. Foot traffic stays low even on weekdays, making it a great unplugged reset between work sessions.",
+      "ja": "ロンドン・シティの中心にある中世の教会廃墟の庭園。蔦が絡まる古い石壁の間に静寂で涼やかな雰囲気が漂う。平日も訪問者が少なく、作業の合間に電源不要の休憩スペースとして活用できる。",
+      "zh": "伦敦金融城中心的中世纪教堂废墟花园。常青藤覆盖的古老石墙间弥漫着宁静清凉的氛围。即使在工作日访客也很少，是工作间隙无需电源的理想休息场所。",
+      "es": "Un jardín de ruinas de iglesia medieval en el corazón de la City de Londres. Las antiguas paredes de piedra cubiertas de hiedra crean un ambiente fresco y tranquilo. El tránsito de personas es escaso incluso los días laborables, ideal para un descanso desconectado entre sesiones de trabajo.",
+      "fr": "Un jardin de ruines d'église médiévale au cœur de la City de Londres. Les vieux murs de pierre couverts de lierre créent une atmosphère fraîche et tranquille. La fréquentation reste faible même en semaine, ce qui en fait un excellent espace de pause déconnectée entre les sessions de travail.",
+      "de": "Ein mittelalterlicher Kirchenruinen-Garten im Herzen der City of London. Alte, efeubedeckte Steinmauern schaffen eine kühle, ruhige Atmosphäre. Der Besucherandrang ist selbst wochentags gering — ideal für eine stromlose Auszeit zwischen Arbeitssessions.",
+      "vi": "Khu vườn trong tàn tích nhà thờ trung cổ giữa lòng City of London. Những bức tường đá cũ phủ đầy thường xuân tạo nên bầu không khí mát mẻ, yên tĩnh. Ngay cả ngày thường cũng ít người qua lại, rất phù hợp để nghỉ ngơi không cần điện giữa các phiên làm việc."
+    },
+    "photos": [],
+    "ratings": {
+      "wifi": 1,
+      "power": 1,
+      "seating": 3,
+      "quiet": 5,
+      "longStay": 1
+    },
+    "tags": [
+      "garden",
+      "quiet",
+      "free",
+      "reading",
+      "historic",
+      "city-of-london",
+      "outdoor"
+    ],
+    "links": [],
+    "channels": [],
+    "comment": {
+      "date": "2025-10",
+      "note": "조용하고 시원하며 상쾌한 곳으로 기록됨 — 독서에 최적.",
+      "note_i18n": {
+        "ko": "조용하고 시원하며 상쾌한 곳으로 기록됨 — 독서에 최적.",
+        "en": "Noted as quiet, cool, and refreshing — ideal for reading.",
+        "ja": "静かで涼しく爽快な場所として記録されている — 読書に最適。",
+        "zh": "记录为安静、凉爽且清新 — 非常适合阅读。",
+        "es": "Descrito como tranquilo, fresco y refrescante — ideal para leer.",
+        "fr": "Noté comme calme, frais et vivifiant — idéal pour lire.",
+        "de": "Als ruhig, kühl und erfrischend vermerkt — ideal zum Lesen.",
+        "vi": "Được ghi chú là yên tĩnh, mát mẻ và sảng khoái — lý tưởng để đọc sách."
+      }
+    }
+  },
+  {
+    "id": "british-library-london",
+    "name": "British Library",
+    "category": "other",
+    "status": "recommended",
+    "lat": 51.5297,
+    "lng": -0.1277,
+    "address": "96 Euston Rd, London NW1 2DB, United Kingdom",
+    "description": "세계적인 연구 도서관. 일반 열람실은 무료 개방이며, 고속 와이파이와 콘센트, 카페까지 갖춰 런던에서 하루 종일 집중 작업하기에 이상적인 베이스다. 전용 열람실은 리더스 패스(사전 온라인 신청)가 필요하다.",
+    "description_i18n": {
+      "ko": "세계적인 연구 도서관. 일반 열람실은 무료 개방이며, 고속 와이파이와 콘센트, 카페까지 갖춰 런던에서 하루 종일 집중 작업하기에 이상적인 베이스다. 전용 열람실은 리더스 패스(사전 온라인 신청)가 필요하다.",
+      "en": "One of the world's great research libraries. General reading rooms are free and open; the dedicated Reading Room requires a Reader Pass applied for online in advance. Fast wifi, good power access, and an on-site cafe make this an ideal deep-work base in London.",
+      "ja": "世界有数の研究図書館。一般閲覧室は無料で開放されており、専用リーディングルームには事前にオンライン申請したリーダーズパスが必要。高速Wi-Fi、電源、カフェも完備されており、ロンドンでの集中作業に最適なベースとなる。",
+      "zh": "世界顶级研究图书馆之一。普通阅览室免费开放，专属阅览室需提前在线申请读者证。快速Wi-Fi、充足电源和馆内咖啡厅，使其成为伦敦集中深度工作的理想基地。",
+      "es": "Una de las grandes bibliotecas de investigación del mundo. Las salas de lectura generales son de acceso libre; la sala de lectura especializada requiere un Pase de Lector solicitado online con antelación. Wi-Fi rápido, buena disponibilidad de enchufes y una cafetería en el recinto la convierten en una base ideal para el trabajo profundo en Londres.",
+      "fr": "L'une des grandes bibliothèques de recherche du monde. Les salles de lecture générales sont en accès libre ; la salle de lecture dédiée nécessite un Reader Pass demandé en ligne à l'avance. Wi-Fi rapide, prises disponibles et café sur place en font une base idéale pour un travail de concentration à Londres.",
+      "de": "Eine der bedeutendsten Forschungsbibliotheken der Welt. Die allgemeinen Lesesäle sind frei zugänglich; der spezielle Lesesaal erfordert einen im Voraus online beantragten Reader Pass. Schnelles WLAN, gute Steckdosenverfügbarkeit und ein Café vor Ort machen sie zur idealen Basis für konzentriertes Arbeiten in London.",
+      "vi": "Một trong những thư viện nghiên cứu lớn nhất thế giới. Phòng đọc chung được mở cửa miễn phí; Phòng đọc chuyên dụng yêu cầu Thẻ Đọc giả đăng ký trực tuyến trước. Wi-Fi tốc độ cao, nhiều ổ cắm điện và quán cà phê trong khuôn viên khiến đây là căn cứ lý tưởng để làm việc tập trung ở London."
+    },
+    "photos": [],
+    "ratings": {
+      "wifi": 4,
+      "power": 4,
+      "seating": 4,
+      "quiet": 5,
+      "longStay": 4
+    },
+    "tags": [
+      "library",
+      "workspace",
+      "quiet",
+      "free",
+      "wifi",
+      "london",
+      "study"
+    ],
+    "links": [
+      {
+        "label": "Official site",
+        "url": "https://www.bl.uk/"
+      }
+    ],
+    "channels": [],
+    "comment": {
+      "date": "2025-10",
+      "note": "열람실 이용 시 리더스 패스 필요 — 사전에 온라인으로 신청할 것.",
+      "note_i18n": {
+        "ko": "열람실 이용 시 리더스 패스 필요 — 사전에 온라인으로 신청할 것.",
+        "en": "Reader Pass required for the Reading Room — apply online in advance.",
+        "ja": "リーディングルーム利用にはリーダーズパスが必要 — 事前にオンラインで申請すること。",
+        "zh": "阅览室使用需要读者证 — 请提前在线申请。",
+        "es": "Se requiere Pase de Lector para la sala de lectura — solicitarlo online con antelación.",
+        "fr": "Reader Pass requis pour la salle de lecture — à demander en ligne à l'avance.",
+        "de": "Reader Pass für den Lesesaal erforderlich — im Voraus online beantragen.",
+        "vi": "Cần Thẻ Đọc giả để vào phòng đọc — đăng ký trực tuyến trước."
+      }
+    }
+  },
+  {
+    "id": "tate-modern-london",
+    "name": "Tate Modern",
+    "category": "other",
+    "status": "good",
+    "lat": 51.5074,
+    "lng": -0.0993,
+    "address": "Bankside, London SE1 9TG, United Kingdom",
+    "description": "사우스 뱅크에 위치한 세계적인 현대미술관. 상설 컬렉션은 무료이며, 밀레니엄 브릿지를 건너 시티에서 접근하기 좋다. 야경이 특히 아름답고, 리버사이드 테라스에서의 휴식도 훌륭하다.",
+    "description_i18n": {
+      "ko": "사우스 뱅크에 위치한 세계적인 현대미술관. 상설 컬렉션은 무료이며, 밀레니엄 브릿지를 건너 시티에서 접근하기 좋다. 야경이 특히 아름답고, 리버사이드 테라스에서의 휴식도 훌륭하다.",
+      "en": "A major modern-art museum on the South Bank. The permanent collection is free; special exhibitions are ticketed. Easily reached by crossing Millennium Bridge from the City. The riverside terrace offers a pleasant break, and the evening views are especially impressive.",
+      "ja": "サウス・バンクに位置する世界的な現代美術館。常設コレクションは無料で、シティからミレニアムブリッジを渡って行きやすい。夜景が特に美しく、リバーサイドテラスでの休憩も素晴らしい。",
+      "zh": "位于南岸的世界级现代艺术博物馆。常设展览免费参观，从金融城穿过千禧桥即可到达。夜景尤为迷人，河滨露台也是绝佳的休息场所。",
+      "es": "Un importante museo de arte moderno en la orilla sur del Támesis. La colección permanente es gratuita; las exposiciones especiales tienen entrada. Fácil acceso cruzando el Millennium Bridge desde la City. La terraza junto al río ofrece un descanso agradable y las vistas nocturnas son especialmente impresionantes.",
+      "fr": "Un grand musée d'art moderne sur la rive sud de la Tamise. La collection permanente est gratuite ; les expositions spéciales sont payantes. Facilement accessible depuis la City en traversant le Millennium Bridge. La terrasse au bord de l'eau offre une agréable pause, et les vues nocturnes sont particulièrement impressionnantes.",
+      "de": "Ein bedeutendes Museum für moderne Kunst am Südufer der Themse. Die Dauerausstellung ist kostenlos; Sonderausstellungen sind kostenpflichtig. Bequem über die Millennium Bridge von der City zu erreichen. Die Flussterrasse bietet eine angenehme Pause, und die abendliche Aussicht ist besonders beeindruckend.",
+      "vi": "Bảo tàng nghệ thuật hiện đại hàng đầu thế giới ở South Bank. Bộ sưu tập thường trực miễn phí; các triển lãm đặc biệt có vé. Dễ dàng tiếp cận từ City qua cầu Millennium. Sân thượng ven sông là nơi nghỉ ngơi thú vị, và cảnh đêm đặc biệt ấn tượng."
+    },
+    "photos": [],
+    "ratings": {
+      "wifi": 2,
+      "power": 1,
+      "seating": 2,
+      "quiet": 2,
+      "longStay": 1
+    },
+    "tags": [
+      "museum",
+      "art",
+      "free",
+      "south-bank",
+      "evening",
+      "london"
+    ],
+    "links": [
+      {
+        "label": "Official site",
+        "url": "https://www.tate.org.uk/visit/tate-modern"
+      }
+    ],
+    "channels": [],
+    "comment": {
+      "date": "2025-10",
+      "note": "야경이 아름다운 곳으로 기록됨.",
+      "note_i18n": {
+        "ko": "야경이 아름다운 곳으로 기록됨.",
+        "en": "Noted as beautiful at night.",
+        "ja": "夜に美しいと記録されている。",
+        "zh": "记录为夜晚景色迷人。",
+        "es": "Descrito como hermoso por la noche.",
+        "fr": "Noté comme magnifique la nuit.",
+        "de": "Als abends besonders schön vermerkt.",
+        "vi": "Được ghi chú là đẹp vào buổi tối."
+      }
+    }
+  },
+  {
+    "id": "all-hallows-church-city-london",
+    "name": "All Hallows by the Tower",
+    "category": "other",
+    "status": "good",
+    "lat": 51.5094,
+    "lng": -0.0793,
+    "address": "Byward St, London EC3R 5BJ, United Kingdom",
+    "description": "런던 타워 바로 옆에 위치한 런던에서 가장 오래된 교회. 조용한 내부와 작은 안뜰이 관광 사이 잠시 쉬어가기 좋다. 성경 구절을 기록하며 묵상할 수 있는 도심 속 사색의 공간이다.",
+    "description_i18n": {
+      "ko": "런던 타워 바로 옆에 위치한 런던에서 가장 오래된 교회. 조용한 내부와 작은 안뜰이 관광 사이 잠시 쉬어가기 좋다. 성경 구절을 기록하며 묵상할 수 있는 도심 속 사색의 공간이다.",
+      "en": "London's oldest church, right next to the Tower of London. The quiet interior and small courtyard offer a short pause between sightseeing. A contemplative space in the city where one can sit quietly with scripture.",
+      "ja": "ロンドン塔のすぐ隣に位置するロンドン最古の教会。静かな内部と小さな中庭が観光の合間の小休憩にちょうどよい。聖書の言葉を書き留めながら黙想できる都心の瞑想スペース。",
+      "zh": "紧邻伦敦塔的伦敦最古老的教堂。宁静的内部和小庭院非常适合在观光之间短暂歇息。是在城市中可以静坐冥思、记录经文的空间。",
+      "es": "La iglesia más antigua de Londres, justo junto a la Torre de Londres. El interior tranquilo y el pequeño patio ofrecen un breve descanso entre visitas turísticas. Un espacio contemplativo en plena ciudad donde sentarse en silencio con las escrituras.",
+      "fr": "La plus ancienne église de Londres, juste à côté de la Tour de Londres. L'intérieur calme et la petite cour offrent une courte pause entre les visites touristiques. Un espace contemplatif en plein cœur de la ville pour s'asseoir tranquillement avec les écritures.",
+      "de": "Londons älteste Kirche, direkt neben dem Tower of London. Das ruhige Innere und der kleine Innenhof bieten eine kurze Pause zwischen den Sehenswürdigkeiten. Ein kontemplativer Raum in der Stadt, in dem man still mit den Schriften sitzen kann.",
+      "vi": "Nhà thờ cổ nhất London, ngay cạnh Tháp London. Nội thất yên tĩnh và sân nhỏ là nơi nghỉ ngơi ngắn ngủi giữa các điểm tham quan. Không gian chiêm nghiệm giữa lòng thành phố để ngồi yên lặng suy ngẫm."
+    },
+    "photos": [],
+    "ratings": {
+      "wifi": 1,
+      "power": 1,
+      "seating": 2,
+      "quiet": 4,
+      "longStay": 1
+    },
+    "tags": [
+      "church",
+      "historic",
+      "quiet",
+      "free",
+      "city-of-london",
+      "tower-area"
+    ],
+    "links": [],
+    "channels": [],
+    "comment": {
+      "date": "2024-06",
+      "note": "런던 타워 인근에서 조용한 묵상을 위해 방문.",
+      "note_i18n": {
+        "ko": "런던 타워 인근에서 조용한 묵상을 위해 방문.",
+        "en": "Visited near the Tower of London for quiet contemplation.",
+        "ja": "ロンドン塔近くで静かな黙想のために訪れた。",
+        "zh": "在伦敦塔附近探访，寻找安静的冥思之所。",
+        "es": "Visitada cerca de la Torre de Londres para una contemplación tranquila.",
+        "fr": "Visité près de la Tour de Londres pour une contemplation tranquille.",
+        "de": "In der Nähe des Tower of London für stille Besinnung besucht.",
+        "vi": "Ghé thăm gần Tháp London để tĩnh tâm chiêm ngẫm."
+      }
+    }
+  },
+  {
+    "id": "waylett-house-airbnb-london",
+    "name": "Waylett House Airbnb (Loughborough St)",
+    "category": "accommodation",
+    "status": "good",
+    "lat": 51.4875,
+    "lng": -0.1152,
+    "address": "Loughborough Street Flat 12 (3rd Floor), London SE11 5PZ, United Kingdom",
+    "description": "런던 SE11 래프버러 정션 지역의 자취형 아파트. 강 남쪽의 조용한 주거지역으로 도심까지 지하철 15분 거리다. 중심부 대비 가성비가 좋고, 독립 카페와 버스 연결도 편리하다.",
+    "description_i18n": {
+      "ko": "런던 SE11 래프버러 정션 지역의 자취형 아파트. 강 남쪽의 조용한 주거지역으로 도심까지 지하철 15분 거리다. 중심부 대비 가성비가 좋고, 독립 카페와 버스 연결도 편리하다.",
+      "en": "A self-catering flat in Loughborough Junction, SE11 — a quiet residential pocket south of the river. About 15 minutes by tube to the City. Good value compared to central accommodation, with independent cafes and easy bus connections nearby.",
+      "ja": "ロンドンSE11ラフバラ・ジャンクションにある自炊型アパート。テムズ川南側の静かな住宅地で、シティまで地下鉄15分。中心部に比べてコストパフォーマンスが良く、独立系カフェやバスの便も整っている。",
+      "zh": "位于伦敦SE11拉夫伯勒桥口的自助公寓。泰晤士河南岸安静的住宅区，地铁到金融城约15分钟。与市中心住宿相比性价比高，附近有独立咖啡馆和便捷的公交连接。",
+      "es": "Un apartamento de autoservicio en Loughborough Junction, SE11 — un tranquilo barrio residencial al sur del río. A unos 15 minutos en metro del City. Buena relación calidad-precio en comparación con el alojamiento céntrico, con cafés independientes y buenas conexiones de autobús.",
+      "fr": "Un appartement en libre-service à Loughborough Junction, SE11 — un quartier résidentiel tranquille au sud du fleuve. À environ 15 minutes en métro du City. Bon rapport qualité-prix par rapport à l'hébergement central, avec des cafés indépendants et des connexions bus pratiques.",
+      "de": "Eine Selbstversorger-Wohnung in Loughborough Junction, SE11 — ein ruhiges Wohnviertel südlich der Themse. Etwa 15 Minuten mit der U-Bahn in die City. Gutes Preis-Leistungs-Verhältnis im Vergleich zu zentralen Unterkünften, mit unabhängigen Cafés und guten Busverbindungen.",
+      "vi": "Căn hộ tự túc ở Loughborough Junction, SE11 — khu dân cư yên tĩnh phía nam sông. Khoảng 15 phút tàu điện ngầm đến City. Giá trị tốt so với chỗ ở trung tâm, với các quán cà phê độc lập và kết nối xe buýt thuận tiện."
+    },
+    "photos": [],
+    "ratings": {
+      "wifi": 3,
+      "power": 3,
+      "seating": 2,
+      "quiet": 4,
+      "longStay": 3
+    },
+    "tags": [
+      "airbnb",
+      "self-catering",
+      "south-london",
+      "se11",
+      "budget"
+    ],
+    "links": [],
+    "channels": [],
+    "comment": {
+      "date": "2025-10",
+      "note": "셰필드에서 런던으로 올라온 2박 여행의 거점으로 활용.",
+      "note_i18n": {
+        "ko": "셰필드에서 런던으로 올라온 2박 여행의 거점으로 활용.",
+        "en": "Used as a base for a 2-night London visit from Sheffield.",
+        "ja": "シェフィールドからのロンドン2泊旅行の拠点として利用。",
+        "zh": "用作从谢菲尔德出发的伦敦两晚旅行的基地。",
+        "es": "Utilizado como base para una visita de 2 noches a Londres desde Sheffield.",
+        "fr": "Utilisé comme base pour une visite de 2 nuits à Londres depuis Sheffield.",
+        "de": "Als Basis für einen 2-Nacht-Besuch in London von Sheffield aus genutzt.",
+        "vi": "Được dùng làm căn cứ cho chuyến thăm London 2 đêm từ Sheffield."
+      }
+    }
+  },
+  {
+    "id": "brighton-airbnb-base",
+    "name": "Brighton (Airbnb base)",
+    "category": "accommodation",
+    "status": "good",
+    "lat": 50.8225,
+    "lng": -0.1372,
+    "address": "Brighton, East Sussex, United Kingdom",
+    "description": "브라이튼 에어비앤비 숙박. Seven Sisters 해안 하이킹을 위한 베이스캠프로 활용했다. 런던까지 기차 약 55분으로 저렴한 런던 대안 숙소가 가능하다. 노스 레인 지역엔 독립 카페와 코워킹 옵션도 있다.",
+    "description_i18n": {
+      "ko": "브라이튼 에어비앤비 숙박. Seven Sisters 해안 하이킹을 위한 베이스캠프로 활용했다. 런던까지 기차 약 55분으로 저렴한 런던 대안 숙소가 가능하다. 노스 레인 지역엔 독립 카페와 코워킹 옵션도 있다.",
+      "en": "An Airbnb base in Brighton, used as a staging point for the Seven Sisters coastal hike. The train to London takes about 55 minutes, making it a viable cheaper overnight alternative to London. The North Laine area has independent cafes and coworking options.",
+      "ja": "ブライトンのエアビーアンドビー宿泊。セブン・シスターズ沿岸ハイキングのベースキャンプとして活用した。ロンドンまで電車約55分で、ロンドンより安価な宿泊の代替として使える。ノース・レイン地区には独立系カフェやコワーキングオプションもある。",
+      "zh": "布莱顿的Airbnb住宿，用作七姐妹海岸徒步的大本营。乘火车到伦敦约55分钟，可作为伦敦的低价住宿替代方案。北莱恩区有独立咖啡馆和共享办公选择。",
+      "es": "Una base de Airbnb en Brighton, utilizada como punto de partida para la excursión por la costa de las Siete Hermanas. El tren a Londres tarda unos 55 minutos, lo que lo convierte en una alternativa más económica para pasar la noche. La zona de North Laine tiene cafés independientes y opciones de coworking.",
+      "fr": "Une base Airbnb à Brighton, utilisée comme point de départ pour la randonnée côtière des Seven Sisters. Le train pour Londres prend environ 55 minutes, ce qui en fait une alternative nocturne moins chère à Londres. Le quartier North Laine dispose de cafés indépendants et d'options de coworking.",
+      "de": "Eine Airbnb-Basis in Brighton, genutzt als Ausgangspunkt für die Seven Sisters Küstenwanderung. Der Zug nach London dauert etwa 55 Minuten, was es zu einer günstigeren Übernachtungsalternative macht. Im Viertel North Laine gibt es unabhängige Cafés und Coworking-Optionen.",
+      "vi": "Căn cứ Airbnb ở Brighton, dùng làm điểm khởi hành cho chuyến đi bộ ven biển Seven Sisters. Tàu đến London khoảng 55 phút, có thể là lựa chọn lưu trú đêm rẻ hơn London. Khu North Laine có các quán cà phê độc lập và không gian làm việc chung."
+    },
+    "photos": [],
+    "ratings": {
+      "wifi": 3,
+      "power": 3,
+      "seating": 2,
+      "quiet": 3,
+      "longStay": 3
+    },
+    "tags": [
+      "airbnb",
+      "budget",
+      "seaside",
+      "brighton",
+      "south-coast",
+      "base-camp"
+    ],
+    "links": [],
+    "channels": [],
+    "comment": {
+      "date": "2025-10",
+      "note": "Seven Sisters 하이킹 거점으로 숙박. 약 59,000원/박.",
+      "note_i18n": {
+        "ko": "Seven Sisters 하이킹 거점으로 숙박. 약 59,000원/박.",
+        "en": "Stayed here as a base for the Seven Sisters hike; approx 59,000 KRW per night.",
+        "ja": "セブン・シスターズハイキングの拠点として宿泊。1泊約59,000ウォン。",
+        "zh": "在此住宿作为七姐妹徒步的基地；每晚约59,000韩元。",
+        "es": "Pernoctado aquí como base para la excursión a las Siete Hermanas; aprox. 59.000 KRW por noche.",
+        "fr": "Séjour ici comme base pour la randonnée des Seven Sisters ; environ 59 000 KRW par nuit.",
+        "de": "Hier übernachtet als Basis für die Seven Sisters Wanderung; ca. 59.000 KRW pro Nacht.",
+        "vi": "Lưu trú ở đây làm căn cứ cho chuyến đi bộ Seven Sisters; khoảng 59.000 KRW mỗi đêm."
+      }
+    }
+  },
+  {
+    "id": "seven-sisters-cliffs",
+    "name": "Seven Sisters Chalk Cliffs",
+    "category": "recovery",
+    "status": "recommended",
+    "lat": 50.7649,
+    "lng": 0.1638,
+    "address": "Seven Sisters Country Park, Seaford, East Sussex BN25, United Kingdom",
+    "description": "이스트 서섹스 해안의 백악 절벽 하이킹 코스. 브라이튼에서 출발해 약 20km를 걷는다. 드넓은 절벽과 탁 트인 하늘이 깊은 회복감을 준다. 신호가 끊기는 구간이 있어 완전한 단절을 경험할 수 있다.",
+    "description_i18n": {
+      "ko": "이스트 서섹스 해안의 백악 절벽 하이킹 코스. 브라이튼에서 출발해 약 20km를 걷는다. 드넓은 절벽과 탁 트인 하늘이 깊은 회복감을 준다. 신호가 끊기는 구간이 있어 완전한 단절을 경험할 수 있다.",
+      "en": "A dramatic chalk sea-cliff hiking trail on the East Sussex coast. Starting from Brighton, the route covers around 20 km. The vast cliffs and open sky are deeply restorative. Some stretches have no phone signal, guaranteeing genuine disconnection.",
+      "ja": "イースト・サセックス海岸の白亜の海崖ハイキングコース。ブライトンから出発し約20kmのルート。広大な断崖と開けた空が深い回復をもたらす。電波が届かないエリアもあり、本当の切断を体験できる。",
+      "zh": "东萨塞克斯海岸的白垩海崖徒步路线。从布莱顿出发，全程约20公里。宽阔的悬崖和辽阔的天空带来深深的恢复感。部分路段没有手机信号，可以体验真正的断线。",
+      "es": "Un dramático sendero de senderismo por los acantilados de tiza de la costa de East Sussex. Partiendo desde Brighton, el recorrido abarca unos 20 km. Los vastos acantilados y el cielo abierto resultan profundamente restauradores. Algunos tramos carecen de señal de móvil, lo que garantiza una desconexión genuina.",
+      "fr": "Un sentier de randonnée spectaculaire le long des falaises de craie de la côte d'East Sussex. Au départ de Brighton, le parcours couvre environ 20 km. Les immenses falaises et le ciel ouvert procurent un profond sentiment de ressourcement. Certains tronçons sont sans réseau mobile, garantissant une vraie déconnexion.",
+      "de": "Ein dramatischer Kreideklippen-Wanderweg an der Küste von East Sussex. Ab Brighton umfasst die Route rund 20 km. Die weiten Klippen und der offene Himmel wirken zutiefst erholsam. Einige Abschnitte haben kein Handysignal — echte Abgeschiedenheit garantiert.",
+      "vi": "Tuyến đường đi bộ vách đá phấn ấn tượng dọc bờ biển East Sussex. Xuất phát từ Brighton, tuyến đường khoảng 20 km. Những vách đá rộng lớn và bầu trời mở mang lại cảm giác phục hồi sâu sắc. Một số đoạn không có tín hiệu điện thoại, đảm bảo sự ngắt kết nối thực sự."
+    },
+    "photos": [],
+    "ratings": {
+      "wifi": 1,
+      "power": 1,
+      "seating": 1,
+      "quiet": 5,
+      "longStay": 1
+    },
+    "tags": [
+      "hiking",
+      "nature",
+      "cliffs",
+      "coastal",
+      "recovery",
+      "south-coast",
+      "uk"
+    ],
+    "links": [],
+    "channels": [],
+    "comment": {
+      "date": "2025-10",
+      "note": "브라이튼에서 걸어서 이동. 감동적이고 회복감이 깊다고 기록됨.",
+      "note_i18n": {
+        "ko": "브라이튼에서 걸어서 이동. 감동적이고 회복감이 깊다고 기록됨.",
+        "en": "Walked from Brighton; described as moving and deeply restorative.",
+        "ja": "ブライトンから徒歩でアクセス。感動的で深い回復をもたらすと記録されている。",
+        "zh": "从布莱顿步行前往。记录为令人感动且具有深度的恢复效果。",
+        "es": "Caminado desde Brighton; descrito como conmovedor y profundamente restaurador.",
+        "fr": "Parcouru à pied depuis Brighton ; décrit comme émouvant et profondément ressourçant.",
+        "de": "Von Brighton aus gelaufen; als bewegend und zutiefst erholsam beschrieben.",
+        "vi": "Đi bộ từ Brighton; được mô tả là xúc động và mang lại sự phục hồi sâu sắc."
+      }
+    }
+  },
+  {
+    "id": "flower-paris-guesthouse",
+    "name": "꽃보다 파리 (Flower Paris Korean Guesthouse)",
+    "category": "accommodation",
+    "status": "good",
+    "lat": 48.8456,
+    "lng": 2.3096,
+    "address": "Paris, 75015, France",
+    "description": "파리 15구에 위치한 한인 게스트하우스. 조식 포함 가성비 싱글룸을 운영한다. 한국어 소통이 가능하고, 여행·현지 팁을 얻기 좋은 분위기다. 관광지에서 조금 벗어난 주거지역이라 비교적 조용하다.",
+    "description_i18n": {
+      "ko": "파리 15구에 위치한 한인 게스트하우스. 조식 포함 가성비 싱글룸을 운영한다. 한국어 소통이 가능하고, 여행·현지 팁을 얻기 좋은 분위기다. 관광지에서 조금 벗어난 주거지역이라 비교적 조용하다.",
+      "en": "A Korean-run guesthouse in Paris's 15th arrondissement. Offers budget single rooms with breakfast included. Korean-speaking atmosphere makes it easy to pick up travel and local tips. The residential location is quieter than the main tourist districts.",
+      "ja": "パリ15区にある韓国人経営のゲストハウス。朝食付きのお得なシングルルームを提供。韓国語でのコミュニケーションが可能で、旅行や現地のヒントを得やすい雰囲気。観光地から少し離れた住宅街で比較的静か。",
+      "zh": "位于巴黎15区的韩国人经营的民宿。提供含早餐的经济型单人房。可以用韩语交流，是了解旅游和当地信息的好去处。远离主要旅游区的住宅区相对安静。",
+      "es": "Una casa de huéspedes de gestión coreana en el distrito 15 de París. Ofrece habitaciones individuales económicas con desayuno incluido. El ambiente de habla coreana facilita obtener consejos de viaje y locales. La ubicación residencial es más tranquila que los principales distritos turísticos.",
+      "fr": "Une maison d'hôtes tenue par des Coréens dans le 15e arrondissement de Paris. Propose des chambres simples économiques avec petit-déjeuner inclus. L'ambiance coréanophone permet d'obtenir facilement des conseils de voyage et locaux. L'emplacement résidentiel est plus calme que les principaux quartiers touristiques.",
+      "de": "Eine koreanisch geführte Pension im 15. Arrondissement von Paris. Bietet preisgünstige Einzelzimmer mit Frühstück. Die koreanischsprachige Atmosphäre macht es leicht, Reise- und Ortstipps zu erhalten. Die Wohnlage ist ruhiger als die touristischen Hauptviertel.",
+      "vi": "Nhà trọ do người Hàn Quốc điều hành tại quận 15 Paris. Cung cấp phòng đơn giá rẻ bao gồm bữa sáng. Có thể giao tiếp bằng tiếng Hàn, bầu không khí thoải mái để xin mẹo du lịch và địa phương. Vị trí trong khu dân cư yên tĩnh hơn các quận du lịch chính."
+    },
+    "photos": [],
+    "ratings": {
+      "wifi": 3,
+      "power": 2,
+      "seating": 2,
+      "quiet": 3,
+      "longStay": 3
+    },
+    "tags": [
+      "guesthouse",
+      "korean-run",
+      "budget",
+      "breakfast-included",
+      "paris",
+      "solo"
+    ],
+    "links": [
+      {
+        "label": "Official site",
+        "url": "https://www.flowerparis.net/"
+      }
+    ],
+    "channels": [],
+    "comment": {
+      "date": "2025-10",
+      "note": "조식 포함 약 85,000원/박. 여행·진로 조언을 들을 수 있는 분위기.",
+      "note_i18n": {
+        "ko": "조식 포함 약 85,000원/박. 여행·진로 조언을 들을 수 있는 분위기.",
+        "en": "Approx 85,000 KRW per night with breakfast. The atmosphere lends itself to receiving travel and career advice.",
+        "ja": "朝食付きで1泊約85,000ウォン。旅行や進路の相談をしやすい雰囲気。",
+        "zh": "含早餐每晚约85,000韩元。氛围适合交流旅行建议和职业规划。",
+        "es": "Aprox. 85.000 KRW por noche con desayuno. El ambiente invita a recibir consejos de viaje y orientación profesional.",
+        "fr": "Environ 85 000 KRW par nuit avec petit-déjeuner. L'ambiance se prête à recevoir des conseils de voyage et de carrière.",
+        "de": "Ca. 85.000 KRW pro Nacht mit Frühstück. Die Atmosphäre lädt dazu ein, Reise- und Karrieretipps zu erhalten.",
+        "vi": "Khoảng 85.000 KRW mỗi đêm bao gồm bữa sáng. Bầu không khí thích hợp để nhận lời khuyên về du lịch và nghề nghiệp."
+      }
+    }
+  },
+  {
+    "id": "montmartre-paris",
+    "name": "Montmartre",
+    "category": "other",
+    "status": "good",
+    "lat": 48.8855,
+    "lng": 2.3392,
+    "address": "Montmartre, 75018 Paris, France",
+    "description": "파리 북부 언덕 지구. 예술가들의 작업실과 사크레쾨르 대성당, 돌길 골목이 어우러진다. 평일 아침 바게트를 들고 걸으면 거리 음악가와 조용한 광장을 만날 수 있다. 작업 쉬는 날 오전 산책 코스로 제격이다.",
+    "description_i18n": {
+      "ko": "파리 북부 언덕 지구. 예술가들의 작업실과 사크레쾨르 대성당, 돌길 골목이 어우러진다. 평일 아침 바게트를 들고 걸으면 거리 음악가와 조용한 광장을 만날 수 있다. 작업 쉬는 날 오전 산책 코스로 제격이다.",
+      "en": "A historic hilltop district in northern Paris, home to artists' studios, the Sacré-Cœur Basilica, and cobblestone lanes. Weekday mornings with a fresh baguette bring street musicians and quiet squares. An ideal morning walk on a day off from work.",
+      "ja": "パリ北部の歴史ある丘の地区。芸術家のアトリエ、サクレ・クール聖堂、石畳の小路が調和する。平日の朝にバゲットを持って歩けば、ストリートミュージシャンや静かな広場に出会える。作業休みの日の朝散歩に最適。",
+      "zh": "巴黎北部历史悠久的山丘区。艺术家工作室、圣心大教堂和鹅卵石小巷交相辉映。平日早晨拿着新鲜法棍散步，可以遇到街头音乐家和安静的广场。非常适合工作间隙的早晨散步。",
+      "es": "Un histórico barrio en lo alto de una colina al norte de París, con estudios de artistas, la Basílica del Sacré-Cœur y callejuelas empedradas. Las mañanas de los días laborables con una baguette fresca acercan a músicos callejeros y plazas tranquilas. Un paseo matutino ideal en un día libre.",
+      "fr": "Un quartier historique perché sur une colline au nord de Paris, avec des ateliers d'artistes, la Basilique du Sacré-Cœur et des ruelles pavées. Les matins de semaine avec une baguette fraîche amènent des musiciens de rue et des places tranquilles. Une promenade matinale idéale le jour de congé.",
+      "de": "Ein historisches Hügelviertel im Norden von Paris, mit Künstlerateliers, der Basilika Sacré-Cœur und Kopfsteinpflastergassen. Wochentags morgens mit einem frischen Baguette begegnet man Straßenmusikern und ruhigen Plätzen. Ein idealer Morgenspaziergang an einem arbeitsfreien Tag.",
+      "vi": "Khu phố lịch sử trên đồi ở phía bắc Paris, nơi có xưởng vẽ của các nghệ sĩ, Vương cung Thánh đường Sacré-Cœur và những con hẻm lát đá. Buổi sáng ngày thường với ổ bánh mì baguette tươi, bạn sẽ gặp các nhạc sĩ đường phố và những quảng trường yên tĩnh. Cuộc đi dạo buổi sáng lý tưởng vào ngày nghỉ."
+    },
+    "photos": [],
+    "ratings": {
+      "wifi": 1,
+      "power": 1,
+      "seating": 2,
+      "quiet": 3,
+      "longStay": 1
+    },
+    "tags": [
+      "hill",
+      "historic",
+      "art",
+      "walking",
+      "paris",
+      "morning",
+      "scenic"
+    ],
+    "links": [],
+    "channels": [],
+    "comment": {
+      "date": "2025-10",
+      "note": "파리 2박 여행 중 방문. 바게트 들고 걷기 좋은 경치 있는 동네.",
+      "note_i18n": {
+        "ko": "파리 2박 여행 중 방문. 바게트 들고 걷기 좋은 경치 있는 동네.",
+        "en": "Visited during a 2-day Paris trip; a scenic neighbourhood good for a baguette walk.",
+        "ja": "パリ2泊旅行中に訪問。バゲットを持って歩くのに最適な景観あふれる街。",
+        "zh": "在巴黎两天旅行中游览。是拿着法棍散步的好去处，风景优美。",
+        "es": "Visitado durante un viaje de 2 días a París; un barrio pintoresco ideal para pasear con baguette.",
+        "fr": "Visité lors d'un voyage de 2 jours à Paris ; un quartier pittoresque idéal pour une promenade avec une baguette.",
+        "de": "Während eines 2-tägigen Parisaufenthalts besucht; ein malerisches Viertel, das sich hervorragend für einen Baguette-Spaziergang eignet.",
+        "vi": "Ghé thăm trong chuyến du lịch Paris 2 ngày; khu phố đẹp phong cảnh, tốt để đi dạo với baguette."
+      }
+    }
+  },
+  {
+    "id": "louvre-paris",
+    "name": "Musée du Louvre",
+    "category": "other",
+    "status": "good",
+    "lat": 48.8611,
+    "lng": 2.338,
+    "address": "Rue de Rivoli, 75001 Paris, France",
+    "description": "세계 최대 규모의 미술관. 모나리자 앞은 인파가 몰리지만, 이집트·메소포타미아 컬렉션은 상대적으로 여유롭다. 온라인 시간대 예약으로 긴 줄을 피할 수 있다.",
+    "description_i18n": {
+      "ko": "세계 최대 규모의 미술관. 모나리자 앞은 인파가 몰리지만, 이집트·메소포타미아 컬렉션은 상대적으로 여유롭다. 온라인 시간대 예약으로 긴 줄을 피할 수 있다.",
+      "en": "The world's largest art museum. The area around the Mona Lisa is packed, but the Egyptian and Mesopotamian collections are far less crowded. Book a timed ticket online to skip the long queues.",
+      "ja": "世界最大規模の美術館。モナ・リザ周辺は混雑しているが、エジプト・メソポタミアコレクションは比較的余裕がある。オンラインで時間指定チケットを予約すれば長い行列を避けられる。",
+      "zh": "世界上规模最大的艺术博物馆。蒙娜丽莎前人潮汹涌，但埃及和美索不达米亚藏品相对宽松。在线预订定时入场票可以避免长队。",
+      "es": "El museo de arte más grande del mundo. La zona de la Mona Lisa está llena de gente, pero las colecciones egipcia y mesopotámica tienen mucho menos gentío. Reserva una entrada de acceso cronometrado online para evitar las largas colas.",
+      "fr": "Le plus grand musée d'art du monde. La zone autour de la Joconde est très fréquentée, mais les collections égyptienne et mésopotamienne sont beaucoup moins bondées. Réservez un billet horodaté en ligne pour éviter les longues files d'attente.",
+      "de": "Das größte Kunstmuseum der Welt. Der Bereich um die Mona Lisa ist überfüllt, doch die ägyptischen und mesopotamischen Sammlungen sind weitaus ruhiger. Online ein zeitgebundenes Ticket buchen, um lange Warteschlangen zu umgehen.",
+      "vi": "Bảo tàng nghệ thuật lớn nhất thế giới. Khu vực quanh Mona Lisa đông người, nhưng các bộ sưu tập Ai Cập và Lưỡng Hà thì ít đông hơn nhiều. Đặt vé theo khung giờ trực tuyến để tránh xếp hàng dài."
+    },
+    "photos": [],
+    "ratings": {
+      "wifi": 2,
+      "power": 1,
+      "seating": 2,
+      "quiet": 2,
+      "longStay": 1
+    },
+    "tags": [
+      "museum",
+      "art",
+      "paris",
+      "iconic",
+      "timed-entry"
+    ],
+    "links": [
+      {
+        "label": "Official site",
+        "url": "https://www.louvre.fr/"
+      }
+    ],
+    "channels": [],
+    "comment": {
+      "date": "2025-10",
+      "note": "방문 완료. 모나리자 인파보다 고대 갤러리가 훨씬 여유롭다고 기록됨.",
+      "note_i18n": {
+        "ko": "방문 완료. 모나리자 인파보다 고대 갤러리가 훨씬 여유롭다고 기록됨.",
+        "en": "Visited; noted that the ancient galleries are far less crowded than the Mona Lisa area.",
+        "ja": "訪問済み。モナ・リザ周辺より古代ギャラリーの方がはるかに余裕があると記録されている。",
+        "zh": "已参观；记录为古代展廊比蒙娜丽莎区域宽松得多。",
+        "es": "Visitado; se señala que las galerías antiguas tienen mucho menos aglomeración que la zona de la Mona Lisa.",
+        "fr": "Visité ; les galeries antiques sont notées comme beaucoup moins fréquentées que la zone de la Joconde.",
+        "de": "Besucht; vermerkt, dass die antiken Galerien weit weniger überfüllt sind als der Mona-Lisa-Bereich.",
+        "vi": "Đã tham quan; ghi chú rằng các phòng trưng bày cổ đại ít đông người hơn nhiều so với khu vực Mona Lisa."
+      }
+    }
+  },
+  {
+    "id": "youth-hostel-interlaken",
+    "name": "Youth Hostel Interlaken",
+    "category": "accommodation",
+    "status": "good",
+    "lat": 46.6903,
+    "lng": 7.8676,
+    "address": "Interlaken, Canton of Berne, Switzerland",
+    "description": "스위스 인터라켄의 유스호스텔. 융프라우 지역 하이킹 거점으로 활용했다. 스위스는 물가가 높기 때문에 호스텔이 비용 절감에 크게 도움이 된다. 그린델발트-퍼스트 케이블카와 베르너 오버란트 주요 트레일로의 접근이 용이하다.",
+    "description_i18n": {
+      "ko": "스위스 인터라켄의 유스호스텔. 융프라우 지역 하이킹 거점으로 활용했다. 스위스는 물가가 높기 때문에 호스텔이 비용 절감에 크게 도움이 된다. 그린델발트-퍼스트 케이블카와 베르너 오버란트 주요 트레일로의 접근이 용이하다.",
+      "en": "Youth hostel in Interlaken used as a base for Jungfrau-region hiking. Switzerland is expensive, so the hostel meaningfully cuts costs. Convenient access to the Grindelwald-First cable car and all major Bernese Oberland trails.",
+      "ja": "ユングフラウ地域のハイキング拠点として利用したインターラーケンのユースホステル。スイスは物価が高いので、ホステルは費用を大幅に削減できる。グリンデルワルト・ファースト・ケーブルカーとベルナー・オーバーランドの主要トレイルへのアクセスも便利。",
+      "zh": "因特拉肯的青年旅馆，用作少女峰地区徒步的大本营。瑞士物价高昂，住青年旅馆能大幅节省开支。可便捷前往格林德瓦-菲斯特缆车和伯尔尼高地主要步道。",
+      "es": "Albergue juvenil en Interlaken utilizado como base para el senderismo en la región del Jungfrau. Suiza es cara, por lo que el albergue permite ahorrar considerablemente. Acceso conveniente al telecabina Grindelwald-First y a todos los principales senderos del Oberland bernés.",
+      "fr": "Auberge de jeunesse à Interlaken utilisée comme base pour la randonnée dans la région du Jungfrau. La Suisse est chère, donc l'auberge réduit significativement les coûts. Accès pratique au téléphérique Grindelwald-First et à tous les principaux sentiers de l'Oberland bernois.",
+      "de": "Jugendherberge in Interlaken, als Basis für Wanderungen in der Jungfrau-Region genutzt. Die Schweiz ist teuer, daher spart die Herberge erheblich. Bequemer Zugang zur Seilbahn Grindelwald-First und zu allen wichtigen Wanderwegen im Berner Oberland.",
+      "vi": "Nhà nghỉ thanh niên ở Interlaken được dùng làm căn cứ để đi bộ trong vùng Jungfrau. Thụy Sĩ đắt đỏ nên nhà nghỉ giúp tiết kiệm chi phí đáng kể. Tiếp cận thuận tiện đến cáp treo Grindelwald-First và các tuyến đường mòn chính ở Bernese Oberland."
+    },
+    "photos": [],
+    "ratings": {
+      "wifi": 3,
+      "power": 3,
+      "seating": 2,
+      "quiet": 3,
+      "longStay": 3
+    },
+    "tags": [
+      "hostel",
+      "budget",
+      "interlaken",
+      "hiking-base",
+      "switzerland",
+      "jungfrau"
+    ],
+    "links": [],
+    "channels": [],
+    "comment": {
+      "date": "2025-11",
+      "note": "2박 숙박. 인터라켄 지역 중 가장 저렴한 옵션으로 선택.",
+      "note_i18n": {
+        "ko": "2박 숙박. 인터라켄 지역 중 가장 저렴한 옵션으로 선택.",
+        "en": "2-night stay; chosen as the most affordable option in the Interlaken area.",
+        "ja": "2泊滞在。インターラーケン地域で最も手頃な選択肢として選んだ。",
+        "zh": "住了两晚；选择了因特拉肯地区最实惠的住宿选项。",
+        "es": "Estancia de 2 noches; elegido como la opción más asequible en la zona de Interlaken.",
+        "fr": "Séjour de 2 nuits ; choisi comme l'option la plus abordable dans la région d'Interlaken.",
+        "de": "2 Nächte Aufenthalt; als günstigste Option im Raum Interlaken gewählt.",
+        "vi": "Lưu trú 2 đêm; được chọn là lựa chọn giá cả phải chăng nhất ở khu vực Interlaken."
+      }
+    }
+  },
+  {
+    "id": "grindelwald-first",
+    "name": "Grindelwald-First (First Viewpoint)",
+    "category": "recovery",
+    "status": "recommended",
+    "lat": 46.6358,
+    "lng": 7.9889,
+    "address": "Grindelwald-First, 3818 Grindelwald, Switzerland",
+    "description": "그린델발트 위 해발 2,167m 전망대. 케이블카로 접근하며 맑은 날 밤하늘 은하수 관측이 하이라이트다. 바흐알프제 호수가 알프스를 반사하는 풍경은 정상 근처에서 짧은 트레킹으로 닿을 수 있다.",
+    "description_i18n": {
+      "ko": "그린델발트 위 해발 2,167m 전망대. 케이블카로 접근하며 맑은 날 밤하늘 은하수 관측이 하이라이트다. 바흐알프제 호수가 알프스를 반사하는 풍경은 정상 근처에서 짧은 트레킹으로 닿을 수 있다.",
+      "en": "A cable-car-accessed viewpoint at 2,167 m above Grindelwald. The highlight on clear nights is the Milky Way overhead. The Bachalpsee lake reflecting the Alps is reachable by a short hike from the top station.",
+      "ja": "グリンデルワルトの上、標高2,167mの展望台。ケーブルカーでアクセス可能で、晴れた夜には天の川が見られるのがハイライト。バッハアルプゼー湖にアルプスが映り込む風景は、頂上駅から短いトレッキングで到達できる。",
+      "zh": "格林德瓦上方海拔2,167米的观景台，乘坐缆车可达。晴朗夜晚银河璀璨是最大亮点。从顶部站短暂徒步可到达倒映着阿尔卑斯山的巴哈尔普湖。",
+      "es": "Un mirador accesible en teleférico a 2.167 m sobre Grindelwald. El punto culminante en las noches despejadas es la Vía Láctea sobre tu cabeza. El lago Bachalpsee reflejando los Alpes se alcanza con una corta caminata desde la estación superior.",
+      "fr": "Un belvédère accessible en téléphérique à 2 167 m au-dessus de Grindelwald. Le clou du spectacle lors des nuits claires est la Voie lactée au-dessus de vous. Le lac Bachalpsee reflétant les Alpes est accessible par une courte randonnée depuis la station supérieure.",
+      "de": "Ein mit der Seilbahn erreichbarer Aussichtspunkt auf 2.167 m über Grindelwald. Das Highlight an klaren Nächten ist die Milchstraße über einem. Der Bachalpsee, der die Alpen spiegelt, ist von der oberen Station mit einer kurzen Wanderung erreichbar.",
+      "vi": "Điểm ngắm cảnh ở độ cao 2.167m trên Grindelwald, tiếp cận bằng cáp treo. Điểm nổi bật vào những đêm quang đãng là dải Ngân hà trên đầu. Hồ Bachalpsee phản chiếu dãy Alps có thể đến được bằng cuộc đi bộ ngắn từ trạm đỉnh."
+    },
+    "photos": [],
+    "ratings": {
+      "wifi": 1,
+      "power": 1,
+      "seating": 2,
+      "quiet": 5,
+      "longStay": 1
+    },
+    "tags": [
+      "alpine",
+      "viewpoint",
+      "night-sky",
+      "milky-way",
+      "hiking",
+      "switzerland",
+      "jungfrau",
+      "nature"
+    ],
+    "links": [
+      {
+        "label": "Jungfrau operating info",
+        "url": "https://www.jungfrau.ch/en-gb/live/operating-info/"
+      },
+      {
+        "label": "Grindelwald hiking status",
+        "url": "https://grindelwald.swiss/en/service/operating-status/status-of-installations.html"
+      }
+    ],
+    "channels": [],
+    "comment": {
+      "date": "2025-11",
+      "note": "밤하늘 관측이 하이라이트로 기록됨. 방문 전 케이블카 운행 상태 확인 필수.",
+      "note_i18n": {
+        "ko": "밤하늘 관측이 하이라이트로 기록됨. 방문 전 케이블카 운행 상태 확인 필수.",
+        "en": "Night-sky observation noted as the highlight. Check cable-car operating status before visiting.",
+        "ja": "夜空観測がハイライトとして記録されている。訪問前にケーブルカーの運行状況を確認すること。",
+        "zh": "夜空观测被记录为最大亮点。访问前请确认缆车运行状态。",
+        "es": "La observación del cielo nocturno se anota como el punto culminante. Comprobar el estado operativo del teleférico antes de visitar.",
+        "fr": "L'observation du ciel nocturne est notée comme le point fort. Vérifier l'état de fonctionnement du téléphérique avant de visiter.",
+        "de": "Nachthimmelbeobachtung als Highlight vermerkt. Seilbahnbetriebszustand vor dem Besuch prüfen.",
+        "vi": "Quan sát bầu trời đêm được ghi là điểm nổi bật. Kiểm tra tình trạng hoạt động của cáp treo trước khi đến."
+      }
+    }
+  },
+  {
+    "id": "kleine-scheidegg",
+    "name": "Kleine Scheidegg",
+    "category": "recovery",
+    "status": "good",
+    "lat": 46.5864,
+    "lng": 7.9617,
+    "address": "Kleine Scheidegg, 3801 Grindelwald, Switzerland",
+    "description": "아이거와 라우버호른 사이 해발 2,061m 안부. 융프라우 하이킹 회로의 핵심 분기점으로, 아이거 근접 전망이 압도적이다. 아이거글레처(트레일 37) → 여기 → 그린델발트 그룬트(트레일 34) 코스는 총 5~6시간이다.",
+    "description_i18n": {
+      "ko": "아이거와 라우버호른 사이 해발 2,061m 안부. 융프라우 하이킹 회로의 핵심 분기점으로, 아이거 근접 전망이 압도적이다. 아이거글레처(트레일 37) → 여기 → 그린델발트 그룬트(트레일 34) 코스는 총 5~6시간이다.",
+      "en": "A mountain saddle at 2,061 m between the Eiger and Lauberhorn. A key junction on the Jungfrau hiking circuit with dramatic close-up Eiger views. The Eigergletscher (Trail 37) → here → Grindelwald Grund (Trail 34) route takes 5–6 hours total.",
+      "ja": "アイガーとラウバーホルンの間の海抜2,061mの山峠。ユングフラウハイキング回路の重要な分岐点で、アイガーの迫力ある近距離の眺めが圧巻。アイガーグレッチャー（トレイル37）→ここ→グリンデルワルト・グルント（トレイル34）のルートは合計5〜6時間。",
+      "zh": "艾格尔峰和劳伯霍恩之间海拔2,061米的山垭口。是少女峰徒步回路的关键岔路口，可近距离欣赏艾格尔峰壮观的景色。艾格冰川（37号步道）→这里→格林德瓦格伦德（34号步道）路线总共需要5~6小时。",
+      "es": "Una collada de montaña a 2.061 m entre el Eiger y el Lauberhorn. Un punto de unión clave del circuito de senderismo del Jungfrau con espectaculares vistas cercanas del Eiger. La ruta Eigergletscher (Sendero 37) → aquí → Grindelwald Grund (Sendero 34) dura 5–6 horas en total.",
+      "fr": "Un col de montagne à 2 061 m entre l'Eiger et le Lauberhorn. Un nœud clé sur le circuit de randonnée du Jungfrau avec des vues spectaculaires de près sur l'Eiger. L'itinéraire Eigergletscher (Sentier 37) → ici → Grindelwald Grund (Sentier 34) dure 5 à 6 heures au total.",
+      "de": "Ein Gebirgssattel auf 2.061 m zwischen dem Eiger und dem Lauberhorn. Ein zentraler Knotenpunkt auf dem Jungfrau-Wanderkreis mit dramatischen Nah-Eiger-Aussichten. Die Route Eigergletscher (Weg 37) → hier → Grindelwald Grund (Weg 34) dauert insgesamt 5–6 Stunden.",
+      "vi": "Đèo núi ở độ cao 2.061m giữa Eiger và Lauberhorn. Điểm giao nhau quan trọng trên tuyến đường đi bộ Jungfrau với tầm nhìn ấn tượng gần núi Eiger. Tuyến đường Eigergletscher (Đường mòn 37) → đây → Grindelwald Grund (Đường mòn 34) mất tổng cộng 5–6 giờ."
+    },
+    "photos": [],
+    "ratings": {
+      "wifi": 1,
+      "power": 1,
+      "seating": 2,
+      "quiet": 4,
+      "longStay": 1
+    },
+    "tags": [
+      "alpine",
+      "hiking",
+      "eiger",
+      "jungfrau",
+      "mountain",
+      "switzerland",
+      "trail"
+    ],
+    "links": [],
+    "channels": [],
+    "comment": {
+      "date": "2025-11",
+      "note": "트레일 37(아이거글레처 → 여기) + 트레일 34(여기 → 그린델발트 그룬트). 트레킹 폴 강력 권장.",
+      "note_i18n": {
+        "ko": "트레일 37(아이거글레처 → 여기) + 트레일 34(여기 → 그린델발트 그룬트). 트레킹 폴 강력 권장.",
+        "en": "Trail 37 (Eigergletscher → here) + Trail 34 (here → Grindelwald Grund). Trekking poles strongly recommended.",
+        "ja": "トレイル37（アイガーグレッチャー→ここ）＋トレイル34（ここ→グリンデルワルト・グルント）。トレッキングポールを強く推奨。",
+        "zh": "37号步道（艾格冰川→这里）+ 34号步道（这里→格林德瓦格伦德）。强烈推荐携带登山杖。",
+        "es": "Sendero 37 (Eigergletscher → aquí) + Sendero 34 (aquí → Grindelwald Grund). Se recomiendan encarecidamente los bastones de trekking.",
+        "fr": "Sentier 37 (Eigergletscher → ici) + Sentier 34 (ici → Grindelwald Grund). Les bâtons de randonnée sont fortement recommandés.",
+        "de": "Weg 37 (Eigergletscher → hier) + Weg 34 (hier → Grindelwald Grund). Wanderstöcke dringend empfohlen.",
+        "vi": "Đường mòn 37 (Eigergletscher → đây) + Đường mòn 34 (đây → Grindelwald Grund). Khuyến nghị mạnh mẽ nên mang gậy leo núi."
+      }
+    }
+  },
+  {
+    "id": "duomo-di-milano",
+    "name": "Duomo di Milano",
+    "category": "other",
+    "status": "good",
+    "lat": 45.4642,
+    "lng": 9.1916,
+    "address": "Piazza del Duomo, 20122 Milano MI, Italy",
+    "description": "밀라노 도심의 고딕 대성당과 광장. 트램으로 도시를 누비며 카페에서 사색하기 좋다. 에스프레소 문화가 강한 밀라노는 2~3일의 조용한 도시 리트릿에 적합하다. 영국 맨체스터에서 저가항공으로 쉽게 접근할 수 있다.",
+    "description_i18n": {
+      "ko": "밀라노 도심의 고딕 대성당과 광장. 트램으로 도시를 누비며 카페에서 사색하기 좋다. 에스프레소 문화가 강한 밀라노는 2~3일의 조용한 도시 리트릿에 적합하다. 영국 맨체스터에서 저가항공으로 쉽게 접근할 수 있다.",
+      "en": "Milan's Gothic cathedral and piazza at the heart of the city. The tram network makes it easy to move around and settle into a cafe for deep thinking. Milan's espresso culture suits a 2–3 day quiet urban retreat. Easily reached by low-cost airline from Manchester.",
+      "ja": "ミラノ中心部のゴシック大聖堂と広場。市内はトラムで移動しやすく、カフェに腰を落ち着けてじっくり考えるのに最適。エスプレッソ文化が根付くミラノは2〜3日の静かな都市リトリートに向いている。マンチェスターからLCCで簡単にアクセス可能。",
+      "zh": "米兰市中心的哥特式大教堂和广场。乘坐有轨电车在城市中穿行，在咖啡馆里沉思非常方便。米兰浓郁的浓缩咖啡文化适合进行2~3天的安静城市静修。从曼彻斯特乘低价航空可轻松到达。",
+      "es": "La catedral gótica de Milán y su piazza en el corazón de la ciudad. La red de tranvías facilita moverse y asentarse en una cafetería para reflexionar profundamente. La cultura del espresso de Milán es ideal para un retiro urbano tranquilo de 2-3 días. Fácil acceso en vuelo de bajo coste desde Mánchester.",
+      "fr": "La cathédrale gothique de Milan et sa piazza au cœur de la ville. Le réseau de tramways facilite les déplacements et l'installation dans un café pour une réflexion approfondie. La culture du café expresso de Milan convient à une retraite urbaine calme de 2-3 jours. Facilement accessible par vol low-cost depuis Manchester.",
+      "de": "Mailands gotische Kathedrale und Piazza im Herzen der Stadt. Das Straßenbahnnetz erleichtert das Bewegen und das Niederlassen in einem Café zum Tiefsinndenken. Mailands Espresso-Kultur eignet sich für einen 2–3-tägigen ruhigen Stadtretreat. Einfach per Billigflug von Manchester erreichbar.",
+      "vi": "Nhà thờ Gothic và quảng trường trung tâm Milan. Mạng lưới xe điện giúp di chuyển dễ dàng và tìm quán cà phê để suy nghĩ sâu. Văn hóa espresso của Milan rất phù hợp để tĩnh tâm đô thị 2-3 ngày. Dễ dàng tiếp cận bằng hãng hàng không giá rẻ từ Manchester."
+    },
+    "photos": [],
+    "ratings": {
+      "wifi": 2,
+      "power": 1,
+      "seating": 2,
+      "quiet": 2,
+      "longStay": 1
+    },
+    "tags": [
+      "cathedral",
+      "milan",
+      "italy",
+      "tram",
+      "city-centre",
+      "solo-trip"
+    ],
+    "links": [],
+    "channels": [],
+    "comment": {
+      "date": "2025-02",
+      "note": "셰필드발 라이언에어 맨체스터→밀라노 경유 2~3일 솔로 리트릿. 트램이 주요 교통수단이었음.",
+      "note_i18n": {
+        "ko": "셰필드발 라이언에어 맨체스터→밀라노 경유 2~3일 솔로 리트릿. 트램이 주요 교통수단이었음.",
+        "en": "2–3 day solo retreat from Sheffield via Ryanair Manchester→Milan. Tram was the main mode of transport.",
+        "ja": "シェフィールドからライアンエアーのマンチェスター→ミラノ便を利用した2〜3日のソロリトリート。トラムが主な交通手段だった。",
+        "zh": "从谢菲尔德出发，乘坐瑞安航空曼彻斯特→米兰航班的2~3天独自静修。有轨电车是主要交通工具。",
+        "es": "Retiro en solitario de 2-3 días desde Sheffield con Ryanair Manchester→Milán. El tranvía fue el principal medio de transporte.",
+        "fr": "Retraite solo de 2-3 jours depuis Sheffield avec Ryanair Manchester→Milan. Le tramway était le principal moyen de transport.",
+        "de": "2–3 tägiger Solo-Retreat von Sheffield mit Ryanair Manchester→Mailand. Die Straßenbahn war das Hauptverkehrsmittel.",
+        "vi": "Tĩnh tâm một mình 2-3 ngày từ Sheffield qua Ryanair Manchester→Milan. Xe điện là phương tiện di chuyển chính."
+      }
+    }
+  },
+  {
+    "id": "sushiro-sapporo",
+    "name": "スシロー (Sushiro) Sapporo",
+    "category": "restaurant",
+    "status": "good",
+    "lat": 43.076,
+    "lng": 141.2937,
+    "address": "Sapporo, Hokkaido, Japan",
+    "description": "삿포로에서 방문한 일본의 인기 카이텐즈시 체인점. 기대보다 맵고 아쉬웠지만 부담 없는 가격과 빠른 식사로 바쁜 일정에 실용적이다.",
+    "description_i18n": {
+      "ko": "삿포로에서 방문한 일본의 인기 카이텐즈시 체인점. 기대보다 맵고 아쉬웠지만 부담 없는 가격과 빠른 식사로 바쁜 일정에 실용적이다.",
+      "en": "A branch of Japan's popular kaiten-zushi (conveyor-belt sushi) chain in Sapporo. Slightly less impressive than expected — possibly due to spicy menu choices — but reliable, affordable, and fast for a busy day.",
+      "ja": "札幌で訪れた日本の人気回転寿司チェーン店。注文したメニューが予想より辛く期待外れだったが、手頃な価格と素早い食事で忙しいスケジュールには実用的。",
+      "zh": "在札幌光顾的日本热门回转寿司连锁店。因为点了辣的菜单，体验略低于预期，但价格实惠、上菜快，适合忙碌的行程。",
+      "es": "Una sucursal de la popular cadena de sushi de cinta transportadora (kaiten-zushi) de Japón en Sapporo. Ligeramente menos impresionante de lo esperado — posiblemente por los menús picantes — pero fiable, asequible y rápido para un día con mucha agenda.",
+      "fr": "Une enseigne de la populaire chaîne de kaiten-zushi (sushi sur tapis roulant) du Japon à Sapporo. Légèrement moins impressionnant qu'espéré — peut-être à cause des choix de menus épicés — mais fiable, abordable et rapide pour une journée chargée.",
+      "de": "Eine Filiale der beliebten japanischen Kaiten-Zushi-Kette (Förderband-Sushi) in Sapporo. Etwas weniger beeindruckend als erwartet — möglicherweise durch die scharfen Menüwahlen — aber zuverlässig, erschwinglich und schnell für einen vollen Tag.",
+      "vi": "Chi nhánh của chuỗi kaiten-zushi (sushi băng chuyền) nổi tiếng của Nhật Bản ở Sapporo. Hơi kém ấn tượng hơn kỳ vọng — có thể do chọn các món cay — nhưng đáng tin cậy, giá cả phải chăng và nhanh cho một ngày bận rộn."
+    },
+    "photos": [],
+    "ratings": {
+      "wifi": 1,
+      "power": 1,
+      "seating": 3,
+      "quiet": 3,
+      "longStay": 1
+    },
+    "tags": [
+      "sushi",
+      "conveyor-belt",
+      "chain",
+      "affordable",
+      "sapporo",
+      "japan",
+      "quick-meal"
+    ],
+    "links": [],
+    "channels": [],
+    "comment": {
+      "date": "2020-01",
+      "note": "홋카이도 여행 중 방문. 주문한 메뉴가 예상보다 맵고 기대에 못 미쳤다고 기록됨.",
+      "note_i18n": {
+        "ko": "홋카이도 여행 중 방문. 주문한 메뉴가 예상보다 맵고 기대에 못 미쳤다고 기록됨.",
+        "en": "Visited during a Hokkaido trip. Noted that the menu ordered was spicier and less satisfying than expected.",
+        "ja": "北海道旅行中に訪問。注文したメニューが予想より辛く、期待に届かなかったと記録されている。",
+        "zh": "北海道旅行期间到访。记录为所点菜肴比预期更辣，体验低于期望。",
+        "es": "Visitado durante un viaje a Hokkaido. Se señala que los platos pedidos resultaron más picantes y menos satisfactorios de lo esperado.",
+        "fr": "Visité lors d'un voyage à Hokkaido. Il est noté que les plats commandés étaient plus épicés et moins satisfaisants qu'espéré.",
+        "de": "Während einer Hokkaido-Reise besucht. Vermerkt, dass das bestellte Menü schärfer und weniger befriedigend als erwartet war.",
+        "vi": "Ghé thăm trong chuyến đi Hokkaido. Ghi chú rằng các món đã gọi cay hơn và kém hài lòng hơn dự kiến."
+      }
+    }
+  },
+  {
+    "id": "hokkaido-university-sapporo",
+    "name": "Hokkaido University Campus",
+    "category": "other",
+    "status": "good",
+    "lat": 43.079,
+    "lng": 141.3377,
+    "address": "Kita 8 Jonishi 5-chome, Kita-ku, Sapporo, Hokkaido 060-0808, Japan",
+    "description": "삿포로 중심부에 자리한 넓은 대학 캠퍼스. 느릅나무 가로수길과 잔디밭이 산책과 독서에 좋다. 도서관은 외부인도 열람 가능하며, 관광 사이 무료 집중 공간으로 활용하기 좋다.",
+    "description_i18n": {
+      "ko": "삿포로 중심부에 자리한 넓은 대학 캠퍼스. 느릅나무 가로수길과 잔디밭이 산책과 독서에 좋다. 도서관은 외부인도 열람 가능하며, 관광 사이 무료 집중 공간으로 활용하기 좋다.",
+      "en": "A wide, scenic university campus in central Sapporo. Elm tree-lined avenues and lawns are perfect for walking and reading. The library is open to visitors, and the campus provides a free, quiet space to focus between sightseeing.",
+      "ja": "札幌中心部に位置する広大で景観豊かな大学キャンパス。ニレの並木道と芝生が散歩と読書に最適。図書館は外部の人も閲覧可能で、観光の合間に無料で集中できるスペースとして活用できる。",
+      "zh": "位于札幌市中心宽阔而美丽的大学校园。榆树大道和草坪是散步和阅读的好去处。图书馆对访客开放，是观光间隙免费集中学习的好地方。",
+      "es": "Un amplio y pintoresco campus universitario en el centro de Sapporo. Los bulevares de olmos y los prados son perfectos para pasear y leer. La biblioteca está abierta a los visitantes, y el campus ofrece un espacio gratuito y tranquilo para concentrarse entre visitas turísticas.",
+      "fr": "Un vaste et pittoresque campus universitaire au centre de Sapporo. Les allées bordées d'ormes et les pelouses sont idéales pour se promener et lire. La bibliothèque est ouverte aux visiteurs, et le campus offre un espace gratuit et calme pour se concentrer entre les visites touristiques.",
+      "de": "Ein weitläufiger, malerischer Universitätscampus im Zentrum von Sapporo. Ulmengesäumte Alleen und Rasenflächen laden zum Spazieren und Lesen ein. Die Bibliothek ist für Besucher zugänglich und bietet eine kostenlose, ruhige Arbeitsumgebung zwischen den Sehenswürdigkeiten.",
+      "vi": "Khuôn viên đại học rộng lớn, cảnh đẹp ở trung tâm Sapporo. Những con đường cây du và bãi cỏ rất phù hợp để đi dạo và đọc sách. Thư viện mở cửa cho du khách, cung cấp không gian miễn phí, yên tĩnh để tập trung giữa các điểm tham quan."
+    },
+    "photos": [],
+    "ratings": {
+      "wifi": 2,
+      "power": 2,
+      "seating": 3,
+      "quiet": 4,
+      "longStay": 2
+    },
+    "tags": [
+      "university",
+      "campus",
+      "outdoor",
+      "quiet",
+      "sapporo",
+      "hokkaido",
+      "free",
+      "park-like"
+    ],
+    "links": [],
+    "channels": [],
+    "comment": {
+      "date": "2020-01",
+      "note": "캠퍼스를 도보로 탐방. 느릅나무 가로수길은 삿포로의 상징적인 경험이다.",
+      "note_i18n": {
+        "ko": "캠퍼스를 도보로 탐방. 느릅나무 가로수길은 삿포로의 상징적인 경험이다.",
+        "en": "Explored the campus on foot. The elm-lined avenue is a quintessential Sapporo experience.",
+        "ja": "キャンパスを徒歩で探索。ニレの並木道は札幌ならではの体験。",
+        "zh": "步行探索了校园。榆树大道是札幌标志性的体验。",
+        "es": "Exploré el campus a pie. La avenida de olmos es una experiencia quintaesencial de Sapporo.",
+        "fr": "Campus exploré à pied. L'allée bordée d'ormes est une expérience typique de Sapporo.",
+        "de": "Campus zu Fuß erkundet. Die ulmengesäumte Allee ist ein unverzichtbares Sapporo-Erlebnis.",
+        "vi": "Khám phá khuôn viên bằng cách đi bộ. Con đường cây du là trải nghiệm đặc trưng của Sapporo."
+      }
+    }
+  },
+  {
+    "id": "changbaishan-baekdusan",
+    "name": "Changbaishan (Baekdusan / Heaven Lake)",
+    "category": "recovery",
+    "status": "recommended",
+    "lat": 42.4605,
+    "lng": 128.1219,
+    "address": "Changbaishan Scenic Area, Jilin Province, China",
+    "description": "중국·북한 국경에 걸친 화산 분화구 호수, 한국어로 백두산. 1월 방문 시 극한의 추위이므로 완전한 방한 장비가 필수다. 분화구 림까지 올라가는 드라이브와 광활하게 얼어붙은 분화구 풍경이 압도적이다. 접근은 옌볜에서 셔틀버스를 이용한다.",
+    "description_i18n": {
+      "ko": "중국·북한 국경에 걸친 화산 분화구 호수, 한국어로 백두산. 1월 방문 시 극한의 추위이므로 완전한 방한 장비가 필수다. 분화구 림까지 올라가는 드라이브와 광활하게 얼어붙은 분화구 풍경이 압도적이다. 접근은 옌볜에서 셔틀버스를 이용한다.",
+      "en": "The volcanic crater lake straddling the China–North Korea border, known in Korean as Baekdusan. A January visit requires full cold-weather gear — it is extremely cold. The drive up to the crater rim and the vast frozen crater are awe-inspiring. Accessed from Yanbian by shuttle bus.",
+      "ja": "中国・北朝鮮の国境にまたがる火山口湖。韓国語では白頭山（ペクトゥサン）と呼ばれる。1月訪問は極寒のため完全な防寒装備が必須。火口リムまでのドライブと広大な凍った火口の景色は圧巻。延辺からシャトルバスでアクセス。",
+      "zh": "横跨中朝边境的火山口湖，韩语称白头山。一月份气温极寒，必须携带完整的防寒装备。开车到火山口边缘，眺望广袤冰封的火山口令人叹为观止。从延边乘班车前往。",
+      "es": "El lago del cráter volcánico que cruza la frontera entre China y Corea del Norte, conocido en coreano como Baekdusan. Una visita en enero requiere equipamiento completo para el frío extremo. El recorrido en coche hasta el borde del cráter y el vasto cráter helado son impresionantes. Acceso desde Yanbian en autobús lanzadera.",
+      "fr": "Le lac du cratère volcanique à cheval sur la frontière sino-nord-coréenne, connu en coréen sous le nom de Baekdusan. Une visite en janvier nécessite un équipement complet pour le froid extrême. Le trajet en voiture jusqu'au bord du cratère et le vaste cratère gelé sont à couper le souffle. Accès depuis Yanbian en navette.",
+      "de": "Der Vulkankratersee an der chinesisch-nordkoreanischen Grenze, auf Koreanisch Baekdusan genannt. Ein Januar-Besuch erfordert vollständige Kälteschutzausrüstung — es ist extrem kalt. Die Fahrt bis zum Kraterrand und der riesige zugefrorene Krater sind atemberaubend. Zugang von Yanbian per Shuttle-Bus.",
+      "vi": "Hồ miệng núi lửa bắc qua biên giới Trung-Triều, tiếng Hàn gọi là Baekdusan. Chuyến thăm tháng 1 cần đồ chống lạnh đầy đủ — cực kỳ lạnh. Đường lên đến miệng núi lửa và cảnh hồ đóng băng rộng lớn thật hùng tráng. Tiếp cận từ Yanbian bằng xe đưa đón."
+    },
+    "photos": [],
+    "ratings": {
+      "wifi": 1,
+      "power": 1,
+      "seating": 1,
+      "quiet": 5,
+      "longStay": 1
+    },
+    "tags": [
+      "mountain",
+      "volcanic",
+      "crater-lake",
+      "border",
+      "winter",
+      "nature",
+      "jilin",
+      "china"
+    ],
+    "links": [],
+    "channels": [],
+    "comment": {
+      "date": "2024-01",
+      "note": "혹한기 방문. 완전한 방한 장비 강력 권장.",
+      "note_i18n": {
+        "ko": "혹한기 방문. 완전한 방한 장비 강력 권장.",
+        "en": "Visited in deep winter. Full cold-weather gear strongly recommended.",
+        "ja": "真冬に訪問。完全な防寒装備を強く推奨。",
+        "zh": "在严冬期间到访。强烈推荐携带完整的防寒装备。",
+        "es": "Visitado en pleno invierno. Se recomienda encarecidamente equipo completo para el frío.",
+        "fr": "Visité en plein hiver. Équipement complet pour le froid vivement recommandé.",
+        "de": "Im Tiefwinter besucht. Vollständige Kälteschutzausrüstung dringend empfohlen.",
+        "vi": "Ghé thăm vào mùa đông sâu. Khuyến nghị mạnh mẽ cần đầy đủ trang bị chống lạnh."
+      }
+    }
   }
 ]

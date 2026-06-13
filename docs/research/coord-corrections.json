@@ -1,0 +1,17 @@
+{
+  "_note": "Coordinate corrections from geo-audit (Kakao keyword POI for KR, OSM for JP). Apply to data/places.json after globe build workflow finishes. 아룸서울 deferred: address lacks building number (종로구 자하문로) — confirm with user.",
+  "corrections": [
+    { "id": "한담-해변", "lat": 33.46222, "lng": 126.31018, "src": "kakao-kw:한담해변", "prevErrorM": 590 },
+    { "id": "바솔트-크로스핏", "lat": 33.49688, "lng": 126.45173, "src": "kakao-kw:바솔트크로스핏", "prevErrorM": 825 },
+    { "id": "유민미술관", "lat": 33.42920, "lng": 126.93223, "src": "kakao-kw:유민 아르누보 뮤지엄(성산 섭지코지)", "prevErrorM": 452 },
+    { "id": "금능해수욕장", "lat": 33.39045, "lng": 126.23589, "src": "kakao-kw:금능해수욕장", "prevErrorM": 521 },
+    { "id": "이호테우해수욕장", "lat": 33.49738, "lng": 126.45269, "src": "kakao-kw:이호테우해수욕장", "prevErrorM": 1340 },
+    { "id": "도두봉", "lat": 33.50791, "lng": 126.46837, "src": "kakao-kw:도두봉", "prevErrorM": 1065 },
+    { "id": "도두해수파크", "lat": 33.50844, "lng": 126.47134, "src": "kakao-kw:도두해수파크", "prevErrorM": 1457 },
+    { "id": "물의-교회", "lat": 43.06480, "lng": 142.63220, "src": "osm:Tomamu resort(水の教会)", "prevErrorM": 13000 }
+  ],
+  "deferred": [
+    { "id": "아룸서울", "reason": "address '서울 종로구 자하문로' has no building number; keyword search returned a non-match. Confirm exact location with user before editing." }
+  ],
+  "verifiedOk": "Other 24 places within tolerance. brighton/antalya/seven-sisters OSM flags were false positives (city/park-level or ambiguous duplicate names); stored coords retained."
+}

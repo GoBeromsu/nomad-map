@@ -34,7 +34,8 @@
     "loading": "マップを読み込み中…",
     "errorTitle": "マップを読み込めませんでした",
     "errorHint": "NEXT_PUBLIC_KAKAO_MAP_KEY にKakao JavaScriptキーを設定し、Kakao Developersコンソールでサイトのドメインが登録されていることを確認してください。",
-    "recenter": "現在地"
+    "recenter": "現在地",
+    "backToGlobe": "地球に戻る"
   },
   "list": {
     "empty": "条件に一致する場所がありません。",
@@ -44,12 +45,17 @@
   },
   "detail": {
     "ratings": "ノマド評価",
-    "visit": "訪問記録",
+    "comment": "コメント",
     "links": "リンク",
     "channels": "チャンネル"
   },
   "common": {
     "close": "閉じる",
     "language": "言語"
+  },
+  "intro": {
+    "tagline": "私が泊まった場所、地球の上で",
+    "enter": "地図を見る",
+    "skip": "スキップ"
   }
 }

@@ -34,7 +34,8 @@
     "loading": "地图加载中…",
     "errorTitle": "无法加载地图",
     "errorHint": "请在 NEXT_PUBLIC_KAKAO_MAP_KEY 中设置您的 Kakao JavaScript 密钥，并确保站点域名已在 Kakao Developers 控制台中注册。",
-    "recenter": "我的位置"
+    "recenter": "我的位置",
+    "backToGlobe": "返回地球"
   },
   "list": {
     "empty": "没有地点符合筛选条件。",
@@ -44,12 +45,17 @@
   },
   "detail": {
     "ratings": "游牧评分",
-    "visit": "到访记录",
+    "comment": "评论",
     "links": "链接",
     "channels": "频道"
   },
   "common": {
     "close": "关闭",
     "language": "语言"
+  },
+  "intro": {
+    "tagline": "我住过的地方，在地球上",
+    "enter": "查看地图",
+    "skip": "跳过"
   }
 }
