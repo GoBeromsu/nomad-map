@@ -1,8 +1,7 @@
 "use client";
 
-import { useRef, useState, useEffect, useCallback } from "react";
+import { useRef, useState, useEffect, useCallback, useMemo } from "react";
 import GlobeGL from "react-globe.gl";
-import { MeshPhongMaterial, Color } from "three";
 import type { GlobeMethods } from "react-globe.gl";
 import type { RouteArc, RouteStop } from "@/lib/types";
 import { useI18n } from "@/lib/i18n/I18nProvider";
@@ -12,17 +11,126 @@ import routeData from "@/data/route.json";
 // ---------------------------------------------------------------------------
 // Constants
 // ---------------------------------------------------------------------------
-const ARC_COLOR_START = "#f5c47a"; // warm gold — contrasts the blue hex globe
-const ARC_COLOR_END = "#ff5757";   // Raycast red
-const STOP_COLOR = "#ff6161";      // accent-red
-const GLOBE_GEO_URL =
-  "https://raw.githubusercontent.com/vasturiano/react-globe.gl/master/example/datasets/ne_110m_admin_0_countries.geojson";
-const NIGHT_SKY_URL =
-  "//unpkg.com/three-globe/example/img/night-sky.png";
+const ARC_HERO_START  = "#f5c47a";   // warm gold — hero arc start
+const ARC_HERO_END    = "#ffffff";   // white glow — hero arc end
+const STOP_COLOR      = "#f5c47a";
+
+const NIGHT_SKY_URL   = "//unpkg.com/three-globe/example/img/night-sky.png";
+const NIGHT_EARTH_URL = "//unpkg.com/three-globe/example/img/earth-night.jpg";
+const TOPO_URL        = "//unpkg.com/three-globe/example/img/earth-topology.png";
 
 // Korea center (same as MapView.tsx)
 const KOREA_POV = { lat: 36.5, lng: 127.8, altitude: 0.65 } as const;
 
+// ---------------------------------------------------------------------------
+// Ambient arc city pool — 42 major hubs (lat, lng)
+// No person names, public city names only.
+// ---------------------------------------------------------------------------
+const CITY_COORDS: [number, number][] = [
+  [ 40.7128,  -74.0060], // New York
+  [ 51.5074,   -0.1278], // London
+  [ 48.8566,    2.3522], // Paris
+  [ 35.6762,  139.6503], // Tokyo
+  [ 22.3193,  114.1694], // Hong Kong
+  [  1.3521,  103.8198], // Singapore
+  [-33.8688,  151.2093], // Sydney
+  [ 55.7558,   37.6173], // Moscow
+  [ 19.0760,   72.8777], // Mumbai
+  [ 39.9042,  116.4074], // Beijing
+  [-23.5505,  -46.6333], // São Paulo
+  [ 34.0522, -118.2437], // Los Angeles
+  [ 41.8781,  -87.6298], // Chicago
+  [ 25.2048,   55.2708], // Dubai
+  [ 37.5665,  126.9780], // Seoul
+  [-26.2041,   28.0473], // Johannesburg
+  [ 30.0444,   31.2357], // Cairo
+  [ 28.6139,   77.2090], // Delhi
+  [ 49.2827, -123.1207], // Vancouver
+  [ 43.6532,  -79.3832], // Toronto
+  [ 19.4326,  -99.1332], // Mexico City
+  [-34.6037,  -58.3816], // Buenos Aires
+  [  6.5244,    3.3792], // Lagos
+  [ -1.2921,   36.8219], // Nairobi
+  [ 59.3293,   18.0686], // Stockholm
+  [ 52.5200,   13.4050], // Berlin
+  [ 41.9028,   12.4964], // Rome
+  [ 40.4168,   -3.7038], // Madrid
+  [ 50.8503,    4.3517], // Brussels
+  [ 47.3769,    8.5417], // Zurich
+  [ 60.1699,   24.9384], // Helsinki
+  [ 59.9139,   10.7522], // Oslo
+  [ 55.6761,   12.5683], // Copenhagen
+  [ 21.3069, -157.8583], // Honolulu
+  [ 13.7563,  100.5018], // Bangkok
+  [  3.1390,  101.6869], // Kuala Lumpur
+  [ -6.2088,  106.8456], // Jakarta
+  [ 31.2304,  121.4737], // Shanghai
+  [-37.8136,  144.9631], // Melbourne
+  [ 33.5731,   -7.5898], // Casablanca
+  [ 14.6937,  -17.4441], // Dakar
+  [ -4.3217,   15.3222], // Kinshasa
+];
+
+// Dim cinematic palette — green / gold / red / indigo / cyan
+const AMBIENT_COLORS = [
+  "rgba(74,222,128,0.32)",
+  "rgba(251,191,36,0.25)",
+  "rgba(248,113,113,0.28)",
+  "rgba(129,140,248,0.30)",
+  "rgba(34,211,238,0.26)",
+];
+
+// ---------------------------------------------------------------------------
+// Arc type discriminant
+// ---------------------------------------------------------------------------
+interface AmbientArc {
+  startLat:     number;
+  startLng:     number;
+  endLat:       number;
+  endLng:       number;
+  ambient:      true;
+  ambientColor: string;
+  ambientGap:   number; // staggered arcDashInitialGap 0–1
+  ambientSpeed: number; // arcDashAnimateTime ms
+}
+
+type CombinedArc = RouteArc | AmbientArc;
+
+function isAmbientArc(arc: CombinedArc): arc is AmbientArc {
+  return (arc as AmbientArc).ambient === true;
+}
+
+// ---------------------------------------------------------------------------
+// Generate ~160 ambient arcs once at module load (client-only via dynamic import)
+// ---------------------------------------------------------------------------
+function buildAmbientArcs(count: number): AmbientArc[] {
+  const result: AmbientArc[] = [];
+  const n = CITY_COORDS.length;
+  for (let i = 0; i < count; i++) {
+    const fromIdx = Math.floor(Math.random() * n);
+    let toIdx = Math.floor(Math.random() * n);
+    if (toIdx === fromIdx) toIdx = (toIdx + 1) % n;
+    result.push({
+      startLat:     CITY_COORDS[fromIdx][0],
+      startLng:     CITY_COORDS[fromIdx][1],
+      endLat:       CITY_COORDS[toIdx][0],
+      endLng:       CITY_COORDS[toIdx][1],
+      ambient:      true,
+      ambientColor: AMBIENT_COLORS[i % AMBIENT_COLORS.length],
+      // golden-ratio-ish stagger so arcs flow continuously, not in sync
+      ambientGap:   (i * 0.137) % 1.0,
+      // spread animate times 4500–7000 ms for a calm shimmer
+      ambientSpeed: 4500 + (i % 10) * 250,
+    });
+  }
+  return result;
+}
+
+const AMBIENT_ARCS: AmbientArc[] = buildAmbientArcs(160);
+
+// ---------------------------------------------------------------------------
+// Component
+// ---------------------------------------------------------------------------
 interface GlobeProps {
   onEnter: () => void;
 }
@@ -33,7 +141,7 @@ export default function GlobeIntro({ onEnter }: GlobeProps) {
   const globeRef = useRef<GlobeMethods | undefined>(undefined);
   const timeoutIdsRef = useRef<ReturnType<typeof setTimeout>[]>([]);
   const dragResumeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  // true once the t=1600ms step fires — prevents drag-resume timer from
+  // true once the t=1600 ms step fires — prevents drag-resume timer from
   // re-enabling autoRotate after the fly-to has begun
   const autoRotateFrozenRef = useRef(false);
   // true while the scripted intro timeline is running
@@ -45,30 +153,21 @@ export default function GlobeIntro({ onEnter }: GlobeProps) {
   const [size, setSize] = useState({ w: 0, h: 0 });
   const [arcsData, setArcsData] = useState<RouteArc[]>([]);
   const [stopsData, setStopsData] = useState<RouteStop[]>([]);
-  // GeoJSON features for the dotted-hex country layer
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const [hexData, setHexData] = useState<any[]>([]);
-
-  // Dark globe material — created synchronously (no texture, near-black navy)
-  const [globeMat] = useState<MeshPhongMaterial | null>(() => {
-    if (typeof window === "undefined") return null;
-    return new MeshPhongMaterial({
-      color: new Color("#0a0c12"),
-      shininess: 6,
-      specular: new Color("#0f1a2e"),
-    });
-  });
 
   const isMobile = size.w < 640;
 
-  // Theme-derived canvas settings — safe: loaded via next/dynamic ssr:false
-  const globeBg = theme === "dark" ? "#07080a" : "#faf7f2";
-  const globeBgImage: string | null = theme === "dark" ? NIGHT_SKY_URL : null;
+  // Theme-derived settings
+  const globeBg        = theme === "dark" ? "#07080a" : "#faf7f2";
+  const globeBgImage   = theme === "dark" ? NIGHT_SKY_URL : null;
+  // Subtle purple-blue atmosphere rim (Image B vibe)
+  const atmosColor     = theme === "dark" ? "#4f87ff" : "#7eb4d8";
+  const atmosAlt       = theme === "dark" ? 0.22 : 0.18;
 
-  // Hex polygon accent — cool glow in dark, warmer navy in light
-  const hexColor = theme === "dark" ? "#57c1ff" : "#2a6fa8";
-  // Atmosphere rim — cool blue in dark, soft sky-blue in light
-  const atmosColor = theme === "dark" ? "#57c1ff" : "#7eb4d8";
+  // Combine ambient atmosphere arcs + real hero arcs in one layer
+  const allArcsData: CombinedArc[] = useMemo(
+    () => [...AMBIENT_ARCS, ...arcsData],
+    [arcsData],
+  );
 
   // ------------------------------------------------------------------
   // Responsive sizing via ResizeObserver
@@ -80,21 +179,6 @@ export default function GlobeIntro({ onEnter }: GlobeProps) {
     });
     if (containerRef.current) obs.observe(containerRef.current);
     return () => obs.disconnect();
-  }, []);
-
-  // ------------------------------------------------------------------
-  // Fetch country GeoJSON for dotted-hex layer (client-side only)
-  // Falls back gracefully — dark globe + arcs still render on failure
-  // ------------------------------------------------------------------
-  useEffect(() => {
-    fetch(GLOBE_GEO_URL)
-      .then((r) => r.json())
-      .then((data) => {
-        if (data?.features) setHexData(data.features);
-      })
-      .catch(() => {
-        // Intentionally silent — globe renders without country outlines
-      });
   }, []);
 
   // ------------------------------------------------------------------
@@ -185,7 +269,7 @@ export default function GlobeIntro({ onEnter }: GlobeProps) {
 
     const ids: ReturnType<typeof setTimeout>[] = [];
 
-    // t≈900 ms — reveal arcs + stop markers
+    // t≈900 ms — reveal real route arcs + stop markers
     ids.push(
       setTimeout(() => {
         setArcsData((routeData.arcs ?? []) as RouteArc[]);
@@ -216,22 +300,22 @@ export default function GlobeIntro({ onEnter }: GlobeProps) {
     timeoutIdsRef.current = ids;
   }, [onEnter]);
 
-  // Gate rendering until container is measured + material is ready
-  const ready = size.w > 0 && globeMat !== null;
+  // Gate rendering until container is measured
+  const ready = size.w > 0;
 
   return (
     <div
       ref={containerRef}
       className="relative w-full h-full overflow-hidden bg-canvas"
     >
-      {/* Dark-mode bloom: faint cool radial glow complementing the blue hex dots */}
+      {/* Cinematic purple-blue bloom overlay */}
       {theme === "dark" && (
         <div
           aria-hidden="true"
           className="absolute inset-0 pointer-events-none z-0"
           style={{
             background:
-              "radial-gradient(ellipse 60% 60% at 50% 50%, rgba(87,193,255,0.06) 0%, transparent 70%)",
+              "radial-gradient(ellipse 60% 60% at 50% 50%, rgba(99,102,241,0.08) 0%, transparent 70%)",
             filter: "blur(40px)",
           }}
         />
@@ -245,38 +329,59 @@ export default function GlobeIntro({ onEnter }: GlobeProps) {
           // Theme-aware canvas
           backgroundColor={globeBg}
           backgroundImageUrl={globeBgImage}
-          globeImageUrl={null}
-          bumpImageUrl={null}
-          globeMaterial={globeMat}
+          // Night-earth texture — city-lights on a dark earth (cinematic)
+          globeImageUrl={NIGHT_EARTH_URL}
+          bumpImageUrl={TOPO_URL}
           showAtmosphere={true}
           atmosphereColor={atmosColor}
-          atmosphereAltitude={0.22}
+          atmosphereAltitude={atmosAlt}
           showGraticules={false}
           animateIn={true}
           waitForGlobeReady={true}
           enablePointerInteraction={true}
           rendererConfig={{ antialias: true, alpha: true }}
-          // Dotted-hex country layer — the premium dotted-globe look
-          hexPolygonsData={hexData}
-          hexPolygonUseDots={true}
-          hexPolygonResolution={3}
-          hexPolygonMargin={0.3}
-          hexPolygonColor={() => hexColor}
-          hexPolygonAltitude={0.001}
-          // Arcs — glowing flights with slightly thicker stroke
-          arcsData={arcsData}
+          // Single arcs layer — ambient (dim atmosphere) + hero (bright real route)
+          // Ambient arcs: thin, muted, slow continuous shimmer
+          // Hero arcs:    thick, gold→white, clearly the user's real journey
+          arcsData={allArcsData}
           arcStartLat="startLat"
           arcStartLng="startLng"
           arcEndLat="endLat"
           arcEndLng="endLng"
-          arcColor={() => [ARC_COLOR_START, ARC_COLOR_END]}
-          arcStroke={isMobile ? null : 1.0}
-          arcDashLength={0.4}
-          arcDashGap={0.5}
-          arcDashInitialGap={0}
-          arcDashAnimateTime={3000}
+          arcColor={(d: object) => {
+            const arc = d as CombinedArc;
+            if (isAmbientArc(arc)) return arc.ambientColor;
+            return [ARC_HERO_START, ARC_HERO_END];
+          }}
+          arcStroke={(d: object) => {
+            const arc = d as CombinedArc;
+            if (isAmbientArc(arc)) return 0.3;
+            return isMobile ? null : 1.2;
+          }}
+          // Longer dash + near-zero gap = continuous glow, not blinky tick
+          arcDashLength={(d: object) => {
+            const arc = d as CombinedArc;
+            return isAmbientArc(arc) ? 0.72 : 0.5;
+          }}
+          arcDashGap={(d: object) => {
+            const arc = d as CombinedArc;
+            return isAmbientArc(arc) ? 0.01 : 0.02;
+          }}
+          // Staggered initial gaps → arcs flow at different offsets, not in sync
+          arcDashInitialGap={(d: object) => {
+            const arc = d as CombinedArc;
+            return isAmbientArc(arc) ? arc.ambientGap : 0;
+          }}
+          // Slow animate times for calm cinematic feel (4500–7000 ms ambient, 4200 hero)
+          arcDashAnimateTime={(d: object) => {
+            const arc = d as CombinedArc;
+            return isAmbientArc(arc) ? arc.ambientSpeed : 4200;
+          }}
           arcAltitude={null}
-          arcAltitudeAutoScale={0.3}
+          arcAltitudeAutoScale={(d: object) => {
+            const arc = d as CombinedArc;
+            return isAmbientArc(arc) ? 0.22 : 0.3;
+          }}
           arcCurveResolution={isMobile ? 32 : 64}
           arcCircularResolution={isMobile ? 3 : 6}
           arcsTransitionDuration={500}
@@ -294,7 +399,7 @@ export default function GlobeIntro({ onEnter }: GlobeProps) {
           ringsData={isMobile ? [] : stopsData}
           ringLat="lat"
           ringLng="lng"
-          ringColor={() => ["rgba(255,97,97,0.6)", "rgba(245,196,122,0)"]}
+          ringColor={() => ["rgba(245,196,122,0.6)", "rgba(245,196,122,0)"]}
           ringMaxRadius={2.5}
           ringPropagationSpeed={1.5}
           ringRepeatPeriod={1400}
