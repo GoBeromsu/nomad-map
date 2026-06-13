@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local photo uploads (dev fallback)
+/public/uploads
+
+# env
+.env
+.env*.local

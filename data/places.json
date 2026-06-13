@@ -1,0 +1,97 @@
+[
+  {
+    "id": "fritz-coffee-mapo",
+    "name": "프릳츠 커피 컴퍼니 (마포)",
+    "category": "cafe",
+    "status": "recommended",
+    "lat": 37.546021,
+    "lng": 126.95177,
+    "address": "서울 마포구 새창로2길 17",
+    "description": "원두 로스터리 기반의 넓은 카페. 2층에 작업하기 좋은 큰 테이블이 많고 콘센트도 넉넉합니다.",
+    "photos": [
+      "https://picsum.photos/seed/fritz1/1000/700",
+      "https://picsum.photos/seed/fritz2/1000/700"
+    ],
+    "ratings": { "wifi": 4, "power": 5, "seating": 5, "quiet": 3, "longStay": 4 },
+    "priceLevel": 2,
+    "tags": ["로스터리", "넓은좌석", "2층작업석"],
+    "links": [
+      { "label": "카카오맵", "url": "https://map.kakao.com/?q=프릳츠커피 마포" }
+    ],
+    "channels": [
+      { "label": "인스타그램", "url": "https://www.instagram.com/fritzcoffeecompany/" }
+    ],
+    "visit": { "date": "2026-03", "duration": "3시간", "note": "주말 오후엔 붐비니 오전 추천." }
+  },
+  {
+    "id": "wework-seolleung",
+    "name": "WeWork 선릉",
+    "category": "coworking",
+    "status": "good",
+    "lat": 37.504974,
+    "lng": 127.04896,
+    "address": "서울 강남구 테헤란로 419",
+    "description": "데이패스로 하루 단위 이용 가능. 빠른 인터넷, 무료 커피, 통화 부스까지 갖춘 정통 코워킹 스페이스.",
+    "photos": ["https://picsum.photos/seed/wework1/1000/700"],
+    "ratings": { "wifi": 5, "power": 5, "seating": 4, "quiet": 4, "longStay": 5 },
+    "priceLevel": 3,
+    "tags": ["데이패스", "통화부스", "프린터"],
+    "links": [{ "label": "공식 사이트", "url": "https://www.wework.com/ko-KR" }],
+    "channels": [],
+    "visit": { "date": "2026-02", "duration": "1일", "note": "데이패스 예약은 앱에서 미리." }
+  },
+  {
+    "id": "stayfolio-jeju",
+    "name": "제주 한 달 살기 스테이",
+    "category": "accommodation",
+    "status": "revisit",
+    "lat": 33.45049,
+    "lng": 126.5708,
+    "address": "제주 제주시 애월읍",
+    "description": "장기 투숙 할인이 있는 독채형 스테이. 책상과 모니터, 빠른 와이파이가 있어 한 달 살기 워케이션에 적합.",
+    "photos": [
+      "https://picsum.photos/seed/jeju1/1000/700",
+      "https://picsum.photos/seed/jeju2/1000/700"
+    ],
+    "ratings": { "wifi": 4, "power": 5, "seating": 4, "quiet": 5, "longStay": 5 },
+    "priceLevel": 2,
+    "tags": ["한달살기", "독채", "워케이션"],
+    "links": [{ "label": "예약 페이지", "url": "https://www.stayfolio.com/" }],
+    "channels": [],
+    "visit": { "date": "2025-11", "duration": "30박 31일", "note": "월 단위 계약 시 가격 협의 가능." }
+  },
+  {
+    "id": "cafe-haeundae-busan",
+    "name": "해운대 오션뷰 카페",
+    "category": "cafe",
+    "status": "mixed",
+    "lat": 35.158698,
+    "lng": 129.160384,
+    "address": "부산 해운대구 달맞이길",
+    "description": "바다가 보이는 뷰는 최고지만 창가 자리는 콘센트가 없어요. 짧은 작업+휴식용으로 추천.",
+    "photos": ["https://picsum.photos/seed/busan1/1000/700"],
+    "ratings": { "wifi": 3, "power": 2, "seating": 3, "quiet": 2, "longStay": 2 },
+    "priceLevel": 2,
+    "tags": ["오션뷰", "분위기"],
+    "links": [{ "label": "카카오맵", "url": "https://map.kakao.com/?q=해운대 달맞이길 카페" }],
+    "channels": [],
+    "visit": { "date": "2026-01", "duration": "1.5시간", "note": "뷰 맛집. 작업보다는 리프레시용." }
+  },
+  {
+    "id": "library-starfield-coex",
+    "name": "별마당 도서관 (코엑스)",
+    "category": "spot",
+    "status": "good",
+    "lat": 37.51199,
+    "lng": 127.05902,
+    "address": "서울 강남구 영동대로 513",
+    "description": "개방형 대형 도서관. 무료이고 자리가 많지만 소음이 있는 편. 가볍게 읽거나 짧은 작업에 좋음.",
+    "photos": ["https://picsum.photos/seed/coex1/1000/700"],
+    "ratings": { "wifi": 3, "power": 3, "seating": 4, "quiet": 2, "longStay": 3 },
+    "priceLevel": 1,
+    "tags": ["무료", "넓음", "접근성"],
+    "links": [{ "label": "스타필드 코엑스", "url": "https://www.starfield.co.kr/coexmall/main.do" }],
+    "channels": [],
+    "visit": { "date": "2026-04", "duration": "1시간", "note": "지하철 바로 연결, 약속 전 시간 때우기 좋음." }
+  }
+]
