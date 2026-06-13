@@ -1527,57 +1527,6 @@
     }
   },
   {
-    "id": "아룸서울",
-    "name": "아룸서울",
-    "category": "accommodation",
-    "status": "recommended",
-    "lat": 37.5785,
-    "lng": 126.9695,
-    "address": "서울특별시 종로구 자하문로",
-    "description": "서촌 한옥 숙소. 맛있는 스콘과 향긋한 커피로 웰컴푸드를 제공하고 편백욕조가 갖춰져 있다. 경복궁·청와대·통인시장이 도보 거리이며 주변 맛집도 풍부해 서울 여행 베이스로 손색없다.",
-    "description_i18n": {
-      "ko": "서촌 한옥 숙소. 맛있는 스콘과 향긋한 커피로 웰컴푸드를 제공하고 편백욕조가 갖춰져 있다. 경복궁·청와대·통인시장이 도보 거리이며 주변 맛집도 풍부해 서울 여행 베이스로 손색없다.",
-      "en": "A hanok guesthouse in Seochon. Welcomes guests with freshly baked scones and aromatic coffee, plus a cypress bathtub. Gyeongbokgung Palace, Cheongwadae, and Tongin Market are all within walking distance, with plenty of good restaurants nearby — an excellent Seoul base.",
-      "ja": "西村の韓屋宿泊施設。美味しいスコーンと香り豊かなコーヒーでウェルカムフードを提供し、ヒノキバスタブが完備されている。景福宮・青瓦台・通仁市場が徒歩圏内で周辺の飲食店も充実しており、ソウル旅行のベースとして申し分ない。",
-      "zh": "西村韩屋住宿。提供美味司康饼和香醇咖啡作为迎宾食物，配备柏木浴缸。景福宫、青瓦台、通仁市场均在步行距离内，附近美食丰富，是首尔旅行的绝佳据点。",
-      "es": "Un alojamiento hanok en Seochon. Recibe a los huéspedes con scones recién horneados y café aromático, más una bañera de ciprés. El Palacio Gyeongbokgung, Cheongwadae y el mercado Tongin están todos a pie, con muchos buenos restaurantes cerca — una excelente base para Seúl.",
-      "fr": "Un hébergement hanok à Seochon. Accueille les clients avec des scones fraîchement préparés et du café aromatique, plus une baignoire en cyprès. Le Palais Gyeongbokgung, Cheongwadae et le marché Tongin sont tous à portée de marche, avec de nombreux bons restaurants à proximité — une excellente base pour Séoul.",
-      "de": "Eine Hanok-Unterkunft in Seochon. Begrüßt Gäste mit frisch gebackenen Scones und aromatischem Kaffee, plus einer Zypressbadewanne. Gyeongbokgung-Palast, Cheongwadae und Tongin-Markt sind alle zu Fuß erreichbar, mit vielen guten Restaurants in der Nähe — eine ausgezeichnete Seoul-Basis.",
-      "vi": "Nhà khách hanok ở Seochon. Đón khách bằng bánh scone nướng tươi và cà phê thơm ngon, cộng thêm bồn tắm gỗ bách. Cung điện Gyeongbokgung, Cheongwadae và chợ Tongin đều trong tầm đi bộ, với nhiều nhà hàng tốt gần đó — căn cứ Seoul xuất sắc."
-    },
-    "photos": [
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
-      "https://images.unsplash.com/photo-1538485399081-7191377e8241"
-    ],
-    "ratings": {
-      "wifi": 3,
-      "power": 3,
-      "seating": 2,
-      "quiet": 4,
-      "longStay": 3
-    },
-    "tags": [
-      "서촌",
-      "한옥숙소",
-      "경복궁역",
-      "편백욕조",
-      "웰컴푸드",
-      "종로"
-    ],
-    "links": [],
-    "channels": [],
-    "name_i18n": {
-      "ko": "아룸서울",
-      "en": "Arum Seoul",
-      "ja": "アルムソウル",
-      "zh": "阿鲁姆首尔",
-      "es": "Arum Seoul",
-      "fr": "Arum Séoul",
-      "de": "Arum Seoul",
-      "vi": "Arum Seoul"
-    }
-  },
-  {
     "id": "마이못",
     "name": "마이못",
     "category": "recovery",
@@ -1809,55 +1758,6 @@
     }
   },
   {
-    "id": "brighton",
-    "name": "Brighton",
-    "category": "recovery",
-    "status": "good",
-    "lat": 50.8225,
-    "lng": -0.1372,
-    "address": "Brighton, East Sussex, United Kingdom",
-    "description": "영국 남부 해안 도시. Sheffield에서 기차로 이동해 에어비앤비 숙박 후 Seven Sisters 하이킹을 위한 거점으로 활용했다. 런던에서 당일치기 또는 1박 기점으로 적합하다.",
-    "description_i18n": {
-      "ko": "영국 남부 해안 도시. Sheffield에서 기차로 이동해 에어비앤비 숙박 후 Seven Sisters 하이킹을 위한 거점으로 활용했다. 런던에서 당일치기 또는 1박 기점으로 적합하다.",
-      "en": "A coastal city in southern England. Used as a base for the Seven Sisters hiking route after travelling from Sheffield by train and staying via Airbnb. A good day-trip or one-night base from London.",
-      "ja": "イングランド南部の海岸都市。シェフィールドから電車で移動し、エアビーアンドビー宿泊後のセブン・シスターズハイキングの拠点として活用した。ロンドンからの日帰りまたは1泊の拠点として適している。",
-      "zh": "英国南部海岸城市。从谢菲尔德乘火车前往，在Airbnb住宿后，作为七姐妹悬崖徒步的据点。适合从伦敦出发的一日游或一晚的起点。",
-      "es": "Una ciudad costera en el sur de Inglaterra. Usada como base para la ruta de senderismo de las Siete Hermanas después de viajar desde Sheffield en tren y alojarse en Airbnb. Una buena base para una excursión de un día o una noche desde Londres.",
-      "fr": "Une ville côtière dans le sud de l'Angleterre. Utilisée comme base pour la randonnée des Seven Sisters après avoir voyagé en train depuis Sheffield et séjourné en Airbnb. Une bonne base pour une excursion d'une journée ou d'une nuit depuis Londres.",
-      "de": "Eine Küstenstadt im Süden Englands. Als Basis für die Seven Sisters Wanderroute genutzt, nachdem man mit dem Zug von Sheffield anreiste und via Airbnb übernachtete. Eine gute Tagesausflug- oder Ein-Nacht-Basis von London aus.",
-      "vi": "Thành phố ven biển ở miền Nam nước Anh. Được sử dụng làm căn cứ cho tuyến đường đi bộ Seven Sisters sau khi di chuyển từ Sheffield bằng tàu hỏa và lưu trú qua Airbnb. Căn cứ tốt để đi tham quan trong ngày hoặc một đêm từ London."
-    },
-    "photos": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/At_Brighton%2C_East_Sussex_2024_019.jpg/1280px-At_Brighton%2C_East_Sussex_2024_019.jpg"
-    ],
-    "ratings": {
-      "wifi": 3,
-      "power": 3,
-      "seating": 3,
-      "quiet": 3,
-      "longStay": 3
-    },
-    "tags": [
-      "영국",
-      "브라이튼",
-      "해안도시",
-      "SevenSisters거점",
-      "에어비앤비"
-    ],
-    "links": [],
-    "channels": [],
-    "name_i18n": {
-      "ko": "Brighton",
-      "en": "Brighton",
-      "ja": "ブライトン",
-      "zh": "布莱顿",
-      "es": "Brighton",
-      "fr": "Brighton",
-      "de": "Brighton",
-      "vi": "Brighton"
-    }
-  },
-  {
     "id": "seven-sisters",
     "name": "Seven Sisters",
     "category": "recovery",
@@ -2037,70 +1937,6 @@
       "fr": "Resort Saeyeon de Damyang",
       "de": "Damyang Healing Park Saeyeon Resort",
       "vi": "Damyang Healing Park Saeyeon Resort"
-    }
-  },
-  {
-    "id": "마포-글래드호텔",
-    "name": "글래드 마포",
-    "category": "accommodation",
-    "status": "good",
-    "lat": 37.5429309787932,
-    "lng": 126.951246054763,
-    "address": "서울특별시 마포구 마포대로 92",
-    "description": "마포 위치 호텔. 연남·홍대 권역 접근 편리.",
-    "description_i18n": {
-      "ko": "마포 위치 호텔. 연남·홍대 권역 접근 편리.",
-      "en": "A hotel in Mapo. Conveniently close to Yeonnam and Hongdae.",
-      "ja": "麻浦位置のホテル。延南・弘大エリアへのアクセスが便利。",
-      "zh": "位于麻浦的酒店。方便前往延南和弘大地区。",
-      "es": "Un hotel en Mapo. Convenientemente cercano a Yeonnam y Hongdae.",
-      "fr": "Un hôtel à Mapo. Commodément proche de Yeonnam et Hongdae.",
-      "de": "Ein Hotel in Mapo. Bequem nahe an Yeonnam und Hongdae.",
-      "vi": "Khách sạn ở Mapo. Thuận tiện gần khu vực Yeonnam và Hongdae."
-    },
-    "photos": [
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750",
-      "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa"
-    ],
-    "ratings": {
-      "wifi": 3,
-      "power": 3,
-      "seating": 2,
-      "quiet": 4,
-      "longStay": 3
-    },
-    "tags": [
-      "호텔",
-      "마포",
-      "홍대",
-      "연남"
-    ],
-    "links": [],
-    "channels": [],
-    "comment": {
-      "date": "2023-12-07",
-      "duration": "2박",
-      "note": null,
-      "note_i18n": {
-        "ko": null,
-        "en": null,
-        "ja": null,
-        "zh": null,
-        "es": null,
-        "fr": null,
-        "de": null,
-        "vi": null
-      }
-    },
-    "name_i18n": {
-      "ko": "글래드 마포",
-      "en": "Glad Mapo",
-      "ja": "グラッド麻浦",
-      "zh": "格莱德麻浦酒店",
-      "es": "Glad Mapo",
-      "fr": "Hôtel Glad Mapo",
-      "de": "Glad Mapo",
-      "vi": "Glad Mapo"
     }
   },
   {
@@ -2497,71 +2333,6 @@
       "fr": "Waylett House Airbnb (Rue Loughborough)",
       "de": "Waylett House Airbnb (Loughborough St)",
       "vi": "Waylett House Airbnb (Loughborough St)"
-    }
-  },
-  {
-    "id": "brighton-airbnb-base",
-    "name": "Brighton (Airbnb base)",
-    "category": "accommodation",
-    "status": "good",
-    "lat": 50.8225,
-    "lng": -0.1372,
-    "address": "Brighton, East Sussex, United Kingdom",
-    "description": "브라이튼 에어비앤비 숙박. Seven Sisters 해안 하이킹을 위한 베이스캠프로 활용했다. 런던까지 기차 약 55분으로 저렴한 런던 대안 숙소가 가능하다. 노스 레인 지역엔 독립 카페와 코워킹 옵션도 있다.",
-    "description_i18n": {
-      "ko": "브라이튼 에어비앤비 숙박. Seven Sisters 해안 하이킹을 위한 베이스캠프로 활용했다. 런던까지 기차 약 55분으로 저렴한 런던 대안 숙소가 가능하다. 노스 레인 지역엔 독립 카페와 코워킹 옵션도 있다.",
-      "en": "An Airbnb base in Brighton, used as a staging point for the Seven Sisters coastal hike. The train to London takes about 55 minutes, making it a viable cheaper overnight alternative to London. The North Laine area has independent cafes and coworking options.",
-      "ja": "ブライトンのエアビーアンドビー宿泊。セブン・シスターズ沿岸ハイキングのベースキャンプとして活用した。ロンドンまで電車約55分で、ロンドンより安価な宿泊の代替として使える。ノース・レイン地区には独立系カフェやコワーキングオプションもある。",
-      "zh": "布莱顿的Airbnb住宿，用作七姐妹海岸徒步的大本营。乘火车到伦敦约55分钟，可作为伦敦的低价住宿替代方案。北莱恩区有独立咖啡馆和共享办公选择。",
-      "es": "Una base de Airbnb en Brighton, utilizada como punto de partida para la excursión por la costa de las Siete Hermanas. El tren a Londres tarda unos 55 minutos, lo que lo convierte en una alternativa más económica para pasar la noche. La zona de North Laine tiene cafés independientes y opciones de coworking.",
-      "fr": "Une base Airbnb à Brighton, utilisée comme point de départ pour la randonnée côtière des Seven Sisters. Le train pour Londres prend environ 55 minutes, ce qui en fait une alternative nocturne moins chère à Londres. Le quartier North Laine dispose de cafés indépendants et d'options de coworking.",
-      "de": "Eine Airbnb-Basis in Brighton, genutzt als Ausgangspunkt für die Seven Sisters Küstenwanderung. Der Zug nach London dauert etwa 55 Minuten, was es zu einer günstigeren Übernachtungsalternative macht. Im Viertel North Laine gibt es unabhängige Cafés und Coworking-Optionen.",
-      "vi": "Căn cứ Airbnb ở Brighton, dùng làm điểm khởi hành cho chuyến đi bộ ven biển Seven Sisters. Tàu đến London khoảng 55 phút, có thể là lựa chọn lưu trú đêm rẻ hơn London. Khu North Laine có các quán cà phê độc lập và không gian làm việc chung."
-    },
-    "photos": [
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267",
-      "https://images.unsplash.com/photo-1590490360182-c33d57733427"
-    ],
-    "ratings": {
-      "wifi": 3,
-      "power": 3,
-      "seating": 2,
-      "quiet": 3,
-      "longStay": 3
-    },
-    "tags": [
-      "airbnb",
-      "budget",
-      "seaside",
-      "brighton",
-      "south-coast",
-      "base-camp"
-    ],
-    "links": [],
-    "channels": [],
-    "comment": {
-      "date": "2025-10",
-      "note": "Seven Sisters 하이킹 거점으로 숙박. 약 59,000원/박.",
-      "note_i18n": {
-        "ko": "Seven Sisters 하이킹 거점으로 숙박. 약 59,000원/박.",
-        "en": "Stayed here as a base for the Seven Sisters hike; approx 59,000 KRW per night.",
-        "ja": "セブン・シスターズハイキングの拠点として宿泊。1泊約59,000ウォン。",
-        "zh": "在此住宿作为七姐妹徒步的基地；每晚约59,000韩元。",
-        "es": "Pernoctado aquí como base para la excursión a las Siete Hermanas; aprox. 59.000 KRW por noche.",
-        "fr": "Séjour ici comme base pour la randonnée des Seven Sisters ; environ 59 000 KRW par nuit.",
-        "de": "Hier übernachtet als Basis für die Seven Sisters Wanderung; ca. 59.000 KRW pro Nacht.",
-        "vi": "Lưu trú ở đây làm căn cứ cho chuyến đi bộ Seven Sisters; khoảng 59.000 KRW mỗi đêm."
-      }
-    },
-    "name_i18n": {
-      "ko": "Brighton (Airbnb base)",
-      "en": "Brighton (Airbnb base)",
-      "ja": "ブライトン（Airbnb拠点）",
-      "zh": "布莱顿（Airbnb据点）",
-      "es": "Brighton (base Airbnb)",
-      "fr": "Brighton (base Airbnb)",
-      "de": "Brighton (Airbnb-Unterkunft)",
-      "vi": "Brighton (Nơi ở Airbnb)"
     }
   },
   {
