@@ -38,6 +38,7 @@ export default function FilterBar({
         value={filters.query}
         onChange={(e) => onChange({ ...filters, query: e.target.value })}
         placeholder="장소 이름, 태그 검색…"
+        aria-label="장소 검색"
         className="w-full rounded-lg border border-neutral-200 bg-white px-3 py-2 text-sm outline-none transition focus:border-neutral-400 focus:ring-2 focus:ring-neutral-100"
       />
 
@@ -50,9 +51,10 @@ export default function FilterBar({
               key={c}
               type="button"
               onClick={() => toggleCategory(c)}
+              aria-pressed={active}
               className={`rounded-full border px-2.5 py-1 text-xs font-medium transition ${
                 active
-                  ? "border-transparent text-white"
+                  ? "border-transparent text-white ring-2 ring-offset-1 ring-neutral-500"
                   : "border-neutral-200 bg-white text-neutral-600 hover:bg-neutral-50"
               }`}
               style={active ? { background: meta.color } : undefined}
@@ -72,11 +74,12 @@ export default function FilterBar({
               key={s}
               type="button"
               onClick={() => toggleStatus(s)}
+              aria-pressed={active}
               className="rounded-full px-2.5 py-1 text-xs font-medium transition"
               style={{
                 background: active ? meta.bg : "transparent",
                 color: active ? meta.color : "#737373",
-                border: `1px solid ${active ? meta.bg : "#e5e5e5"}`,
+                border: `${active ? "2px" : "1px"} solid ${active ? meta.color : "#e5e5e5"}`,
               }}
             >
               {meta.label}

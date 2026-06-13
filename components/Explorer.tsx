@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import FilterBar, { type Filters } from "./FilterBar";
 import PlaceListItem from "./PlaceListItem";
@@ -25,6 +25,7 @@ export default function Explorer({ places }: { places: Place[] }) {
     categories: new Set<Category>(),
     statuses: new Set<Status>(),
   });
+  const sheetCloseRef = useRef<HTMLButtonElement>(null);
 
   const filtered = useMemo(() => {
     const q = filters.query.trim().toLowerCase();
@@ -52,6 +53,54 @@ export default function Explorer({ places }: { places: Place[] }) {
     setMobileListOpen(false);
   };
 
+  // 모바일 목록 시트가 열리면 닫기 버튼에 포커스
+  useEffect(() => {
+    if (mobileListOpen) sheetCloseRef.current?.focus();
+  }, [mobileListOpen]);
+
+  // 목록 시트 키보드: Escape 닫기 + 간단한 포커스 트랩
+  const handleSheetKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    if (e.key === "Escape") {
+      setMobileListOpen(false);
+      return;
+    }
+    if (e.key !== "Tab") return;
+    const items = Array.from(
+      e.currentTarget.querySelectorAll<HTMLElement>(
+        'a[href], button:not([disabled]), input, select, textarea, [tabindex]:not([tabindex="-1"])',
+      ),
+    );
+    if (items.length === 0) return;
+    const first = items[0];
+    const last = items[items.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  };
+
+  const renderList = () =>
+    filtered.length === 0 ? (
+      <p className="px-2 py-8 text-center text-sm text-neutral-400">
+        조건에 맞는 장소가 없어요.
+      </p>
+    ) : (
+      <ul className="space-y-2">
+        {filtered.map((p) => (
+          <li key={p.id}>
+            <PlaceListItem
+              place={p}
+              active={p.id === selectedId}
+              onClick={() => handleSelect(p.id)}
+            />
+          </li>
+        ))}
+      </ul>
+    );
+
   return (
     <div className="relative flex flex-1 overflow-hidden">
       {/* 데스크톱 사이드바: 필터 + 목록 */}
@@ -64,22 +113,7 @@ export default function Explorer({ places }: { places: Place[] }) {
             shown={filtered.length}
           />
         </div>
-        <div className="flex-1 space-y-2 overflow-y-auto p-3">
-          {filtered.length === 0 ? (
-            <p className="px-2 py-8 text-center text-sm text-neutral-400">
-              조건에 맞는 장소가 없어요.
-            </p>
-          ) : (
-            filtered.map((p) => (
-              <PlaceListItem
-                key={p.id}
-                place={p}
-                active={p.id === selectedId}
-                onClick={() => handleSelect(p.id)}
-              />
-            ))
-          )}
-        </div>
+        <div className="flex-1 overflow-y-auto p-3">{renderList()}</div>
       </aside>
 
       {/* 지도 */}
@@ -92,7 +126,7 @@ export default function Explorer({ places }: { places: Place[] }) {
 
         {/* 데스크톱: 상세 floating 패널 */}
         {selected && (
-          <div className="absolute right-4 top-4 z-20 hidden w-[380px] max-h-[calc(100%-2rem)] overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-xl md:block">
+          <div className="absolute right-4 top-4 z-20 hidden max-h-[calc(100%-2rem)] w-[380px] overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-xl md:block">
             <PlaceDetail place={selected} onClose={() => setSelectedId(null)} />
           </div>
         )}
@@ -107,10 +141,16 @@ export default function Explorer({ places }: { places: Place[] }) {
         </button>
       </div>
 
-      {/* 모바일: 상세 바텀시트 */}
+      {/* 모바일: 상세 바텀시트 (배경 탭으로 닫기) */}
       {selected && (
-        <div className="fixed inset-x-0 bottom-0 z-40 max-h-[80dvh] overflow-hidden rounded-t-2xl border-t border-neutral-200 bg-white shadow-2xl md:hidden">
-          <PlaceDetail place={selected} onClose={() => setSelectedId(null)} />
+        <div className="fixed inset-0 z-40 md:hidden">
+          <div
+            className="absolute inset-0 bg-black/30"
+            onClick={() => setSelectedId(null)}
+          />
+          <div className="absolute inset-x-0 bottom-0 max-h-[80dvh] overflow-hidden rounded-t-2xl border-t border-neutral-200 bg-white shadow-2xl">
+            <PlaceDetail place={selected} onClose={() => setSelectedId(null)} />
+          </div>
         </div>
       )}
 
@@ -121,10 +161,19 @@ export default function Explorer({ places }: { places: Place[] }) {
             className="absolute inset-0 bg-black/30"
             onClick={() => setMobileListOpen(false)}
           />
-          <div className="absolute inset-x-0 bottom-0 flex max-h-[85dvh] flex-col rounded-t-2xl bg-white">
+          <div
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="mobile-list-title"
+            onKeyDown={handleSheetKeyDown}
+            className="absolute inset-x-0 bottom-0 flex max-h-[85dvh] flex-col rounded-t-2xl bg-white"
+          >
             <div className="flex items-center justify-between border-b border-neutral-100 p-4">
-              <h2 className="text-sm font-semibold">장소 목록</h2>
+              <h2 id="mobile-list-title" className="text-sm font-semibold">
+                장소 목록
+              </h2>
               <button
+                ref={sheetCloseRef}
                 type="button"
                 onClick={() => setMobileListOpen(false)}
                 aria-label="닫기"
@@ -141,16 +190,7 @@ export default function Explorer({ places }: { places: Place[] }) {
                 shown={filtered.length}
               />
             </div>
-            <div className="flex-1 space-y-2 overflow-y-auto p-3">
-              {filtered.map((p) => (
-                <PlaceListItem
-                  key={p.id}
-                  place={p}
-                  active={p.id === selectedId}
-                  onClick={() => handleSelect(p.id)}
-                />
-              ))}
-            </div>
+            <div className="flex-1 overflow-y-auto p-3">{renderList()}</div>
           </div>
         </div>
       )}

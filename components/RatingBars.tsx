@@ -23,7 +23,10 @@ export default function RatingBars({ ratings }: { ratings: NomadRatings }) {
                   />
                 ))}
               </div>
-              <span className="w-7 shrink-0 text-right text-xs font-semibold tabular-nums text-neutral-700">
+              <span
+                aria-label={`${value.toFixed(1)} / 5`}
+                className="w-7 shrink-0 text-right text-xs font-semibold tabular-nums text-neutral-700"
+              >
                 {value.toFixed(1)}
               </span>
             </dd>

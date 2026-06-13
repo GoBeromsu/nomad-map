@@ -51,3 +51,9 @@ npx vercel deploy --prod   # 프로덕션
 
 환경변수(`NEXT_PUBLIC_KAKAO_MAP_KEY`, `ADMIN_PASSWORD`)는 Vercel 대시보드 또는
 `vercel env add` 로 등록하세요. Blob 스토어를 만들면 `BLOB_READ_WRITE_TOKEN`이 자동 주입됩니다.
+
+> ⚠️ **`NEXT_PUBLIC_*` 변수는 빌드 시점에 번들에 인라인됩니다.** 따라서
+> `NEXT_PUBLIC_KAKAO_MAP_KEY` 는 **배포 빌드가 시작되기 전에** 반드시 Vercel에
+> 등록되어 있어야 합니다. 키를 나중에 추가했다면 **재배포(재빌드)** 해야 지도가
+> 로드됩니다. (`ADMIN_PASSWORD` 등 서버 전용 변수는 런타임에 읽히므로 재빌드가
+> 필요 없습니다.)

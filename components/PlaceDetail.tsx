@@ -36,11 +36,16 @@ export default function PlaceDetail({
                     key={i}
                     type="button"
                     aria-label={`사진 ${i + 1}`}
+                    aria-current={i === photoIdx ? "true" : undefined}
                     onClick={() => setPhotoIdx(i)}
-                    className={`h-1.5 rounded-full transition-all ${
-                      i === photoIdx ? "w-5 bg-white" : "w-1.5 bg-white/60"
-                    }`}
-                  />
+                    className="flex h-9 w-6 items-center justify-center"
+                  >
+                    <span
+                      className={`block h-1.5 rounded-full transition-all ${
+                        i === photoIdx ? "w-5 bg-white" : "w-1.5 bg-white/60"
+                      }`}
+                    />
+                  </button>
                 ))}
               </div>
             )}
@@ -119,11 +124,15 @@ export default function PlaceDetail({
             <div className="space-y-1 text-sm text-neutral-600">
               {(place.visit.date || place.visit.duration) && (
                 <p>
-                  📅 {place.visit.date}
+                  <span aria-hidden="true">📅</span> {place.visit.date}
                   {place.visit.duration ? ` · ${place.visit.duration}` : ""}
                 </p>
               )}
-              {place.visit.note && <p className="text-neutral-700">💬 {place.visit.note}</p>}
+              {place.visit.note && (
+                <p className="text-neutral-700">
+                  <span aria-hidden="true">💬</span> {place.visit.note}
+                </p>
+              )}
             </div>
           </section>
         )}

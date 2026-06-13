@@ -18,6 +18,7 @@ export default function PlaceListItem({
     <button
       type="button"
       onClick={onClick}
+      aria-current={active ? "true" : undefined}
       className={`flex w-full items-center gap-3 rounded-xl border p-2.5 text-left transition ${
         active
           ? "border-neutral-900 bg-neutral-50"

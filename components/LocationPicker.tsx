@@ -81,6 +81,7 @@ export default function LocationPicker({
     <div className="space-y-2">
       <div className="flex gap-2">
         <input
+          aria-label="장소 또는 주소 검색"
           value={keyword}
           onChange={(e) => setKeyword(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && (e.preventDefault(), search())}

@@ -52,6 +52,10 @@ export function loadKakaoMaps(): Promise<any> {
         ),
       );
     document.head.appendChild(script);
+  }).catch((e) => {
+    // 실패 시 싱글턴을 비워 다음 호출에서 재시도 가능하게 함
+    loaderPromise = null;
+    throw e;
   });
 
   return loaderPromise;

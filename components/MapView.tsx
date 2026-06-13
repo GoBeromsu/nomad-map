@@ -83,6 +83,11 @@ export default function MapView({ places, selectedId, onSelect }: MapViewProps) 
     });
 
     map.setBounds(bounds, 60, 60, 60, 60);
+
+    return () => {
+      overlaysRef.current.forEach((ov) => ov.setMap(null));
+      overlaysRef.current.clear();
+    };
   }, [places, ready]);
 
   // 선택된 장소 강조 + 중심 이동
@@ -122,5 +127,12 @@ export default function MapView({ places, selectedId, onSelect }: MapViewProps) 
     );
   }
 
-  return <div ref={containerRef} className="h-full w-full" />;
+  return (
+    <div
+      ref={containerRef}
+      className="h-full w-full"
+      role="application"
+      aria-label="노마드 장소 지도"
+    />
+  );
 }

@@ -103,20 +103,21 @@ export default function AdminPage() {
     }
     setUploading(true);
     setUploadMsg(null);
-    const urls: string[] = [];
     try {
-      for (const file of Array.from(files)) {
-        const fd = new FormData();
-        fd.append("file", file);
-        const res = await fetch("/api/upload", {
-          method: "POST",
-          headers: { "x-admin-password": password },
-          body: fd,
-        });
-        const data = await res.json();
-        if (!res.ok) throw new Error(data.error || "업로드 실패");
-        urls.push(data.url);
-      }
+      const urls = await Promise.all(
+        Array.from(files).map(async (file) => {
+          const fd = new FormData();
+          fd.append("file", file);
+          const res = await fetch("/api/upload", {
+            method: "POST",
+            headers: { "x-admin-password": password },
+            body: fd,
+          });
+          const data = await res.json();
+          if (!res.ok) throw new Error(data.error || "업로드 실패");
+          return data.url as string;
+        }),
+      );
       setPhotos((prev) => [...prev, ...urls]);
       setUploadMsg(`${urls.length}장 업로드 완료`);
     } catch (e) {
@@ -167,6 +168,7 @@ export default function AdminPage() {
           type="file"
           accept="image/*"
           multiple
+          aria-label="사진 파일 선택"
           onChange={(e) => handleUpload(e.target.files)}
           disabled={uploading}
           className="block w-full text-sm text-neutral-600 file:mr-3 file:rounded-lg file:border-0 file:bg-neutral-900 file:px-4 file:py-2 file:text-sm file:font-medium file:text-white"
@@ -190,10 +192,12 @@ export default function AdminPage() {
                   onClick={() =>
                     setPhotos((p) => p.filter((_, idx) => idx !== i))
                   }
-                  className="absolute -right-1.5 -top-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-neutral-900 text-xs text-white"
-                  aria-label="삭제"
+                  className="absolute -right-2 -top-2 flex h-8 w-8 items-center justify-center rounded-full text-white"
+                  aria-label={`${i + 1}번째 사진 삭제`}
                 >
-                  ✕
+                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-neutral-900 text-xs">
+                    ✕
+                  </span>
                 </button>
               </div>
             ))}
@@ -258,13 +262,14 @@ export default function AdminPage() {
         <div className="space-y-3">
           {(Object.keys(RATING_LABELS) as (keyof NomadRatings)[]).map((key) => (
             <div key={key} className="flex items-center gap-3">
-              <span className="w-16 text-sm text-neutral-600">{RATING_LABELS[key]}</span>
+              <label htmlFor={`rating-${key}`} className="w-16 text-sm text-neutral-600">{RATING_LABELS[key]}</label>
               <input
+                id={`rating-${key}`}
                 type="range" min={1} max={5} value={ratings[key]}
                 onChange={(e) => setRatings((r) => ({ ...r, [key]: Number(e.target.value) }))}
                 className="flex-1"
               />
-              <span className="w-6 text-right text-sm font-semibold tabular-nums">{ratings[key]}</span>
+              <span aria-hidden="true" className="w-6 text-right text-sm font-semibold tabular-nums">{ratings[key]}</span>
             </div>
           ))}
         </div>
