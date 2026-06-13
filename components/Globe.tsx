@@ -221,33 +221,44 @@ export default function GlobeIntro({ onEnter }: GlobeProps) {
     const ctrl = g.controls();
     ctrl.autoRotate = true;
     ctrl.autoRotateSpeed = 0.55;
-    ctrl.enableZoom = false;
+    // Zoom is live from the first frame — the intro is explorable, not a locked
+    // cutscene. Bounds keep the camera between a close fly-over and a full-globe
+    // view (globe radius 100 → altitude ≈ 0.3–4.2).
+    ctrl.enableZoom = true;
+    ctrl.minDistance = 130;
+    ctrl.maxDistance = 520;
     ctrl.enablePan = false;
 
     // Mark choreography as active so the drag listener knows to abort
     choreoActiveRef.current = true;
 
     // ------------------------------------------------------------------
-    // Drag START — if intro is still running, abort the entire timeline
-    // and hand full control to the user (permanent for this session).
+    // Hand full control to the user, aborting the scripted intro timeline.
+    // Triggered by a drag (controls "start") OR a zoom (wheel / pinch), so
+    // zooming during the intro feels responsive instead of fighting the
+    // scripted fly-to. Permanent for this session once it fires.
     // ------------------------------------------------------------------
+    const takeControl = () => {
+      if (!(choreoActiveRef.current && !userTookControlRef.current)) return;
+      userTookControlRef.current = true;
+      choreoActiveRef.current = false;
+      timeoutIdsRef.current.forEach(clearTimeout);
+      timeoutIdsRef.current = [];
+      if (dragResumeTimerRef.current) {
+        clearTimeout(dragResumeTimerRef.current);
+        dragResumeTimerRef.current = null;
+      }
+      // Immediately reveal arcs + stops so the user can watch them animate
+      setArcsData((routeData.arcs ?? []) as RouteArc[]);
+      setStopsData(routeData.stops as RouteStop[]);
+      // Freeze autoRotate — stop fighting the user
+      autoRotateFrozenRef.current = true;
+      ctrl.autoRotate = false;
+    };
+
     ctrl.addEventListener("start", () => {
       if (choreoActiveRef.current && !userTookControlRef.current) {
-        // Abort scripted intro — user grabbed the globe
-        userTookControlRef.current = true;
-        choreoActiveRef.current = false;
-        timeoutIdsRef.current.forEach(clearTimeout);
-        timeoutIdsRef.current = [];
-        if (dragResumeTimerRef.current) {
-          clearTimeout(dragResumeTimerRef.current);
-          dragResumeTimerRef.current = null;
-        }
-        // Immediately reveal arcs + stops so user can watch them animate
-        setArcsData((routeData.arcs ?? []) as RouteArc[]);
-        setStopsData(routeData.stops as RouteStop[]);
-        // Freeze autoRotate — stop fighting the user's drag
-        autoRotateFrozenRef.current = true;
-        ctrl.autoRotate = false;
+        takeControl();
         return;
       }
       // Normal pre-freeze behavior: temporarily pause autorotate while dragging
@@ -255,6 +266,12 @@ export default function GlobeIntro({ onEnter }: GlobeProps) {
       ctrl.autoRotate = false;
       if (dragResumeTimerRef.current) clearTimeout(dragResumeTimerRef.current);
     });
+
+    // OrbitControls zoom (wheel / pinch) does NOT fire the "start" event, so
+    // hook the canvas wheel event explicitly: the first zoom during the intro
+    // also hands over control. Listener dies with the canvas on unmount.
+    const wheelEl = g.renderer().domElement;
+    wheelEl.addEventListener("wheel", takeControl, { passive: true });
 
     // Drag END — resume autorotate 3 s after pointer idle (pre-freeze only)
     ctrl.addEventListener("end", () => {
@@ -356,7 +373,9 @@ export default function GlobeIntro({ onEnter }: GlobeProps) {
           arcStroke={(d: object) => {
             const arc = d as CombinedArc;
             if (isAmbientArc(arc)) return 0.3;
-            return isMobile ? null : 1.2;
+            if (isMobile) return null;
+            const heroArc = arc as RouteArc;
+            return 0.7 + (heroArc.weight ?? 0) * 2.0;
           }}
           // Longer dash + near-zero gap = continuous glow, not blinky tick
           arcDashLength={(d: object) => {

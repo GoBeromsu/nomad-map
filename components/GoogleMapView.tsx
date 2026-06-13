@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { MarkerClusterer } from "@googlemaps/markerclusterer";
 import { loadGoogleMaps } from "@/lib/google";
 import { CATEGORY_META } from "@/lib/constants";
 import { useI18n } from "@/lib/i18n/I18nProvider";
@@ -25,6 +26,7 @@ export default function GoogleMapView({
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<any>(null);
   const markersRef = useRef<Map<string, any>>(new Map());
+  const clustererRef = useRef<MarkerClusterer | null>(null);
   const meMarkerRef = useRef<any>(null);
   const didCenterOnMe = useRef(false);
   const onSelectRef = useRef(onSelect);
@@ -76,7 +78,12 @@ export default function GoogleMapView({
     const google = window.google;
     const map = mapRef.current;
 
-    // 기존 마커 제거
+    // 기존 clusterer + 마커 제거
+    if (clustererRef.current) {
+      clustererRef.current.clearMarkers(true);
+      (clustererRef.current as any).setMap(null);
+      clustererRef.current = null;
+    }
     markersRef.current.forEach((marker) => {
       marker.map = null;
     });
@@ -85,6 +92,7 @@ export default function GoogleMapView({
     if (places.length === 0) return;
 
     const bounds = new google.maps.LatLngBounds();
+    const markersList: google.maps.marker.AdvancedMarkerElement[] = [];
 
     places.forEach((place) => {
       const pos = { lat: place.lat, lng: place.lng };
@@ -104,18 +112,46 @@ export default function GoogleMapView({
         onSelectRef.current(place.id);
       });
 
+      // map은 clusterer가 관리 — 직접 설정하지 않음
       const marker = new google.maps.marker.AdvancedMarkerElement({
         position: pos,
-        map,
         content: el,
         title: place.name,
       });
       markersRef.current.set(place.id, marker);
+      markersList.push(marker);
     });
+
+    // 커스텀 따뜻한 테마 클러스터 렌더러
+    const renderer = {
+      render(cluster: { count: number; position: google.maps.LatLng }, _stats: unknown) {
+        const { count, position } = cluster;
+        const size = count < 10 ? 40 : count < 50 ? 48 : 56;
+        const el = document.createElement("div");
+        el.className = "nm-cluster";
+        el.setAttribute("aria-label", `${count}개 장소 클러스터`);
+        el.style.width = `${size}px`;
+        el.style.height = `${size}px`;
+        el.style.fontSize = count >= 100 ? "11px" : "13px";
+        el.textContent = String(count);
+        return new google.maps.marker.AdvancedMarkerElement({
+          position,
+          content: el,
+          zIndex: 1000 + count,
+        });
+      },
+    };
+
+    clustererRef.current = new MarkerClusterer({ map, markers: markersList, renderer });
 
     map.fitBounds(bounds, { top: 60, right: 60, bottom: 60, left: 60 });
 
     return () => {
+      if (clustererRef.current) {
+        clustererRef.current.clearMarkers(true);
+        (clustererRef.current as any).setMap(null);
+        clustererRef.current = null;
+      }
       markersRef.current.forEach((marker) => {
         marker.map = null;
       });

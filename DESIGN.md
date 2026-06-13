@@ -2,7 +2,7 @@
 
 > **This is the operational source of truth.** Token values and component patterns live here and evolve with the design.
 > For the frozen *rationale* behind each major decision, see the ADR index in `docs/decisions/`.
-> Last updated: 2026-06-13
+> Last updated: 2026-06-13 (intro zoom + visit-frequency arc weighting)
 
 ---
 
@@ -182,7 +182,7 @@ In both cases, apply:
 | Gradient start (warm gold) | `#f5c47a` |
 | Gradient end (Raycast red) | `#ff5757` |
 | Effect | Soft bloom / glow (post-processing or simulated via layered geometry) |
-| Desktop stroke width | `0.6` – `0.8` (was `0.4`) |
+| Desktop stroke width | **Visit-frequency weighted**: `0.7 + (weight × 2.0)` where `weight ∈ [0,1]` is the place's normalized visit frequency. Frequently-visited routes render thicker, so the map reads the owner's lived rhythm at a glance. Ambient (non-route) arcs stay thin at `0.3`. Mobile renders `null` (uniform) to save vertices. |
 | Animation speed | Slower dash animation — majestic, not hurried |
 | Stop markers | `#ff6161` with gentle pulse rings |
 
@@ -194,7 +194,11 @@ In both cases, apply:
 
 ### Interactive globe
 
-The globe accepts pointer/touch input (`enablePointerInteraction: true`). Dragging pauses cinematic autorotation; a 3-second idle timer resumes it. Zoom and pan are disabled. Dragging does **not** advance or skip the intro choreography — that sequence runs on its own timers.
+The globe accepts pointer/touch input (`enablePointerInteraction: true`). Dragging pauses cinematic autorotation; a 3-second idle timer resumes it.
+
+**Zoom is enabled from the first frame** (`enableZoom: true`, bounded `minDistance 130` / `maxDistance 520` ≈ altitude 0.3–4.2) so the intro is explorable rather than a locked cutscene. Pan stays disabled.
+
+**The intro is explorable, not a fixed cutscene.** The first deliberate user gesture during the intro — a drag (OrbitControls `start`) **or** a zoom (wheel / pinch, hooked separately since wheel does not fire `start`) — calls a single `takeControl()` that aborts the scripted timeline, reveals the arcs + stops immediately, and freezes autorotate so the camera stops fighting the user. Absent any gesture, the scripted choreography runs to completion on its own timers.
 
 ---
 
@@ -324,6 +328,8 @@ Both layers are mounted simultaneously for the crossfade duration; z-index keeps
 |---|---|
 | [ADR-001](docs/decisions/ADR-001-design-system-foundation.md) | Dark chrome + warm globe hero rationale |
 | ADR-002 | Dual dark/light theme decision |
-| ADR-003 | (future) |
+| ADR-003 | Globe-first hybrid navigation model |
+| ADR-004 | Immersive navigation — click-to-fly & cinematic handoff |
+| ADR-005 | Zoom-driven globe → flat-map handoff (Google Earth model) |
 | `docs/research/references/raycast-design-md.md` | Verbatim Raycast design system source (read-only archive) |
 | `docs/rules/no-person-names.md` | PII rule: no person names in any project file |

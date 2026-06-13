@@ -420,385 +420,440 @@
       "startLng": -122.8032,
       "endLat": 64.6557,
       "endLng": -17.1996,
-      "label": "Inverness, United States → Fosshóll, Iceland"
+      "label": "Inverness, United States → Fosshóll, Iceland",
+      "weight": 0.13
     },
     {
       "startLat": 64.6557,
       "startLng": -17.1996,
       "endLat": 34.975,
       "endLng": 127.0296,
-      "label": "Fosshóll, Iceland → South Jeolla, South Korea"
+      "label": "Fosshóll, Iceland → South Jeolla, South Korea",
+      "weight": 0.5
     },
     {
       "startLat": 34.975,
       "startLng": 127.0296,
       "endLat": 43.0085,
       "endLng": 141.387,
-      "label": "South Jeolla, South Korea → Sapporo, Japan"
+      "label": "South Jeolla, South Korea → Sapporo, Japan",
+      "weight": 0.5
     },
     {
       "startLat": 43.0085,
       "startLng": 141.387,
       "endLat": 37.5155,
       "endLng": 128.2446,
-      "label": "Sapporo, Japan → Gangwon, South Korea"
+      "label": "Sapporo, Japan → Gangwon, South Korea",
+      "weight": 0.38
     },
     {
       "startLat": 37.5155,
       "startLng": 128.2446,
       "endLat": 36.2018,
       "endLng": 126.279,
-      "label": "Gangwon, South Korea → South Jeolla, South Korea"
+      "label": "Gangwon, South Korea → South Jeolla, South Korea",
+      "weight": 0.5
     },
     {
       "startLat": 36.2018,
       "startLng": 126.279,
       "endLat": 15.986,
       "endLng": 108.2849,
-      "label": "South Jeolla, South Korea → Da Nang, Vietnam"
+      "label": "South Jeolla, South Korea → Da Nang, Vietnam",
+      "weight": 0.5
     },
     {
       "startLat": 15.986,
       "startLng": 108.2849,
       "endLat": 35.3324,
       "endLng": 126.8692,
-      "label": "Da Nang, Vietnam → Gwangju, South Korea"
+      "label": "Da Nang, Vietnam → Gwangju, South Korea",
+      "weight": 0.38
     },
     {
       "startLat": 35.3324,
       "startLng": 126.8692,
       "endLat": 35.0645,
       "endLng": 135.1793,
-      "label": "Gwangju, South Korea → Tambasasayama, Japan"
+      "label": "Gwangju, South Korea → Tambasasayama, Japan",
+      "weight": 0.38
     },
     {
       "startLat": 35.0645,
       "startLng": 135.1793,
       "endLat": 35.0519,
       "endLng": 127.1092,
-      "label": "Tambasasayama, Japan → 광주광역시, South Korea"
+      "label": "Tambasasayama, Japan → 광주광역시, South Korea",
+      "weight": 0.25
     },
     {
       "startLat": 35.0519,
       "startLng": 127.1092,
       "endLat": 35.0628,
       "endLng": 135.1728,
-      "label": "광주광역시, South Korea → Tambasasayama, Japan"
+      "label": "광주광역시, South Korea → Tambasasayama, Japan",
+      "weight": 0.25
     },
     {
       "startLat": 35.0628,
       "startLng": 135.1728,
       "endLat": 35.3053,
       "endLng": 126.9763,
-      "label": "Tambasasayama, Japan → 여수시, South Korea"
+      "label": "Tambasasayama, Japan → 여수시, South Korea",
+      "weight": 0.25
     },
     {
       "startLat": 35.3053,
       "startLng": 126.9763,
       "endLat": 43.0491,
       "endLng": 141.3288,
-      "label": "여수시, South Korea → Sapporo, Japan"
+      "label": "여수시, South Korea → Sapporo, Japan",
+      "weight": 0.38
     },
     {
       "startLat": 43.0491,
       "startLng": 141.3288,
       "endLat": 35.1144,
       "endLng": 126.9987,
-      "label": "Sapporo, Japan → Gwangju, South Korea"
+      "label": "Sapporo, Japan → Gwangju, South Korea",
+      "weight": 0.38
     },
     {
       "startLat": 35.1144,
       "startLng": 126.9987,
       "endLat": 37.928,
       "endLng": 127.6625,
-      "label": "Gwangju, South Korea → 춘천시, South Korea"
+      "label": "Gwangju, South Korea → 춘천시, South Korea",
+      "weight": 0.38
     },
     {
       "startLat": 37.928,
       "startLng": 127.6625,
       "endLat": 35.0052,
       "endLng": 127.3095,
-      "label": "춘천시, South Korea → South Jeolla, South Korea"
+      "label": "춘천시, South Korea → South Jeolla, South Korea",
+      "weight": 0.5
     },
     {
       "startLat": 35.0052,
       "startLng": 127.3095,
       "endLat": 34.7949,
       "endLng": 126.355,
-      "label": "South Jeolla, South Korea → Mokpo, South Korea"
+      "label": "South Jeolla, South Korea → Mokpo, South Korea",
+      "weight": 0.5
     },
     {
       "startLat": 34.7949,
       "startLng": 126.355,
       "endLat": 34.975,
       "endLng": 127.0125,
-      "label": "Mokpo, South Korea → 목포시, South Korea"
+      "label": "Mokpo, South Korea → 목포시, South Korea",
+      "weight": 0.13
     },
     {
       "startLat": 34.975,
       "startLng": 127.0125,
       "endLat": 35.5507,
       "endLng": 127.152,
-      "label": "목포시, South Korea → Gwangju, South Korea"
+      "label": "목포시, South Korea → Gwangju, South Korea",
+      "weight": 0.38
     },
     {
       "startLat": 35.5507,
       "startLng": 127.152,
       "endLat": 33.7002,
       "endLng": 132.6497,
-      "label": "Gwangju, South Korea → Iyo, Japan"
+      "label": "Gwangju, South Korea → Iyo, Japan",
+      "weight": 0.38
     },
     {
       "startLat": 33.7002,
       "startLng": 132.6497,
       "endLat": 35.4249,
       "endLng": 127.1722,
-      "label": "Iyo, Japan → Gyeonggi-do, South Korea"
+      "label": "Iyo, Japan → Gyeonggi-do, South Korea",
+      "weight": 0.5
     },
     {
       "startLat": 35.4249,
       "startLng": 127.1722,
       "endLat": 40.2485,
       "endLng": 124.2907,
-      "label": "Gyeonggi-do, South Korea → Shenyang, China"
+      "label": "Gyeonggi-do, South Korea → Shenyang, China",
+      "weight": 0.5
     },
     {
       "startLat": 40.2485,
       "startLng": 124.2907,
       "endLat": 38.877,
       "endLng": 121.4344,
-      "label": "Shenyang, China → Lushun, China"
+      "label": "Shenyang, China → Lushun, China",
+      "weight": 0.25
     },
     {
       "startLat": 38.877,
       "startLng": 121.4344,
       "endLat": 42.1483,
       "endLng": 128.0773,
-      "label": "Lushun, China → Yanbian, China"
+      "label": "Lushun, China → Yanbian, China",
+      "weight": 0.25
     },
     {
       "startLat": 42.7199,
       "startLng": 129.1921,
       "endLat": 41.7765,
       "endLng": 123.4424,
-      "label": "Yanbian, China → Shenyang, China"
+      "label": "Yanbian, China → Shenyang, China",
+      "weight": 0.25
     },
     {
       "startLat": 41.7765,
       "startLng": 123.4424,
       "endLat": 35.6118,
       "endLng": 127.2773,
-      "label": "Shenyang, China → Gyeonggi-do, South Korea"
+      "label": "Shenyang, China → Gyeonggi-do, South Korea",
+      "weight": 0.5
     },
     {
       "startLat": 35.6118,
       "startLng": 127.2773,
       "endLat": 53.0827,
       "endLng": -1.459,
-      "label": "Gyeonggi-do, South Korea → London, United Kingdom"
+      "label": "Gyeonggi-do, South Korea → London, United Kingdom",
+      "weight": 0.5
     },
     {
       "startLat": 53.0827,
       "startLng": -1.459,
       "endLat": 35.1504,
       "endLng": 128.4378,
-      "label": "London, United Kingdom → 광명시, South Korea"
+      "label": "London, United Kingdom → 광명시, South Korea",
+      "weight": 0.25
     },
     {
       "startLat": 35.1504,
       "startLng": 128.4378,
       "endLat": 37.449,
       "endLng": 126.4491,
-      "label": "광명시, South Korea → Gyeonggi-do, South Korea"
+      "label": "광명시, South Korea → Gyeonggi-do, South Korea",
+      "weight": 0.5
     },
     {
       "startLat": 37.449,
       "startLng": 126.4491,
       "endLat": 24.488,
       "endLng": 54.656,
-      "label": "Gyeonggi-do, South Korea → Abu Dhabi, United Arab Emirates"
+      "label": "Gyeonggi-do, South Korea → Abu Dhabi, United Arab Emirates",
+      "weight": 0.5
     },
     {
       "startLat": 24.488,
       "startLng": 54.656,
       "endLat": 30.0244,
       "endLng": 47.8689,
-      "label": "Abu Dhabi, United Arab Emirates → Basra, Kuwait"
+      "label": "Abu Dhabi, United Arab Emirates → Basra, Kuwait",
+      "weight": 0.25
     },
     {
       "startLat": 30.0244,
       "startLng": 47.8689,
       "endLat": 53.3563,
       "endLng": -1.6936,
-      "label": "Basra, Kuwait → Sheffield, United Kingdom"
+      "label": "Basra, Kuwait → Sheffield, United Kingdom",
+      "weight": 1
     },
     {
       "startLat": 53.3563,
       "startLng": -1.6936,
       "endLat": 33.2963,
       "endLng": 131.1739,
-      "label": "Sheffield, United Kingdom → Kurume, Japan"
+      "label": "Sheffield, United Kingdom → Kurume, Japan",
+      "weight": 1
     },
     {
       "startLat": 33.2963,
       "startLng": 131.1739,
       "endLat": 53.3826,
       "endLng": -1.4761,
-      "label": "Kurume, Japan → Sheffield, United Kingdom"
+      "label": "Kurume, Japan → Sheffield, United Kingdom",
+      "weight": 1
     },
     {
       "startLat": 53.3848,
       "startLng": -1.8479,
       "endLat": 45.6278,
       "endLng": 9.2191,
-      "label": "Sheffield, United Kingdom → Milan, Italy"
+      "label": "Sheffield, United Kingdom → Milan, Italy",
+      "weight": 1
     },
     {
       "startLat": 45.6278,
       "startLng": 9.2191,
       "endLat": 53.3834,
       "endLng": -1.5014,
-      "label": "Milan, Italy → Sheffield, United Kingdom"
+      "label": "Milan, Italy → Sheffield, United Kingdom",
+      "weight": 1
     },
     {
       "startLat": 53.3834,
       "startLng": -1.5014,
       "endLat": 52.316,
       "endLng": 4.6344,
-      "label": "Sheffield, United Kingdom → Badhoevedorp, Netherlands"
+      "label": "Sheffield, United Kingdom → Badhoevedorp, Netherlands",
+      "weight": 1
     },
     {
       "startLat": 52.316,
       "startLng": 4.6344,
       "endLat": 37.4527,
       "endLng": 126.6895,
-      "label": "Badhoevedorp, Netherlands → 인천광역시, South Korea"
+      "label": "Badhoevedorp, Netherlands → 인천광역시, South Korea",
+      "weight": 0.13
     },
     {
       "startLat": 37.4527,
       "startLng": 126.6895,
       "endLat": 33.9644,
       "endLng": 126.8789,
-      "label": "인천광역시, South Korea → 여수시, South Korea"
+      "label": "인천광역시, South Korea → 여수시, South Korea",
+      "weight": 0.25
     },
     {
       "startLat": 33.9644,
       "startLng": 126.8789,
       "endLat": 37.5078,
       "endLng": 126.5331,
-      "label": "여수시, South Korea → Gyeonggi-do, South Korea"
+      "label": "여수시, South Korea → Gyeonggi-do, South Korea",
+      "weight": 0.5
     },
     {
       "startLat": 37.5078,
       "startLng": 126.5331,
       "endLat": 52.3044,
       "endLng": 4.7579,
-      "label": "Gyeonggi-do, South Korea → Luchthaven Schiphol, Netherlands"
+      "label": "Gyeonggi-do, South Korea → Luchthaven Schiphol, Netherlands",
+      "weight": 0.5
     },
     {
       "startLat": 52.3044,
       "startLng": 4.7579,
       "endLat": 53.2471,
       "endLng": -2.9149,
-      "label": "Luchthaven Schiphol, Netherlands → Sheffield, United Kingdom"
+      "label": "Luchthaven Schiphol, Netherlands → Sheffield, United Kingdom",
+      "weight": 1
     },
     {
       "startLat": 53.2471,
       "startLng": -2.9149,
       "endLat": 35.4298,
       "endLng": 128.6867,
-      "label": "Sheffield, United Kingdom → South Jeolla, South Korea"
+      "label": "Sheffield, United Kingdom → South Jeolla, South Korea",
+      "weight": 1
     },
     {
       "startLat": 35.4298,
       "startLng": 128.6867,
       "endLat": 35.8021,
       "endLng": 129.3011,
-      "label": "South Jeolla, South Korea → North Gyeongsang, South Korea"
+      "label": "South Jeolla, South Korea → North Gyeongsang, South Korea",
+      "weight": 0.5
     },
     {
       "startLat": 35.8021,
       "startLng": 129.3011,
       "endLat": 54.0253,
       "endLng": -1.9007,
-      "label": "North Gyeongsang, South Korea → Sheffield, United Kingdom"
+      "label": "North Gyeongsang, South Korea → Sheffield, United Kingdom",
+      "weight": 1
     },
     {
       "startLat": 54.0253,
       "startLng": -1.9007,
       "endLat": 51.9991,
       "endLng": -0.5489,
-      "label": "Sheffield, United Kingdom → London, United Kingdom"
+      "label": "Sheffield, United Kingdom → London, United Kingdom",
+      "weight": 1
     },
     {
       "startLat": 51.9991,
       "startLng": -0.5489,
       "endLat": 48.9477,
       "endLng": 2.3108,
-      "label": "London, United Kingdom → Paris, France"
+      "label": "London, United Kingdom → Paris, France",
+      "weight": 0.25
     },
     {
       "startLat": 48.9477,
       "startLng": 2.3108,
       "endLat": 53.3604,
       "endLng": -1.4714,
-      "label": "Paris, France → Sheffield, United Kingdom"
+      "label": "Paris, France → Sheffield, United Kingdom",
+      "weight": 1
     },
     {
       "startLat": 53.3604,
       "startLng": -1.4714,
       "endLat": 50.7876,
       "endLng": 0.1416,
-      "label": "Sheffield, United Kingdom → Seaford, United Kingdom"
+      "label": "Sheffield, United Kingdom → Seaford, United Kingdom",
+      "weight": 1
     },
     {
       "startLat": 50.7876,
       "startLng": 0.1416,
       "endLat": 53.3317,
       "endLng": -1.8678,
-      "label": "Seaford, United Kingdom → Manchester, United Kingdom"
+      "label": "Seaford, United Kingdom → Manchester, United Kingdom",
+      "weight": 0.13
     },
     {
       "startLat": 53.3317,
       "startLng": -1.8678,
       "endLat": 48.194,
       "endLng": 4.1863,
-      "label": "Manchester, United Kingdom → Saint-Parres-lès-Vaudes, France"
+      "label": "Manchester, United Kingdom → Saint-Parres-lès-Vaudes, France",
+      "weight": 0.13
     },
     {
       "startLat": 48.194,
       "startLng": 4.1863,
       "endLat": 46.6407,
       "endLng": 7.8795,
-      "label": "Saint-Parres-lès-Vaudes, France → Grindelwald, Switzerland"
+      "label": "Saint-Parres-lès-Vaudes, France → Grindelwald, Switzerland",
+      "weight": 0.13
     },
     {
       "startLat": 46.6407,
       "startLng": 7.8795,
       "endLat": 50.5159,
       "endLng": 1.9385,
-      "label": "Grindelwald, Switzerland → Wahagnies, France"
+      "label": "Grindelwald, Switzerland → Wahagnies, France",
+      "weight": 0.13
     },
     {
       "startLat": 50.5159,
       "startLng": 1.9385,
       "endLat": 53.3178,
       "endLng": -1.6071,
-      "label": "Wahagnies, France → Sheffield, United Kingdom"
+      "label": "Wahagnies, France → Sheffield, United Kingdom",
+      "weight": 1
     },
     {
       "startLat": 53.3178,
       "startLng": -1.6071,
       "endLat": 24.453,
       "endLng": 54.6448,
-      "label": "Sheffield, United Kingdom → Abu Dhabi, United Arab Emirates"
+      "label": "Sheffield, United Kingdom → Abu Dhabi, United Arab Emirates",
+      "weight": 1
     },
     {
       "startLat": 24.453,
       "startLng": 54.6448,
       "endLat": 34.9831,
       "endLng": 127.3714,
-      "label": "Abu Dhabi, United Arab Emirates → South Chungcheong, South Korea"
+      "label": "Abu Dhabi, United Arab Emirates → South Chungcheong, South Korea",
+      "weight": 0.25
     }
   ]
 }

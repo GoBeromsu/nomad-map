@@ -20,3 +20,4 @@ PROPOSED → ACCEPTED → (SUPERSEDED | DEPRECATED)
 | ADR-002 | Dual Theme System with Auto-Detection | Accepted | 2026-06-13 |
 | ADR-003 | Globe-First Hybrid Navigation Model | Accepted | 2026-06-13 |
 | ADR-004 | Immersive Navigation — Click-to-Fly Map Motion & Cinematic Globe→Map Handoff | Accepted | 2026-06-13 |
+| ADR-005 | Zoom-Driven Globe → Flat-Map Handoff (Google Earth Model) | Accepted | 2026-06-13 |

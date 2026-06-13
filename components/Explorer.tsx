@@ -12,7 +12,13 @@ import type { Category, Place, Status } from "@/lib/types";
 
 const SIDEBAR_KEY = "nm-sidebar-collapsed";
 
-export default function Explorer({ places }: { places: Place[] }) {
+export default function Explorer({
+  places,
+  onShowGlobe,
+}: {
+  places: Place[];
+  onShowGlobe?: () => void;
+}) {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [mobileListOpen, setMobileListOpen] = useState(false);
   // Default expanded (false = not collapsed). Lazy initializer reads localStorage
@@ -167,8 +173,21 @@ export default function Explorer({ places }: { places: Place[] }) {
           userLocation={userLocation}
         />
 
+        {/* 🌍 지구본으로 돌아가기: 지도 컬럼 안에 위치하므로 사이드바 검색창과
+            절대 겹치지 않음 (AppShell에서 이전됨). left-3 top-3. */}
+        {onShowGlobe && (
+          <button
+            type="button"
+            onClick={onShowGlobe}
+            className="absolute left-3 top-3 z-20 flex items-center gap-1.5 rounded-full border border-hairline bg-surface-1/90 px-3 py-2 text-sm font-semibold text-body backdrop-blur transition hover:bg-surface-2"
+            aria-label={t("map.backToGlobe")}
+          >
+            🌍
+          </button>
+        )}
+
         {/* 사이드바 펼치기 버튼 (▶): 접혔을 때만 표시, 데스크톱 전용.
-            AppShell의 🌍 버튼이 left-3 top-3 에 있으므로 left-14 top-3 으로 오프셋. */}
+            🌍 버튼이 left-3 top-3 에 있으므로 left-14 top-3 으로 오프셋. */}
         {sidebarCollapsed && (
           <button
             type="button"

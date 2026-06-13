@@ -50,6 +50,7 @@ export interface RouteArc {
   endLat: number;
   endLng: number;
   label: string;
+  weight?: number;
 }
 
 export interface RouteData {

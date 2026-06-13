@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import Explorer from "./Explorer";
-import { useI18n } from "@/lib/i18n/I18nProvider";
 import type { Place } from "@/lib/types";
 
 const INTRO_KEY = "nm-intro-seen";
@@ -40,7 +39,6 @@ export default function AppShell({ places }: { places: Place[] }) {
   // null during SSR/hydration — effect below resolves it client-side.
   const [stage, setStage] = useState<Stage | null>(null);
   const [reducedMotion, setReducedMotion] = useState(false);
-  const { t } = useI18n();
 
   useEffect(() => {
     const seen = sessionStorage.getItem(INTRO_KEY);
@@ -81,7 +79,7 @@ export default function AppShell({ places }: { places: Place[] }) {
           stage === "globe" ? "scale-[0.97]" : "scale-100",
         ].join(" ")}
       >
-        <Explorer places={places} />
+        <Explorer places={places} onShowGlobe={handleGlobeButton} />
       </div>
 
       {/* Globe overlay: conditionally mounted so WebGL context is released when gone;
@@ -101,17 +99,8 @@ export default function AppShell({ places }: { places: Place[] }) {
         </div>
       )}
 
-      {/* 🌍 return button — only in map stage, floats over Explorer's map column */}
-      {stage === "map" && (
-        <button
-          type="button"
-          onClick={handleGlobeButton}
-          className="absolute left-3 top-3 z-20 flex items-center gap-1.5 rounded-full border border-hairline bg-surface-1/90 px-3 py-2 text-sm font-semibold text-body backdrop-blur transition hover:bg-surface-2"
-          aria-label={t("map.backToGlobe")}
-        >
-          🌍
-        </button>
-      )}
+      {/* 🌍 return button now lives inside Explorer's map column (see Explorer's
+          onShowGlobe) so it floats over the map, never over the sidebar search. */}
     </div>
   );
 }
