@@ -95,6 +95,9 @@ export default function MapView({
 
         // MarkerClusterer: cluster when map level >= minLevel (more zoomed out).
         // At level < 6 (zoomed in), individual markers are shown.
+        // 버블 톤은 구글(.nm-cluster)과 동일한 따뜻한 앰버로 통일. 카카오 클러스터러는
+        // inline 스타일만 받으므로 여기서 직접 앰버를 지정하고, 다크모드에서는
+        // .nm-kakao-surface 반전 필터를 상쇄하기 위해 아래에서 .nm-cluster 클래스를 부여한다.
         clustererRef.current = new kakao.maps.MarkerClusterer({
           map,
           averageCenter: true,
@@ -104,17 +107,30 @@ export default function MapView({
             {
               width: "44px",
               height: "44px",
-              background: "#ffffff",
-              border: "2px solid #e7ded0",
+              background: "radial-gradient(circle at 38% 32%, #e8a04b, #b45309)",
+              border: "none",
               borderRadius: "50%",
-              color: "#2a2723",
+              color: "#fff",
               fontWeight: "700",
               fontSize: "13px",
               textAlign: "center",
-              lineHeight: "40px",
-              boxShadow: "0 2px 6px rgba(0,0,0,.2)",
+              lineHeight: "44px",
+              boxShadow:
+                "0 0 0 5px rgba(180,83,9,.22), 0 2px 8px rgba(0,0,0,.35)",
+              textShadow: "0 1px 2px rgba(0,0,0,.4)",
             },
           ],
+        });
+
+        // 클러스터가 (재)렌더될 때마다 우리 클래스를 부여 → globals.css의
+        // `.dark .nm-kakao-surface .nm-cluster` 역필터가 다크모드에서 앰버를 복원.
+        // 카카오 클러스터 엘리먼트는 클래스가 없으므로 inline 원형 스타일로 선별한다.
+        kakao.maps.event.addListener(clustererRef.current, "clustered", () => {
+          const root = containerRef.current;
+          if (!root) return;
+          root
+            .querySelectorAll<HTMLElement>('[style*="border-radius: 50%"]')
+            .forEach((el) => el.classList.add("nm-cluster"));
         });
 
         setReady(true);

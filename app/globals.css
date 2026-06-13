@@ -165,9 +165,12 @@ body {
 }
 
 /* ── 클러스터 마커 (MarkerClusterer warm-theme badge) ── */
+/* 클러스터 버블 — 디자인 토큰의 따뜻한 앰버(카페 마커 #b45309 계열)로 통일.
+   카카오/구글 두 프로바이더가 동일한 톤을 쓰도록 globals.css 한 곳에서 관리한다.
+   (카카오는 .nm-kakao-surface 다크 반전 필터 안에 있으므로 아래에서 역필터로 상쇄.) */
 .nm-cluster {
   border-radius: 9999px;
-  background: radial-gradient(circle at 38% 32%, #ffca6b, #c8700a);
+  background: radial-gradient(circle at 38% 32%, #e8a04b, #b45309);
   color: #fff;
   font-weight: 700;
   line-height: 1;
@@ -175,7 +178,7 @@ body {
   align-items: center;
   justify-content: center;
   box-shadow:
-    0 0 0 5px rgba(200, 112, 10, 0.22),
+    0 0 0 5px rgba(180, 83, 9, 0.22),
     0 2px 8px rgba(0, 0, 0, 0.35);
   cursor: pointer;
   transition:
@@ -188,7 +191,7 @@ body {
 .nm-cluster:hover {
   transform: scale(1.1);
   box-shadow:
-    0 0 0 7px rgba(200, 112, 10, 0.28),
+    0 0 0 7px rgba(180, 83, 9, 0.28),
     0 4px 14px rgba(0, 0, 0, 0.4);
 }
 
@@ -200,6 +203,7 @@ body {
    Google 지도는 colorScheme을 쓰고 컨테이너 필터가 없으므로
    .nm-kakao-surface 하위로만 한정하여 영향을 주지 않는다. */
 .dark .nm-kakao-surface .nm-marker button,
-.dark .nm-kakao-surface .nm-here {
+.dark .nm-kakao-surface .nm-here,
+.dark .nm-kakao-surface .nm-cluster {
   filter: invert(1) hue-rotate(180deg);
 }

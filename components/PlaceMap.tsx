@@ -111,12 +111,14 @@ export default function PlaceMap(props: MapViewProps) {
     <div className="relative h-full w-full">
       <Active {...props} onLoadError={() => handleLoadError(effective)} />
 
-      {/* 프로바이더 토글 (자동 / Kakao / Google). 우하단 — 🌍·상세패널·모바일
-          목록 버튼과 겹치지 않는 위치. */}
+      {/* 프로바이더 토글 (자동 / Kakao / Google). 우하단 정렬.
+          모바일에서는 하단 중앙 '목록 보기' 버튼과 같은 띠(bottom-4)에 놓이면
+          겹치므로 한 단 위로 올린다(bottom-16). 데스크톱(md+)은 목록 버튼이
+          없으므로 bottom-4로 복귀. */}
       <div
         role="group"
         aria-label={t("map.provider.label")}
-        className="absolute bottom-4 right-3 z-20 flex items-center gap-0.5 rounded-full border border-hairline bg-surface-1/90 p-0.5 text-[11px] font-semibold shadow-md backdrop-blur"
+        className="absolute bottom-16 right-3 z-20 flex items-center gap-0.5 rounded-full border border-hairline bg-surface-1/90 p-0.5 text-[11px] font-semibold shadow-md backdrop-blur md:bottom-4"
       >
         {CHOICES.map((c) => {
           const selected = choice === c;
@@ -144,7 +146,7 @@ export default function PlaceMap(props: MapViewProps) {
       {notice && (
         <div
           role="status"
-          className="absolute bottom-16 right-3 z-20 max-w-[260px] rounded-lg border border-hairline bg-surface-1/95 px-3 py-2 text-xs text-body shadow-md backdrop-blur"
+          className="absolute bottom-28 right-3 z-20 max-w-[260px] rounded-lg border border-hairline bg-surface-1/95 px-3 py-2 text-xs text-body shadow-md backdrop-blur md:bottom-16"
         >
           {notice}
         </div>
