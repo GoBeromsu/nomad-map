@@ -9,7 +9,7 @@ status: active
 
 ## Rule
 
-No real person's name or personal identifier may appear ANYWHERE in the public artifacts — this includes `data/places.json` (descriptions, notes/comments, addresses), all 8-locale translations (ko/en/ja/zh/es/fr/de/vi), `data/route.json`, Obsidian-sourced extractions, commit messages, and UI copy. This is a hard, non-negotiable owner rule ("절대 우리 개인정보가 유출이 되면 안되 ... 사람 이름이 언급이 안된다").
+No real person's name or personal identifier may appear ANYWHERE in the public artifacts — this includes `data/places.json` (descriptions, notes/comments, addresses), all 8-locale translations (ko/en/ja/zh/es/fr/de/vi), `data/route.json`, any extracted source data, commit messages, and UI copy. This is a hard, non-negotiable owner rule ("절대 우리 개인정보가 유출이 되면 안되 ... 사람 이름이 언급이 안된다").
 
 ## Rationale
 
