@@ -25,6 +25,7 @@ export default function PlaceDetail({
   const [photoIdx, setPhotoIdx] = useState(0);
   const cat = CATEGORY_META[place.category];
   const photos = place.photos.length > 0 ? place.photos : [];
+  const displayName = localizeField(place.name_i18n, locale, place.name);
 
   return (
     <div className="flex h-full flex-col">
@@ -35,7 +36,7 @@ export default function PlaceDetail({
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={photos[photoIdx]}
-              alt={place.name}
+              alt={displayName}
               className="h-full w-full object-cover"
             />
             {photos.length > 1 && (
@@ -89,7 +90,7 @@ export default function PlaceDetail({
           </span>
         </div>
 
-        <h2 className="mt-3 text-xl font-bold text-ink">{place.name}</h2>
+        <h2 className="mt-3 text-xl font-bold text-ink">{displayName}</h2>
         {place.address && (
           <p className="mt-1 text-sm text-muted">{place.address}</p>
         )}

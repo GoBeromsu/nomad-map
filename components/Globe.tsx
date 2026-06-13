@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, useEffect, useCallback, useMemo } from "react";
+import { useRef, useState, useEffect, useCallback } from "react";
 import GlobeGL from "react-globe.gl";
 import type { GlobeMethods } from "react-globe.gl";
 import type { RouteArc, RouteStop } from "@/lib/types";
@@ -21,112 +21,6 @@ const TOPO_URL        = "//unpkg.com/three-globe/example/img/earth-topology.png"
 
 // Korea center (same as MapView.tsx)
 const KOREA_POV = { lat: 36.5, lng: 127.8, altitude: 0.65 } as const;
-
-// ---------------------------------------------------------------------------
-// Ambient arc city pool — 42 major hubs (lat, lng)
-// No person names, public city names only.
-// ---------------------------------------------------------------------------
-const CITY_COORDS: [number, number][] = [
-  [ 40.7128,  -74.0060], // New York
-  [ 51.5074,   -0.1278], // London
-  [ 48.8566,    2.3522], // Paris
-  [ 35.6762,  139.6503], // Tokyo
-  [ 22.3193,  114.1694], // Hong Kong
-  [  1.3521,  103.8198], // Singapore
-  [-33.8688,  151.2093], // Sydney
-  [ 55.7558,   37.6173], // Moscow
-  [ 19.0760,   72.8777], // Mumbai
-  [ 39.9042,  116.4074], // Beijing
-  [-23.5505,  -46.6333], // São Paulo
-  [ 34.0522, -118.2437], // Los Angeles
-  [ 41.8781,  -87.6298], // Chicago
-  [ 25.2048,   55.2708], // Dubai
-  [ 37.5665,  126.9780], // Seoul
-  [-26.2041,   28.0473], // Johannesburg
-  [ 30.0444,   31.2357], // Cairo
-  [ 28.6139,   77.2090], // Delhi
-  [ 49.2827, -123.1207], // Vancouver
-  [ 43.6532,  -79.3832], // Toronto
-  [ 19.4326,  -99.1332], // Mexico City
-  [-34.6037,  -58.3816], // Buenos Aires
-  [  6.5244,    3.3792], // Lagos
-  [ -1.2921,   36.8219], // Nairobi
-  [ 59.3293,   18.0686], // Stockholm
-  [ 52.5200,   13.4050], // Berlin
-  [ 41.9028,   12.4964], // Rome
-  [ 40.4168,   -3.7038], // Madrid
-  [ 50.8503,    4.3517], // Brussels
-  [ 47.3769,    8.5417], // Zurich
-  [ 60.1699,   24.9384], // Helsinki
-  [ 59.9139,   10.7522], // Oslo
-  [ 55.6761,   12.5683], // Copenhagen
-  [ 21.3069, -157.8583], // Honolulu
-  [ 13.7563,  100.5018], // Bangkok
-  [  3.1390,  101.6869], // Kuala Lumpur
-  [ -6.2088,  106.8456], // Jakarta
-  [ 31.2304,  121.4737], // Shanghai
-  [-37.8136,  144.9631], // Melbourne
-  [ 33.5731,   -7.5898], // Casablanca
-  [ 14.6937,  -17.4441], // Dakar
-  [ -4.3217,   15.3222], // Kinshasa
-];
-
-// Dim cinematic palette — green / gold / red / indigo / cyan
-const AMBIENT_COLORS = [
-  "rgba(74,222,128,0.32)",
-  "rgba(251,191,36,0.25)",
-  "rgba(248,113,113,0.28)",
-  "rgba(129,140,248,0.30)",
-  "rgba(34,211,238,0.26)",
-];
-
-// ---------------------------------------------------------------------------
-// Arc type discriminant
-// ---------------------------------------------------------------------------
-interface AmbientArc {
-  startLat:     number;
-  startLng:     number;
-  endLat:       number;
-  endLng:       number;
-  ambient:      true;
-  ambientColor: string;
-  ambientGap:   number; // staggered arcDashInitialGap 0–1
-  ambientSpeed: number; // arcDashAnimateTime ms
-}
-
-type CombinedArc = RouteArc | AmbientArc;
-
-function isAmbientArc(arc: CombinedArc): arc is AmbientArc {
-  return (arc as AmbientArc).ambient === true;
-}
-
-// ---------------------------------------------------------------------------
-// Generate ~160 ambient arcs once at module load (client-only via dynamic import)
-// ---------------------------------------------------------------------------
-function buildAmbientArcs(count: number): AmbientArc[] {
-  const result: AmbientArc[] = [];
-  const n = CITY_COORDS.length;
-  for (let i = 0; i < count; i++) {
-    const fromIdx = Math.floor(Math.random() * n);
-    let toIdx = Math.floor(Math.random() * n);
-    if (toIdx === fromIdx) toIdx = (toIdx + 1) % n;
-    result.push({
-      startLat:     CITY_COORDS[fromIdx][0],
-      startLng:     CITY_COORDS[fromIdx][1],
-      endLat:       CITY_COORDS[toIdx][0],
-      endLng:       CITY_COORDS[toIdx][1],
-      ambient:      true,
-      ambientColor: AMBIENT_COLORS[i % AMBIENT_COLORS.length],
-      // golden-ratio-ish stagger so arcs flow continuously, not in sync
-      ambientGap:   (i * 0.137) % 1.0,
-      // spread animate times 4500–7000 ms for a calm shimmer
-      ambientSpeed: 4500 + (i % 10) * 250,
-    });
-  }
-  return result;
-}
-
-const AMBIENT_ARCS: AmbientArc[] = buildAmbientArcs(160);
 
 // ---------------------------------------------------------------------------
 // Component
@@ -162,12 +56,6 @@ export default function GlobeIntro({ onEnter }: GlobeProps) {
   // Subtle purple-blue atmosphere rim (Image B vibe)
   const atmosColor     = theme === "dark" ? "#4f87ff" : "#7eb4d8";
   const atmosAlt       = theme === "dark" ? 0.22 : 0.18;
-
-  // Combine ambient atmosphere arcs + real hero arcs in one layer
-  const allArcsData: CombinedArc[] = useMemo(
-    () => [...AMBIENT_ARCS, ...arcsData],
-    [arcsData],
-  );
 
   // ------------------------------------------------------------------
   // Responsive sizing via ResizeObserver
@@ -357,50 +245,29 @@ export default function GlobeIntro({ onEnter }: GlobeProps) {
           waitForGlobeReady={true}
           enablePointerInteraction={true}
           rendererConfig={{ antialias: true, alpha: true }}
-          // Single arcs layer — ambient (dim atmosphere) + hero (bright real route)
-          // Ambient arcs: thin, muted, slow continuous shimmer
-          // Hero arcs:    thick, gold→white, clearly the user's real journey
-          arcsData={allArcsData}
+          // Real visited-route arcs only — gold→white, weight-scaled stroke.
+          // (Decorative ambient arcs to non-visited cities were removed: the
+          // globe must connect only places actually visited.)
+          arcsData={arcsData}
           arcStartLat="startLat"
           arcStartLng="startLng"
           arcEndLat="endLat"
           arcEndLng="endLng"
-          arcColor={(d: object) => {
-            const arc = d as CombinedArc;
-            if (isAmbientArc(arc)) return arc.ambientColor;
-            return [ARC_HERO_START, ARC_HERO_END];
-          }}
+          arcColor={() => [ARC_HERO_START, ARC_HERO_END]}
           arcStroke={(d: object) => {
-            const arc = d as CombinedArc;
-            if (isAmbientArc(arc)) return 0.3;
             if (isMobile) return null;
-            const heroArc = arc as RouteArc;
-            return 0.7 + (heroArc.weight ?? 0) * 2.0;
+            const arc = d as RouteArc;
+            // Visit-frequency weighted: more-visited routes render thicker.
+            return 0.7 + (arc.weight ?? 0) * 2.0;
           }}
           // Longer dash + near-zero gap = continuous glow, not blinky tick
-          arcDashLength={(d: object) => {
-            const arc = d as CombinedArc;
-            return isAmbientArc(arc) ? 0.72 : 0.5;
-          }}
-          arcDashGap={(d: object) => {
-            const arc = d as CombinedArc;
-            return isAmbientArc(arc) ? 0.01 : 0.02;
-          }}
-          // Staggered initial gaps → arcs flow at different offsets, not in sync
-          arcDashInitialGap={(d: object) => {
-            const arc = d as CombinedArc;
-            return isAmbientArc(arc) ? arc.ambientGap : 0;
-          }}
-          // Slow animate times for calm cinematic feel (4500–7000 ms ambient, 4200 hero)
-          arcDashAnimateTime={(d: object) => {
-            const arc = d as CombinedArc;
-            return isAmbientArc(arc) ? arc.ambientSpeed : 4200;
-          }}
+          arcDashLength={0.5}
+          arcDashGap={0.02}
+          arcDashInitialGap={0}
+          // Slow animate time for a calm cinematic flow
+          arcDashAnimateTime={4200}
           arcAltitude={null}
-          arcAltitudeAutoScale={(d: object) => {
-            const arc = d as CombinedArc;
-            return isAmbientArc(arc) ? 0.22 : 0.3;
-          }}
+          arcAltitudeAutoScale={0.3}
           arcCurveResolution={isMobile ? 32 : 64}
           arcCircularResolution={isMobile ? 3 : 6}
           arcsTransitionDuration={500}

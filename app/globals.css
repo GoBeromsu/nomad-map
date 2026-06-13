@@ -125,6 +125,7 @@ body {
   max-width: 140px;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .nm-marker--active button {
@@ -189,4 +190,16 @@ body {
   box-shadow:
     0 0 0 7px rgba(200, 112, 10, 0.28),
     0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+/* ── 카카오 다크모드 오버레이 역필터 ──
+   다크모드에서 카카오 타일 컨테이너(.nm-kakao-surface)에 색 반전 필터가
+   걸리는데(MapView.tsx), 그 안의 커스텀 오버레이(.nm-marker/.nm-here)는
+   이미 다크모드 CSS 변수 색을 쓰므로 이중 반전되어 색이 깨진다.
+   해당 오버레이만 역필터로 상쇄해 원래 색을 복원한다.
+   Google 지도는 colorScheme을 쓰고 컨테이너 필터가 없으므로
+   .nm-kakao-surface 하위로만 한정하여 영향을 주지 않는다. */
+.dark .nm-kakao-surface .nm-marker button,
+.dark .nm-kakao-surface .nm-here {
+  filter: invert(1) hue-rotate(180deg);
 }

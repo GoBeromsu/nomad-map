@@ -55,7 +55,7 @@ export default function PlaceListItem({
       <div className="min-w-0 flex-1">
         <div className="flex items-center gap-1.5">
           <span className="truncate text-sm font-semibold text-ink">
-            {place.name}
+            {localizeField(place.name_i18n, locale, place.name)}
           </span>
           {distanceKm !== undefined && (
             <span className="ml-auto shrink-0 rounded-full bg-accent-blue/15 px-1.5 py-0.5 text-[10px] font-semibold text-accent-blue">
@@ -68,13 +68,13 @@ export default function PlaceListItem({
         </p>
         <div className="mt-1.5 flex items-center gap-1.5">
           <span
-            className="rounded-full px-1.5 py-0.5 text-[10px] font-medium"
+            className="whitespace-nowrap rounded-full px-1.5 py-0.5 text-[10px] font-medium"
             style={{ background: cat.color + "1a", color: cat.color }}
           >
             {t(`category.${place.category}`)}
           </span>
           <span
-            className={`rounded-full px-1.5 py-0.5 text-[10px] font-semibold ${STATUS_CHIP[place.status] ?? ""}`}
+            className={`whitespace-nowrap rounded-full px-1.5 py-0.5 text-[10px] font-semibold ${STATUS_CHIP[place.status] ?? ""}`}
           >
             {t(`status.${place.status}`)}
           </span>

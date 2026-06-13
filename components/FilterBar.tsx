@@ -57,7 +57,7 @@ export default function FilterBar({
               type="button"
               onClick={() => toggleCategory(c)}
               aria-pressed={active}
-              className={`rounded-full border px-2.5 py-1 text-xs font-medium transition ${
+              className={`whitespace-nowrap rounded-full border px-2.5 py-1 text-xs font-medium transition ${
                 active
                   ? "border-transparent text-cta-ink"
                   : "border-hairline bg-surface-2 text-body hover:bg-surface-3"
@@ -80,7 +80,7 @@ export default function FilterBar({
               type="button"
               onClick={() => toggleStatus(s)}
               aria-pressed={active}
-              className={`rounded-full border px-2.5 py-1 text-xs font-medium transition ${
+              className={`whitespace-nowrap rounded-full border px-2.5 py-1 text-xs font-medium transition ${
                 active
                   ? "border-transparent bg-cta text-cta-ink"
                   : "border-hairline bg-surface-2 text-body hover:bg-surface-3"

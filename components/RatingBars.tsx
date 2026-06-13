@@ -12,7 +12,7 @@ export default function RatingBars({ ratings }: { ratings: NomadRatings }) {
         const value = ratings[key];
         return (
           <div key={key} className="flex items-center gap-3">
-            <dt className="w-16 shrink-0 text-xs font-medium text-muted">
+            <dt className="w-32 shrink-0 whitespace-nowrap leading-tight text-xs font-medium text-muted">
               {t(`rating.${key}`)}
             </dt>
             <dd className="flex flex-1 items-center gap-2">

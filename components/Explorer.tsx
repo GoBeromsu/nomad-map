@@ -211,7 +211,7 @@ export default function Explorer({
         <button
           type="button"
           onClick={() => setMobileListOpen(true)}
-          className="absolute bottom-4 left-1/2 z-10 -translate-x-1/2 rounded-full bg-cta px-5 py-2.5 text-sm font-semibold text-cta-ink md:hidden"
+          className="absolute bottom-4 left-1/2 z-10 -translate-x-1/2 whitespace-nowrap rounded-full bg-cta px-5 py-2.5 text-sm font-semibold text-cta-ink md:hidden"
         >
           {t("list.openMobile")} ({filtered.length})
         </button>

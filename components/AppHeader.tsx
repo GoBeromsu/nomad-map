@@ -19,7 +19,7 @@ export default function AppHeader() {
           <h1 className="text-base font-bold leading-tight text-ink">
             {t("app.title")}
           </h1>
-          <p className="text-[11px] leading-tight text-muted">
+          <p className="line-clamp-2 text-[11px] leading-tight text-muted">
             {t("app.tagline")}
           </p>
         </div>

@@ -60,7 +60,9 @@ export interface RouteData {
 
 export interface Place {
   id: string;
+  /** @deprecated Use name_i18n. Retained as ko/original shim until all records migrated. */
   name: string;
+  name_i18n?: LocaleMap; // 로컬라이즈된 장소명
   category: Category;
   status: Status;
   lat: number;

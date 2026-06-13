@@ -5,6 +5,7 @@ import { MarkerClusterer } from "@googlemaps/markerclusterer";
 import { loadGoogleMaps } from "@/lib/google";
 import { CATEGORY_META } from "@/lib/constants";
 import { useI18n } from "@/lib/i18n/I18nProvider";
+import { localizeField } from "@/lib/i18n/localizeField";
 import { useTheme } from "@/lib/theme/ThemeProvider";
 import type { Place } from "@/lib/types";
 
@@ -21,7 +22,7 @@ export default function GoogleMapView({
   onSelect,
   userLocation,
 }: MapViewProps) {
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
   const { theme } = useTheme();
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<any>(null);
@@ -49,7 +50,9 @@ export default function GoogleMapView({
           // AdvancedMarkerElement 사용을 위해 mapId 필요
           mapId: "nomad-map",
           // mapId 사용 시 styles 속성은 무시됨 — colorScheme으로 다크/라이트 전환.
-          // 초기값은 아래 theme-update effect가 ready=true 시 즉시 적용합니다.
+          // 초기값을 생성자에서 바로 지정해야 마운트 시 라이트 타일이 번쩍이는
+          // (flash-of-light) 현상을 막을 수 있다. 이후 토글은 아래 effect가 처리.
+          colorScheme: theme === "dark" ? "DARK" : "LIGHT",
           // 불필요한 기본 UI 제거
           streetViewControl: false,
           mapTypeControl: false,
@@ -62,6 +65,8 @@ export default function GoogleMapView({
     return () => {
       cancelled = true;
     };
+    // theme는 생성자 초기값으로만 사용 — 토글 시 재초기화하면 안 되므로 deps에서 제외.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // 테마 변경 시 colorScheme 재적용
@@ -99,13 +104,14 @@ export default function GoogleMapView({
       bounds.extend(pos);
 
       const meta = CATEGORY_META[place.category];
+      const name = localizeField(place.name_i18n, locale, place.name);
       const el = document.createElement("div");
       el.className = "nm-marker";
       el.dataset.id = place.id;
       el.innerHTML = `
-        <button type="button" aria-label="${place.name}" style="--mc:${meta.color}">
+        <button type="button" aria-label="${name}" style="--mc:${meta.color}">
           <span class="nm-marker__emoji">${meta.emoji}</span>
-          <span class="nm-marker__name">${place.name}</span>
+          <span class="nm-marker__name">${name}</span>
         </button>`;
       el.querySelector("button")!.addEventListener("click", (e) => {
         e.stopPropagation();
@@ -116,7 +122,7 @@ export default function GoogleMapView({
       const marker = new google.maps.marker.AdvancedMarkerElement({
         position: pos,
         content: el,
-        title: place.name,
+        title: name,
       });
       markersRef.current.set(place.id, marker);
       markersList.push(marker);
@@ -157,7 +163,7 @@ export default function GoogleMapView({
       });
       markersRef.current.clear();
     };
-  }, [places, ready]);
+  }, [places, ready, locale]);
 
   // 선택된 장소 강조 + smooth fly-to (pan + animated zoom)
   useEffect(() => {

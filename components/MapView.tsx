@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { loadKakaoMaps } from "@/lib/kakao";
 import { CATEGORY_META } from "@/lib/constants";
 import { useI18n } from "@/lib/i18n/I18nProvider";
+import { localizeField } from "@/lib/i18n/localizeField";
 import { useTheme } from "@/lib/theme/ThemeProvider";
 import type { Place } from "@/lib/types";
 
@@ -58,7 +59,7 @@ export default function MapView({
   onSelect,
   userLocation,
 }: MapViewProps) {
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
   const { theme } = useTheme();
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<any>(null);
@@ -119,12 +120,17 @@ export default function MapView({
     };
   }, []);
 
-  // LIMITATION: Kakao lacks full JSON dark styling — apply a subtle CSS filter
-  // to the map container so it doesn't glare against the dark UI.
+  // LIMITATION: Kakao has no native dark tile API (MapTypeId only offers
+  // ROADMAP/SKYVIEW/HYBRID). The robust workaround is a colour-inversion CSS
+  // filter on the tile container so the map reads as an intentional dark map
+  // instead of a dimmed light one. The .nm-marker / .nm-here custom overlays
+  // are counter-inverted in globals.css so their CSS-var colours survive.
   useEffect(() => {
     if (!containerRef.current) return;
     containerRef.current.style.filter =
-      theme === "dark" ? "brightness(0.85) contrast(1.05)" : "";
+      theme === "dark"
+        ? "invert(0.93) hue-rotate(180deg) brightness(0.95) contrast(0.85) saturate(0.75)"
+        : "";
   }, [theme]);
 
   // 마커 + 클러스터링 — 필터된 목록이 바뀔 때마다 갱신
@@ -200,12 +206,13 @@ export default function MapView({
       if (place) {
         const pos = new kakao.maps.LatLng(place.lat, place.lng);
         const meta = CATEGORY_META[place.category];
+        const name = localizeField(place.name_i18n, locale, place.name);
         const el = document.createElement("div");
         el.className = "nm-marker nm-marker--active";
         el.innerHTML = `
-          <button type="button" aria-label="${place.name}" style="--mc:${meta.color}">
+          <button type="button" aria-label="${name}" style="--mc:${meta.color}">
             <span class="nm-marker__emoji">${meta.emoji}</span>
-            <span class="nm-marker__name">${place.name}</span>
+            <span class="nm-marker__name">${name}</span>
           </button>`;
         el.querySelector("button")!.addEventListener("click", (e) => {
           e.stopPropagation();
@@ -243,7 +250,7 @@ export default function MapView({
         lastFlyToId.current = selectedId;
       }
     }
-  }, [selectedId, ready, places]);
+  }, [selectedId, ready, places, locale]);
 
   // 현재 위치 마커 — userLocation이 생기면 표시하고, 최초 1회 그쪽으로 중심 이동
   useEffect(() => {
@@ -302,7 +309,7 @@ export default function MapView({
     <div className="relative h-full w-full">
       <div
         ref={containerRef}
-        className="h-full w-full"
+        className="nm-kakao-surface h-full w-full"
         role="application"
         aria-label={t("app.title")}
       />

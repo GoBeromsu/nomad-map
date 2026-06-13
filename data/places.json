@@ -58,6 +58,16 @@
         "de": "Spontanbuchung am selben Tag, um Stress abzubauen. Basis für eine ungeplante Jeju-Reise. Ruhige östliche Lage in Richtung Seongsan Ilchulbong.",
         "vi": "Đặt phòng bốc đồng trong ngày để giải tỏa căng thẳng. Căn cứ cho chuyến du lịch Jeju không có kế hoạch. Vị trí yên tĩnh ở phía đông hướng về Seongsan Ilchulbong."
       }
+    },
+    "name_i18n": {
+      "ko": "제주도 자전거컨셉 게스트하우스",
+      "en": "Jeju Bicycle Concept Guesthouse",
+      "ja": "済州島 自転車コンセプト ゲストハウス",
+      "zh": "济州岛自行车主题民宿",
+      "es": "Jeju Bicycle Concept Guesthouse",
+      "fr": "Guesthouse Concept Vélo de Jeju",
+      "de": "Jeju Fahrrad-Konzept Gästehaus",
+      "vi": "Nhà Nghỉ Xe Đạp Jeju"
     }
   },
   {
@@ -112,6 +122,16 @@
         "de": "Unterkunft war gut. Nach einem Abendspaziergang am Geumneung Beach und Abendessen eingecheckt. Würde wieder buchen.",
         "vi": "Chỗ ở khá tốt. Nhận phòng sau khi đi dạo ở bãi biển Geumneung và ăn tối. Muốn quay lại."
       }
+    },
+    "name_i18n": {
+      "ko": "제주 토비스 콘도",
+      "en": "Jeju Tobis Condo",
+      "ja": "済州 トビス コンド",
+      "zh": "济州托比斯公寓",
+      "es": "Jeju Tovis Condo",
+      "fr": "Résidence Tobis Jeju",
+      "de": "Jeju Tobis Condo",
+      "vi": "Jeju Tobis Condo"
     }
   },
   {
@@ -173,6 +193,16 @@
         "de": "Ruhig mit Bettwäsche inklusive. Sehr zufrieden. Wiederholte Nutzung während Seoul-Aufenthalten im April und Mai bestätigt.",
         "vi": "Yên tĩnh và có chăn màn. Rất hài lòng. Xác nhận sử dụng lại trong các chuyến ở Seoul vào tháng 4 và tháng 5."
       }
+    },
+    "name_i18n": {
+      "ko": "강남 코리아 24시 찜질방",
+      "en": "Gangnam Korea 24-Hour Jjimjilbang",
+      "ja": "江南 コリア 24時 チムジルバン",
+      "zh": "江南韩国24小时汗蒸房",
+      "es": "Gangnam Korea Jjimjilbang 24h",
+      "fr": "Jjimjilbang Coréen 24h Gangnam",
+      "de": "Gangnam Korea 24h Jjimjilbang",
+      "vi": "Jjimjilbang Korea 24h Gangnam"
     }
   },
   {
@@ -234,6 +264,16 @@
         "de": "Ein Ort, den ich schon lange besuchen wollte. Basaltweg und smaragdgrünes Meer.",
         "vi": "Nơi tôi đã muốn đến từ lâu. Đường đi bộ đá bazan và biển màu ngọc lục bảo."
       }
+    },
+    "name_i18n": {
+      "ko": "한담 해변",
+      "en": "Handam Beach",
+      "ja": "ハンダムビーチ",
+      "zh": "汉潭海滩",
+      "es": "Playa Handam",
+      "fr": "Plage de Handam",
+      "de": "Handam Strand",
+      "vi": "Bãi Biển Handam"
     }
   },
   {
@@ -295,6 +335,16 @@
         "de": "Besuch an Tag 3 geplant. Bestätigte Öffnungszeiten: täglich 09:00–19:30.",
         "vi": "Dự kiến ghé thăm vào Ngày 3. Xác nhận giờ mở cửa: hàng ngày 09:00–19:30."
       }
+    },
+    "name_i18n": {
+      "ko": "제주 쉼표",
+      "en": "Jeju Comma",
+      "ja": "済州 シムピョ",
+      "zh": "济州逗号",
+      "es": "Jeju Swimpyo",
+      "fr": "Jeju Pause",
+      "de": "Jeju Shimpyo",
+      "vi": "Jeju Swimpyo"
     }
   },
   {
@@ -335,7 +385,17 @@
       "교회"
     ],
     "links": [],
-    "channels": []
+    "channels": [],
+    "name_i18n": {
+      "ko": "물의 교회",
+      "en": "Church of the Water",
+      "ja": "水の教会",
+      "zh": "水之教堂",
+      "es": "Iglesia del Agua",
+      "fr": "Chapelle de l'Eau",
+      "de": "Kirche des Wassers",
+      "vi": "Nhà Thờ Nước"
+    }
   },
   {
     "id": "예가-아이네오",
@@ -381,7 +441,17 @@
         "url": "https://www.diningcode.com/profile.php?rid=rqDP2WAbu6xq"
       }
     ],
-    "channels": []
+    "channels": [],
+    "name_i18n": {
+      "ko": "예가 아이네오",
+      "en": "Yega Aineo",
+      "ja": "イェガ アイネオ",
+      "zh": "耶加艾尼欧",
+      "es": "Yega Aineo",
+      "fr": "Yega Aineo",
+      "de": "Yega Aineo",
+      "vi": "Yega Aineo"
+    }
   },
   {
     "id": "니모메-빈티지라운지",
@@ -437,6 +507,16 @@
         "de": "Letztes Café vor dem Flughafen. Beeindruckende offene Falttür-Sitzplätze, Außenterrasse und Meerblick.",
         "vi": "Quán cà phê cuối cùng trước khi ra sân bay. Chỗ ngồi mở cửa gấp ấn tượng, sân thượng ngoài trời và view biển tuyệt đẹp."
       }
+    },
+    "name_i18n": {
+      "ko": "니모메 빈티지라운지",
+      "en": "Nimome Vintage Lounge",
+      "ja": "ニモメ ヴィンテージラウンジ",
+      "zh": "尼莫梅复古休息室",
+      "es": "Nimome Vintage Lounge",
+      "fr": "Nimome Vintage Lounge",
+      "de": "Nimome Vintage Lounge",
+      "vi": "Nimome Vintage Lounge"
     }
   },
   {
@@ -498,6 +578,16 @@
         "de": "Abendessen nach der Rückkehr von Jeju. Konguksu + Meeresfrüchte-Jjamppong. Ein befriedigendes Abschlussessen.",
         "vi": "Bữa tối sau khi trở về từ Jeju. Konguksu + jjamppong hải sản. Bữa ăn kết thúc thỏa mãn."
       }
+    },
+    "name_i18n": {
+      "ko": "여수 라이라이",
+      "en": "Yeosu Lailai",
+      "ja": "麗水 ライライ",
+      "zh": "丽水来来",
+      "es": "Yeosu Rai Rai",
+      "fr": "Yeosu Rai Rai",
+      "de": "Yeosu Lairai",
+      "vi": "Yeosu Rairai"
     }
   },
   {
@@ -558,6 +648,16 @@
         "de": "Tatsächlicher Mittagsbesuch an Tag 2. Ursprünglich als Takeout geplant, aber vor Ort gegessen.",
         "vi": "Ghé thực tế ăn trưa Ngày 2. Ban đầu dự định mang về nhưng cuối cùng ăn tại chỗ."
       }
+    },
+    "name_i18n": {
+      "ko": "비틀스 타코",
+      "en": "Beatles Taco",
+      "ja": "ビートルズ タコ",
+      "zh": "披头士塔可",
+      "es": "Beatles Taco",
+      "fr": "Beatles Taco",
+      "de": "Beatles Taco",
+      "vi": "Beatles Taco"
     }
   },
   {
@@ -619,6 +719,16 @@
         "de": "Für das morgendliche WOD um 10:00 Uhr an Tag 3 geplant. Raumhoher Meerblick.",
         "vi": "Lên kế hoạch cho buổi WOD sáng 10:00 vào Ngày 3. View biển toàn cảnh."
       }
+    },
+    "name_i18n": {
+      "ko": "바솔트 크로스핏",
+      "en": "Basalt CrossFit",
+      "ja": "バソルト クロスフィット",
+      "zh": "玄武岩综合健身",
+      "es": "Basalt CrossFit",
+      "fr": "Basalt CrossFit",
+      "de": "Basalt CrossFit",
+      "vi": "Basalt CrossFit"
     }
   },
   {
@@ -679,6 +789,16 @@
         "de": "Geplanter Startpunkt für die Scooter-Route an Tag 3.",
         "vi": "Điểm xuất phát dự kiến cho tuyến xe ga Ngày 3."
       }
+    },
+    "name_i18n": {
+      "ko": "쓩쓩 렌탈샵",
+      "en": "Sseungsseung Rental Shop",
+      "ja": "スンスン レンタルショップ",
+      "zh": "嗖嗖租赁店",
+      "es": "Sseungsseung Rental Shop",
+      "fr": "Sseungsseung Location",
+      "de": "Sseungsseung Rentalshop",
+      "vi": "Sseungsseung Rental Shop"
     }
   },
   {
@@ -734,6 +854,16 @@
         "de": "Das Schreiben dort brachte ein Gefühl von Frieden. Ein ruhiger Ort, an dem sowohl Nachdenken als auch Arbeiten gut funktionieren.",
         "vi": "Viết lách ở đó mang lại cảm giác bình yên. Nơi yên tĩnh mà cả suy nghĩ lẫn làm việc đều trôi chảy."
       }
+    },
+    "name_i18n": {
+      "ko": "종달리 746",
+      "en": "Jongdal-ri 746",
+      "ja": "チョンダルリ 746",
+      "zh": "钟达里746",
+      "es": "Jongdal-ri 746",
+      "fr": "Jongdalli 746",
+      "de": "Jongdal-ri 746",
+      "vi": "Jongdalli 746"
     }
   },
   {
@@ -788,6 +918,16 @@
         "de": "Als Mittagsoption an Tag 1 besucht. Praktische Lage in Flughafennähe.",
         "vi": "Ghé thăm như một lựa chọn bữa trưa vào Ngày 1. Vị trí thuận tiện gần sân bay."
       }
+    },
+    "name_i18n": {
+      "ko": "올드캡 west",
+      "en": "Old Cap West",
+      "ja": "オールドキャップ West",
+      "zh": "老帽西区",
+      "es": "Old Cap West",
+      "fr": "Old Cap West",
+      "de": "Old Cap West",
+      "vi": "Old Cap West"
     }
   },
   {
@@ -844,6 +984,16 @@
         "de": "Besuch nach dem Ansehen eines Videobeitrags über das Museum. Die hohen Decken, der Betonraum und das Echo der Schritte hinterließen einen tiefen Eindruck.",
         "vi": "Ghé thăm sau khi xem một video về bảo tàng. Trần cao, không gian bê tông và tiếng bước chân vang vọng để lại ấn tượng sâu sắc."
       }
+    },
+    "name_i18n": {
+      "ko": "유민미술관",
+      "en": "Yumin Art Museum",
+      "ja": "ユミン美術館",
+      "zh": "由民美术馆",
+      "es": "Museo Yumin",
+      "fr": "Musée d'Art Yumin",
+      "de": "Yumin Kunstmuseum",
+      "vi": "Bảo Tàng Nghệ Thuật Yumin"
     }
   },
   {
@@ -898,6 +1048,16 @@
         "de": "Ein optionaler Halt während des freien Reiseprogramms an Tag 1.",
         "vi": "Điểm dừng tùy chọn trong lịch trình tự do vào Ngày 1."
       }
+    },
+    "name_i18n": {
+      "ko": "연대포구",
+      "en": "Yeondae Harbor",
+      "ja": "ヨンデ港",
+      "zh": "延垈渔港",
+      "es": "Puerto de Yeondae",
+      "fr": "Port de Yeondae",
+      "de": "Yeondae-Hafen",
+      "vi": "Cảng Yeondae"
     }
   },
   {
@@ -957,6 +1117,16 @@
         "de": "Als Halt auf dem Reiseprogramm von Tag 3 geplant.",
         "vi": "Được lên kế hoạch là điểm dừng trong lịch trình Ngày 3."
       }
+    },
+    "name_i18n": {
+      "ko": "고스트타운",
+      "en": "Ghost Town",
+      "ja": "ゴーストタウン",
+      "zh": "幽灵镇",
+      "es": "Ghost Town",
+      "fr": "Ghost Town",
+      "de": "Ghost Town",
+      "vi": "Ghost Town"
     }
   },
   {
@@ -1019,6 +1189,16 @@
         "de": "Der entfernte Blick auf den Ozean war wunderschön. Spätabendsnack aus Heilbutt-Sashimi vom Hanaro Mart plus Instantnudeln.",
         "vi": "Nhìn thấy biển ở xa thật tuyệt vời. Ăn khuya với sashimi cá bơn từ Hanaro Mart cộng mì ăn liền."
       }
+    },
+    "name_i18n": {
+      "ko": "트립레시피",
+      "en": "Trip Recipe",
+      "ja": "トリップレシピ",
+      "zh": "旅行食谱",
+      "es": "Trip Recipe",
+      "fr": "Trip Recipe",
+      "de": "Trip Recipe",
+      "vi": "Trip Recipe"
     }
   },
   {
@@ -1072,6 +1252,16 @@
         "de": "Mittagskandidat für Tag 3.",
         "vi": "Ứng viên bữa trưa Ngày 3."
       }
+    },
+    "name_i18n": {
+      "ko": "와구와궁",
+      "en": "Waguwagung",
+      "ja": "ワグワグン",
+      "zh": "哇咕哇宫",
+      "es": "Wagu Wagung",
+      "fr": "Wagu Wagung",
+      "de": "Waguwagung",
+      "vi": "Wagu Wagung"
     }
   },
   {
@@ -1129,6 +1319,16 @@
         "de": "Die Zeit beim Spazieren am Meer wurde als eines der Highlights dieser Jeju-Reise hervorgehoben.",
         "vi": "Thời gian đi dạo dọc theo biển nổi bật như một trong những điểm nhấn của chuyến đi Jeju này."
       }
+    },
+    "name_i18n": {
+      "ko": "금능해수욕장",
+      "en": "Geumneung Beach",
+      "ja": "金陵海水浴場",
+      "zh": "金陵海水浴场",
+      "es": "Playa Geumneung",
+      "fr": "Plage de Geumneung",
+      "de": "Geumneung Strand",
+      "vi": "Bãi Biển Geumneung"
     }
   },
   {
@@ -1183,6 +1383,16 @@
         "de": "Abendspaziergang-Ziel an Tag 3.",
         "vi": "Điểm đi dạo buổi tối Ngày 3."
       }
+    },
+    "name_i18n": {
+      "ko": "대원암",
+      "en": "Daewon Hermitage",
+      "ja": "大元庵",
+      "zh": "大圆庵",
+      "es": "Daewon-am",
+      "fr": "Ermitage Daewon",
+      "de": "Daewon-am",
+      "vi": "Đại Viên Am"
     }
   },
   {
@@ -1242,6 +1452,16 @@
         "de": "Strandspaziergang und Sonnenuntergang beobachten an Tag 1.",
         "vi": "Đi dạo bãi biển và ngắm hoàng hôn vào Ngày 1."
       }
+    },
+    "name_i18n": {
+      "ko": "이호테우해수욕장",
+      "en": "Iho Tewoo Beach",
+      "ja": "梨湖テウ海水浴場",
+      "zh": "梨湖泰宇海水浴场",
+      "es": "Playa Iho Tewoo",
+      "fr": "Plage d'Ihoteu",
+      "de": "Iho-Tewoo Strand",
+      "vi": "Bãi Biển Ihoteu"
     }
   },
   {
@@ -1298,6 +1518,16 @@
         "de": "Teil der Route an Tag 1 nach dem Sonnenuntergang am Iho Tewoo Beach.",
         "vi": "Một phần trong lịch trình Ngày 1 sau khi ngắm hoàng hôn ở bãi biển Iho Tewoo."
       }
+    },
+    "name_i18n": {
+      "ko": "도두봉",
+      "en": "Dodu Peak",
+      "ja": "道頭峰",
+      "zh": "道头峰",
+      "es": "Pico Dodu",
+      "fr": "Colline de Dodu",
+      "de": "Dodubong",
+      "vi": "Đỉnh Dodu"
     }
   },
   {
@@ -1339,7 +1569,17 @@
       "종로"
     ],
     "links": [],
-    "channels": []
+    "channels": [],
+    "name_i18n": {
+      "ko": "아룸서울",
+      "en": "Arum Seoul",
+      "ja": "アルムソウル",
+      "zh": "阿鲁姆首尔",
+      "es": "Arum Seoul",
+      "fr": "Arum Séoul",
+      "de": "Arum Seoul",
+      "vi": "Arum Seoul"
+    }
   },
   {
     "id": "마이못",
@@ -1392,6 +1632,16 @@
         "de": "Kandidat für den Abendspaziergang an Tag 3.",
         "vi": "Địa điểm ứng viên đi dạo buổi tối Ngày 3."
       }
+    },
+    "name_i18n": {
+      "ko": "마이못",
+      "en": "Maimot",
+      "ja": "マイモッ",
+      "zh": "迈池",
+      "es": "Maimot",
+      "fr": "Maimot",
+      "de": "Maimot",
+      "vi": "Maimot"
     }
   },
   {
@@ -1453,6 +1703,16 @@
         "de": "Eingecheckt an Tag 1 nach dem Sonnenuntergang an Iho Tewoo. Hinweis: Kein Check-in/Check-out, Gepäckaufbewahrung nicht verfügbar.",
         "vi": "Nhận phòng vào Ngày 1 sau khi ngắm hoàng hôn ở Iho Tewoo. Lưu ý: không có nhận/trả phòng, không có dịch vụ giữ hành lý."
       }
+    },
+    "name_i18n": {
+      "ko": "도두해수파크",
+      "en": "Dodu Seawater Park",
+      "ja": "道頭海水パーク",
+      "zh": "道头海水公园",
+      "es": "Parque Marino Dodu",
+      "fr": "Parc Marin de Dodu",
+      "de": "Dodu Meerespark",
+      "vi": "Công Viên Biển Dodu"
     }
   },
   {
@@ -1492,7 +1752,17 @@
       "묵상"
     ],
     "links": [],
-    "channels": []
+    "channels": [],
+    "name_i18n": {
+      "ko": "All Hallows by the Tower",
+      "en": "All Hallows by the Tower",
+      "ja": "オール・ハローズ・バイ・ザ・タワー",
+      "zh": "塔旁万圣教堂",
+      "es": "All Hallows by the Tower",
+      "fr": "All Hallows by the Tower",
+      "de": "All Hallows by the Tower",
+      "vi": "All Hallows by the Tower"
+    }
   },
   {
     "id": "antalya",
@@ -1530,7 +1800,17 @@
       "추천여행지"
     ],
     "links": [],
-    "channels": []
+    "channels": [],
+    "name_i18n": {
+      "ko": "Antalya",
+      "en": "Antalya",
+      "ja": "アンタルヤ",
+      "zh": "安塔利亚",
+      "es": "Antalya",
+      "fr": "Antalya",
+      "de": "Antalya",
+      "vi": "Antalya"
+    }
   },
   {
     "id": "brighton",
@@ -1569,7 +1849,17 @@
       "에어비앤비"
     ],
     "links": [],
-    "channels": []
+    "channels": [],
+    "name_i18n": {
+      "ko": "Brighton",
+      "en": "Brighton",
+      "ja": "ブライトン",
+      "zh": "布莱顿",
+      "es": "Brighton",
+      "fr": "Brighton",
+      "de": "Brighton",
+      "vi": "Brighton"
+    }
   },
   {
     "id": "seven-sisters",
@@ -1609,7 +1899,17 @@
       "브라이튼근교"
     ],
     "links": [],
-    "channels": []
+    "channels": [],
+    "name_i18n": {
+      "ko": "Seven Sisters",
+      "en": "Seven Sisters",
+      "ja": "セブン・シスターズ",
+      "zh": "七姐妹",
+      "es": "Seven Sisters",
+      "fr": "Seven Sisters",
+      "de": "Seven Sisters",
+      "vi": "Seven Sisters"
+    }
   },
   {
     "id": "강남-벨지움재즈카페",
@@ -1663,6 +1963,16 @@
         "de": null,
         "vi": null
       }
+    },
+    "name_i18n": {
+      "ko": "벨지움재즈카페",
+      "en": "Belgium Jazz Cafe",
+      "ja": "ベルギー・ジャズカフェ",
+      "zh": "比利时爵士咖啡馆",
+      "es": "Belgium Jazz Cafe Gangnam",
+      "fr": "Belgium Jazz Café",
+      "de": "Belgium Jazz Café",
+      "vi": "Belgium Jazz Cafe"
     }
   },
   {
@@ -1722,6 +2032,16 @@
         "de": null,
         "vi": null
       }
+    },
+    "name_i18n": {
+      "ko": "담양힐링파크 새연리조트",
+      "en": "Damyang Healing Park Saeyeon Resort",
+      "ja": "潭陽ヒーリングパーク セヨン・リゾート",
+      "zh": "潭阳疗愈公园新缘度假村",
+      "es": "Damyang Healing Park Saeyeon Resort",
+      "fr": "Resort Saeyeon de Damyang",
+      "de": "Damyang Healing Park Saeyeon Resort",
+      "vi": "Damyang Healing Park Saeyeon Resort"
     }
   },
   {
@@ -1776,6 +2096,16 @@
         "de": null,
         "vi": null
       }
+    },
+    "name_i18n": {
+      "ko": "글래드 마포",
+      "en": "Glad Mapo",
+      "ja": "グラッド麻浦",
+      "zh": "格莱德麻浦酒店",
+      "es": "Glad Mapo",
+      "fr": "Hôtel Glad Mapo",
+      "de": "Glad Mapo",
+      "vi": "Glad Mapo"
     }
   },
   {
@@ -1830,6 +2160,16 @@
         "de": null,
         "vi": null
       }
+    },
+    "name_i18n": {
+      "ko": "온화 (천안 감성무인호텔)",
+      "en": "Onhwa Self-Check-in Hotel (Cheonan)",
+      "ja": "オンファ（天安 感性無人ホテル）",
+      "zh": "温和（天安感性无人酒店）",
+      "es": "Onhwa (Hotel Autónomo Cheonan)",
+      "fr": "Onhwa (Hôtel Automatisé de Cheonan)",
+      "de": "Onhwa (Cheonan)",
+      "vi": "Onhwa (Khách Sạn Tự Động Cheonan)"
     }
   },
   {
@@ -1885,6 +2225,16 @@
         "de": "Als ruhig, kühl und erfrischend vermerkt — ideal zum Lesen.",
         "vi": "Được ghi chú là yên tĩnh, mát mẻ và sảng khoái — lý tưởng để đọc sách."
       }
+    },
+    "name_i18n": {
+      "ko": "Saint Dunstan in the East Church Garden",
+      "en": "Saint Dunstan in the East Church Garden",
+      "ja": "セント・ダンスタン・イン・ザ・イースト 教会庭園",
+      "zh": "东区圣邓斯坦教堂花园",
+      "es": "Jardín de Saint Dunstan in the East",
+      "fr": "Jardin de l'Église Saint-Dunstan-in-the-East",
+      "de": "Saint Dunstan in the East – Kirchengarten",
+      "vi": "Saint Dunstan in the East Church Garden"
     }
   },
   {
@@ -1945,6 +2295,16 @@
         "de": "Reader Pass für den Lesesaal erforderlich — im Voraus online beantragen.",
         "vi": "Cần Thẻ Đọc giả để vào phòng đọc — đăng ký trực tuyến trước."
       }
+    },
+    "name_i18n": {
+      "ko": "British Library",
+      "en": "British Library",
+      "ja": "大英図書館",
+      "zh": "大英图书馆",
+      "es": "Biblioteca Británica",
+      "fr": "British Library",
+      "de": "British Library",
+      "vi": "Thư Viện Anh"
     }
   },
   {
@@ -2004,6 +2364,16 @@
         "de": "Als abends besonders schön vermerkt.",
         "vi": "Được ghi chú là đẹp vào buổi tối."
       }
+    },
+    "name_i18n": {
+      "ko": "Tate Modern",
+      "en": "Tate Modern",
+      "ja": "テート・モダン",
+      "zh": "泰特现代艺术馆",
+      "es": "Tate Modern",
+      "fr": "Tate Modern",
+      "de": "Tate Modern",
+      "vi": "Tate Modern"
     }
   },
   {
@@ -2058,6 +2428,16 @@
         "de": "In der Nähe des Tower of London für stille Besinnung besucht.",
         "vi": "Ghé thăm gần Tháp London để tĩnh tâm chiêm ngẫm."
       }
+    },
+    "name_i18n": {
+      "ko": "All Hallows by the Tower",
+      "en": "All Hallows by the Tower",
+      "ja": "オール・ハローズ・バイ・ザ・タワー",
+      "zh": "塔旁万圣教堂",
+      "es": "All Hallows by the Tower",
+      "fr": "All Hallows by the Tower",
+      "de": "All Hallows by the Tower",
+      "vi": "All Hallows by the Tower"
     }
   },
   {
@@ -2112,6 +2492,16 @@
         "de": "Als Basis für einen 2-Nacht-Besuch in London von Sheffield aus genutzt.",
         "vi": "Được dùng làm căn cứ cho chuyến thăm London 2 đêm từ Sheffield."
       }
+    },
+    "name_i18n": {
+      "ko": "Waylett House Airbnb (Loughborough St)",
+      "en": "Waylett House Airbnb (Loughborough St)",
+      "ja": "ウェイレット・ハウス Airbnb（ラフバラー・ストリート）",
+      "zh": "韦利特公寓（劳伯勒街）",
+      "es": "Waylett House Airbnb (Loughborough St)",
+      "fr": "Waylett House Airbnb (Rue Loughborough)",
+      "de": "Waylett House Airbnb (Loughborough St)",
+      "vi": "Waylett House Airbnb (Loughborough St)"
     }
   },
   {
@@ -2167,6 +2557,16 @@
         "de": "Hier übernachtet als Basis für die Seven Sisters Wanderung; ca. 59.000 KRW pro Nacht.",
         "vi": "Lưu trú ở đây làm căn cứ cho chuyến đi bộ Seven Sisters; khoảng 59.000 KRW mỗi đêm."
       }
+    },
+    "name_i18n": {
+      "ko": "Brighton (Airbnb base)",
+      "en": "Brighton (Airbnb base)",
+      "ja": "ブライトン（Airbnb拠点）",
+      "zh": "布莱顿（Airbnb据点）",
+      "es": "Brighton (base Airbnb)",
+      "fr": "Brighton (base Airbnb)",
+      "de": "Brighton (Airbnb-Unterkunft)",
+      "vi": "Brighton (Nơi ở Airbnb)"
     }
   },
   {
@@ -2223,6 +2623,16 @@
         "de": "Von Brighton aus gelaufen; als bewegend und zutiefst erholsam beschrieben.",
         "vi": "Đi bộ từ Brighton; được mô tả là xúc động và mang lại sự phục hồi sâu sắc."
       }
+    },
+    "name_i18n": {
+      "ko": "Seven Sisters Chalk Cliffs",
+      "en": "Seven Sisters Chalk Cliffs",
+      "ja": "セブン・シスターズ チョーク断崖",
+      "zh": "七姐妹白垩崖",
+      "es": "Acantilados de Seven Sisters",
+      "fr": "Falaises des Sept Sœurs",
+      "de": "Sieben Schwestern Kreideklippen",
+      "vi": "Vách Đá Phấn Seven Sisters"
     }
   },
   {
@@ -2283,6 +2693,16 @@
         "de": "Ca. 85.000 KRW pro Nacht mit Frühstück. Die Atmosphäre lädt dazu ein, Reise- und Karrieretipps zu erhalten.",
         "vi": "Khoảng 85.000 KRW mỗi đêm bao gồm bữa sáng. Bầu không khí thích hợp để nhận lời khuyên về du lịch và nghề nghiệp."
       }
+    },
+    "name_i18n": {
+      "ko": "꽃보다 파리 (Flower Paris Korean Guesthouse)",
+      "en": "Flower Paris Korean Guesthouse",
+      "ja": "花よりパリ（韓国系ゲストハウス）",
+      "zh": "花胜巴黎韩国民宿",
+      "es": "Flower Paris (Pensión Coreana)",
+      "fr": "Flower Paris (Guesthouse Coréen)",
+      "de": "Kkotboda Pari – Koreanisches Gästehaus",
+      "vi": "Flower Paris Korean Guesthouse"
     }
   },
   {
@@ -2338,6 +2758,16 @@
         "de": "Während eines 2-tägigen Parisaufenthalts besucht; ein malerisches Viertel, das sich hervorragend für einen Baguette-Spaziergang eignet.",
         "vi": "Ghé thăm trong chuyến du lịch Paris 2 ngày; khu phố đẹp phong cảnh, tốt để đi dạo với baguette."
       }
+    },
+    "name_i18n": {
+      "ko": "Montmartre",
+      "en": "Montmartre",
+      "ja": "モンマルトル",
+      "zh": "蒙马特",
+      "es": "Montmartre",
+      "fr": "Montmartre",
+      "de": "Montmartre",
+      "vi": "Montmartre"
     }
   },
   {
@@ -2396,6 +2826,16 @@
         "de": "Besucht; vermerkt, dass die antiken Galerien weit weniger überfüllt sind als der Mona-Lisa-Bereich.",
         "vi": "Đã tham quan; ghi chú rằng các phòng trưng bày cổ đại ít đông người hơn nhiều so với khu vực Mona Lisa."
       }
+    },
+    "name_i18n": {
+      "ko": "Musée du Louvre",
+      "en": "Louvre Museum",
+      "ja": "ルーヴル美術館",
+      "zh": "卢浮宫",
+      "es": "Museo del Louvre",
+      "fr": "Musée du Louvre",
+      "de": "Louvre-Museum",
+      "vi": "Bảo Tàng Louvre"
     }
   },
   {
@@ -2451,6 +2891,16 @@
         "de": "2 Nächte Aufenthalt; als günstigste Option im Raum Interlaken gewählt.",
         "vi": "Lưu trú 2 đêm; được chọn là lựa chọn giá cả phải chăng nhất ở khu vực Interlaken."
       }
+    },
+    "name_i18n": {
+      "ko": "Youth Hostel Interlaken",
+      "en": "Youth Hostel Interlaken",
+      "ja": "インターラーケン ユースホステル",
+      "zh": "因特拉肯青年旅舍",
+      "es": "Albergue Juvenil Interlaken",
+      "fr": "Auberge de Jeunesse d'Interlaken",
+      "de": "Jugendherberge Interlaken",
+      "vi": "Nhà Nghỉ Thanh Niên Interlaken"
     }
   },
   {
@@ -2517,6 +2967,16 @@
         "de": "Nachthimmelbeobachtung als Highlight vermerkt. Seilbahnbetriebszustand vor dem Besuch prüfen.",
         "vi": "Quan sát bầu trời đêm được ghi là điểm nổi bật. Kiểm tra tình trạng hoạt động của cáp treo trước khi đến."
       }
+    },
+    "name_i18n": {
+      "ko": "Grindelwald-First (First Viewpoint)",
+      "en": "Grindelwald First",
+      "ja": "グリンデルワルト・ファースト（展望台）",
+      "zh": "格林德瓦德菲斯特观景台",
+      "es": "Grindelwald-First (Mirador)",
+      "fr": "Grindelwald-First",
+      "de": "Grindelwald-First (Aussichtspunkt First)",
+      "vi": "Grindelwald-First (Đài Quan Sát First)"
     }
   },
   {
@@ -2572,6 +3032,16 @@
         "de": "Weg 37 (Eigergletscher → hier) + Weg 34 (hier → Grindelwald Grund). Wanderstöcke dringend empfohlen.",
         "vi": "Đường mòn 37 (Eigergletscher → đây) + Đường mòn 34 (đây → Grindelwald Grund). Khuyến nghị mạnh mẽ nên mang gậy leo núi."
       }
+    },
+    "name_i18n": {
+      "ko": "Kleine Scheidegg",
+      "en": "Kleine Scheidegg",
+      "ja": "クライネ・シャイデック",
+      "zh": "克莱因沙伊德格",
+      "es": "Kleine Scheidegg",
+      "fr": "Kleine Scheidegg",
+      "de": "Kleine Scheidegg",
+      "vi": "Kleine Scheidegg"
     }
   },
   {
@@ -2626,6 +3096,16 @@
         "de": "2–3 tägiger Solo-Retreat von Sheffield mit Ryanair Manchester→Mailand. Die Straßenbahn war das Hauptverkehrsmittel.",
         "vi": "Tĩnh tâm một mình 2-3 ngày từ Sheffield qua Ryanair Manchester→Milan. Xe điện là phương tiện di chuyển chính."
       }
+    },
+    "name_i18n": {
+      "ko": "Duomo di Milano",
+      "en": "Milan Cathedral",
+      "ja": "ドゥオーモ・ディ・ミラノ",
+      "zh": "米兰大教堂",
+      "es": "Duomo di Milano",
+      "fr": "Dôme de Milan",
+      "de": "Mailänder Dom",
+      "vi": "Duomo di Milano"
     }
   },
   {
@@ -2681,6 +3161,16 @@
         "de": "Während einer Hokkaido-Reise besucht. Vermerkt, dass das bestellte Menü schärfer und weniger befriedigend als erwartet war.",
         "vi": "Ghé thăm trong chuyến đi Hokkaido. Ghi chú rằng các món đã gọi cay hơn và kém hài lòng hơn dự kiến."
       }
+    },
+    "name_i18n": {
+      "ko": "スシロー (Sushiro) Sapporo",
+      "en": "Sushiro Sapporo",
+      "ja": "スシロー 札幌",
+      "zh": "寿司郎（札幌）",
+      "es": "Sushiro Sapporo",
+      "fr": "Sushiro Sapporo",
+      "de": "Sushiro Sapporo",
+      "vi": "Sushiro Sapporo"
     }
   },
   {
@@ -2738,6 +3228,16 @@
         "de": "Campus zu Fuß erkundet. Die ulmengesäumte Allee ist ein unverzichtbares Sapporo-Erlebnis.",
         "vi": "Khám phá khuôn viên bằng cách đi bộ. Con đường cây du là trải nghiệm đặc trưng của Sapporo."
       }
+    },
+    "name_i18n": {
+      "ko": "Hokkaido University Campus",
+      "en": "Hokkaido University Campus",
+      "ja": "北海道大学キャンパス",
+      "zh": "北海道大学校园",
+      "es": "Campus de la Universidad de Hokkaido",
+      "fr": "Campus de l'Université d'Hokkaido",
+      "de": "Hokkaido-Universität Campus",
+      "vi": "Khuôn Viên Đại Học Hokkaido"
     }
   },
   {
@@ -2794,6 +3294,16 @@
         "de": "Im Tiefwinter besucht. Vollständige Kälteschutzausrüstung dringend empfohlen.",
         "vi": "Ghé thăm vào mùa đông sâu. Khuyến nghị mạnh mẽ cần đầy đủ trang bị chống lạnh."
       }
+    },
+    "name_i18n": {
+      "ko": "Changbaishan (Baekdusan / Heaven Lake)",
+      "en": "Changbaishan (Baekdusan / Heaven Lake)",
+      "ja": "長白山（白頭山 / 天池）",
+      "zh": "长白山（天池）",
+      "es": "Changbaishan (Baekdusan / Lago del Cielo)",
+      "fr": "Changbaishan (Baekdusan / Lac Céleste)",
+      "de": "Changbaishan (Baekdusan / Himmelsee)",
+      "vi": "Trường Bạch Sơn (Bạch Đầu Sơn / Thiên Trì)"
     }
   }
 ]
