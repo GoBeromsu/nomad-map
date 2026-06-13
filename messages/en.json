@@ -35,7 +35,14 @@
     "errorTitle": "Couldn't load the map",
     "errorHint": "Set your Kakao JavaScript key in NEXT_PUBLIC_KAKAO_MAP_KEY and make sure the site domain is registered in the Kakao Developers console.",
     "recenter": "My location",
-    "backToGlobe": "Back to globe"
+    "backToGlobe": "Back to globe",
+    "provider": {
+      "auto": "Auto",
+      "kakao": "Kakao",
+      "google": "Google",
+      "label": "Map provider",
+      "fallback": "Couldn’t load {from} Maps — switched to {to}."
+    }
   },
   "list": {
     "empty": "No places match your filters.",

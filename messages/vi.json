@@ -35,7 +35,14 @@
     "errorTitle": "Không thể tải bản đồ",
     "errorHint": "Đặt Kakao JavaScript key vào NEXT_PUBLIC_KAKAO_MAP_KEY và đảm bảo domain của trang web đã được đăng ký trong Kakao Developers console.",
     "recenter": "Vị trí của tôi",
-    "backToGlobe": "Quay lại địa cầu"
+    "backToGlobe": "Quay lại địa cầu",
+    "provider": {
+      "auto": "Tự động",
+      "kakao": "Kakao",
+      "google": "Google",
+      "label": "Nhà cung cấp bản đồ",
+      "fallback": "Không tải được bản đồ {from} — đã chuyển sang {to}."
+    }
   },
   "list": {
     "empty": "Không có địa điểm nào phù hợp với bộ lọc của bạn.",

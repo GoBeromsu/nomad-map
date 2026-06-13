@@ -35,7 +35,14 @@
     "errorTitle": "Karte konnte nicht geladen werden",
     "errorHint": "Trage deinen Kakao-JavaScript-Schlüssel in NEXT_PUBLIC_KAKAO_MAP_KEY ein und stelle sicher, dass die Website-Domain in der Kakao Developers-Konsole registriert ist.",
     "recenter": "Mein Standort",
-    "backToGlobe": "Zurück zum Globus"
+    "backToGlobe": "Zurück zum Globus",
+    "provider": {
+      "auto": "Auto",
+      "kakao": "Kakao",
+      "google": "Google",
+      "label": "Kartenanbieter",
+      "fallback": "{from}-Karte konnte nicht geladen werden — zu {to} gewechselt."
+    }
   },
   "list": {
     "empty": "Keine Orte entsprechen deinen Filtern.",

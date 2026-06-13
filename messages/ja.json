@@ -35,7 +35,14 @@
     "errorTitle": "マップを読み込めませんでした",
     "errorHint": "NEXT_PUBLIC_KAKAO_MAP_KEY にKakao JavaScriptキーを設定し、Kakao Developersコンソールでサイトのドメインが登録されていることを確認してください。",
     "recenter": "現在地",
-    "backToGlobe": "地球に戻る"
+    "backToGlobe": "地球に戻る",
+    "provider": {
+      "auto": "自動",
+      "kakao": "カカオ",
+      "google": "Google",
+      "label": "地図プロバイダー",
+      "fallback": "{from}マップを読み込めず、{to}に切り替えました。"
+    }
   },
   "list": {
     "empty": "条件に一致する場所がありません。",

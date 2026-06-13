@@ -13,6 +13,8 @@ interface MapViewProps {
   selectedId: string | null;
   onSelect: (id: string) => void;
   userLocation?: { lat: number; lng: number } | null;
+  /** SDK 로드 실패 시 호출 — 상위(PlaceMap)에서 다른 프로바이더로 자동 폴백. */
+  onLoadError?: () => void;
 }
 
 // Cache drawn marker images so each category color+emoji combo is only
@@ -58,10 +60,13 @@ export default function MapView({
   selectedId,
   onSelect,
   userLocation,
+  onLoadError,
 }: MapViewProps) {
   const { t, locale } = useI18n();
   const { theme } = useTheme();
   const containerRef = useRef<HTMLDivElement>(null);
+  const onLoadErrorRef = useRef(onLoadError);
+  onLoadErrorRef.current = onLoadError;
   const mapRef = useRef<any>(null);
   const clustererRef = useRef<any>(null);
   const markersRef = useRef<Map<string, any>>(new Map());
@@ -114,7 +119,11 @@ export default function MapView({
 
         setReady(true);
       })
-      .catch((e: Error) => !cancelled && setError(e.message));
+      .catch((e: Error) => {
+        if (cancelled) return;
+        setError(e.message);
+        onLoadErrorRef.current?.();
+      });
     return () => {
       cancelled = true;
     };

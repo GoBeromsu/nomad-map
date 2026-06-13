@@ -30,3 +30,8 @@ export function pickProviderForSet(places: Place[]): MapProvider {
   if (places.length === 0) return "kakao";
   return places.every((p) => isKorea(p.lat, p.lng)) ? "kakao" : "google";
 }
+
+/** 반대편 프로바이더 (자동 폴백에 사용). */
+export function otherProvider(p: MapProvider): MapProvider {
+  return p === "kakao" ? "google" : "kakao";
+}

@@ -35,7 +35,14 @@
     "errorTitle": "无法加载地图",
     "errorHint": "请在 NEXT_PUBLIC_KAKAO_MAP_KEY 中设置您的 Kakao JavaScript 密钥，并确保站点域名已在 Kakao Developers 控制台中注册。",
     "recenter": "我的位置",
-    "backToGlobe": "返回地球"
+    "backToGlobe": "返回地球",
+    "provider": {
+      "auto": "自动",
+      "kakao": "Kakao",
+      "google": "Google",
+      "label": "地图服务商",
+      "fallback": "无法加载{from}地图，已切换到{to}。"
+    }
   },
   "list": {
     "empty": "没有地点符合筛选条件。",

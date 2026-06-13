@@ -14,6 +14,8 @@ export interface MapViewProps {
   selectedId: string | null;
   onSelect: (id: string) => void;
   userLocation?: { lat: number; lng: number } | null;
+  /** SDK 로드 실패 시 호출 — 상위(PlaceMap)에서 다른 프로바이더로 자동 폴백. */
+  onLoadError?: () => void;
 }
 
 export default function GoogleMapView({
@@ -21,10 +23,13 @@ export default function GoogleMapView({
   selectedId,
   onSelect,
   userLocation,
+  onLoadError,
 }: MapViewProps) {
   const { t, locale } = useI18n();
   const { theme } = useTheme();
   const containerRef = useRef<HTMLDivElement>(null);
+  const onLoadErrorRef = useRef(onLoadError);
+  onLoadErrorRef.current = onLoadError;
   const mapRef = useRef<any>(null);
   const markersRef = useRef<Map<string, any>>(new Map());
   const clustererRef = useRef<MarkerClusterer | null>(null);
@@ -61,7 +66,11 @@ export default function GoogleMapView({
         mapRef.current = map;
         setReady(true);
       })
-      .catch((e: Error) => !cancelled && setError(e.message));
+      .catch((e: Error) => {
+        if (cancelled) return;
+        setError(e.message);
+        onLoadErrorRef.current?.();
+      });
     return () => {
       cancelled = true;
     };

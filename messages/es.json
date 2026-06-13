@@ -35,7 +35,14 @@
     "errorTitle": "No se pudo cargar el mapa",
     "errorHint": "Establece tu clave JavaScript de Kakao en NEXT_PUBLIC_KAKAO_MAP_KEY y asegúrate de que el dominio del sitio esté registrado en la consola de Kakao Developers.",
     "recenter": "Mi ubicación",
-    "backToGlobe": "Volver al globo"
+    "backToGlobe": "Volver al globo",
+    "provider": {
+      "auto": "Auto",
+      "kakao": "Kakao",
+      "google": "Google",
+      "label": "Proveedor de mapas",
+      "fallback": "No se pudo cargar el mapa de {from}; se cambió a {to}."
+    }
   },
   "list": {
     "empty": "Ningún lugar coincide con tus filtros.",

@@ -35,7 +35,14 @@
     "errorTitle": "Impossible de charger la carte",
     "errorHint": "Renseignez votre clé JavaScript Kakao dans NEXT_PUBLIC_KAKAO_MAP_KEY et assurez-vous que le domaine du site est enregistré dans la console Kakao Developers.",
     "recenter": "Ma position",
-    "backToGlobe": "Retour au globe"
+    "backToGlobe": "Retour au globe",
+    "provider": {
+      "auto": "Auto",
+      "kakao": "Kakao",
+      "google": "Google",
+      "label": "Fournisseur de carte",
+      "fallback": "Impossible de charger la carte {from} — passage à {to}."
+    }
   },
   "list": {
     "empty": "Aucun lieu ne correspond à vos filtres.",
