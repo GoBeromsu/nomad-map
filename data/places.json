@@ -3154,5 +3154,86 @@
       "/places/제주-스타벅스-애월dt-1.webp",
       "/places/제주-스타벅스-애월dt-2.webp"
     ]
+  },
+  {
+    "id": "여수-스타벅스-여수여천",
+    "name": "스타벅스 여수여천점",
+    "name_i18n": {
+      "ko": "스타벅스 여수여천점",
+      "en": "Starbucks Yeosu Yeocheon",
+      "ja": "スターバックス 麗水麗川店",
+      "zh": "星巴克 丽水丽川店",
+      "es": "Starbucks Yeosu Yeocheon",
+      "fr": "Starbucks Yeosu Yeocheon",
+      "de": "Starbucks Yeosu Yeocheon",
+      "vi": "Starbucks Yeosu Yeocheon"
+    },
+    "category": "cafe",
+    "status": "good",
+    "lat": 34.75984,
+    "lng": 127.667034,
+    "address": "전라남도 여수시 망마로 39 (학동)",
+    "description": "여수 여천·학동에 있는 2층 스타벅스. 점심 시간에는 소음이 있지만, 보통은 조용해서 작업하거나 책 읽기 좋은 동네 카페다.",
+    "description_i18n": {
+      "ko": "여수 여천·학동에 있는 2층 스타벅스. 점심 시간에는 소음이 있지만, 보통은 조용해서 작업하거나 책 읽기 좋은 동네 카페다.",
+      "en": "A two-floor Starbucks in Yeocheon/Hak-dong, Yeosu. It gets noisy around lunch, but it is usually quiet enough for working or reading.",
+      "ja": "麗水の麗川・鶴洞エリアにある2階建てのスターバックス。昼時は騒がしくなるが、普段は静かで作業や読書に使いやすい地域のカフェ。",
+      "zh": "位于丽水丽川/鹤洞一带的两层星巴克。午餐时间会比较吵，但平时较安静，适合工作或阅读。",
+      "es": "Un Starbucks de dos plantas en Yeocheon/Hak-dong, Yeosu. Al mediodía puede ser ruidoso, pero normalmente es lo bastante tranquilo para trabajar o leer.",
+      "fr": "Un Starbucks sur deux étages à Yeocheon/Hak-dong, Yeosu. Il devient bruyant à l'heure du déjeuner, mais reste généralement assez calme pour travailler ou lire.",
+      "de": "Ein zweistöckiger Starbucks in Yeocheon/Hak-dong, Yeosu. Mittags kann es laut werden, ist aber meistens ruhig genug zum Arbeiten oder Lesen.",
+      "vi": "Một Starbucks hai tầng ở khu Yeocheon/Hak-dong, Yeosu. Buổi trưa có thể ồn, nhưng thường đủ yên tĩnh để làm việc hoặc đọc sách."
+    },
+    "ratings": {
+      "wifi": 4,
+      "power": 3,
+      "seating": 4,
+      "quiet": 4,
+      "longStay": 4
+    },
+    "tags": [
+      "여수",
+      "여천",
+      "학동",
+      "스타벅스",
+      "카페",
+      "작업하기좋음",
+      "보통조용함",
+      "점심혼잡"
+    ],
+    "links": [
+      {
+        "label": "네이버지도",
+        "url": "https://map.naver.com/p/search/스타벅스%20여수여천점"
+      },
+      {
+        "label": "카카오맵",
+        "url": "https://map.kakao.com/link/search/스타벅스%20여수여천점"
+      },
+      {
+        "label": "스타벅스 매장찾기",
+        "url": "https://www.starbucks.co.kr/store/store_map.do"
+      }
+    ],
+    "channels": [],
+    "comment": {
+      "date": "2026-06-14",
+      "duration": "방문",
+      "note": "여천 스타벅스. 점심에는 시끄러운데 보통은 조용해서 작업하기 괜찮다.",
+      "note_i18n": {
+        "ko": "여천 스타벅스. 점심에는 시끄러운데 보통은 조용해서 작업하기 괜찮다.",
+        "en": "Yeocheon Starbucks. Noisy at lunch, but usually quiet and fine for working.",
+        "ja": "麗川のスターバックス。昼時は騒がしいが、普段は静かで作業しやすい。",
+        "zh": "丽川星巴克。午餐时间较吵，但平时安静，适合工作。",
+        "es": "Starbucks de Yeocheon. Ruidoso al mediodía, pero normalmente tranquilo y útil para trabajar.",
+        "fr": "Starbucks de Yeocheon. Bruyant à midi, mais généralement calme et pratique pour travailler.",
+        "de": "Starbucks in Yeocheon. Mittags laut, aber meistens ruhig und gut zum Arbeiten.",
+        "vi": "Starbucks Yeocheon. Buổi trưa hơi ồn, nhưng thường yên tĩnh và ổn để làm việc."
+      }
+    },
+    "photos": [
+      "/places/여수-스타벅스-여수여천-1.webp",
+      "/places/여수-스타벅스-여수여천-2.webp"
+    ]
   }
 ]
