@@ -4,6 +4,9 @@ import { I18nProvider } from "@/lib/i18n/I18nProvider";
 import { ThemeProvider } from "@/lib/theme/ThemeProvider";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  ),
   title: "노마드 맵 · 디지털 노마드 장소 기록",
   description:
     "내가 직접 가본 카페·숙소·코워킹 스페이스를 디지털 노마드 관점에서 지도에 기록하고 공유합니다. 와이파이·콘센트·좌석·조용함·장기체류 적합도까지.",
@@ -29,6 +32,11 @@ export default function RootLayout({
     <html lang="ko" className="h-full" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        {/* Warm up the connections for photos, map SDKs and globe textures. */}
+        <link rel="preconnect" href="https://images.unsplash.com" />
+        <link rel="preconnect" href="https://dapi.kakao.com" />
+        <link rel="preconnect" href="https://maps.googleapis.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://unpkg.com" />
       </head>
       <body className="flex min-h-full flex-col bg-canvas text-ink transition-colors antialiased">
         <ThemeProvider>

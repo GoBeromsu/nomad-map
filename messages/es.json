@@ -54,7 +54,9 @@
     "ratings": "Valoración nómada",
     "comment": "Comentario",
     "links": "Enlaces",
-    "channels": "Canales"
+    "channels": "Canales",
+    "share": "Compartir",
+    "linkCopied": "Enlace copiado"
   },
   "common": {
     "close": "Cerrar",
@@ -63,6 +65,7 @@
   "intro": {
     "tagline": "Los lugares donde me quedé, en el globo",
     "enter": "Explorar el mapa",
-    "skip": "Omitir"
+    "skip": "Omitir",
+    "hint": "Gira y haz zoom para explorar"
   }
 }

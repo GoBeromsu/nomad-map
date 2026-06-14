@@ -14,6 +14,7 @@ export interface MapViewProps {
   selectedId: string | null;
   onSelect: (id: string) => void;
   userLocation?: { lat: number; lng: number } | null;
+  initialCenter?: { lat: number; lng: number } | null;
   /** SDK 로드 실패 시 호출 — 상위(PlaceMap)에서 다른 프로바이더로 자동 폴백. */
   onLoadError?: () => void;
 }
@@ -23,6 +24,7 @@ export default function GoogleMapView({
   selectedId,
   onSelect,
   userLocation,
+  initialCenter,
   onLoadError,
 }: MapViewProps) {
   const { t, locale } = useI18n();
@@ -39,6 +41,11 @@ export default function GoogleMapView({
   onSelectRef.current = onSelect;
   const lastFlownIdRef = useRef<string | null>(null);
   const zoomRafRef = useRef<number | null>(null);
+  // Latest seed centre (handoff / shared place) read inside effects without
+  // re-triggering them; `seededCenterRef` dedupes the one-shot recenter.
+  const initialCenterRef = useRef(initialCenter);
+  initialCenterRef.current = initialCenter;
+  const seededCenterRef = useRef<string | null>(null);
 
   const [error, setError] = useState<string | null>(null);
   const [ready, setReady] = useState(false);
@@ -50,8 +57,8 @@ export default function GoogleMapView({
       .then((google) => {
         if (cancelled || !containerRef.current) return;
         const map = new google.maps.Map(containerRef.current, {
-          center: { lat: 36.5, lng: 127.8 },
-          zoom: 7,
+          center: initialCenterRef.current ?? { lat: 36.5, lng: 127.8 },
+          zoom: initialCenterRef.current ? 10 : 7,
           // AdvancedMarkerElement 사용을 위해 mapId 필요
           mapId: "nomad-map",
           // mapId 사용 시 styles 속성은 무시됨 — colorScheme으로 다크/라이트 전환.
@@ -159,7 +166,9 @@ export default function GoogleMapView({
 
     clustererRef.current = new MarkerClusterer({ map, markers: markersList, renderer });
 
-    map.fitBounds(bounds, { top: 60, right: 60, bottom: 60, left: 60 });
+    // 핸드오프/공유 중심이 있으면 fitBounds로 덮어쓰지 않는다(아래 recenter effect가 처리).
+    if (!initialCenterRef.current)
+      map.fitBounds(bounds, { top: 60, right: 60, bottom: 60, left: 60 });
 
     return () => {
       if (clustererRef.current) {
@@ -173,6 +182,16 @@ export default function GoogleMapView({
       markersRef.current.clear();
     };
   }, [places, ready, locale]);
+
+  // 핸드오프(지구본 줌인) 또는 공유 진입 시: 전달된 중심으로 1회 이동.
+  useEffect(() => {
+    if (!ready || !mapRef.current || !initialCenter) return;
+    const key = `${initialCenter.lat},${initialCenter.lng}`;
+    if (seededCenterRef.current === key) return;
+    seededCenterRef.current = key;
+    mapRef.current.setZoom(10);
+    mapRef.current.setCenter({ lat: initialCenter.lat, lng: initialCenter.lng });
+  }, [initialCenter, ready]);
 
   // 선택된 장소 강조 + smooth fly-to (pan + animated zoom)
   useEffect(() => {

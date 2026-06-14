@@ -54,7 +54,9 @@
     "ratings": "ノマド評価",
     "comment": "コメント",
     "links": "リンク",
-    "channels": "チャンネル"
+    "channels": "チャンネル",
+    "share": "共有",
+    "linkCopied": "リンクをコピーしました"
   },
   "common": {
     "close": "閉じる",
@@ -63,6 +65,7 @@
   "intro": {
     "tagline": "私が泊まった場所、地球の上で",
     "enter": "地図を見る",
-    "skip": "スキップ"
+    "skip": "スキップ",
+    "hint": "地球儀を回して拡大して探検しよう"
   }
 }

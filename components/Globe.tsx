@@ -19,17 +19,26 @@ const NIGHT_SKY_URL   = "//unpkg.com/three-globe/example/img/night-sky.png";
 const NIGHT_EARTH_URL = "//unpkg.com/three-globe/example/img/earth-night.jpg";
 const TOPO_URL        = "//unpkg.com/three-globe/example/img/earth-topology.png";
 
-// Korea center (same as MapView.tsx)
+// Korea fallback centre when geolocation is unavailable (same as MapView.tsx)
 const KOREA_POV = { lat: 36.5, lng: 127.8, altitude: 0.65 } as const;
+
+// Post-intro resting altitude — the globe flies here on the user's location and
+// then stays freely interactive (spin + zoom), Google Earth model (ADR-005).
+const ENTRY_ALTITUDE = 0.72;
+// Zoom-in altitude that triggers the crossfade into the flat provider map.
+const HANDOFF_ALTITUDE = 0.42;
 
 // ---------------------------------------------------------------------------
 // Component
 // ---------------------------------------------------------------------------
 interface GlobeProps {
-  onEnter: () => void;
+  /** Hands off to the flat map; carries the globe centre so the map can be seeded. */
+  onEnter: (handoff?: { lat: number; lng: number }) => void;
+  /** Current geolocation — the globe flies here after the intro (falls back to Korea). */
+  userLocation?: { lat: number; lng: number } | null;
 }
 
-export default function GlobeIntro({ onEnter }: GlobeProps) {
+export default function GlobeIntro({ onEnter, userLocation }: GlobeProps) {
   const { t } = useI18n();
   const { theme } = useTheme();
   const globeRef = useRef<GlobeMethods | undefined>(undefined);
@@ -42,6 +51,12 @@ export default function GlobeIntro({ onEnter }: GlobeProps) {
   const choreoActiveRef = useRef(false);
   // permanently true once the user drags during the intro
   const userTookControlRef = useRef(false);
+  // true once the globe is a free explore surface — enables the zoom→map handoff
+  const exploreModeRef = useRef(false);
+  // guards the handoff so it fires exactly once
+  const handoffFiredRef = useRef(false);
+  // latest geolocation, read inside the choreography timers + Enter handler
+  const userLocationRef = useRef(userLocation ?? null);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const [size, setSize] = useState({ w: 0, h: 0 });
@@ -49,6 +64,11 @@ export default function GlobeIntro({ onEnter }: GlobeProps) {
   const [stopsData, setStopsData] = useState<RouteStop[]>([]);
 
   const isMobile = size.w < 640;
+
+  // Keep the geolocation ref current so the scripted fly-to lands on the user.
+  useEffect(() => {
+    userLocationRef.current = userLocation ?? null;
+  }, [userLocation]);
 
   // Theme-derived settings
   const globeBg        = theme === "dark" ? "#07080a" : "#faf7f2";
@@ -80,20 +100,33 @@ export default function GlobeIntro({ onEnter }: GlobeProps) {
   }, []);
 
   // ------------------------------------------------------------------
-  // Skip / Enter — interrupt choreography and proceed immediately
+  // Enter / Skip button + zoom-handoff all converge here. Seeds the flat map
+  // with the globe's current centre, falling back to the user's location, then
+  // Korea. Idempotent: only the first call wins.
   // ------------------------------------------------------------------
-  const handleSkip = useCallback(() => {
+  const enterMap = useCallback(() => {
+    if (handoffFiredRef.current) return;
+    handoffFiredRef.current = true;
     timeoutIdsRef.current.forEach(clearTimeout);
     timeoutIdsRef.current = [];
     if (dragResumeTimerRef.current) {
       clearTimeout(dragResumeTimerRef.current);
       dragResumeTimerRef.current = null;
     }
-    onEnter();
+    // While the scripted intro is still playing, the camera is the cinematic
+    // fly-over — not a place the user chose — so seed from their location. Once
+    // they're freely exploring, honour wherever they zoomed/panned to.
+    const exploring = exploreModeRef.current || userTookControlRef.current;
+    const pov = globeRef.current?.pointOfView();
+    const center =
+      exploring && pov && Number.isFinite(pov.lat) && Number.isFinite(pov.lng)
+        ? { lat: pov.lat, lng: pov.lng }
+        : userLocationRef.current ?? { lat: KOREA_POV.lat, lng: KOREA_POV.lng };
+    onEnter(center);
   }, [onEnter]);
 
   // ------------------------------------------------------------------
-  // Globe ready → cinematic choreography (~5 s total)
+  // Globe ready → cinematic choreography, then a freely explorable globe.
   // ------------------------------------------------------------------
   const handleGlobeReady = useCallback(() => {
     if (!globeRef.current) return;
@@ -109,22 +142,18 @@ export default function GlobeIntro({ onEnter }: GlobeProps) {
     const ctrl = g.controls();
     ctrl.autoRotate = true;
     ctrl.autoRotateSpeed = 0.55;
-    // Zoom is live from the first frame — the intro is explorable, not a locked
-    // cutscene. Bounds keep the camera between a close fly-over and a full-globe
-    // view (globe radius 100 → altitude ≈ 0.3–4.2).
+    // Zoom is live from the first frame — the globe is the explore surface.
     ctrl.enableZoom = true;
-    ctrl.minDistance = 130;
+    ctrl.minDistance = 125;
     ctrl.maxDistance = 520;
     ctrl.enablePan = false;
 
-    // Mark choreography as active so the drag listener knows to abort
     choreoActiveRef.current = true;
 
     // ------------------------------------------------------------------
     // Hand full control to the user, aborting the scripted intro timeline.
-    // Triggered by a drag (controls "start") OR a zoom (wheel / pinch), so
-    // zooming during the intro feels responsive instead of fighting the
-    // scripted fly-to. Permanent for this session once it fires.
+    // Triggered by a drag (controls "start") OR a zoom (wheel / pinch). Once
+    // fired the globe is in free-explore mode for the rest of the session.
     // ------------------------------------------------------------------
     const takeControl = () => {
       if (!(choreoActiveRef.current && !userTookControlRef.current)) return;
@@ -136,12 +165,12 @@ export default function GlobeIntro({ onEnter }: GlobeProps) {
         clearTimeout(dragResumeTimerRef.current);
         dragResumeTimerRef.current = null;
       }
-      // Immediately reveal arcs + stops so the user can watch them animate
       setArcsData((routeData.arcs ?? []) as RouteArc[]);
       setStopsData(routeData.stops as RouteStop[]);
-      // Freeze autoRotate — stop fighting the user
       autoRotateFrozenRef.current = true;
       ctrl.autoRotate = false;
+      // Free exploration — zooming in now hands off to the flat map.
+      exploreModeRef.current = true;
     };
 
     ctrl.addEventListener("start", () => {
@@ -155,11 +184,19 @@ export default function GlobeIntro({ onEnter }: GlobeProps) {
       if (dragResumeTimerRef.current) clearTimeout(dragResumeTimerRef.current);
     });
 
-    // OrbitControls zoom (wheel / pinch) does NOT fire the "start" event, so
-    // hook the canvas wheel event explicitly: the first zoom during the intro
-    // also hands over control. Listener dies with the canvas on unmount.
+    // OrbitControls zoom (wheel / pinch) does NOT fire "start", so hook wheel
+    // explicitly: the first zoom during the intro also hands over control.
     const wheelEl = g.renderer().domElement;
     wheelEl.addEventListener("wheel", takeControl, { passive: true });
+
+    // Zoom-driven handoff (Google Earth model): once exploring, dropping below
+    // HANDOFF_ALTITUDE crossfades into the flat provider map seeded at the
+    // globe's centre. "change" fires on every rotate/zoom of OrbitControls.
+    ctrl.addEventListener("change", () => {
+      if (!exploreModeRef.current || handoffFiredRef.current) return;
+      const pov = globeRef.current?.pointOfView();
+      if (pov && pov.altitude < HANDOFF_ALTITUDE) enterMap();
+    });
 
     // Drag END — resume autorotate 3 s after pointer idle (pre-freeze only)
     ctrl.addEventListener("end", () => {
@@ -182,7 +219,8 @@ export default function GlobeIntro({ onEnter }: GlobeProps) {
       }, 900),
     );
 
-    // t≈1600 ms — freeze rotation; fly to Korea over 2600 ms (lands ≈t=4200 ms)
+    // t≈1600 ms — freeze rotation; fly to the user's location (or Korea) over
+    // 2600 ms so the first resting view is centred where the user is.
     ids.push(
       setTimeout(() => {
         if (userTookControlRef.current) return; // user already took over
@@ -190,20 +228,26 @@ export default function GlobeIntro({ onEnter }: GlobeProps) {
         autoRotateFrozenRef.current = true;
         if (dragResumeTimerRef.current) clearTimeout(dragResumeTimerRef.current);
         globeRef.current.controls().autoRotate = false;
-        globeRef.current.pointOfView(KOREA_POV, 2600);
+        const loc = userLocationRef.current;
+        const target = loc
+          ? { lat: loc.lat, lng: loc.lng, altitude: ENTRY_ALTITUDE }
+          : { lat: KOREA_POV.lat, lng: KOREA_POV.lng, altitude: ENTRY_ALTITUDE };
+        globeRef.current.pointOfView(target, 2600);
       }, 1600),
     );
 
-    // t≈5200 ms — mark choreography complete, hand off to Explorer
+    // t≈4400 ms — fly-to settled: enable free exploration + zoom handoff.
+    // No auto-enter — the globe stays the primary surface until the user zooms
+    // in (or taps "Explore the map").
     ids.push(
       setTimeout(() => {
         choreoActiveRef.current = false;
-        onEnter();
-      }, 5200),
+        exploreModeRef.current = true;
+      }, 4400),
     );
 
     timeoutIdsRef.current = ids;
-  }, [onEnter]);
+  }, [enterMap]);
 
   // Gate rendering until container is measured
   const ready = size.w > 0;
@@ -246,8 +290,6 @@ export default function GlobeIntro({ onEnter }: GlobeProps) {
           enablePointerInteraction={true}
           rendererConfig={{ antialias: true, alpha: true }}
           // Real visited-route arcs only — gold→white, weight-scaled stroke.
-          // (Decorative ambient arcs to non-visited cities were removed: the
-          // globe must connect only places actually visited.)
           arcsData={arcsData}
           arcStartLat="startLat"
           arcStartLng="startLng"
@@ -311,18 +353,24 @@ export default function GlobeIntro({ onEnter }: GlobeProps) {
         {t("intro.tagline")}
       </p>
 
-      {/* Skip + Enter — both visible from t=0 throughout the entire intro */}
+      {/* Hint: spin + zoom to dive in */}
+      <p className="absolute top-16 left-1/2 -translate-x-1/2 z-20 text-xs text-muted/70 tracking-wide pointer-events-none select-none whitespace-nowrap">
+        {t("intro.hint")}
+      </p>
+
+      {/* Skip + Enter — both visible from t=0 throughout the entire intro.
+          Either one dives straight into the flat map at the current centre. */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-3">
         <button
           type="button"
-          onClick={handleSkip}
+          onClick={enterMap}
           className="min-h-[44px] px-5 py-2 rounded-full bg-surface-2 border border-hairline text-sm text-muted hover:text-body transition"
         >
           {t("intro.skip")}
         </button>
         <button
           type="button"
-          onClick={handleSkip}
+          onClick={enterMap}
           className="min-h-[44px] px-5 py-2 rounded-full bg-cta text-cta-ink text-sm hover:opacity-90 transition"
         >
           {t("intro.enter")}

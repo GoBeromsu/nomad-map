@@ -54,7 +54,9 @@
     "ratings": "游牧评分",
     "comment": "评论",
     "links": "链接",
-    "channels": "频道"
+    "channels": "频道",
+    "share": "分享",
+    "linkCopied": "已复制链接"
   },
   "common": {
     "close": "关闭",
@@ -63,6 +65,7 @@
   "intro": {
     "tagline": "我住过的地方，在地球上",
     "enter": "查看地图",
-    "skip": "跳过"
+    "skip": "跳过",
+    "hint": "旋转地球并放大即可探索"
   }
 }

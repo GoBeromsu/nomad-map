@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useI18n } from "@/lib/i18n/I18nProvider";
 import {
+  isKorea,
   otherProvider,
   pickProviderForSet,
   type MapProvider,
@@ -15,6 +16,7 @@ export interface MapViewProps {
   selectedId: string | null;
   onSelect: (id: string) => void;
   userLocation?: { lat: number; lng: number } | null;
+  initialCenter?: { lat: number; lng: number } | null;
   onLoadError?: () => void;
 }
 
@@ -68,7 +70,15 @@ export default function PlaceMap(props: MapViewProps) {
   const [failed, setFailed] = useState<Set<MapProvider>>(new Set());
   const [notice, setNotice] = useState<string | null>(null);
 
-  const auto = pickProviderForSet(props.places);
+  // Provider auto-selection. Once the globe hands off (or a place is deep-linked)
+  // we know the focus coordinate, so route Korea→Kakao / overseas→Google by that
+  // single point. Until then, fall back to the set-wide heuristic.
+  const coord = props.initialCenter ?? props.userLocation ?? null;
+  const auto = coord
+    ? isKorea(coord.lat, coord.lng)
+      ? "kakao"
+      : "google"
+    : pickProviderForSet(props.places);
   const desired: MapProvider = choice === "auto" ? auto : choice;
 
   // 실효 프로바이더: 원하는 쪽이 실패했고 반대편은 멀쩡하면 폴백.

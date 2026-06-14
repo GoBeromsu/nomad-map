@@ -5,7 +5,7 @@ import FilterBar, { type Filters } from "./FilterBar";
 import PlaceMap from "./PlaceMap";
 import PlaceListItem from "./PlaceListItem";
 import PlaceDetail from "./PlaceDetail";
-import { useGeolocation } from "@/lib/useGeolocation";
+
 import { haversineKm } from "@/lib/geo";
 import { useI18n } from "@/lib/i18n/I18nProvider";
 import type { Category, Place, Status } from "@/lib/types";
@@ -15,11 +15,19 @@ const SIDEBAR_KEY = "nm-sidebar-collapsed";
 export default function Explorer({
   places,
   onShowGlobe,
+  userLocation,
+  initialCenter,
+  initialSelectedId,
 }: {
   places: Place[];
   onShowGlobe?: () => void;
+  userLocation?: { lat: number; lng: number } | null;
+  initialCenter?: { lat: number; lng: number } | null;
+  initialSelectedId?: string;
 }) {
-  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [selectedId, setSelectedId] = useState<string | null>(
+    initialSelectedId ?? null,
+  );
   const [mobileListOpen, setMobileListOpen] = useState(false);
   // Default expanded (false = not collapsed). Lazy initializer reads localStorage
   // on the client; returns false on SSR (typeof window guard) to keep hydration stable.
@@ -33,7 +41,7 @@ export default function Explorer({
     statuses: new Set<Status>(),
   });
   const sheetCloseRef = useRef<HTMLButtonElement>(null);
-  const { coords: userLocation } = useGeolocation();
+
   const { t } = useI18n();
 
   const toggleSidebar = () => {
@@ -171,6 +179,7 @@ export default function Explorer({
           selectedId={selectedId}
           onSelect={handleSelect}
           userLocation={userLocation}
+          initialCenter={initialCenter}
         />
 
         {/* 🌍 지구본으로 돌아가기: 지도 컬럼 안에 위치하므로 사이드바 검색창과

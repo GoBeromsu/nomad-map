@@ -54,7 +54,9 @@
     "ratings": "노마드 평가",
     "comment": "코멘트",
     "links": "링크",
-    "channels": "홍보 채널"
+    "channels": "홍보 채널",
+    "share": "공유",
+    "linkCopied": "링크가 복사됐어요"
   },
   "common": {
     "close": "닫기",
@@ -63,6 +65,7 @@
   "intro": {
     "tagline": "내가 머문 곳들, 지구 위에서",
     "enter": "지도 보기",
-    "skip": "건너뛰기"
+    "skip": "건너뛰기",
+    "hint": "지구본을 돌리고 확대해 탐험하세요"
   }
 }

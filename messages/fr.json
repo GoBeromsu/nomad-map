@@ -54,7 +54,9 @@
     "ratings": "Avis nomade",
     "comment": "Commentaire",
     "links": "Liens",
-    "channels": "Chaînes"
+    "channels": "Chaînes",
+    "share": "Partager",
+    "linkCopied": "Lien copié"
   },
   "common": {
     "close": "Fermer",
@@ -63,6 +65,7 @@
   "intro": {
     "tagline": "Les endroits où j'ai séjourné, sur le globe",
     "enter": "Explorer la carte",
-    "skip": "Passer"
+    "skip": "Passer",
+    "hint": "Faites tourner et zoomez pour explorer"
   }
 }

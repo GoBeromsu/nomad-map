@@ -13,6 +13,7 @@ interface MapViewProps {
   selectedId: string | null;
   onSelect: (id: string) => void;
   userLocation?: { lat: number; lng: number } | null;
+  initialCenter?: { lat: number; lng: number } | null;
   /** SDK 로드 실패 시 호출 — 상위(PlaceMap)에서 다른 프로바이더로 자동 폴백. */
   onLoadError?: () => void;
 }
@@ -60,6 +61,7 @@ export default function MapView({
   selectedId,
   onSelect,
   userLocation,
+  initialCenter,
   onLoadError,
 }: MapViewProps) {
   const { t, locale } = useI18n();
@@ -75,6 +77,11 @@ export default function MapView({
   const meMarkerRef = useRef<any>(null);
   const didCenterOnMe = useRef(false);
   const lastFlyToId = useRef<string | null>(null);
+  // Latest seed centre (handoff / shared place) read inside effects without
+  // re-triggering them; `seededCenterRef` dedupes the one-shot recenter.
+  const initialCenterRef = useRef(initialCenter);
+  initialCenterRef.current = initialCenter;
+  const seededCenterRef = useRef<string | null>(null);
   const onSelectRef = useRef(onSelect);
   onSelectRef.current = onSelect;
 
@@ -88,8 +95,11 @@ export default function MapView({
       .then((kakao) => {
         if (cancelled || !containerRef.current) return;
         const map = new kakao.maps.Map(containerRef.current, {
-          center: new kakao.maps.LatLng(36.5, 127.8),
-          level: 13,
+          center: new kakao.maps.LatLng(
+            initialCenterRef.current?.lat ?? 36.5,
+            initialCenterRef.current?.lng ?? 127.8,
+          ),
+          level: initialCenterRef.current ? 8 : 13,
         });
         mapRef.current = map;
 
@@ -203,7 +213,8 @@ export default function MapView({
     });
 
     clusterer.addMarkers(newMarkers);
-    map.setBounds(bounds, 60, 60, 60, 60);
+    // 핸드오프/공유 중심이 있으면 fitBounds로 덮어쓰지 않는다(아래 recenter effect가 처리).
+    if (!initialCenterRef.current) map.setBounds(bounds, 60, 60, 60, 60);
 
     return () => {
       clusterer.clear();
@@ -214,6 +225,18 @@ export default function MapView({
       }
     };
   }, [places, ready]);
+
+  // 핸드오프(지구본 줌인) 또는 공유 진입 시: 전달된 중심으로 1회 이동.
+  useEffect(() => {
+    if (!ready || !mapRef.current || !window.kakao || !initialCenter) return;
+    const key = `${initialCenter.lat},${initialCenter.lng}`;
+    if (seededCenterRef.current === key) return;
+    seededCenterRef.current = key;
+    mapRef.current.setLevel(8);
+    mapRef.current.setCenter(
+      new window.kakao.maps.LatLng(initialCenter.lat, initialCenter.lng),
+    );
+  }, [initialCenter, ready]);
 
   // 선택된 장소: 이름 pill 오버레이 표시 + 중심 이동 (fly-to)
   useEffect(() => {

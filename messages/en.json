@@ -54,7 +54,9 @@
     "ratings": "Nomad rating",
     "comment": "Comment",
     "links": "Links",
-    "channels": "Channels"
+    "channels": "Channels",
+    "share": "Share",
+    "linkCopied": "Link copied"
   },
   "common": {
     "close": "Close",
@@ -63,6 +65,7 @@
   "intro": {
     "tagline": "The places I've stayed, mapped across the globe",
     "enter": "Explore the map",
-    "skip": "Skip"
+    "skip": "Skip",
+    "hint": "Spin and zoom in to dive in"
   }
 }

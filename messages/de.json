@@ -54,7 +54,9 @@
     "ratings": "Nomaden-Bewertung",
     "comment": "Kommentar",
     "links": "Links",
-    "channels": "Kanäle"
+    "channels": "Kanäle",
+    "share": "Teilen",
+    "linkCopied": "Link kopiert"
   },
   "common": {
     "close": "Schließen",
@@ -63,6 +65,7 @@
   "intro": {
     "tagline": "Die Orte, an denen ich war, auf dem Globus",
     "enter": "Karte erkunden",
-    "skip": "Überspringen"
+    "skip": "Überspringen",
+    "hint": "Drehen und hineinzoomen zum Entdecken"
   }
 }

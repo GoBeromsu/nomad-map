@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import Explorer from "./Explorer";
+import { useGeolocation } from "@/lib/useGeolocation";
 import type { Place } from "@/lib/types";
 
 const INTRO_KEY = "nm-intro-seen";
@@ -29,27 +30,60 @@ type Stage = "globe" | "globe-exiting" | "map";
  *
  * Stage machine:
  *   null  (SSR / hydration) → avoids sessionStorage mismatch
- *   "globe" → GlobeCanvas overlay covers Explorer; fires onEnter on completion
+ *   "globe" → GlobeCanvas overlay covers Explorer; the globe is the primary,
+ *             freely interactive surface. Zooming in (or "Explore") hands off.
  *   "map"   → Explorer visible; 🌍 button replays the intro
  *
- * Explorer is always mounted so the Kakao/Google SDK initialises during
- * the globe intro, meaning the map is ready the moment the user enters.
+ * Explorer is always mounted so the Kakao/Google SDK initialises during the
+ * globe intro, meaning the map is ready the moment the globe hands off.
+ *
+ * `initialPlaceId` (share / deep-link route) skips the intro and opens that
+ * place's detail straight away, seeded at its coordinates.
  */
-export default function AppShell({ places }: { places: Place[] }) {
+export default function AppShell({
+  places,
+  initialPlaceId,
+}: {
+  places: Place[];
+  initialPlaceId?: string;
+}) {
+  const initialPlace = initialPlaceId
+    ? places.find((p) => p.id === initialPlaceId)
+    : undefined;
+
   // null during SSR/hydration — effect below resolves it client-side.
   const [stage, setStage] = useState<Stage | null>(null);
   const [reducedMotion, setReducedMotion] = useState(false);
+  // Centre carried from the globe at handoff (Google Earth model, ADR-005) — or
+  // the shared place's coordinates — used to seed the flat map's centre/provider.
+  const [handoffCenter, setHandoffCenter] = useState<{
+    lat: number;
+    lng: number;
+  } | null>(
+    initialPlace ? { lat: initialPlace.lat, lng: initialPlace.lng } : null,
+  );
+
+  // Geolocation lives here so both the globe (fly-to) and the map (provider +
+  // recenter) share a single request.
+  const { coords: userLocation } = useGeolocation();
 
   useEffect(() => {
-    const seen = sessionStorage.getItem(INTRO_KEY);
-    setStage(seen ? "map" : "globe");
     setReducedMotion(
       window.matchMedia("(prefers-reduced-motion: reduce)").matches,
     );
-  }, []);
+    // Deep-linked single place (share route): skip the intro, open the map.
+    if (initialPlaceId) {
+      sessionStorage.setItem(INTRO_KEY, "1");
+      setStage("map");
+      return;
+    }
+    const seen = sessionStorage.getItem(INTRO_KEY);
+    setStage(seen ? "map" : "globe");
+  }, [initialPlaceId]);
 
-  const handleEnter = () => {
+  const handleEnter = (handoff?: { lat: number; lng: number }) => {
     sessionStorage.setItem(INTRO_KEY, "1");
+    if (handoff) setHandoffCenter(handoff);
     if (reducedMotion) {
       // No crossfade for users who prefer reduced motion — switch instantly.
       setStage("map");
@@ -57,21 +91,16 @@ export default function AppShell({ places }: { places: Place[] }) {
     }
     setStage("globe-exiting");
     // Unmount the WebGL overlay after the CSS crossfade completes (~550ms).
-    // pointer-events-none on the wrapper prevents any interaction during the fade.
     setTimeout(() => setStage("map"), 550);
   };
 
-  // Replay the intro without clearing the sessionStorage flag —
-  // sessionStorage only controls the page-load skip, not in-session replays.
+  // Replay the intro without clearing the sessionStorage flag.
   const handleGlobeButton = () => setStage("globe");
 
   return (
-    // Same classes as Explorer's own outer div to satisfy the h-dvh layout contract
-    // set by app/page.tsx: <main className="flex h-dvh flex-col">.
     <div className="relative flex flex-1 overflow-hidden">
-      {/* Explorer always mounted: SDK init + filter state preserved across transitions.
-          Incoming map scales 0.97→1.0 as the globe fades — a subtle "settle into place"
-          that reads as diving down to the surface. Stripped when reduced-motion. */}
+      {/* Explorer always mounted: SDK init + filter state preserved across
+          transitions. Incoming map scales 0.97→1.0 as the globe fades. */}
       <div
         className={[
           "flex flex-1",
@@ -79,12 +108,17 @@ export default function AppShell({ places }: { places: Place[] }) {
           stage === "globe" ? "scale-[0.97]" : "scale-100",
         ].join(" ")}
       >
-        <Explorer places={places} onShowGlobe={handleGlobeButton} />
+        <Explorer
+          places={places}
+          onShowGlobe={handleGlobeButton}
+          userLocation={userLocation}
+          initialCenter={handoffCenter}
+          initialSelectedId={initialPlaceId}
+        />
       </div>
 
-      {/* Globe overlay: conditionally mounted so WebGL context is released when gone;
-          re-mount replays the full choreography animation.
-          "globe-exiting" keeps it mounted during the CSS crossfade, then unmounts. */}
+      {/* Globe overlay: conditionally mounted so the WebGL context is released
+          when gone; re-mount replays the full choreography. */}
       {(stage === "globe" || stage === "globe-exiting") && (
         <div
           className={[
@@ -95,12 +129,9 @@ export default function AppShell({ places }: { places: Place[] }) {
               : "opacity-100",
           ].join(" ")}
         >
-          <GlobeCanvas onEnter={handleEnter} />
+          <GlobeCanvas onEnter={handleEnter} userLocation={userLocation} />
         </div>
       )}
-
-      {/* 🌍 return button now lives inside Explorer's map column (see Explorer's
-          onShowGlobe) so it floats over the map, never over the sidebar search. */}
     </div>
   );
 }

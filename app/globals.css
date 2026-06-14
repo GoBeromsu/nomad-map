@@ -207,3 +207,14 @@ body {
 .dark .nm-kakao-surface .nm-cluster {
   filter: invert(1) hue-rotate(180deg);
 }
+
+/* ── 장소 상세 사진 갤러리 (가로 스와이프) ──
+   네이티브 스크롤-스냅으로 옆으로 넘기고, 스크롤바는 숨긴다. */
+.nm-gallery {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overscroll-behavior-x: contain;
+}
+.nm-gallery::-webkit-scrollbar {
+  display: none;
+}

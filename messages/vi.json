@@ -54,7 +54,9 @@
     "ratings": "Đánh giá Nomad",
     "comment": "Bình luận",
     "links": "Liên kết",
-    "channels": "Kênh"
+    "channels": "Kênh",
+    "share": "Chia sẻ",
+    "linkCopied": "Đã sao chép liên kết"
   },
   "common": {
     "close": "Đóng",
@@ -63,6 +65,7 @@
   "intro": {
     "tagline": "Những nơi tôi đã ở, trên toàn cầu",
     "enter": "Xem bản đồ",
-    "skip": "Bỏ qua"
+    "skip": "Bỏ qua",
+    "hint": "Xoay và phóng to để khám phá"
   }
 }
