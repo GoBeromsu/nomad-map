@@ -3071,5 +3071,88 @@
       "de": "Changbaishan (Baekdusan / Himmelsee)",
       "vi": "Trường Bạch Sơn (Bạch Đầu Sơn / Thiên Trì)"
     }
+  },
+  {
+    "id": "제주-스타벅스-애월dt",
+    "name": "스타벅스 제주애월DT점",
+    "name_i18n": {
+      "ko": "스타벅스 제주애월DT점",
+      "en": "Starbucks Jeju Aewol DT",
+      "ja": "スターバックス 済州涯月DT店",
+      "zh": "星巴克济州涯月DT店",
+      "es": "Starbucks Jeju Aewol DT",
+      "fr": "Starbucks Jeju Aewol DT",
+      "de": "Starbucks Jeju Aewol DT",
+      "vi": "Starbucks Jeju Aewol DT"
+    },
+    "category": "cafe",
+    "status": "recommended",
+    "lat": 33.472797,
+    "lng": 126.34871,
+    "address": "제주특별자치도 제주시 애월읍 애월해안로 376",
+    "description": "제주 애월 해안도로에 있는 바다뷰 스타벅스. 창가에서 바다가 보이고 인터넷이 빨라 여행 중 작업하거나 쉬어가기 좋다.",
+    "description_i18n": {
+      "ko": "제주 애월 해안도로에 있는 바다뷰 스타벅스. 창가에서 바다가 보이고 인터넷이 빨라 여행 중 작업하거나 쉬어가기 좋다.",
+      "en": "A sea-view Starbucks on Jeju’s Aewol coastal road. You can see the ocean from the windows, and the fast internet makes it a solid stop for working or resting during a trip.",
+      "ja": "済州・涯月の海岸道路沿いにある海が見えるスターバックス。窓側から海を眺められ、インターネットも速いので旅行中の作業や休憩に使いやすい。",
+      "zh": "位于济州涯月海岸道路上的海景星巴克。窗边可以看到大海，网络速度也快，适合旅行途中工作或休息。",
+      "es": "Un Starbucks con vista al mar en la carretera costera de Aewol, Jeju. Desde las ventanas se ve el océano y el internet rápido lo convierte en una buena parada para trabajar o descansar durante el viaje.",
+      "fr": "Un Starbucks avec vue sur la mer sur la route côtière d’Aewol à Jeju. On aperçoit l’océan depuis les fenêtres, et l’internet rapide en fait une bonne halte pour travailler ou se reposer en voyage.",
+      "de": "Ein Starbucks mit Meerblick an der Küstenstraße von Aewol auf Jeju. Von den Fenstern sieht man das Meer, und das schnelle Internet macht ihn zu einem guten Stopp zum Arbeiten oder Ausruhen auf Reisen.",
+      "vi": "Một Starbucks nhìn ra biển trên đường ven biển Aewol ở Jeju. Có thể nhìn thấy biển từ cửa sổ, internet nhanh nên phù hợp để làm việc hoặc nghỉ chân trong chuyến đi."
+    },
+    "ratings": {
+      "wifi": 5,
+      "power": 3,
+      "seating": 4,
+      "quiet": 3,
+      "longStay": 4
+    },
+    "tags": [
+      "제주",
+      "애월",
+      "카페거리",
+      "스타벅스",
+      "오션뷰",
+      "와이파이빠름",
+      "작업카페",
+      "해안도로",
+      "무료주차",
+      "드라이브스루"
+    ],
+    "links": [
+      {
+        "label": "네이버지도",
+        "url": "https://map.naver.com/p/search/스타벅스%20제주애월DT점"
+      },
+      {
+        "label": "카카오맵",
+        "url": "https://map.kakao.com/link/search/스타벅스%20제주애월DT점"
+      },
+      {
+        "label": "공식사이트",
+        "url": "https://www.starbucks.co.kr/"
+      }
+    ],
+    "channels": [],
+    "comment": {
+      "date": "2026-06-14",
+      "duration": "방문",
+      "note": "제주 애월 카페거리에서 바다가 보이고 인터넷이 빠른 카페. 여행 중 노트북 작업과 짧은 휴식 모두에 적합하다.",
+      "note_i18n": {
+        "ko": "제주 애월 카페거리에서 바다가 보이고 인터넷이 빠른 카페. 여행 중 노트북 작업과 짧은 휴식 모두에 적합하다.",
+        "en": "A cafe in Jeju’s Aewol cafe street with an ocean view and fast internet. Good for both laptop work and a short travel break.",
+        "ja": "済州・涯月カフェ通りにある、海が見えてインターネットが速いカフェ。旅行中のノートPC作業にも短い休憩にも向いている。",
+        "zh": "济州涯月咖啡街里可以看海、网络很快的咖啡馆。适合旅行途中用笔记本工作，也适合短暂休息。",
+        "es": "Un café en la calle de cafés de Aewol, Jeju, con vista al mar e internet rápido. Bueno tanto para trabajar con portátil como para una pausa breve de viaje.",
+        "fr": "Un café dans la rue des cafés d’Aewol à Jeju, avec vue sur la mer et internet rapide. Adapté au travail sur ordinateur comme à une courte pause de voyage.",
+        "de": "Ein Café in Jejus Aewol-Caféstraße mit Meerblick und schnellem Internet. Gut geeignet sowohl für Laptop-Arbeit als auch für eine kurze Reisepause.",
+        "vi": "Một quán cà phê ở phố cà phê Aewol, Jeju, có tầm nhìn ra biển và internet nhanh. Phù hợp cả để làm việc bằng laptop lẫn nghỉ chân ngắn trong chuyến đi."
+      }
+    },
+    "photos": [
+      "/places/제주-스타벅스-애월dt-1.webp",
+      "/places/제주-스타벅스-애월dt-2.webp"
+    ]
   }
 ]
