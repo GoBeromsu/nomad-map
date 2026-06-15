@@ -3235,5 +3235,81 @@
       "/places/여수-스타벅스-여수여천-1.webp",
       "/places/여수-스타벅스-여수여천-2.webp"
     ]
+  },
+  {
+    "id": "광주-카페-나인틴52-전남대",
+    "name": "카페 나인틴52 전남대학교 광주캠퍼스",
+    "name_i18n": {
+      "ko": "카페 나인틴52 전남대학교 광주캠퍼스",
+      "en": "Cafe Nineteen52 Chonnam National University Gwangju Campus",
+      "ja": "カフェ ナインティーン52 全南大学 光州キャンパス",
+      "zh": "Cafe Nineteen52 全南大学光州校区",
+      "es": "Cafe Nineteen52 Campus Gwangju de la Universidad Nacional de Chonnam",
+      "fr": "Cafe Nineteen52 Campus de Gwangju de l'Université nationale de Chonnam",
+      "de": "Cafe Nineteen52 Campus Gwangju der Chonnam National University",
+      "vi": "Cafe Nineteen52 Cơ sở Gwangju Đại học Quốc gia Chonnam"
+    },
+    "category": "cafe",
+    "status": "good",
+    "lat": 35.17912,
+    "lng": 126.906751,
+    "address": "광주 북구 용봉로 77 스토리움 1층",
+    "description": "전남대학교 광주캠퍼스 안 스토리움 1층에 있는 교내 카페. 캠퍼스 산책이나 수업·작업 사이에 부담 없이 들르기 좋은 휴식 지점이다.",
+    "description_i18n": {
+      "ko": "전남대학교 광주캠퍼스 안 스토리움 1층에 있는 교내 카페. 캠퍼스 산책이나 수업·작업 사이에 부담 없이 들르기 좋은 휴식 지점이다.",
+      "en": "A campus cafe on the first floor of Storium inside Chonnam National University’s Gwangju Campus. A low-friction rest stop between a campus walk, classes, or a work session.",
+      "ja": "全南大学光州キャンパス内、ストリウム1階にある学内カフェ。キャンパス散策や授業、作業の合間に気軽に立ち寄れる休憩スポット。",
+      "zh": "位于全南大学光州校区 Storium 一楼的校内咖啡馆。适合在校园散步、上课或工作间隙轻松休息。",
+      "es": "Una cafetería del campus en la primera planta de Storium, dentro del campus de Gwangju de la Universidad Nacional de Chonnam. Un punto sencillo para descansar entre un paseo por el campus, clases o una sesión de trabajo.",
+      "fr": "Un café de campus au premier étage de Storium, dans le campus de Gwangju de l'Université nationale de Chonnam. Une halte simple pour se poser entre une promenade, un cours ou une session de travail.",
+      "de": "Ein Campus-Café im ersten Stock des Storium auf dem Gwangju-Campus der Chonnam National University. Ein unkomplizierter Ruhepunkt zwischen Campus-Spaziergang, Vorlesung oder Arbeitssession.",
+      "vi": "Một quán cà phê trong khuôn viên ở tầng 1 Storium, bên trong cơ sở Gwangju của Đại học Quốc gia Chonnam. Điểm nghỉ nhẹ nhàng giữa lúc đi dạo trong trường, học hoặc làm việc."
+    },
+    "ratings": {
+      "wifi": 3,
+      "power": 3,
+      "seating": 4,
+      "quiet": 3,
+      "longStay": 4
+    },
+    "tags": [
+      "광주",
+      "전남대",
+      "교내카페",
+      "용봉동",
+      "스토리움",
+      "카공",
+      "캠퍼스"
+    ],
+    "links": [
+      {
+        "label": "당근 동네업체",
+        "url": "https://www.daangn.com/kr/local-profile/%EC%B9%B4%ED%8E%98-%EB%82%98%EC%9D%B8%ED%8B%B452-%EC%A0%84%EB%82%A8%EB%8C%80%ED%95%99%EA%B5%90-%EA%B4%91%EC%A3%BC%EC%BA%A0%ED%8D%BC%EC%8A%A4-82pp2z5bqwrx"
+      },
+      {
+        "label": "Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=35.179120,126.906751"
+      }
+    ],
+    "channels": [],
+    "comment": {
+      "date": "2026-06-15",
+      "duration": "방문",
+      "note": "전남대학교 안에 있는 카페 나인틴52. 캠퍼스 안에서 쉬거나 가볍게 작업하기 좋은 카페로 기록.",
+      "note_i18n": {
+        "ko": "전남대학교 안에 있는 카페 나인틴52. 캠퍼스 안에서 쉬거나 가볍게 작업하기 좋은 카페로 기록.",
+        "en": "Cafe Nineteen52 inside Chonnam National University. Logged as a cafe for resting or light work on campus.",
+        "ja": "全南大学の中にあるカフェ ナインティーン52。キャンパス内で休憩したり軽く作業したりする場所として記録。",
+        "zh": "全南大学内的 Cafe Nineteen52。记录为适合在校园里休息或轻量工作的咖啡馆。",
+        "es": "Cafe Nineteen52 dentro de la Universidad Nacional de Chonnam. Registrado como café para descansar o trabajar ligero en el campus.",
+        "fr": "Cafe Nineteen52 à l'intérieur de l'Université nationale de Chonnam. Enregistré comme café pour se reposer ou travailler légèrement sur le campus.",
+        "de": "Cafe Nineteen52 innerhalb der Chonnam National University. Als Café für Pausen oder leichtes Arbeiten auf dem Campus gespeichert.",
+        "vi": "Cafe Nineteen52 bên trong Đại học Quốc gia Chonnam. Được ghi lại như một quán cà phê để nghỉ ngơi hoặc làm việc nhẹ trong khuôn viên."
+      }
+    },
+    "photos": [
+      "/places/광주-카페-나인틴52-전남대-1.webp",
+      "/places/광주-카페-나인틴52-전남대-2.webp"
+    ]
   }
 ]
