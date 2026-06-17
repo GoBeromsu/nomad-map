@@ -3311,5 +3311,83 @@
       "/places/광주-카페-나인틴52-전남대-1.webp",
       "/places/광주-카페-나인틴52-전남대-2.webp"
     ]
+  },
+  {
+    "id": "여수-언던커피",
+    "name": "언던커피 UNDONE COFFEE",
+    "name_i18n": {
+      "ko": "언던커피 UNDONE COFFEE",
+      "en": "UNDONE COFFEE Yeosu",
+      "ja": "UNDONE COFFEE 麗水",
+      "zh": "UNDONE COFFEE 丽水",
+      "es": "UNDONE COFFEE Yeosu",
+      "fr": "UNDONE COFFEE Yeosu",
+      "de": "UNDONE COFFEE Yeosu",
+      "vi": "UNDONE COFFEE Yeosu"
+    },
+    "category": "cafe",
+    "status": "good",
+    "lat": 34.760253,
+    "lng": 127.669066,
+    "address": "전라남도 여수시 신기남2길 29 2층",
+    "description": "여수 신기동 흥국상가 골목의 2층 카페. 큰 창, 식물, 어두운 타일과 노출 천장이 만드는 차분한 무드가 있어 작업과 휴식 사이에 머물기 좋다.",
+    "description_i18n": {
+      "ko": "여수 신기동 흥국상가 골목의 2층 카페. 큰 창, 식물, 어두운 타일과 노출 천장이 만드는 차분한 무드가 있어 작업과 휴식 사이에 머물기 좋다.",
+      "en": "A second-floor cafe in the Heungguk Shopping Arcade alley of Singi-dong, Yeosu. Large windows, plants, dark tile, and an exposed ceiling create a calm mood that works well between focused work and rest.",
+      "ja": "麗水・新基洞の興国商街路地にある2階のカフェ。大きな窓、植物、黒いタイル、むき出しの天井が落ち着いた雰囲気をつくり、作業と休憩のあいだに滞在しやすい。",
+      "zh": "位于丽水新基洞兴国商街巷内的二楼咖啡馆。大窗、绿植、深色地砖和裸露天花营造出安静氛围，适合在工作与休息之间停留。",
+      "es": "Café en el segundo piso de un callejón del Heungguk Shopping Arcade en Singi-dong, Yeosu. Ventanales, plantas, baldosas oscuras y techo expuesto crean un ambiente tranquilo, útil entre trabajo concentrado y descanso.",
+      "fr": "Café au deuxième étage dans une ruelle du Heungguk Shopping Arcade à Singi-dong, Yeosu. Grandes fenêtres, plantes, carrelage sombre et plafond apparent créent une ambiance calme, pratique entre travail concentré et pause.",
+      "de": "Café im zweiten Stock in einer Gasse der Heungguk Shopping Arcade in Singi-dong, Yeosu. Große Fenster, Pflanzen, dunkle Fliesen und eine offene Decke schaffen eine ruhige Stimmung zwischen fokussierter Arbeit und Pause.",
+      "vi": "Quán cà phê tầng 2 trong hẻm Heungguk Shopping Arcade ở Singi-dong, Yeosu. Cửa sổ lớn, cây xanh, gạch tối màu và trần lộ tạo cảm giác yên tĩnh, phù hợp để ngồi giữa làm việc tập trung và nghỉ ngơi."
+    },
+    "ratings": {
+      "wifi": 4,
+      "power": 3,
+      "seating": 4,
+      "quiet": 3,
+      "longStay": 4
+    },
+    "tags": [
+      "여수",
+      "신기동",
+      "흥국상가",
+      "카페",
+      "2층카페",
+      "식물",
+      "창가",
+      "작업카페"
+    ],
+    "links": [
+      {
+        "label": "네이버지도",
+        "url": "https://map.naver.com/p/entry/place/2025905310?lng=127.6690658&lat=34.760253&placePath=%2Fhome&entry=plt&searchType=place"
+      },
+      {
+        "label": "공식 블로그",
+        "url": "https://blog.naver.com/undonecoffee"
+      }
+    ],
+    "channels": [],
+    "comment": {
+      "date": "2026-06-17",
+      "duration": "방문",
+      "note": "여수 신기동 흥국상가의 UNDONE COFFEE. 창밖 전선과 골목 풍경, 실내 식물과 검은 타일이 묘하게 잘 맞는 조용한 작업/쉼 포인트.",
+      "note_i18n": {
+        "ko": "여수 신기동 흥국상가의 UNDONE COFFEE. 창밖 전선과 골목 풍경, 실내 식물과 검은 타일이 묘하게 잘 맞는 조용한 작업/쉼 포인트.",
+        "en": "UNDONE COFFEE in Heungguk Shopping Arcade, Singi-dong, Yeosu. The wires and alley view outside somehow match the indoor plants and black tile — a quiet work/rest point.",
+        "ja": "麗水・新基洞の興国商街にあるUNDONE COFFEE。窓の外の電線と路地の景色、室内の植物と黒いタイルが不思議と合う、静かな作業・休憩スポット。",
+        "zh": "丽水新基洞兴国商街的 UNDONE COFFEE。窗外的电线和巷景，与室内绿植和黑色地砖意外地协调，是安静的工作/休息点。",
+        "es": "UNDONE COFFEE en el Heungguk Shopping Arcade de Singi-dong, Yeosu. Los cables y la vista del callejón combinan curiosamente con las plantas interiores y el azulejo negro: un punto tranquilo para trabajar o descansar.",
+        "fr": "UNDONE COFFEE dans le Heungguk Shopping Arcade de Singi-dong, Yeosu. Les câbles et la vue de ruelle dehors s'accordent étrangement avec les plantes et le carrelage noir dedans — un point calme pour travailler ou souffler.",
+        "de": "UNDONE COFFEE in der Heungguk Shopping Arcade in Singi-dong, Yeosu. Die Kabel und der Gassenblick draußen passen überraschend gut zu den Pflanzen und schwarzen Fliesen drinnen — ein ruhiger Ort zum Arbeiten oder Ausruhen.",
+        "vi": "UNDONE COFFEE ở Heungguk Shopping Arcade, Singi-dong, Yeosu. Dây điện và khung cảnh con hẻm bên ngoài lại hợp lạ với cây xanh và gạch đen bên trong — một điểm yên tĩnh để làm việc/nghỉ."
+      }
+    },
+    "photos": [
+      "/places/여수-언던커피-1.webp",
+      "/places/여수-언던커피-2.webp",
+      "/places/여수-언던커피-3.webp"
+    ]
   }
 ]
